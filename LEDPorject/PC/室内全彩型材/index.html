@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	<!--顶移动端适配-->
-<title>-</title>
-	<link href="../bs/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../bs/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../bs/css/demo.css">
+<title>PC版报价</title>
+	<!--bootstarp官方样式,因为引入本地的css文件会导致上传后不显示图标,所以引入官方在线文件-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--引入这个页面对应的css样式-->
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 </head>
 <body>
 <!--报价系统副本2 index-->
@@ -202,13 +203,13 @@
 						<td >总千瓦数</td>
 					</tr>
 					<tr id="dataX">
-						<td id="dataX1"></td>
-						<td id="dataX2"></td>
-						<td id="dataX3"></td>
-						<td id="dataX4"></td>
-						<td id="dataX5"></td>
-						<td id="dataX6"></td>
-						<td id="dataX7"></td>
+						<td id="dataA1"></td>
+						<td id="dataA2"></td>
+						<td id="dataA3"></td>
+						<td id="dataA4"></td>
+						<td id="dataA5"></td>
+						<td id="dataA6"></td>
+						<td id="dataA7"></td>
 					</tr>
 					<tr id="bdy">
 						<td>单板高度</td>
@@ -220,13 +221,13 @@
 						<td>总平方数㎡</td>
 					</tr>
 					<tr id="dataY">
-						<td id="dataY1"></td>
-						<td id="dataY2"></td>
-						<td id="dataY3"></td>
-						<td id="dataY4"></td>
-						<td id="dataY5"></td>
-						<td id="dataY6"></td>
-						<td id="dataY7"></td>
+						<td id="dataB1"></td>
+						<td id="dataB2"></td>
+						<td id="dataB3"></td>
+						<td id="dataB4"></td>
+						<td id="dataB5"></td>
+						<td id="dataB6"></td>
+						<td id="dataB7"></td>
 					</tr>
 					</tbody>
 					</table>
@@ -391,28 +392,37 @@
 			</div>
 
 			<!--2.4:合同信息栏-->
-			<div class="hetong-message" id="contract-message"  style="margin-left:30px;">
-
+			<div class="hetong-message" id="contract-message"  style="margin-left:30px; width:100%;">
+				<!--备注栏-->
+				<table class="table table-bordered  " style="margin-left:-30px;">
+					<tr id="bd21">
+						<td style="width: 20%;">备注</td>
+						<td style="width: 80%;padding:0; border:0;">
+							<textarea rows="3" cols="20" style="padding:0;width:100%;height:100%;border:0;" >输入备注内容
+							</textarea>
+						</td>
+					</tr>
+				</table>
 				<p>
 					<span>一、付款方式：</span><br>
-					<span>本次合同总价为<input type="text"class="message-input" value="35300" style="width:120px">元,( <i>叁万伍仟叁佰元整</i> )，自合同签订之日起 甲方支付合同总金额的<input type="text"class="message-input" value="30%" style="width:80px"> 给乙方<input type="text"class="message-input" value="（淘宝-河南佳美电子）" style="width:200px">，发货前支付剩下的<input type="text"class="message-input" value="70%" style="width:80px">,物流运费到付。</span>
+					<span>本次合同总价为<input type="text"class="message-input" placeholder="35300"  style="width:120px">元,( <i>叁万伍仟叁佰元整</i> )，自合同签订之日起 甲方支付合同总金额的<input type="text"class="message-input" placeholder="30%" style="width:80px"> 给乙方<input type="text"class="message-input" placeholder="（淘宝-河南佳美电子）" style="width:200px">，发货前支付剩下的<input type="text"class="message-input"  placeholder="70%" style="width:80px">,物流运费到付。</span>
 				</p>
 
 				<p>
 					<span>二、交货日期：</span><br>
-					<span>1、甲乙双方约定交货日期为收到定金后<input type="text"class="message-input" value="三" style="width:80px">个工作日内发货。</span><br>
+					<span>1、甲乙双方约定交货日期为收到定金后<input type="text"class="message-input" placeholder="三" style="width:80px">个工作日内发货。</span><br>
 					<span>2、甲方未按本合同付款方式付款的，乙方交付产品的时间相应顺延。</span>
 				</p>
 
 				<p>
 					<span>三、交货方式：</span><br>
-					<span>甲方指定运输方式为汽运。运输费用由甲方承担；甲方收货人姓名： <input type="text"class="message-input" style="width:230px">    联系电话： <input type="text"class="message-input" style="width:180px">    收货地址: <input type="text"class="message-input" style="width:350px">    。货物运输安全由甲乙及物流公司共同承担。</span>
+					<span>甲方指定运输方式为汽运。运输费用由甲方承担；甲方收货人姓名： <input type="text"class="message-input" placeholder="请输入甲方收货人姓名"style="width:230px">    联系电话： <input type="text"class="message-input" placeholder="请输入联系电话" style="width:180px">    收货地址: <input type="text"class="message-input"placeholder="请输入收货人地址" style="width:350px">    。货物运输安全由甲乙及物流公司共同承担。</span>
 				</p>
 
 				<p>
 					<span>四、验收标准及期限：</span><br>
 					<span>1、验收标准：按显示屏行业通用标准执行验收。</span><br>
-					<span>2、自乙方交付产品 <input type="text"class="message-input" value="5" style="width:80px"> 天内，如有问题甲方因及时向乙方提出书面异议，甲方未按时提出书面异议的，视为产品验收合格。</span>
+					<span>2、自乙方交付产品 <input type="text"class="message-input" placeholder="5" style="width:80px"> 天内，如有问题甲方因及时向乙方提出书面异议，甲方未按时提出书面异议的，视为产品验收合格。</span>
 
 				</p>
 				<p>
@@ -424,9 +434,9 @@
 
 				<p>
 					<span>六、违约责任</span><br>
-					<span>1、甲方逾期付款的，每逾期一日，按应付而未付价款部分的<input type="text"class="message-input" value="千分之一" style="width:80px">向乙方支付违约金。</span><br>
-					<span>2、乙方未按期交付设备的，每延迟<input type="text"class="message-input" value="一" style="width:80px">日。</span>按支付合同总额千分之一向甲方支付违约金。</span><br>
-					<span>3、甲方未按合同执行付款时间逾期超<input type="text"class="message-input" value="20" style="width:80px">天,货物所有权归乙方所有，定金不退还。</span>
+					<span>1、甲方逾期付款的，每逾期一日，按应付而未付价款部分的<input type="text"class="message-input"  placeholder="千分之一" style="width:80px">向乙方支付违约金。</span><br>
+					<span>2、乙方未按期交付设备的，每延迟<input type="text"class="message-input" placeholder="一" style="width:80px">日。</span>按支付合同总额千分之一向甲方支付违约金。</span><br>
+					<span>3、甲方未按合同执行付款时间逾期超<input type="text"class="message-input"  placeholder="20" style="width:80px">天,货物所有权归乙方所有，定金不退还。</span>
 				</p>
 
 				<p>

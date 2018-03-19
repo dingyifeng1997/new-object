@@ -5,6 +5,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>更新后的首页文件</h1>
+    <h1 id="h1click">更新后的首页文件</h1>
 </body>
+<script>
+    //	PC端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
+    document.getElementById("h1click").onclick = function(){
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href="mobile/室内全彩型材/全彩计算页面.html";
+        }else{
+            window.location.href="PC/室内全彩型材/index.html";
+            return false;
+        }
+    }
+</script>
 </html>

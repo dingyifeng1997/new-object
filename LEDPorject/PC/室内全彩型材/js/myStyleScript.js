@@ -7,20 +7,20 @@
 // 一:选择型号后输入方法
 $("#selectType").click(function(){
     productType = $("#selectType").val();   //在点击选择型号的时候就把获取到的值赋值给全局变量 productType
-    getSingleWidth();   //调用单元板长度方法
-    getSingleHeight();  //调用单元板高度方法
-    inwidth();      //型号设置后依然调用宽度改变方法
-    inheight();     //型号设置后依然调用高度改变方法
-
+    inwidth();      //型号设置后调用宽度改变方法
+    inheight();     //型号设置后调用高度改变方法
+    selectBorderFunction(); //获取加型材后的长宽尺寸
 })
 // 二:长度输入后调用方法
 $("#inputWidth").blur(function(){
     inwidth();
-    alert(productType);
 });
 function inwidth(){
+    getSingleWidth();   //调用单元板长度方法
+    getSingleHeight();  //调用单元板高度方法
     getWidthNumber();   //调用获取单元板长个数方法
     getScreenWidth()    //调用获取显示屏长度方法
+    getOverWdith();     //长度输入的时候调用最终加边框长度方法
 }
 
 // 三:高度输入后调用方法
@@ -28,20 +28,27 @@ $("#inputHeight").blur(function(){
     inheight();
 })
 function inheight(){
+    getSingleWidth();   //调用单元板长度方法
+    getSingleHeight();  //调用单元板高度方法
     getHeightNumber();   //调用获取单元板长个数方法
     getScreenHeight();   //调用获取显示屏长度方法
+    getOverHeight()      //高度输入的时候调用最终加边框高度方法
 }
-// 四:控制卡
 
-// 五:外边框
+
+
+// 四:选择控制卡后调用方法
+
+
+// 五:选择外边框后调用方法
 $("#selectBorder").click(function(){
     selectBorderFunction();
-    alert(productType);
 });
 function selectBorderFunction(){
     getOverWdith();
+    getOverHeight()
 }
-// 六:处理器
+// 六:选择处理器后调用方法
 
 
 

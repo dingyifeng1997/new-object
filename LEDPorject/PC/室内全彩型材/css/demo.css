@@ -167,13 +167,13 @@ button{
 }
 #mytable  tr td:nth-child(6){
 	display: none;
-	width:54px;
+	width:58px;
 	height: 30px;
 	padding:0px;
 	/*background:red;*/
-
 }
 #mytable  tr td:nth-child(6) div{
+	/*background:red;*/
 
 }
 #mytable  tr td:nth-child(6) button{
@@ -217,12 +217,13 @@ button{
 }
 .hetong p{	/*合同签订方内容样式*/
 	float: left;
-	margin-left:10px;
+	margin-left:30px;
 	border: 0px;
 	line-height:30px;
+	/*background:red;*/
 }
 .input-right{
-	padding-left:150px;
+	padding-left:120px;
 }
 .hetong p input{
 	border:0px;
@@ -230,7 +231,8 @@ button{
 	border-bottom:1px solid #7e8b91;
 	background: #e8eae9;
 	text-align: center;
-	width:330px;
+	line-height:100%;
+	width:300px;
 }
 /*2.3.2合同主体*/
 .hetong-message{
@@ -238,6 +240,7 @@ button{
 }
 .hetong-message p{
 	padding-top: 15px;
+	padding-right:30px;
 }
 .hetong-message p span{
 	margin-left:30px;
@@ -255,7 +258,8 @@ button{
 	border-bottom:1px solid #7e8b91;
 	background: #eeeeee;
 	text-align: center;
-	color: red;
+	color: blue;
+	line-height:100%;
 }
 
 
