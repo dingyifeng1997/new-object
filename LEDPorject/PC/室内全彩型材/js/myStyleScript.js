@@ -10,10 +10,17 @@ $("#selectType").click(function(){
     inwidth();      //型号设置后调用宽度改变方法
     inheight();     //型号设置后调用高度改变方法
     selectBorderFunction(); //获取加型材后的长宽尺寸
+    getWidthPixel();        //获取单板长像素
+    getHeightPixel();       //获取单板高像素
+    //因为inwidth在获取单板长像素后才执行,所以获取长总像素在选择型号这一项获取单板像素后还需要再执行一次
+    getWidthSumPixel();
+    getHeightSumPixel();
+    getDataList();
 })
 // 二:长度输入后调用方法
 $("#inputWidth").blur(function(){
     inwidth();
+
 });
 function inwidth(){
     getSingleWidth();   //调用单元板长度方法
@@ -21,6 +28,8 @@ function inwidth(){
     getWidthNumber();   //调用获取单元板长个数方法
     getScreenWidth()    //调用获取显示屏长度方法
     getOverWdith();     //长度输入的时候调用最终加边框长度方法
+    getWidthSumPixel(); //长度输入后调用获取长总像素的方法
+    getDataList();
 }
 
 // 三:高度输入后调用方法
@@ -33,6 +42,8 @@ function inheight(){
     getHeightNumber();   //调用获取单元板长个数方法
     getScreenHeight();   //调用获取显示屏长度方法
     getOverHeight()      //高度输入的时候调用最终加边框高度方法
+    getHeightSumPixel()  //高度输入后调用获取高总像素方法
+    getDataList();
 }
 
 

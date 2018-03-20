@@ -21,8 +21,12 @@ screenWidth = 0;        //全局变量 显示总长度
 screenHeight = 0;       //全局变量 显示总高度
 borderWidth = 0;        //全局变量 加边框后总长度
 borderHeight = 0;       //全局变量 加边框后总高度
-WidthPixel = 0;         //全局变量 单板长线束
-HeightPixel = 0;
+WidthPixel = 0;         //全局变量 单板长像素
+HeightPixel = 0;        //全局变量 单板高像素
+WidthSumPixel = 0;      //全局变量 显示屏长总像素
+HeightSumPixel = 0;     //全局变量 显示屏高总像素
+
+getPowerNumber = 0;//全局变量 电源数量 (因为要根据电源数量获取总千瓦数)
 
 
 
@@ -185,49 +189,171 @@ function getWidthPixel(){
     switch(productType)
     {
         case "室内P2/32扫":
-            moduleWidth = "25.6";
+            WidthPixel = "128";
             break;
         case "室内P2.5/32扫":
-            moduleWidth = "32.0";
+            WidthPixel = "128";
             break;
         case "室内P3/32扫":
-            moduleWidth = "19.2";
+            WidthPixel = "64";
             break;
         case "室内P3.91/16扫":
-            moduleWidth = "25.0";
+            WidthPixel = "64";
             break;
         case "室内P4/16扫":
-            moduleWidth = "25.6";
+            WidthPixel = "64";
             break;
         case "室内P4.81/13扫":
-            moduleWidth = "25.0";
+            WidthPixel = "52";
             break;
         case "室内P5/16扫":
-            moduleWidth = "32.0";
+            WidthPixel = "64";
             break;
     }
 
-    $("#dataA5").text(moduleWidth);
+    $("#dataA5").text(WidthPixel);
 }
 //  1.10 单元板高像素,通过单元板型号switch匹配
 function getHeightPixel(){
+    switch(productType)
+    {
+        case "室内P2/32扫":
+            HeightPixel = "64";
+            break;
+        case "室内P2.5/32扫":
+            HeightPixel = "64";
+            break;
+        case "室内P3/32扫":
+            HeightPixel = "64";
+            break;
+        case "室内P3.91/16扫":
+            HeightPixel = "64";
+            break;
+        case "室内P4/16扫":
+            HeightPixel = "32";
+            break;
+        case "室内P4.81/13扫":
+            HeightPixel = "52";
+            break;
+        case "室内P5/16扫":
+            HeightPixel = "32";
+            break;
+    }
 
+    $("#dataB5").text(HeightPixel);
 }
 //  1.11 显示长总像素,通过单元板长个数和长像素获得
 function getWidthSumPixel(){
-
+    //使用获取到的模组长像素点和模组长数量,求得显示屏的长总像素点
+    WidthSumPixel = accMul(WidthPixel,moduleWidthNumber)
+    $("#dataA6").text(WidthSumPixel);
 }
 //  1.12 显示高总像素,通过单元板高个数和高像素获得
 function getHeightSumPixel(){
-
+    //使用获取到的模组高像素点和模组高数量,求得显示屏的高总像素点
+    HeightSumPixel = accMul(HeightPixel,moduleHeightNumber)
+    $("#dataB6").text(HeightSumPixel);
 }
 //  1.13 总千瓦数,最后点击提交计算后根据电源数量生成
+
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
 
 
+//   2 根据数据表获取材料表的所有内容
+function getDataList(){
+    //第一行数据
+    getLine1();
+    gitLine2();
+    gitLine3();
+}
+//2.1第一行数据 -[单元板]
+function getLine1(){
+    //获取单元板数量
+    $("#partsA1").html(moduleWidthNumber*moduleHeightNumber);
+    //获取单板价格
+    boardPrice = 0;
+    switch(productType)
+    {
+        case "室内P2/32扫":
+            boardPrice = "370";
+            break;
+        case "室内P2.5/32扫":
+            boardPrice = "215";
+            break;
+        case "室内P3/32扫":
+            boardPrice = "105";
+            break;
+        case "室内P3.91/16扫":
+            boardPrice = "170";
+            break;
+        case "室内P4/16扫":
+            boardPrice = "56";
+            break;
+        case "室内P4.81/13扫":
+            boardPrice = "160";
+            break;
+        case "室内P5/16扫":
+            boardPrice = "75";
+            break;
+    }
+    $("#partsA2").text(boardPrice); //单元板单价
+    $("#partsA3").text(boardPrice *(moduleWidthNumber*moduleHeightNumber));//单元板总价
+}
+
+//2.2第二行数据 -[磁铁]
+function gitLine2(){
+    var num = moduleWidthNumber * moduleHeightNumber; //板总数量
+    $("#partsB1").text(num * 4 + 30);   //磁铁数量加30个
+    $("#partsB2").text(0.25);   //磁铁数量加30个
+    $("#partsB3").text((num * 4 + 30)*0.25);   //磁铁数量加30个
+
+}
+//2.3第三行数据 -[电源]
+function gitLine3(){
+    boardNumber = moduleWidthNumber*moduleHeightNumber; //板子总数量
+    //获取单板价格
+    powerSource = 0;
+    switch(productType)
+    {
+        case "室内P2/32扫":
+            powerSource = "3";
+            break;
+        case "室内P2.5/32扫":
+            powerSource = "3";
+            break;
+        case "室内P3/32扫":
+            powerSource = "3";
+            break;
+        case "室内P3.91/16扫":
+            powerSource = "6";
+            break;
+        case "室内P4/16扫":
+            powerSource = "6";
+            break;
+        case "室内P4.81/13扫":
+            powerSource = "6";
+            break;
+        case "室内P5/16扫":
+            powerSource = "6";
+            break;
+    }
+    var num =  Math.ceil(boardNumber/powerSource);
+    $("#partsC1").text(num); //电源数量
+    $("#partsC2").text(45); //电源价格
+    $("#partsC3").text(num*45);
+
+}
 
 
-//两个浮点数相乘获取准确位数小数
+
+
+
+
+
+
+
+
+//  算法 : 两个浮点数相乘获取准确位数小数
 function accMul(arg1,arg2){
     var m=0,s1=arg1.toString(),
         s2=arg2.toString();
