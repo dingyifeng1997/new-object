@@ -20,7 +20,6 @@ $("#selectType").click(function(){
 // 二:长度输入后调用方法
 $("#inputWidth").blur(function(){
     inwidth();
-
 });
 function inwidth(){
     getSingleWidth();   //调用单元板长度方法
