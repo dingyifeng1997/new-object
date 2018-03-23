@@ -1,0 +1,8 @@
+indoorColorXC		室内全彩型材
+indoorColorYZL		室内全彩压铸铝
+monochrome5.0		单色5.0
+monochromeP3.75		单色3.75
+monochromeP10		单色P10
+outdoorColorXC		室外全彩型材
+outdoorColorXT		室外全彩箱体
+outdoorColorYZL		室外全彩压铸铝

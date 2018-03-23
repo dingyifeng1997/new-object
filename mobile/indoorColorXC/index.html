@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
             <div class="navbar-header">
 
                 <!--1.1 回到首页按钮-->
-                <a href="" class="navbar-brand">首页</a>   <!-- 左侧logo部分 a连接加 navbar-brand 起对齐作用 -->
+                <a href="../../backLogin.html" class="navbar-brand">首页</a>   <!-- 左侧logo部分 a连接加 navbar-brand 起对齐作用 -->
 
                 <!--1.2 汉堡菜单-->
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
@@ -57,13 +57,14 @@
                 <!-- 2.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
                 <ul class="nav navbar-nav" style="margin:0px; padding-left:15px;">
                     <h3 class="navbar-text navbar-right" style="margin-left: 15px;">型号选择:</h3>
-                    <li><a href="">单 色 P10</a></li>
-                    <li><a href="">单 色 3.75</a></li>
-                    <li><a href="">单 色 5.0</a></li>
-                    <li><a href="">室内全彩型材</a></li>
-                    <li><a href="">室内全彩箱体</a></li>
-                    <li><a href="">室外全彩型材</a></li>
-                    <li><a href="">室外全彩箱体</a></li>
+                    <li><a href="../monochromeP10/index">单 色 P10</a></li>
+                    <li><a href="../monochromeP3.75/index.html">单 色 3.75</a></li>
+                    <li><a href="../monochrome5.0/index.html">单 色 5.0</a></li>
+                    <li><a href="../indoorColorXC/index.html">室内全彩型材</a></li>
+                    <li><a href="../outdoorColorXC/index.html">室外全彩型材</a></li>
+                    <li><a href="../outdoorColorXT/index.html">室外全彩箱体</a></li>
+                    <li><a href="../indoorColorYZL/index.html">室内全彩压铸铝</a></li>
+                    <li><a href="../outdoorColorYZL/index.html">室外全彩压铸铝</a></li>
                 </ul>
             </div>
 
@@ -377,8 +378,8 @@
         </table>
     </div>
     <div style="text-align:center; font-size: 12px; background:#f8f0d5;color: #ef943b;">
-        <p>河南炫风科技有限公司版权所有 ©2017-2018</p>
-        <p>河南炫风科技有限公司运营：豫网文[2018] 0121-135号</p>
+        <p style="margin:0;line-height:30px;">郑州炫风网络科技有限公司版权所有 ©2017-2018</p>
+        <p style="margin:0;line-height:30px;">郑州炫风网络科技有限公司运营：豫网文[2018] 0121-135号</p>
     </div>
 </div>
 </body>
@@ -392,4 +393,16 @@
 <!--bootstrap.js-->
 <script src="../bs/js/bootstrap.min.js"></script>
 
+<script>
+
+    //	PC端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
+    $(document).ready(function(){
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            return false;
+        }else{
+            window.location.href="../../PC/indoorColorXC/index.html";
+
+        }
+    });
+</script>
 </html>
