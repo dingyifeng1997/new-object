@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>后台登录系统</title>
+    <link rel="stylesheet" href="public/bs/css/bootstrap.css">
+    <script src="public/bs/js/jquery-1.11.0.min.js"></script>
+    <script src="public/bs/js/bootstrap.min.js"></script>
+    <script src="public/js/holder.min.js"></script>
+
+    <style>
+
+
+    body{
+        background: url("public/img/bj3.jpg") center no-repeat fixed;;
+        background-size: cover;
+    }
+    .home-wrapper{
+        width: 100%;
+        height: 380px;
+        /*background: red;*/
+        margin-top:30%;
+    }
+    .login-body{
+        width: 100%;
+        height:100%;
+        background: rgba(238, 237, 234, 0.5);
+        margin:0 auto;
+        border-radius:10px;
+    }
+    .box{
+        padding:15px;
+    }
+    .form-control{
+        background: rgba(238, 237, 234, 0.1);
+    }
+    .col-md-3 img{
+        width:250px;
+        margin-top:10%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="public/img/logo.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <section class="box vertical home-wrapper">
+
+                    <div class=" login-body">
+                        <div class="box">
+                            <h3 class="page-header">管理员登录</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputName">用 户 名:</label>
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="username" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword">密 码:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                </div>
+                                <button type="button" class="btn btn-primary" id="submit">登录</button>
+                                <button type="reset" class="btn btn-info">清空</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
+    </div>
+
+    <script>
+        //点击登录逻辑
+        $("#submit").click(function(){
+            username = $("#exampleInputName").val();
+            password = $("#exampleInputPassword").val();
+            if(username==1234&&password==1234){
+                window.location = "backLogin.html";
+            }
+        });
+    </script>
+</body>
+</html>
