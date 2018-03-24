@@ -20,9 +20,14 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 	clear: both;
 }
 
+/*设置不打印区域*/
+@media print {
+	.dataInput{display:none}
+}
+
+
 body{
 	font-family: "微软 ","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
-
 }
 
 
@@ -216,15 +221,42 @@ button{
 	display: none;
 }
 .hetong p{	/*合同签订方内容样式*/
-	float: left;
+	/*float: left;*/
 	margin-left:30px;
 	border: 0px;
 	line-height:30px;
 	/*background:red;*/
+	position: relative;
+
 }
+.hetong p span{
+	/*background:red;*/
+}
+
+.input-right1{
+	position: relative;
+	top: -39px;
+	left:50%;
+}
+.input-left2{
+	position: relative;
+	top: -40px;
+	/*left:-50%;*/
+}
+.input-right2{
+	position: relative;
+	top: -80px;
+	left:50%;
+}
+
+
 .input-right{
-	padding-left:120px;
+	/*padding-left:120px;*/
+	/*position: relative;*/
+	/*left:50%;*/
+	/*top:-50px;*/
 }
+
 .hetong p input{
 	border:0px;
 	outline:none;
