@@ -17,7 +17,9 @@ $("#selectType").click(function(){
     getHeightSumPixel();    //获取高总像素(要等到获取到尺寸后再获取高总像素)
 
     getDataList();  //计算数据主体表格
+    getSelectsIO()      //调用选择发送卡接收卡设备
 
+    selects()   //判断是否选择
 })
 // 二:长度输入后调用方法
 $("#inputWidth").blur(function(){
@@ -31,11 +33,12 @@ function inwidth(){
     getOverWdith();     //长度输入的时候调用最终加边框长度方法
     getWidthSumPixel(); //长度输入后调用获取长总像素的方法
 
-
     getDataList();      //计算数据主体表格
 
     getPower();         //根据表格中电源的数量来获取功率(因为要根据电源的数量去获取,所以要等到getDataList()方法走完之后再走这一个方法)
     getArea()           //设置长度后获取总平方数
+    getSelectsIO()      //调用选择发送卡接收卡设备
+    types()             //判断是否输入
 }
 
 // 三:高度输入后调用方法
@@ -54,19 +57,29 @@ function inheight(){
 
     getPower();          //根据表格中电源的数量来获取功率(因为要根据电源的数量去获取,所以要等到getDataList()方法走完之后再走这一个方法)
     getArea()           //设置高度后获取总平方数
+    getSelectsIO()      //调用选择发送卡接收卡设备
+
+    types()             //判断是否输入
 }
 
 
 
 // 四:选择控制卡后调用方法
 $("#selectIO").click(function(){
-    getLine4(); //设置发送卡
+    getSelectsIO()
+    selects()   //判断是否选择
 });
+function getSelectsIO(){
+    getLine4(); //设置发送卡
+    getLine5(); //设置接收卡
+    getLine12();    //选择长排线
+    getLine14()     //选择网线根数
+}
 
 // 五:选择外边框后调用方法
 $("#selectBorder").click(function(){
     selectBorderFunction();
-    getLine8()  //选择边框的时候调用选择拐角方法
+    selects()   //判断是否选择
 });
 
 function selectBorderFunction(){
@@ -74,22 +87,63 @@ function selectBorderFunction(){
     getOverHeight()         //获取加边框后高度
     getArea();              //设置边框后获取总平方数
 
+    getLine7()  //选择边框的时候调用选择型号
+    getLine8()  //选择边框的时候调用选择拐角方法
+    getLine9(); //选择型材后调用选择接头方法
+
 }
 // 六:选择处理器后调用方法
 
-
+$("#videoProcessing").click(function(){
+    getLine17();
+    selects()   //判断是否选择
+});
 
 // 七:添加新的表格按钮
 $('#mytable').SetEditable({
     $addButton: $('#add')
+
 });
 
 
 // 八:表格的提交计算按钮
 $("#submitNumeration").click(function(){
-    $("#footerDate").text(new Date().toLocaleDateString()); //提交按钮按下后生成日期
+    //提交按钮按下后生成日期
+    $("#footerDate").text(new Date().toLocaleDateString());
+
+    inputAndSelect();
 
 });
+function inputAndSelect(){
+    //提交计算的时候判断选择和输入是否为空
+    $(".form-horizontal select").each(function(){
+        if($(this).val() == null){
+            $(this).parent().next().children("span").css({"display":"block"});
+            alert($(this).parent().next().children("span").text())
+        }
+    })
+
+    $(".form-horizontal input").each(function(){
+        if($(this).val() == ""){
+            $(this).parent().parent().next().children("span").css({"display":"block"});
+            alert($(this).parent().parent().next().children("span").text());
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // 九:表格的编辑按钮

@@ -26,7 +26,30 @@ HeightPixel = 0;        //全局变量 单板高像素
 WidthSumPixel = 0;      //全局变量 显示屏长总像素
 HeightSumPixel = 0;     //全局变量 显示屏高总像素
 
-getPowerNumber = 0;//全局变量 电源数量 (因为要根据电源数量获取总千瓦数)
+getPowerNumber = 0;     //全局变量 电源数量 (因为要根据电源数量获取总千瓦数)
+receptionCard = "";     //全局变量 接收卡数量
+heightNumber = 0;       //接收卡高帯载几块
+widthNumber = 0;        //接收卡长帯载几块
+
+//判断输入和选择的内容不为空
+
+function selects(){
+    $(".form-horizontal select").each(function(){
+        if($(this).val() != null){
+            $(this).parent().next().children("span").css({"display":"none"});
+        }
+    })
+}
+
+function types(){
+    $(".form-horizontal input").each(function(){
+        if($(this).val() != ""){
+            $(this).parent().parent().next().children("span").css({"display":"none"});
+        }
+    })
+}
+
+
 
 
 
@@ -43,14 +66,8 @@ function getSingleWidth(){
         case "室内P3/32扫":
             moduleWidth = "19.2";
             break;
-        case "室内P3.91/16扫":
-            moduleWidth = "25.0";
-            break;
         case "室内P4/16扫":
             moduleWidth = "25.6";
-            break;
-        case "室内P4.81/13扫":
-            moduleWidth = "25.0";
             break;
         case "室内P5/16扫":
             moduleWidth = "32.0";
@@ -73,14 +90,8 @@ function getSingleHeight(){
         case "室内P3/32扫":
             moduleHeight = "19.2";
             break;
-        case "室内P3.91/16扫":
-            moduleHeight = "25.0";
-            break;
         case "室内P4/16扫":
             moduleHeight = "12.8";
-            break;
-        case "室内P4.81/13扫":
-            moduleHeight = "25.0";
             break;
         case "室内P5/16扫":
             moduleHeight = "16.0";
@@ -122,42 +133,39 @@ function getOverWdith(){
     borderWidth = 0;
     var price = 0;  //这里把这个型材单价设置成局部变量
     switch($("#selectBorder").val()) {
-        case "9045常规型材":
-            borderWidth = 9;
-            price = 60;
-            break;
+
         case "9025常规型材":
             borderWidth = 5;
-            price = 60;
+            break;
+        case "9035常规型材":
+            borderWidth = 7;
+            break;
+        case "9040常规型材":
+            borderWidth = 8;
+            break;
+        case "9045常规型材":
+            borderWidth = 9;
             break;
         case "10050常规型材":
             borderWidth = 10;
-            price = 100;
             break;
         case "9045金型材":
             borderWidth = 9;
-            price = 140;
-            break;
-        case "9025金型材":
-            borderWidth = 5;
-            price = 150;
             break;
         case "10050金型材":
             borderWidth = 10;
-            price = 200;
             break;
         case "9045银型材":
             borderWidth = 9;
-            price = 230;
             break;
-        case "9025银型材":
-            borderWidth = 5;
-            price = 300;
+        case "9060银型材":
+            borderWidth = 12;
             break;
-        case "10050银型材":
-            borderWidth =  10;
-            price = 330;
+        case "10070银型材":
+            borderWidth = 14;
             break;
+
+
     }
     borderSumWidth = borderWidth + screenWidth;
     $("#dataA4").text(borderSumWidth);
@@ -168,12 +176,20 @@ function getOverWdith(){
 //  1.8 加边框后高度,通过显示总高度加上10cm获得
 function getOverHeight(){
     borderHeight = 0;
+
+
     switch($("#selectBorder").val()) {
-        case "9045常规型材":
-            borderHeight = 9;
-            break;
         case "9025常规型材":
             borderHeight = 5;
+            break;
+        case "9035常规型材":
+            borderHeight = 7;
+            break;
+        case "9040常规型材":
+            borderHeight = 8;
+            break;
+        case "9045常规型材":
+            borderHeight = 9;
             break;
         case "10050常规型材":
             borderHeight = 10;
@@ -181,20 +197,17 @@ function getOverHeight(){
         case "9045金型材":
             borderHeight = 9;
             break;
-        case "9025金型材":
-            borderHeight = 5;
-            break;
         case "10050金型材":
             borderHeight = 10;
             break;
         case "9045银型材":
             borderHeight = 9;
             break;
-        case "9025银型材":
-            borderHeight = 5;
+        case "9060银型材":
+            borderHeight = 12;
             break;
-        case "10050银型材":
-            borderHeight = 10;
+        case "10070银型材":
+            borderHeight = 14;
             break;
     }
     borderSumHeight = borderHeight + screenHeight
@@ -217,20 +230,13 @@ function getWidthPixel(){
         case "室内P3/32扫":
             WidthPixel = "64";
             break;
-        case "室内P3.91/16扫":
-            WidthPixel = "64";
-            break;
         case "室内P4/16扫":
             WidthPixel = "64";
-            break;
-        case "室内P4.81/13扫":
-            WidthPixel = "52";
             break;
         case "室内P5/16扫":
             WidthPixel = "64";
             break;
     }
-
     $("#dataA5").text(WidthPixel);
 }
 //  1.10 单元板高像素,通过单元板型号switch匹配
@@ -246,14 +252,8 @@ function getHeightPixel(){
         case "室内P3/32扫":
             HeightPixel = "64";
             break;
-        case "室内P3.91/16扫":
-            HeightPixel = "64";
-            break;
         case "室内P4/16扫":
             HeightPixel = "32";
-            break;
-        case "室内P4.81/13扫":
-            HeightPixel = "52";
             break;
         case "室内P5/16扫":
             HeightPixel = "32";
@@ -280,9 +280,11 @@ function getPower(){
 }
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
 function getArea(){
-    $("#dataB7").text(((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1)
-    );
+    $("#dataB7").text(((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1));
 }
+
+
+
 
 //   2 根据数据表获取材料表的所有内容
 function getDataList(){
@@ -294,6 +296,17 @@ function getDataList(){
     getLine6(); //第6行数据
     getLine7(); //第7行数据
     getLine8(); //第8行数据
+    getLine9(); //第8行数据
+    getLine10(); //第8行数据
+    getLine11(); //第8行数据
+    getLine12(); //第8行数据
+    getLine13(); //第8行数据
+    getLine14(); //第8行数据
+    getLine15(); //第8行数据
+    getLine16(); //第8行数据
+    getLine17(); //第8行数据
+    getLine18(); //第8行数据
+
 }
 
 //2.1 第1行数据 -[单元板]
@@ -313,14 +326,8 @@ function getLine1(){
         case "室内P3/32扫":
             boardPrice = "105";
             break;
-        case "室内P3.91/16扫":
-            boardPrice = "170";
-            break;
         case "室内P4/16扫":
             boardPrice = "56";
-            break;
-        case "室内P4.81/13扫":
-            boardPrice = "160";
             break;
         case "室内P5/16扫":
             boardPrice = "75";
@@ -353,13 +360,7 @@ function getLine3(){
         case "室内P3/32扫":
             powerSource = "6";
             break;
-        case "室内P3.91/16扫":
-            powerSource = "6";
-            break;
         case "室内P4/16扫":
-            powerSource = "6";
-            break;
-        case "室内P4.81/13扫":
             powerSource = "6";
             break;
         case "室内P5/16扫":
@@ -397,18 +398,101 @@ function getLine4(){
 }
 //2.5 第5行数据 -[接收卡]
 function getLine5(){
-    switch(IOtype)
+    var price = 0;                      //卡单价
+    var type = $("#selectIO").val();    //选择型号
+    switch(type)
     {
         case "聚诚":
-            price = 550;
+            price = 73;
             break;
         case "诺瓦":
-            price = 750;
+            price = 95;
             break;
         case "灵星雨":
-            price = 550;
+            price = 73;
             break;
     }
+
+    //receptionCard = "";
+    if(type=="聚诚"){
+        switch(productType)
+        {
+            case "室内P2/32扫":
+                widthNumber = "1";
+                heightNumber = "12";
+                break;
+            case "室内P2.5/32扫":
+                widthNumber = "1";
+                heightNumber = "12";
+                break;
+            case "室内P3/32扫":
+                widthNumber = "2";
+                heightNumber = "12";
+                break;
+            case "室内P4/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+            case "室内P5/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+        }
+
+    }else if(type=="诺瓦"){
+        switch(productType)
+        {
+            case "室内P2/32扫":
+                widthNumber = "1";
+                heightNumber = "6";
+                break;
+            case "室内P2.5/32扫":
+                widthNumber = "1";
+                heightNumber = "6";
+                break;
+            case "室内P3/32扫":
+                widthNumber = "2";
+                heightNumber = "6";
+                break;
+            case "室内P4/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+            case "室内P5/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+        }
+    }else if(type=="灵星雨"){
+        switch(productType)
+        {
+            case "室内P2/32扫":
+                widthNumber = "1";
+                heightNumber = "6";
+                break;
+            case "室内P2.5/32扫":
+                widthNumber = "1";
+                heightNumber = "6";
+                break;
+            case "室内P3/32扫":
+                widthNumber = "2";
+                heightNumber = "6";
+                break;
+            case "室内P4/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+            case "室内P5/16扫":
+                widthNumber = "3";
+                heightNumber = "12";
+                break;
+        }
+    }
+    receptionCard =  Math.ceil(moduleWidthNumber/widthNumber) * Math.ceil(moduleHeightNumber/heightNumber)
+
+    $("#partsE1").text(receptionCard);
+    $("#partsE2").text(price);
+    $("#partsE3").text(receptionCard * price);
 }
 //2.6 第6行数据 -[DIV线]
 function getLine6(){
@@ -426,38 +510,51 @@ function getLine6(){
 }
 //2.7 第7行数据 -[型材]
 function getLine7(){
-    //screenWidth = 0;        //全局变量 显示总长度
-    //screenHeight = 0;       //全局变量 显示总高度
 
 
-    cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/600)  //型材总根数
+
+    cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/600);  //型材总根数
     $("#partsG1").text(cel);
 
+    var corner = 0;
+    switch($("#selectBorder").val()) {
 
-    /*//  型材切割长度1
-    var width1 = accMul(Math.ceil(moduleWidthNumber/(Math.ceil(screenWidth/384))),moduleWidth)+"";
-    //  型材切割长度1数量
-    var width1Genshu = Math.max(2,Math.floor(screenWidth/width1)*2);
-
-
-    //型材切割长度2
-    var width1num = 0; //第一根长的总长
-    var width2 = 0;//第二根长的长度
-    if(screenWidth-width1>0){
-        width1num = accMul(width1,(width1Genshu/2)); //第一根长的总长
-        width2 = screenWidth-width1num;             //第二根长的长度
+        case "9025常规型材":
+            corner = 60;
+            break;
+        case "9035常规型材":
+            corner = 60;
+            break;
+        case "9040常规型材":
+            corner = 60;
+            break;
+        case "9045常规型材":
+            corner = 60;
+            break;
+        case "10050常规型材":
+            corner = 100;
+            break;
+        case "9045金型材":
+            corner = 200;
+            break;
+        case "10050金型材":
+            corner = 200;
+            break;
+        case "9045银型材":
+            corner = 230;
+            break;
+        case "9060银型材":
+            corner = 260;
+            break;
+        case "10070银型材":
+            corner = 330;
+            break;
     }
-    var width2Genshu = 0;
-    //长第二根的根数
-    if(width2 == 0){
-        width2Genshu = 0;
-    }else{
-        width2Genshu = 2
-    }
-
-    //  型材切割高度*/
 
 
+    $("#partsG2").text(corner);
+
+    $("#partsG3").text(cel * corner);
 
 
 }
@@ -467,31 +564,35 @@ function getLine8(){
 
     var corner = 0;
     switch($("#selectBorder").val()) {
-        case "9045常规型材":
-            corner = 3;
-            break;
+
         case "9025常规型材":
             corner = 3;
             break;
+        case "9035常规型材":
+            corner = 3;
+            break;
+        case "9040常规型材":
+            corner = 3;
+            break;
+        case "9045常规型材":
+            corner = 3;
+            break;
         case "10050常规型材":
-            corner = 8;
+            corner = 5;
             break;
         case "9045金型材":
-            corner = 25;
-            break;
-        case "9025金型材":
-            corner = 25;
+            corner = 10;
             break;
         case "10050金型材":
-            corner = 25;
+            corner = 10;
             break;
         case "9045银型材":
             corner = 25;
             break;
-        case "9025银型材":
+        case "9060银型材":
             corner = 25;
             break;
-        case "10050银型材":
+        case "10070银型材":
             corner = 25;
             break;
     }
@@ -500,30 +601,248 @@ function getLine8(){
 }
 //2.9 第9行数据 -[型材接头]
 function getLine9(){
+    //screenWidth = 0;        //显示总长度
+    //screenHeight = 0;       //显示总高度
+
+    //接头数量/4 向上取整
+    var number = (Math.floor(screenWidth/300)*2)+(Math.floor(screenHeight/300)*2);
+    $("#partsI1").text(number);  //接头数量
+
+    var corner = 0;
+    switch($("#selectBorder").val()) {
+        case "9025常规型材":
+            corner = 8;
+            break;
+        case "9035常规型材":
+            corner = 8;
+            break;
+        case "9040常规型材":
+            corner = 8;
+            break;
+        case "9045常规型材":
+            corner = 8;
+            break;
+        case "10050常规型材":
+            corner = 10;
+            break;
+        case "9045金型材":
+            corner = 20;
+            break;
+        case "10050金型材":
+            corner = 20;
+            break;
+        case "9045银型材":
+            corner = 30;
+            break;
+        case "9060银型材":
+            corner = 30;
+            break;
+        case "10070银型材":
+            corner = 30;
+            break;
+    }
+
+    if(number != 0){
+        $("#partsI2").text(corner);  //接头价格
+    }else{
+        $("#partsI2").text(0);  //接头价格
+    }
+    $("#partsI3").text(corner*number);  //接头合计
+
 
 }
-//2.9 第10行数据 -[]
-function getLine10(){}
-//2.9 第11行数据 -[]
-function getLine11(){}
-//2.9 第12行数据 -[]
-function getLine12(){}
-//2.9 第13行数据 -[]
-function getLine13(){}
-//2.9 第14行数据 -[]
-function getLine14(){}
-//2.9 第15行数据 -[]
-function getLine15(){}
-//2.9 第16行数据 -[]
-function getLine16(){}
-//2.9 第17行数据 -[]
-function getLine17(){}
-//2.9 第18行数据 -[]
-function getLine18(){}
-//2.9 第19行数据 -[]
-function getLine19(){}
-//2.9 第20行数据 -[]
-function getLine20(){}
+//2.9 第10行数据 -[方管]
+function getLine10(){
+
+    //moduleWidthNumber = 0;  //全局变量 模组长个数A2
+    //screenWidth = 0;        //全局变量 显示总长度
+    //screenHeight = 0;       //全局变量 显示总高度
+
+    //方管算法: ① 6米/ (显示总高度+3) 得出一根方管可以切几根,
+    //          ② 显示总长度 / 3米 得出需要加几根,
+    //          ③ 单元板数量加1,再加上中间分隔的几根  / 一根方管切出的根数
+
+
+    if(screenHeight>600){
+        number = (moduleWidthNumber+ Math.floor(600/(screenHeight+3)) +1) * Math.ceil(screenHeight/600);
+    }else{
+        number = moduleWidthNumber+ Math.floor(600/(screenHeight+3)) +1
+    }
+    $("#partsJ1").text(number);  //方管数量
+
+    $("#partsJ2").text(25);  //方管单价
+    $("#partsJ3").text(number*25);  //方管合计
+
+}
+//2.9 第11行数据 -[配电柜]
+function getLine11(){
+
+    if((getPowerNumber*200)/1000 > 10){
+        $("#partsK1").text(1);  //配电柜数量
+    }else{
+        $("#partsK1").text(0);  //配电柜数量
+    }
+
+    var xinghao = "";                       //配电柜型号
+    var KW = getPowerNumber;     //数据表千瓦数
+    var number  = 0;
+
+    if(getPowerNumber>48){
+        xinghao ="20KW";
+    }else if(getPowerNumber>96){
+        xinghao ="30KW";
+    }else if(getPowerNumber>130){
+        xinghao ="40KW";
+    }else if(getPowerNumber>175){
+        xinghao ="50KW";
+    }else if(getPowerNumber>225){
+        xinghao ="60KW";
+    }else if(getPowerNumber>275){
+        xinghao ="80KW";
+    }else if(getPowerNumber>375){
+        xinghao ="100KW";
+    }else if(getPowerNumber>450){
+        xinghao ="120KW";
+    }else if(getPowerNumber>550){
+        xinghao ="140KW";
+    }else if(getPowerNumber>650){
+        xinghao ="160KW";
+    }else if(getPowerNumber>750){
+        xinghao ="180KW";
+    }else if(getPowerNumber>850){
+        xinghao ="200KW";
+    }
+
+    $("#partsK2").text(xinghao);  //配电柜数量
+    switch(xinghao)
+    {
+        case "20KW":
+            number = 1050;
+            break;
+        case "30KW":
+            number = 1500;
+            break;
+        case "40KW":
+            number = 1800;
+            break;
+        case "50KW":
+            number = 2200;
+            break;
+        case "60KW":
+            number = 2500;
+            break;
+        case "80KW":
+            number = 2900;
+            break;
+        case "100KW":
+            number = 3500;
+            break;
+        case "120KW":
+            number = 4500;
+            break;
+        case "1400KW":
+            number = 5300;
+            break;
+        case "160KW":
+            number = 6100;
+            break;
+        case "180KW":
+            number = 6900;
+            break;
+        case "200KW":
+            number = 7500;
+            break;
+    }
+    //
+    $("#partsK3").text(number);
+    $("#partsK4").text(number);
+}
+//2.9 第12行数据 -[长排线]
+function getLine12(){
+
+    num = Math.ceil(moduleWidthNumber/widthNumber)*moduleHeightNumber+ 30;
+    $("#partsL1").text(num );  //插入长排线数量
+
+
+
+    ss = $("#partsL1").text();
+    var danjia = 0;             //长排线单价
+    if(ss > 0){
+        danjia = 2.5;
+    }else{
+        danjia = 0;
+    }
+
+    $("#partsL2").text(danjia);  //插入长排线数量
+    $("#partsL3").text(num * danjia);  //插入长排线数量
+}
+//2.9 第13行数据 -[电源线]
+function getLine13(){
+    $("#partsM1").text(1);
+    $("#partsM2").text(240);
+    $("#partsM3").text(240);
+}
+//2.9 第14行数据 -[网线一米]
+function getLine14(){
+    $("#partsN1").text(receptionCard);
+    $("#partsN2").text(5);
+    $("#partsN3").text(receptionCard*5);
+}
+//2.9 第15行数据 -[网线三米]
+function getLine15(){
+    $("#partsO1").text(1);
+    $("#partsO2").text(10);
+    $("#partsO3").text(10);
+}
+//2.9 第16行数据 -[挂件]
+function getLine16(){
+    //screenWidth = 0;
+
+    number = Math.floor(screenWidth/150)*2;
+    if(number == 2){
+        number = 4;
+    }
+
+    $("#partsP1").text(number);
+    $("#partsP2").text(3);
+    $("#partsP3").text(number*3);
+}
+//2.9 第17行数据 -[视频处理器]
+function getLine17(){
+    //sss = $("#videoProcessing").val();
+    $("#partsQ1").text($("#videoProcessing").val());
+    $("#partsQ2").text(1);
+
+    var xinghao = 0;
+    switch($("#videoProcessing").val()) {
+        case "华瑞视界800":
+            xinghao = 800;
+            break;
+        case "维奥505":
+            xinghao = 1800;
+            break;
+        case "BVP3200":
+            xinghao = 4500;
+            break;
+        case "异步盒子":
+            xinghao = 800;
+            break;
+    }
+
+    $("#partsQ3").text(xinghao);
+    $("#partsQ4").text(xinghao);
+}
+//2.9 第18行数据 -[组装加工费]
+function getLine18(){
+
+    var v = ((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1)
+
+
+    $("#partsR1").text(v);
+    $("#partsR2").text(400);
+    $("#partsR3").text(Math.ceil(v*400));
+}
+
 
 
 

@@ -62,6 +62,7 @@
 
 				<form class="form-horizontal">
 					<!--选择室内板型号-->
+
 					<div class="form-group">
 						<label for="selectType" class="col-sm-3 control-label">型号:</label>
 
@@ -70,11 +71,13 @@
 							<option>室内P2/32扫</option>
 							<option>室内P2.5/32扫</option>
 							<option>室内P3/32扫</option>
-							<option>室内P3.91/16扫</option>
 							<option>室内P4/16扫</option>
-							<option>室内P4.81/13扫</option>
 							<option>室内P5/16扫</option>
 						</select>
+
+					</div>
+					<div class="warning">
+						<span >未 选 择 型 号 !</span>
 					</div>
 					<!--输入长度-->
 					<div class="form-group">
@@ -83,6 +86,10 @@
 							<input type="email" class="form-control" id="inputWidth" placeholder="请输入长度">
 						</div>
 					</div>
+					<div class="warning">
+						<span >未 输 入 长 度 !</span>
+					</div>
+
 					<!--输入高度-->
 					<div class="form-group">
 						<label for="inputHeight" class="col-sm-3 control-label">高度:</label>
@@ -90,34 +97,47 @@
 							<input type="text" class="form-control" id="inputHeight" placeholder="请输入长度">
 						</div>
 					</div>
+					<div class="warning">
+						<span >未 输 入 高 度 !</span>
+					</div>
+
 					<!--选择发送接收设备-->
 					<div class="form-group">
 						<label for="selectIO" class="col-sm-3 control-label">控制卡:</label>
 
 						<select  class="col-sm-9 form-control" id="selectIO"  style="margin-left:15px; padding:0px 0px 0px 10px;">
 							<option disabled selected>选择控制系统 :</option>
-							<option>聚诚</option>
+							<option >聚诚</option>
 							<option>诺瓦</option>
 							<option>灵星雨</option>
 						</select>
 					</div>
+					<div class="warning">
+						<span >未 选 择 控 制 系 统 !</span>
+					</div>
+
 					<!--选择型材-->
 					<div class="form-group">
 						<label for="selectBorder" class="col-sm-3 control-label">外边框:</label>
 
 						<select  class="col-sm-9 form-control" id="selectBorder"  style="margin-left:15px; padding:0px 0px 0px 10px;">
 							<option disabled selected>选择屏幕外边框 :</option>
-							<option>9045常规型材</option>
 							<option>9025常规型材</option>
-							<option>10050常规型材</option>
+							<option>9035常规型材</option>
+							<option>9040常规型材</option>
+							<option>9045常规型材</option>
+							<option >10050常规型材</option>
 							<option>9045金型材</option>
-							<option>9025金型材</option>
 							<option>10050金型材</option>
 							<option>9045银型材</option>
-							<option>9025银型材</option>
-							<option>10050银型材</option>
+							<option>9060银型材</option>
+							<option>10070银型材</option>
 						</select>
 					</div>
+					<div class="warning">
+						<span >未 选 择 型 材 !</span>
+					</div>
+
 					<!--选择视频处理器-->
 					<div class="form-group">
 						<label for="videoProcessing" class="col-sm-3 control-label">处理器:</label>
@@ -129,6 +149,9 @@
 							<option>BVP3200</option>
 							<option>异步盒子</option>
 						</select>
+					</div>
+					<div class="warning">
+						<span >未 选 择 视 频 处 理 器 !</span>
 					</div>
 
 
@@ -319,9 +342,9 @@
 					<tr id="bd12">
 						<td>配电柜</td>
 						<td id="partsK1"></td>
-						<td>台</td>
-						<td id="partsK2"></td>
+						<td id="partsK2">台</td>
 						<td id="partsK3"></td>
+						<td id="partsK4"></td>
 					</tr>
 					<tr id="bd13">
 						<td>长排线</td>
@@ -359,11 +382,11 @@
 						<td id="partsP3"></td>
 					</tr>
 					<tr id="bd18">
-						<td>视睿讯BVP800</td>
-						<td id="partsQ1"></td>
-						<td>台</td>
+						<td id="partsQ1">视频处理器</td>
 						<td id="partsQ2"></td>
+						<td >台</td>
 						<td id="partsQ3"></td>
+						<td id="partsQ4"></td>
 					</tr>
 					<tr id="bd19">
 						<td>组装加工费</td>

@@ -107,6 +107,24 @@ body{
 	width: 179px;
 	color: #000;
 }
+/*提示框*/
+.form-horizontal .form-group{
+    margin-bottom: 0px;
+}
+.warning span{
+    display:none;
+}
+.warning{
+	/*background:red;*/
+	width: 178px;
+	height: 15px;
+    margin-left: 100px;
+    font-size:12px;
+    color: red;
+}
+
+
+
 
 /*1.3左侧按钮外部*/
 .btn-warp{
