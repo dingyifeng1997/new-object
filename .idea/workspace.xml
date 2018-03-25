@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0cc8f5d-5987-478e-a9ba-b93a0eb905f6" name="Default" comment="" />
+    <list default="true" id="c0cc8f5d-5987-478e-a9ba-b93a0eb905f6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo.png" afterPath="$PROJECT_DIR$/public/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/.idea/workspace.xml" afterPath="$PROJECT_DIR$/mobile/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css" />
+    </list>
     <ignored path="LED.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,119 +27,18 @@
     <favorites_list name="LED" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.62421185">
-      <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5166835">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="21.0">
-                      <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-                      <folding>
-                        <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                        <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="inputScript.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.75702477">
-                      <caret line="806" column="24" selection-start-line="806" selection-start-column="24" selection-end-line="806" selection-end-column="24" />
-                      <folding>
-                        <element signature="n#!!block;n#selects#0" expanded="false" />
-                        <element signature="n#!!block;n#types#0" expanded="false" />
-                        <element signature="n#!!block;n#getSingleWidth#0" expanded="false" />
-                        <element signature="n#!!block;n#getSingleHeight#0" expanded="false" />
-                        <element signature="n#!!block;n#getWidthNumber#0" expanded="false" />
-                        <element signature="n#!!block;n#getHeightNumber#0" expanded="false" />
-                        <element signature="n#!!block;n#getScreenWidth#0" expanded="false" />
-                        <element signature="n#!!block;n#getScreenHeight#0" expanded="false" />
-                        <element signature="n#!!block;n#getOverWdith#0" expanded="false" />
-                        <element signature="n#!!block;n#getOverHeight#0" expanded="false" />
-                        <element signature="n#!!block;n#getWidthPixel#0" expanded="false" />
-                        <element signature="n#!!block;n#getHeightPixel#0" expanded="false" />
-                        <element signature="n#!!block;n#getWidthSumPixel#0" expanded="false" />
-                        <element signature="n#!!block;n#getHeightSumPixel#0" expanded="false" />
-                        <element signature="n#!!block;n#getPower#0" expanded="false" />
-                        <element signature="n#!!block;n#getArea#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine1#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine2#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine3#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine4#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine5#0" expanded="false" />
-                        <element signature="e#9829#10040#0" expanded="false" />
-                        <element signature="e#10783#11457#0" expanded="false" />
-                        <element signature="e#10793#11451#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine6#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine8#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine9#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine10#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine11#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine12#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine13#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine14#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine15#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine17#0" expanded="false" />
-                        <element signature="n#!!block;n#getLine18#0" expanded="false" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="demo.css" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="2.3333333">
-                      <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.07948244">
-                      <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-                      <folding>
-                        <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                        <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="myStyleScript.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.4330579">
-                  <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#3431#4040#0" expanded="false" />
-                    <element signature="e#4174#5041#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27493605">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -148,7 +54,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mobile/室内全彩型材/全彩计算页面.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/PC/室内全彩型材/index.html" />
         <option value="$PROJECT_DIR$/backLogin.html" />
         <option value="$PROJECT_DIR$/mobile/indoorColorYZL/index.html" />
@@ -159,6 +64,7 @@
         <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
         <option value="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" />
         <option value="$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -168,10 +74,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="371" />
+    <option name="width" value="1504" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,8 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,84 +121,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="indoorColorXC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="indoorColorXC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LED" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="indoorColorXC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,13 +225,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="371" y="0" width="1504" height="957" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1421875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14180107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22093023" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -410,6 +238,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -443,6 +272,154 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="801" column="20" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#selects#0" expanded="false" />
+            <element signature="n#!!block;n#types#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getOverWdith#0" expanded="false" />
+            <element signature="n#!!block;n#getOverHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getPower#0" expanded="false" />
+            <element signature="n#!!block;n#getArea#0" expanded="false" />
+            <element signature="n#!!block;n#getLine1#0" expanded="false" />
+            <element signature="n#!!block;n#getLine2#0" expanded="false" />
+            <element signature="n#!!block;n#getLine3#0" expanded="false" />
+            <element signature="n#!!block;n#getLine4#0" expanded="false" />
+            <element signature="n#!!block;n#getLine5#0" expanded="false" />
+            <element signature="e#9829#10040#0" expanded="false" />
+            <element signature="e#10783#11457#0" expanded="false" />
+            <element signature="e#10793#11451#0" expanded="false" />
+            <element signature="n#!!block;n#getLine6#0" expanded="false" />
+            <element signature="n#!!block;n#getLine8#0" expanded="false" />
+            <element signature="n#!!block;n#getLine9#0" expanded="false" />
+            <element signature="n#!!block;n#getLine10#0" expanded="false" />
+            <element signature="n#!!block;n#getLine11#0" expanded="false" />
+            <element signature="n#!!block;n#getLine12#0" expanded="false" />
+            <element signature="n#!!block;n#getLine13#0" expanded="false" />
+            <element signature="n#!!block;n#getLine14#0" expanded="false" />
+            <element signature="n#!!block;n#getLine15#0" expanded="false" />
+            <element signature="n#!!block;n#getLine17#0" expanded="false" />
+            <element signature="n#!!block;n#getLine18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3431#4040#0" expanded="false" />
+            <element signature="e#4174#5041#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="801" column="20" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#selects#0" expanded="false" />
+            <element signature="n#!!block;n#types#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getOverWdith#0" expanded="false" />
+            <element signature="n#!!block;n#getOverHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getPower#0" expanded="false" />
+            <element signature="n#!!block;n#getArea#0" expanded="false" />
+            <element signature="n#!!block;n#getLine1#0" expanded="false" />
+            <element signature="n#!!block;n#getLine2#0" expanded="false" />
+            <element signature="n#!!block;n#getLine3#0" expanded="false" />
+            <element signature="n#!!block;n#getLine4#0" expanded="false" />
+            <element signature="n#!!block;n#getLine5#0" expanded="false" />
+            <element signature="e#9829#10040#0" expanded="false" />
+            <element signature="e#10783#11457#0" expanded="false" />
+            <element signature="e#10793#11451#0" expanded="false" />
+            <element signature="n#!!block;n#getLine6#0" expanded="false" />
+            <element signature="n#!!block;n#getLine8#0" expanded="false" />
+            <element signature="n#!!block;n#getLine9#0" expanded="false" />
+            <element signature="n#!!block;n#getLine10#0" expanded="false" />
+            <element signature="n#!!block;n#getLine11#0" expanded="false" />
+            <element signature="n#!!block;n#getLine12#0" expanded="false" />
+            <element signature="n#!!block;n#getLine13#0" expanded="false" />
+            <element signature="n#!!block;n#getLine14#0" expanded="false" />
+            <element signature="n#!!block;n#getLine15#0" expanded="false" />
+            <element signature="n#!!block;n#getLine17#0" expanded="false" />
+            <element signature="n#!!block;n#getLine18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3431#4040#0" expanded="false" />
+            <element signature="e#4174#5041#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -609,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.472222">
-          <caret line="22" column="191" selection-start-line="22" selection-start-column="191" selection-end-line="22" selection-end-column="191" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backLogin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2222222">
@@ -651,14 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3333333">
-          <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33260632">
@@ -667,32 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4330579">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-          <folding>
-            <element signature="e#3431#4040#0" expanded="false" />
-            <element signature="e#4174#5041#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75702477">
-          <caret line="806" column="24" selection-start-line="806" selection-start-column="24" selection-end-line="806" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="801" column="20" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
           <folding>
             <element signature="n#!!block;n#selects#0" expanded="false" />
             <element signature="n#!!block;n#types#0" expanded="false" />
@@ -730,6 +670,44 @@
             <element signature="n#!!block;n#getLine17#0" expanded="false" />
             <element signature="n#!!block;n#getLine18#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83697814">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36430317">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#3431#4040#0" expanded="false" />
+            <element signature="e#4174#5041#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47442454">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27493605">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

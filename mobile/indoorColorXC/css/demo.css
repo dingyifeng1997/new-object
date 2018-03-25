@@ -71,11 +71,6 @@ body{
 }
 
 
-/*型号选择高度*/
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
-	max-height:500px;
-}
-
 
 /*字编辑表格字体颜色修改*/
 .astrict-number{
