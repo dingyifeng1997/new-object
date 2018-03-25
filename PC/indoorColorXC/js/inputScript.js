@@ -25,6 +25,7 @@ WidthPixel = 0;         //全局变量 单板长像素
 HeightPixel = 0;        //全局变量 单板高像素
 WidthSumPixel = 0;      //全局变量 显示屏长总像素
 HeightSumPixel = 0;     //全局变量 显示屏高总像素
+allSquare = 0;          //全局变量 总平方数
 
 getPowerNumber = 0;     //全局变量 电源数量 (因为要根据电源数量获取总千瓦数)
 receptionCard = "";     //全局变量 接收卡数量
@@ -280,7 +281,8 @@ function getPower(){
 }
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
 function getArea(){
-    $("#dataB7").text(((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1));
+    allSquare = ((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1);
+    $("#dataB7").text(allSquare);
 }
 
 
@@ -677,7 +679,7 @@ function getLine10(){
 //2.9 第11行数据 -[配电柜]
 function getLine11(){
 
-    if((getPowerNumber*200)/1000 > 10){
+    if(getPowerNumber > 48){
         $("#partsK1").text(1);  //配电柜数量
     }else{
         $("#partsK1").text(0);  //配电柜数量
@@ -856,4 +858,41 @@ function accMul(arg1,arg2){
     try{
         m+=s2.split(".")[1].length}catch(e){}
     return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m)
+}
+
+//算法:合计小写数字转汉字大写
+function zhuanhuan(){
+    $("#daXie").text(
+        intToChinese($("#summation").text())
+    );
+}
+function intToChinese(n) {
+    var fraction = ['角', '分'];
+    var digit = [
+        '零', '壹', '贰', '叁', '肆',
+        '伍', '陆', '柒', '捌', '玖'
+    ];
+    var unit = [
+        ['元', '万', '亿'],
+        ['', '拾', '佰', '仟']
+    ];
+    var head = n < 0 ? '欠' : '';
+    n = Math.abs(n);
+    var s = '';
+    for (var i = 0; i < fraction.length; i++) {
+        s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
+    }
+    s = s || '整';
+    n = Math.floor(n);
+    for (var i = 0; i < unit[0].length && n > 0; i++) {
+        var p = '';
+        for (var j = 0; j < unit[1].length && n > 0; j++) {
+            p = digit[n % 10] + unit[1][j] + p;
+            n = Math.floor(n / 10);
+        }
+        s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
+    }
+    return head + s.replace(/(零.)*零元/, '元')
+            .replace(/(零.)+/g, '零')
+            .replace(/^整$/, '零元整');
 }

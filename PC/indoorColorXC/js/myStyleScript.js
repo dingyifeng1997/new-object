@@ -111,11 +111,17 @@ $("#submitNumeration").click(function(){
     //提交按钮按下后生成日期
     $("#footerDate").text(new Date().toLocaleDateString());
 
-    inputAndSelect();
+    inputAndSelect();   //判断输入是否为空
+    onlyNumber();       //判断表格是否为数字
+    getSum();           //对修改过的所有的的数量和单价都再次进行计算
+    insertSum           //然后把得出的结果填充到合计内
+                        //填充到大写单元格内
+                        //打印出每平方的价格
 
 });
+
+//提交计算的时候判断选择和输入是否为空
 function inputAndSelect(){
-    //提交计算的时候判断选择和输入是否为空
     $(".form-horizontal select").each(function(){
         if($(this).val() == null){
             $(this).parent().next().children("span").css({"display":"block"});
@@ -131,9 +137,42 @@ function inputAndSelect(){
     })
 }
 
+//限制只能输入数字,输入不正确就弹出弹框
+function onlyNumber(){
+    b = 0;  //输入框的索引
+    c = 0;  //输入框不为数字个数
+    val = $(".astrict-number");
+    while(b < val.length){
+        //判断,遍历输入框的内容,当发现输入框的内容不为数字时,就记录输入框不为数字的个数
+        if(!val.eq(b)[0].innerText.match(/^\d/i)){
+            c++;
+            val.eq(b).css({"color":"red"});
+        }else{
+            val.eq(b).css({"color":"black"});
+        }
+        b++;
+    }
+    //判断,当输入框中发现有一个或者一个以上的内容不为数字,就打印出有几个输入框不为数字
+    if(c != 0){
+        alert("报错! 编辑表格中有"+c+"个输入框的内容为空.或者不为数字,请检查后再提交");
+    }
 
+}
 
+//对所有的单价和数量再次进行求和
+function getSum(){
+    summation = 0;
+    $(" #mytable .warp-tbody").children("tr").each(function(){
+        num = $(this).children("td").eq(1).text();    //数量
+        prace = $(this).children("td").eq(3).text();    //单价
+        $(this).children("td").eq(4).text(accMul(num,prace));
+        summation += accMul(num,prace);
+    })
+    $("#zongHeJi").text(summation); //插入到总合计中
+    $("#allDaXie").text(intToChinese(summation)); //插入到总合计中
+    alert("折合每平方价格为 : "+(summation/allSquare).toFixed(1)+" 元")  //弹出每平方价格
 
+}
 
 
 
