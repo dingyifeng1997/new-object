@@ -28,6 +28,8 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 
 body{
 	font-family: "微软 ","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+	background: url("../../../public/img/bg2.jpg") center no-repeat fixed;;
+	background-size: cover;
 }
 
 
@@ -317,12 +319,6 @@ button{
 
 
 
-
-
-
-
-
-
 /*右侧开始*/
 /**有的时候设置完之后页面还是没有显示,这个时候就得重新把index页面打开一次*/
 /*3.1*/
@@ -331,10 +327,11 @@ button{
 	height: 300px;
 	float:left;
 	margin-left:1170px;
-	background: white;
+	/*background: white;*/
 	position: fixed;/*固定定位*/
 	text-align:justify;
-	color:red;
+	color: #8bff84;
+	padding:30px;
 }
  
 /*右侧结束*/

@@ -313,30 +313,41 @@ function getDataList(){
 
 //2.1 第1行数据 -[单元板]
 function getLine1(){
+    //获取单元板型号
+    tc = "";
+
+
     //获取单元板数量
-    $("#partsA1").html(moduleWidthNumber*moduleHeightNumber);
+    $("#partsA2").html(moduleWidthNumber*moduleHeightNumber);
     //获取单板价格
     boardPrice = 0;
     switch(productType)
     {
         case "室内P2/32扫":
             boardPrice = "370";
+            tc = "P2";
             break;
         case "室内P2.5/32扫":
             boardPrice = "215";
+            tc = "P2.5";
             break;
         case "室内P3/32扫":
             boardPrice = "105";
+            tc = "P3";
             break;
         case "室内P4/16扫":
             boardPrice = "56";
+            tc = "P4";
             break;
         case "室内P5/16扫":
             boardPrice = "75";
+            tc = "P5";
             break;
     }
-    $("#partsA2").text(boardPrice); //单元板单价
-    $("#partsA3").text(boardPrice *(moduleWidthNumber*moduleHeightNumber));//单元板总价
+    $(" #headline span").html(tc);
+    $("#partsA1").html("室内"+tc +"单元板");  //获取单元板型号
+    $("#partsA3").text(boardPrice); //单元板单价
+    $("#partsA4").text(boardPrice *(moduleWidthNumber*moduleHeightNumber));//单元板总价
 }
 //2.2 第2行数据 -[磁铁]
 function getLine2(){
