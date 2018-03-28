@@ -31,7 +31,7 @@ getPowerNumber = 0;     //全局变量 电源数量 (因为要根据电源数量
 receptionCard = "";     //全局变量 接收卡数量
 heightNumber = 0;       //接收卡高帯载几块
 widthNumber = 0;        //接收卡长帯载几块
-
+boardNumber = 0;        //全局变量 单元板总数量
 //判断输入和选择的内容不为空
 
 function selects(){
@@ -49,7 +49,6 @@ function types(){
         }
     })
 }
-
 
 
 
@@ -131,7 +130,7 @@ function getScreenHeight(){
 
 //  1.7 加边框后长度,通过显示总长度加上10cm获得
 function getOverWdith(){
-    borderWidth = 0;
+    var borderWidth = 0;
     var price = 0;  //这里把这个型材单价设置成局部变量
     switch($("#selectBorder").val()) {
 
@@ -176,7 +175,7 @@ function getOverWdith(){
 }
 //  1.8 加边框后高度,通过显示总高度加上10cm获得
 function getOverHeight(){
-    borderHeight = 0;
+    var borderHeight = 0;
 
 
     switch($("#selectBorder").val()) {
@@ -277,6 +276,7 @@ function getHeightSumPixel(){
 }
 //  1.13 总千瓦数,最后点击提交计算后根据电源数量生成
 function getPower(){
+    //每个电源功率200瓦,除以1000为千瓦值
     $("#dataA7").text((getPowerNumber*200)/1000);
 }
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
@@ -314,13 +314,13 @@ function getDataList(){
 //2.1 第1行数据 -[单元板]
 function getLine1(){
     //获取单元板型号
-    tc = "";
+    var tc = "";
 
 
     //获取单元板数量
     $("#partsA2").html(moduleWidthNumber*moduleHeightNumber);
     //获取单板价格
-    boardPrice = 0;
+    var boardPrice = 0;
     switch(productType)
     {
         case "室内P2/32扫":
@@ -509,10 +509,10 @@ function getLine5(){
 }
 //2.6 第6行数据 -[DIV线]
 function getLine6(){
-    num = Math.ceil((WidthSumPixel*HeightSumPixel)/1300000); //发送卡数量
+    var num = Math.ceil((WidthSumPixel*HeightSumPixel)/1300000); //发送卡数量
     $("#partsF1").text(Math.floor(num/2));   //DIV线数量
 
-    be = 0;
+    var be = 0;
     if( $("#partsF1").text() == "NaN"|| $("#partsF1").text() == 0){
         be = 0;
     }else{
@@ -526,7 +526,7 @@ function getLine7(){
 
 
 
-    cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/600);  //型材总根数
+    var cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/600);  //型材总根数
     $("#partsG1").text(cel);
 
     var corner = 0;
@@ -675,7 +675,7 @@ function getLine10(){
     //          ② 显示总长度 / 3米 得出需要加几根,
     //          ③ 单元板数量加1,再加上中间分隔的几根  / 一根方管切出的根数
 
-
+    var number = 0;
     if(screenHeight>600){
         number = (moduleWidthNumber+ Math.floor(600/(screenHeight+3)) +1) * Math.ceil(screenHeight/600);
     }else{
@@ -773,7 +773,7 @@ function getLine11(){
 //2.9 第12行数据 -[长排线]
 function getLine12(){
 
-    num = Math.ceil(moduleWidthNumber/widthNumber)*moduleHeightNumber+ 30;
+    var num = Math.ceil(moduleWidthNumber/widthNumber)*moduleHeightNumber+ 30;
     $("#partsL1").text(num );  //插入长排线数量
 
 
@@ -809,9 +809,8 @@ function getLine15(){
 }
 //2.9 第16行数据 -[挂件]
 function getLine16(){
-    //screenWidth = 0;
-
-    number = Math.floor(screenWidth/150)*2;
+    //挂件数量
+    var number = Math.floor(screenWidth/150)*2;
     if(number == 2){
         number = 4;
     }
