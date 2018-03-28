@@ -51,8 +51,6 @@ function types(){
 }
 
 
-
-
 //  1.1 填充单元板单板长度
 function getSingleWidth(){
     switch(productType)
