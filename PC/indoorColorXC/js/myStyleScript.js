@@ -178,13 +178,6 @@ function getSum(){
 
 
 
-
-
-
-
-
-
-
 // 九:表格的编辑按钮
 i = 0;
 $("#butin").click(  //jquery1.8 之后没有toggle(fn(),fn()) 方法,用下列方式替代
@@ -239,6 +232,7 @@ $("#contract").click(function(){
         $(" #headline h2").text(v);  //合同标题修改
     }
     j++;
+
 });
 
 // 十一:打印按钮
@@ -247,7 +241,40 @@ $("#print").click(function(){
 });
 
 
+//合同区域变为大写
+$("#contractNum").blur(function() {
+    $("#priceDaXie").text(intToChinese($(this).val()));
+});
 
+//删除合同区域备注
+$("#shanchu1").click(function(){
+    $("#htbeizhu1").html("");
+    $("#tbbeizhu1").html("");
+
+});
+$("#htbeizhu1").hover(
+    function(){
+        $("#shanchu1").css({"display":"block"});
+    },
+    function(){
+        $("#shanchu1").css({"display":"none"});
+    }
+)
+
+//删除合同区域备注
+$("#shanchu2").click(function(){
+    $("#htbeizhu2").html("");
+    $("#tbbeizhu2").html("");
+
+});
+$("#htbeizhu2").hover(
+    function(){
+        $("#shanchu2").css({"display":"block"});
+    },
+    function(){
+        $("#shanchu2").css({"display":"none"});
+    }
+)
 
 
 

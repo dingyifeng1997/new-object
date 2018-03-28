@@ -16,6 +16,15 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 	display: table;
 }
 
+/*合同备注区域*/
+#shanchu1:hover{
+	cursor: pointer
+}
+#shanchu2:hover{
+	cursor: pointer
+}
+
+
 .clearfix:after {
 	clear: both;
 }
@@ -27,6 +36,7 @@ html{overflow-x:hidden}
 @media print {
 	.dataInput{display:none}	/*左侧栏不打印*/
 	.right-show{display:none}	/*右侧栏不打印*/
+	.copyright{display:none}	/*底部版权不打印*/
 }
 
 
@@ -35,6 +45,7 @@ body{
 	background: url("../../../public/img/bg2.jpg") center no-repeat fixed;;
 	background-size: cover;
 }
+
 
 
 /*左侧开始*/
@@ -151,8 +162,8 @@ button{
 .copyright{
 	text-align: center;
 	font-size: 12px;	/*默认字体最小为12px*/
-	color: #ebff81;
-	margin-top:10px;
+	color: #828282;
+	margin-top:30px;
 
 }
 /*左侧结束*/
@@ -168,11 +179,16 @@ button{
 
 /*中部开始*/
 /*2.1表格标题以及内容*/
+
+.container{
+	height:100px!important;
+}
 .content{
 	width:100%;
 	background: #e9ebea;
 	/*margin-left:5%;*/
 	z-index:10;
+
 }
 .biaoti{
 	width: 100%;
@@ -253,9 +269,6 @@ button{
 	position: relative;
 
 }
-.hetong p span{
-	/*background:red;*/
-}
 
 .input-right1{
 	position: relative;
@@ -317,6 +330,29 @@ button{
 	color: blue;
 	line-height:100%;
 }
+.hetong-fotter span{	/*合同签订方内容样式*/
+	display: inline-block;
+	width:100px;
+}
+.hetong-fotter .warp-ht{
+	display: inline-block;
+	width: 48%;
+	line-height: 30px;
+}
+.hetong-fotter .warp-ht input{
+	border:0px;
+	outline:none;
+	border-bottom:1px solid #7e8b91;
+	background: #e8eae9;
+	text-align: center;
+	line-height:100%;
+	width:300px;
+}
+
+/*.hetong-fotter span{	!*合同签订方内容样式*!*/
+	/*display: inline-block;*/
+	/*width:200px;*/
+/*}*/
 
 
 /*中部结束*/
