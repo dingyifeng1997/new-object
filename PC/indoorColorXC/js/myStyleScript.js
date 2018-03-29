@@ -114,10 +114,6 @@ $("#submitNumeration").click(function(){
     inputAndSelect();   //判断输入是否为空
     onlyNumber();       //判断表格是否为数字
     getSum();           //对修改过的所有的的数量和单价都再次进行计算
-    insertSum           //然后把得出的结果填充到合计内
-                        //填充到大写单元格内
-                        //打印出每平方的价格
-
 });
 
 //提交计算的时候判断选择和输入是否为空
