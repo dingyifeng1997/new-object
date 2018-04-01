@@ -164,8 +164,8 @@ function getSum(){
         $(this).children("td").eq(4).text(accMul(num,prace));
         summation += accMul(num,prace);
     })
-    $("#zongHeJi").text(summation); //插入到总合计中
-    $("#allDaXie").text(intToChinese(summation)); //插入到总合计中
+    $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
+    $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
     alert("折合每平方价格为 : "+(summation/allSquare).toFixed(1)+" 元")  //弹出每平方价格
 
 }
