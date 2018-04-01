@@ -672,20 +672,23 @@ function getLine10(){
     //screenWidth = 0;        //全局变量 显示总长度
     //screenHeight = 0;       //全局变量 显示总高度
 
-    //方管算法: ① 6米/ (显示总高度+3) 得出一根方管可以切几根,
-    //          ② 显示总长度 / 3米 得出需要加几根,
-    //          ③ 单元板数量加1,再加上中间分隔的几根  / 一根方管切出的根数
+    //moduleWidthNumber = 0;  //全局变量 模组长个数A2
+    //screenWidth = 0;        //全局变量 显示总长度
+    //screenHeight = 0;       //全局变量 显示总高度
 
-    var number = 0;
+
+    var number = 0;     //龙骨根数
+    var price = 25;
+    //如果是五排高以外用方管
     if(screenHeight>600){
-        number = (moduleWidthNumber+ Math.floor(600/(screenHeight+3)) +1) * Math.ceil(screenHeight/600);
+        number = Math.ceil(screenHeight/600) * (Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3)))));
     }else{
-        number = moduleWidthNumber+ Math.floor(600/(screenHeight+3)) +1
+        number = Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3))));
     }
-    $("#partsJ1").text(number);  //方管数量
 
-    $("#partsJ2").text(25);  //方管单价
-    $("#partsJ3").text(number*25);  //方管合计
+    $("#partsJ1").text(number);               //龙骨数量
+    $("#partsJ2").text(price);                //龙骨价格
+    $("#partsJ3").text(price*number);         //龙骨价格
 
 }
 //2.9 第11行数据 -[配电柜]
@@ -812,13 +815,13 @@ function getLine15(){
 function getLine16(){
     //挂件数量
     var number = Math.floor(screenWidth/150)*2;
-    if(number == 2){
+    if(number < 4){
         number = 4;
     }
 
     $("#partsP1").text(number);
-    $("#partsP2").text(3);
-    $("#partsP3").text(number*3);
+    $("#partsP2").text(5);
+    $("#partsP3").text(number*5);
 }
 //2.9 第17行数据 -[视频处理器]
 function getLine17(){

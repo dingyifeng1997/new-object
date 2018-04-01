@@ -55,19 +55,19 @@ function types(){
 function getSingleWidth(){
     switch(productType)
     {
-        case "室内P2/32扫":
+        case "P4室外表贴全彩":
             moduleWidth = "25.6";
             break;
-        case "室内P2.5/32扫":
+        case "P5室外表贴全彩":
             moduleWidth = "32.0";
             break;
-        case "室内P3/32扫":
+        case "P6室外表贴全彩":
             moduleWidth = "19.2";
             break;
-        case "室内P4/16扫":
+        case "P8室外表贴全彩":
             moduleWidth = "25.6";
             break;
-        case "室内P5/16扫":
+        case "P10室外表贴全彩/4扫":
             moduleWidth = "32.0";
             break;
     }
@@ -79,19 +79,19 @@ function getSingleWidth(){
 function getSingleHeight(){
     switch(productType)
     {
-        case "室内P2/32扫":
+        case "P4室外表贴全彩":
             moduleHeight = "12.8";
             break;
-        case "室内P2.5/32扫":
+        case "P5室外表贴全彩":
             moduleHeight = "16.0";
             break;
-        case "室内P3/32扫":
+        case "P6室外表贴全彩":
             moduleHeight = "19.2";
             break;
-        case "室内P4/16扫":
+        case "P8室外表贴全彩":
             moduleHeight = "12.8";
             break;
-        case "室内P5/16扫":
+        case "P10室外表贴全彩/4扫":
             moduleHeight = "16.0";
             break;
     }
@@ -105,6 +105,7 @@ function getWidthNumber(){
     moduleWidthNumber = Math.round(inputWidth/moduleWidth); //单元板长个数
     $("#dataA2").text(moduleWidthNumber);
 }
+
 //  1.4 单元板高个数,通过输入框四舍五入获得
 function getHeightNumber(){
     //先获取输入的总高度,再用总高度除以获取到的单板高度,求得单元板高个数
@@ -119,6 +120,7 @@ function getScreenWidth(){
     screenWidth = accMul(moduleWidth,moduleWidthNumber);
     $("#dataA3").text(screenWidth);
 }
+
 //  1.6 显示总高度,通过高个数乘以单板高度获得
 function getScreenHeight(){
     //使用获取到的模组高度和模组高个数,求得显示屏的总高度
@@ -171,6 +173,7 @@ function getOverWdith(){
     //求得型材的合计金额
     $("#partsG3").text($("#partsG2").text()*Math.ceil(((screenWidth*2)+(screenHeight*2))/600));
 }
+
 //  1.8 加边框后高度,通过显示总高度加上10cm获得
 function getOverHeight(){
     var borderHeight = 0;
@@ -219,72 +222,75 @@ function getOverHeight(){
 function getWidthPixel(){
     switch(productType)
     {
-        case "室内P2/32扫":
-            WidthPixel = "128";
-            break;
-        case "室内P2.5/32扫":
-            WidthPixel = "128";
-            break;
-        case "室内P3/32扫":
+        case "P4室外表贴全彩":
             WidthPixel = "64";
             break;
-        case "室内P4/16扫":
+        case "P5室外表贴全彩":
             WidthPixel = "64";
             break;
-        case "室内P5/16扫":
-            WidthPixel = "64";
+        case "P6室外表贴全彩":
+            WidthPixel = "32";
+            break;
+        case "P8室外表贴全彩":
+            WidthPixel = "32";
+            break;
+        case "P10室外表贴全彩/4扫":
+            WidthPixel = "32";
             break;
     }
     $("#dataA5").text(WidthPixel);
 }
+
 //  1.10 单元板高像素,通过单元板型号switch匹配
 function getHeightPixel(){
     switch(productType)
     {
-        case "室内P2/32扫":
-            HeightPixel = "64";
-            break;
-        case "室内P2.5/32扫":
-            HeightPixel = "64";
-            break;
-        case "室内P3/32扫":
-            HeightPixel = "64";
-            break;
-        case "室内P4/16扫":
+
+        case "P4室外表贴全彩":
             HeightPixel = "32";
             break;
-        case "室内P5/16扫":
+        case "P5室外表贴全彩":
             HeightPixel = "32";
+            break;
+        case "P6室外表贴全彩":
+            HeightPixel = "32";
+            break;
+        case "P8室外表贴全彩":
+            HeightPixel = "16";
+            break;
+        case "P10室外表贴全彩/4扫":
+            HeightPixel = "16";
             break;
     }
 
     $("#dataB5").text(HeightPixel);
 }
+
 //  1.11 显示长总像素,通过单元板长个数和长像素获得
 function getWidthSumPixel(){
     //使用获取到的模组长像素点和模组长数量,求得显示屏的长总像素点
     WidthSumPixel = accMul(WidthPixel,moduleWidthNumber)
     $("#dataA6").text(WidthSumPixel);
 }
+
 //  1.12 显示高总像素,通过单元板高个数和高像素获得
 function getHeightSumPixel(){
     //使用获取到的模组高像素点和模组高数量,求得显示屏的高总像素点
     HeightSumPixel = accMul(HeightPixel,moduleHeightNumber)
     $("#dataB6").text(HeightSumPixel);
 }
+
 //  1.13 总千瓦数,最后点击提交计算后根据电源数量生成
 function getPower(){
     //每个电源功率200瓦,除以1000为千瓦值
     $("#dataA7").text((getPowerNumber*200)/1000);
 }
+
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
 function getArea(){
     allSquare = ((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1);
     $("#dataB7").text(allSquare);
 }
-
-
-
 
 //   2 根据数据表获取材料表的所有内容
 function getDataList(){
@@ -314,32 +320,31 @@ function getLine1(){
     //获取单元板型号
     var tc = "";
 
-
     //获取单元板数量
     $("#partsA2").html(moduleWidthNumber*moduleHeightNumber);
     //获取单板价格
     var boardPrice = 0;
     switch(productType)
     {
-        case "室内P2/32扫":
-            boardPrice = "370";
-            tc = "P2";
-            break;
-        case "室内P2.5/32扫":
-            boardPrice = "215";
-            tc = "P2.5";
-            break;
-        case "室内P3/32扫":
-            boardPrice = "105";
-            tc = "P3";
-            break;
-        case "室内P4/16扫":
-            boardPrice = "56";
+        case "P4室外表贴全彩":
+            boardPrice = "180";
             tc = "P4";
             break;
-        case "室内P5/16扫":
-            boardPrice = "75";
+        case "P5室外表贴全彩":
+            boardPrice = "150";
             tc = "P5";
+            break;
+        case "P6室外表贴全彩":
+            boardPrice = "69";
+            tc = "P6";
+            break;
+        case "P8室外表贴全彩":
+            boardPrice = "46";
+            tc = "P8";
+            break;
+        case "P10室外表贴全彩/4扫":
+            boardPrice = "58";
+            tc = "P10";
             break;
     }
     $(" #headline span").html(tc);
@@ -362,19 +367,19 @@ function getLine3(){
     powerSource = 0;
     switch(productType)
     {
-        case "室内P2/32扫":
-            powerSource = "3";
+        case "P4室外表贴全彩":
+            powerSource = "4";
             break;
-        case "室内P2.5/32扫":
-            powerSource = "3";
+        case "P5室外表贴全彩":
+            powerSource = "4";
             break;
-        case "室内P3/32扫":
+        case "P6室外表贴全彩":
             powerSource = "6";
             break;
-        case "室内P4/16扫":
+        case "P8室外表贴全彩":
             powerSource = "6";
             break;
-        case "室内P5/16扫":
+        case "P10室外表贴全彩/4扫":
             powerSource = "6";
             break;
     }
@@ -428,24 +433,24 @@ function getLine5(){
     if(type=="聚诚"){
         switch(productType)
         {
-            case "室内P2/32扫":
-                widthNumber = "1";
-                heightNumber = "12";
-                break;
-            case "室内P2.5/32扫":
-                widthNumber = "1";
-                heightNumber = "12";
-                break;
-            case "室内P3/32扫":
-                widthNumber = "2";
-                heightNumber = "12";
-                break;
-            case "室内P4/16扫":
+            case "P4室外表贴全彩":
                 widthNumber = "3";
                 heightNumber = "12";
                 break;
-            case "室内P5/16扫":
+            case "P5室外表贴全彩":
                 widthNumber = "3";
+                heightNumber = "12";
+                break;
+            case "P6室外表贴全彩":
+                widthNumber = "6";
+                heightNumber = "12";
+                break;
+            case "P8室外表贴全彩":
+                widthNumber = "6";
+                heightNumber = "12";
+                break;
+            case "P10室外表贴全彩/4扫":
+                widthNumber = "6";
                 heightNumber = "12";
                 break;
         }
@@ -453,23 +458,24 @@ function getLine5(){
     }else if(type=="诺瓦"){
         switch(productType)
         {
-            case "室内P2/32扫":
-                widthNumber = "1";
-                heightNumber = "6";
-                break;
-            case "室内P2.5/32扫":
-                widthNumber = "1";
-                heightNumber = "6";
-                break;
-            case "室内P3/32扫":
+
+            case "P4室外表贴全彩":
                 widthNumber = "2";
-                heightNumber = "6";
+                heightNumber = "8";
                 break;
-            case "室内P4/16扫":
-                widthNumber = "3";
+            case "P5室外表贴全彩":
+                widthNumber = "2";
+                heightNumber = "8";
+                break;
+            case "P6室外表贴全彩":
+                widthNumber = "4";
+                heightNumber = "8";
+                break;
+            case "P8室外表贴全彩":
+                widthNumber = "4";
                 heightNumber = "12";
                 break;
-            case "室内P5/16扫":
+            case "P10室外表贴全彩/4扫":
                 widthNumber = "3";
                 heightNumber = "12";
                 break;
@@ -477,24 +483,25 @@ function getLine5(){
     }else if(type=="灵星雨"){
         switch(productType)
         {
-            case "室内P2/32扫":
-                widthNumber = "1";
-                heightNumber = "6";
-                break;
-            case "室内P2.5/32扫":
-                widthNumber = "1";
-                heightNumber = "6";
-                break;
-            case "室内P3/32扫":
-                widthNumber = "2";
-                heightNumber = "6";
-                break;
-            case "室内P4/16扫":
+
+            case "P4室外表贴全彩":
                 widthNumber = "3";
                 heightNumber = "12";
                 break;
-            case "室内P5/16扫":
+            case "P5室外表贴全彩":
                 widthNumber = "3";
+                heightNumber = "12";
+                break;
+            case "P6室外表贴全彩":
+                widthNumber = "6";
+                heightNumber = "12";
+                break;
+            case "P8室外表贴全彩":
+                widthNumber = "6";
+                heightNumber = "12";
+                break;
+            case "P10室外表贴全彩/4扫":
+                widthNumber = "6";
                 heightNumber = "12";
                 break;
         }
@@ -669,18 +676,19 @@ function getLine10(){
     //screenWidth = 0;        //全局变量 显示总长度
     //screenHeight = 0;       //全局变量 显示总高度
 
+    //moduleWidthNumber = 0;  //全局变量 模组长个数A2
+    //screenWidth = 0;        //全局变量 显示总长度
+    //screenHeight = 0;       //全局变量 显示总高度
+
 
     var number = 0;     //龙骨根数
     var price = 25;
-        //如果是五排高以外用方管
-        if(screenHeight>600){
-            number = Math.ceil(screenHeight/600) * (Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3)))));
-        }else{
-            number = Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3))));
-        }
-
-
-
+    //如果是五排高以外用方管
+    if(screenHeight>600){
+        number = Math.ceil(screenHeight/600) * (Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3)))));
+    }else{
+        number = Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3))));
+    }
 
     $("#partsJ1").text(number);               //龙骨数量
     $("#partsJ2").text(price);                //龙骨价格
@@ -807,7 +815,7 @@ function getLine15(){
     $("#partsO2").text(10);
     $("#partsO3").text(10);
 }
-//2.9 第16行数据 -[挂件膨胀丝]
+//2.9 第16行数据 -[挂件]
 function getLine16(){
     //挂件数量
     var number = Math.floor(screenWidth/150)*2;
