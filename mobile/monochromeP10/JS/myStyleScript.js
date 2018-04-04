@@ -47,7 +47,7 @@ $(" #dropDown").click(
 
 
 // 一:选择型号后输入方法
-$("#selectType").click(function(){
+$("#selectType").blur(function(){
 
     productType = $("#selectType").val();   //在点击选择型号的时候就把获取到的值赋值给全局变量 productType
     inwidth();      //型号设置后调用宽度改变方法
@@ -66,7 +66,7 @@ $("#selectType").click(function(){
 
 })
 // 二:长度输入后调用方法
-$("#inputWidth").click(function(){
+$("#inputWidth").blur(function(){
     inwidth();
 });
 function inwidth(){
@@ -87,7 +87,7 @@ function inwidth(){
 }
 
 // 三:高度输入后调用方法
-$("#inputHeight").click(function(){
+$("#inputHeight").blur(function(){
     inheight();
 })
 function inheight(){
@@ -110,7 +110,7 @@ function inheight(){
 
 
 // 四:选择控制卡后调用方法
-$("#selectIO").click(function(){
+$("#selectIO").blur(function(){
     getSelectsIO()
     selects()   //判断是否选择
 });
@@ -121,7 +121,7 @@ function getSelectsIO(){
 }
 
 // 五:选择外边框后调用方法
-$("#selectBorder").click(function(){
+$("#selectBorder").blur(function(){
     selectBorderFunction();
     selects()   //判断是否选择
 });

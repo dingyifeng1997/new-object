@@ -555,7 +555,7 @@ function getLine2(){
     $("#partsB2").text(number);                     //设置数量
     $("#partsB3").text(type);                      //设置控制卡型号
     $("#partsB4").text(price);                          //控制卡单价
-    $("#partsB5").text(price*number);                          //控制卡合计
+    $("#partsB5").text(accMul(price,number));                          //控制卡合计
 
 }
 //2.3 第3行数据 -[转接板]
@@ -578,7 +578,7 @@ function getLine3(){
         $("#partsC2").text(25); //转接板价格
     }
 
-    $("#partsC3").text(getPowerNumber*25);
+    $("#partsC3").text(accMul(getPowerNumber,25));
 }
 //2.4 第4行数据 -[电源]
 function getLine4(){
@@ -599,7 +599,7 @@ function getLine4(){
     }
     $("#partsD1").text(getPowerNumber);
     $("#partsD2").text(price);            //电源价格
-    $("#partsD3").text(getPowerNumber * price); //发送卡合计
+    $("#partsD3").text(accMul(getPowerNumber,price)); //发送卡合计
 }
 //2.5 第5行数据 -[型材]
 function getLine5(){
@@ -642,7 +642,7 @@ function getLine5(){
     }
 
     $("#partsE2").text(corner);
-    $("#partsE3").text(cel * corner);
+    $("#partsE3").text(accMul(cel,corner));
 
 }
 //2.6 第6行数据 -[龙骨]
@@ -687,7 +687,7 @@ function getLine6(){
     $("#partsF1").text(name);               //名称
     $("#partsF2").text(number);             //龙骨数量
     $("#partsF3").text(price);              //龙骨价格
-    $("#partsF4").text(price*number);       //龙骨合计
+    $("#partsF4").text(accMul(price,number));       //龙骨合计
 
 }
 //2.7 第7行数据 -[型材拐角]
@@ -729,7 +729,7 @@ function getLine7(){
             break;
     }
     $("#partsG2").text(corner);  //拐角单价
-    $("#partsG3").text(corner*4);  //拐角合计
+    $("#partsG3").text(accMul(corner,4));  //拐角合计
 
 
 }
@@ -777,13 +777,13 @@ function getLine8(){
     }else{
         $("#partsH2").text(0);  //接头价格
     }
-    $("#partsH3").text(corner*number);  //接头合计
+    $("#partsH3").text(accMul(corner,number));  //接头合计
 }
 //2.9 第9行数据 -[短燕尾丝]
 function getLine9(){
     var number = 0;
     if(moduleHeightNumber <= 5){
-        number = (moduleWidthNumber+1+Math.floor(screenWidth/300))*6;
+        number = accMul((moduleWidthNumber+1+Math.floor(screenWidth/300)),6);
     }else{
         number = 24;
     }
@@ -796,7 +796,7 @@ function getLine9(){
 //2.10 第10行数据 -[长燕尾丝]
 function getLine10(){
     if(moduleHeightNumber > 5){
-        number = (moduleWidthNumber+1+Math.floor(screenWidth/300))*6;
+        number = accMul((moduleWidthNumber+1+Math.floor(screenWidth/300)),6);
     }else{
         number = 0;
     }
@@ -816,7 +816,7 @@ function getLine11(){
 function getLine12(){
     $("#partsL1").text(moduleHeightNumber);
     $("#partsL2").text(2);
-    $("#partsL3").text(moduleHeightNumber * 2);
+    $("#partsL3").text(accMul(moduleHeightNumber,2));
 }
 //2.13 第13行数据 -[USB延长线]
 function getLine13(){
@@ -828,25 +828,25 @@ function getLine13(){
 function getLine14(){
 
     //挂件数量
-    var number = Math.floor(screenWidth/150)*2;
+    var number = accMul(Math.floor(screenWidth/150),2);
     if(number < 4){
         number = 4;
     }
     $("#partsN1").text(number);
     $("#partsN2").text(5);
-    $("#partsN3").text(number*5);
+    $("#partsN3").text(accMul(number,5));
 }
 //2.15 第15行数据 -[包装费]
 function getLine15(){
     $("#partsO1").text(allSquare);
     $("#partsO2").text(15);
-    $("#partsO3").text(allSquare*15);
+    $("#partsO3").text(accMul(allSquare,15));
 }
 //2.16 第16行数据 -[组装加工费]
 function getLine16(){
     $("#partsP1").text(allSquare);
     $("#partsP2").text(50);
-    $("#partsP3").text(allSquare*50);
+    $("#partsP3").text(accMul(allSquare,50));
 }
 
 

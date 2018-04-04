@@ -171,7 +171,7 @@ function getOverWdith(){
     $("#dataA4").text(borderSumWidth);
     $("#partsG2").text(price);
     //求得型材的合计金额
-    $("#partsG3").text($("#partsG2").text()*Math.ceil(((screenWidth*2)+(screenHeight*2))/600));
+    $("#partsG3").text( $("#partsK3").text($("#partsG2").text(),Math.ceil(((screenWidth*2)+(screenHeight*2))/600)));
 }
 
 //  1.8 加边框后高度,通过显示总高度加上10cm获得
@@ -355,9 +355,9 @@ function getLine1(){
 //2.2 第2行数据 -[磁铁]
 function getLine2(){
     var num = moduleWidthNumber * moduleHeightNumber; //板总数量
-    $("#partsB1").text(num * 4 + 30);   //磁铁数量加30个
+    $("#partsB1").text(accMul(num,4) + 30);   //磁铁数量加30个
     $("#partsB2").text(0.25);   //磁铁数量加30个
-    $("#partsB3").text((num * 4 + 30)*0.25);   //磁铁数量加30个
+    $("#partsB3").text(accMul((accMul(num,4) + 30),0.25));   //磁铁数量加30个
 
 }
 //2.3 第3行数据 -[电源]
@@ -386,7 +386,7 @@ function getLine3(){
     getPowerNumber =  Math.ceil(boardNumber/powerSource);
     $("#partsC1").text(getPowerNumber); //电源数量
     $("#partsC2").text(45); //电源价格
-    $("#partsC3").text(getPowerNumber*45);
+    $("#partsC3").text(accMul(getPowerNumber ,45));
 
 }
 //2.4 第4行数据 -[发送卡]
@@ -409,7 +409,7 @@ function getLine4(){
             break;
     }
     $("#partsD2").text(price);  //发送卡价格
-    $("#partsD3").text(num*price); //发送卡合计
+    $("#partsD3").text(accMul(num,price)); //发送卡合计
 
 }
 //2.5 第5行数据 -[接收卡]
@@ -510,7 +510,7 @@ function getLine5(){
 
     $("#partsE1").text(receptionCard);
     $("#partsE2").text(price);
-    $("#partsE3").text(receptionCard * price);
+    $("#partsE3").text(accMul(receptionCard,price));
 }
 //2.6 第6行数据 -[DIV线]
 function getLine6(){
@@ -524,7 +524,7 @@ function getLine6(){
         be =  80;
     }
     $("#partsF2").text(be);        //DIV线价格
-    $("#partsF3").text(Math.floor(num/2) * be);        //DIV线价格
+    $("#partsF3").text(accMul(Math.floor(num/2), be));        //DIV线价格
 }
 //2.7 第7行数据 -[型材]
 function getLine7(){
@@ -572,7 +572,7 @@ function getLine7(){
 
     $("#partsG2").text(corner);
 
-    $("#partsG3").text(cel * corner);
+    $("#partsG3").text(accMul(cel,corner));
 
 
 }
@@ -615,7 +615,7 @@ function getLine8(){
             break;
     }
     $("#partsH2").text(corner);  //拐角单价
-    $("#partsH3").text(corner*4);  //拐角合计
+    $("#partsH3").text(accMul(corner,4));  //拐角合计
 }
 //2.9 第9行数据 -[型材接头]
 function getLine9(){
@@ -665,7 +665,7 @@ function getLine9(){
     }else{
         $("#partsI2").text(0);  //接头价格
     }
-    $("#partsI3").text(corner*number);  //接头合计
+    $("#partsI3").text(accMul(corner,number));  //接头合计
 
 
 }
@@ -692,7 +692,7 @@ function getLine10(){
 
     $("#partsJ1").text(number);               //龙骨数量
     $("#partsJ2").text(price);                //龙骨价格
-    $("#partsJ3").text(price*number);         //龙骨价格
+    $("#partsJ3").text(accMul(price,number));         //龙骨价格
 
 }
 //2.9 第11行数据 -[配电柜]
@@ -781,7 +781,7 @@ function getLine11(){
 //2.9 第12行数据 -[长排线]
 function getLine12(){
 
-    var num = Math.ceil(moduleWidthNumber/widthNumber)*moduleHeightNumber+ 30;
+    var num = accMul(Math.ceil(moduleWidthNumber/widthNumber),moduleHeightNumber)+ 30;
     $("#partsL1").text(num );  //插入长排线数量
 
 
@@ -807,7 +807,7 @@ function getLine13(){
 function getLine14(){
     $("#partsN1").text(receptionCard);
     $("#partsN2").text(5);
-    $("#partsN3").text(receptionCard*5);
+    $("#partsN3").text(accMul(receptionCard,5));
 }
 //2.9 第15行数据 -[网线三米]
 function getLine15(){
@@ -825,7 +825,7 @@ function getLine16(){
 
     $("#partsP1").text(number);
     $("#partsP2").text(5);
-    $("#partsP3").text(number*5);
+    $("#partsP3").text(accMul(number,5));
 }
 //2.9 第17行数据 -[视频处理器]
 function getLine17(){
@@ -860,7 +860,7 @@ function getLine18(){
 
     $("#partsR1").text(v);
     $("#partsR2").text(400);
-    $("#partsR3").text(Math.ceil(v*400));
+    $("#partsR3").text(Math.ceil(accMul(v,400)));
 }
 
 
