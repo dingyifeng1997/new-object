@@ -38,6 +38,12 @@
         width:250px;
         margin-top:10%;
     }
+    .xianshi{
+        width: 17px;
+        height: 17px;
+        position: relative;
+        top: 3px;
+    }
     </style>
 </head>
 <body>
@@ -61,6 +67,10 @@
                                     <label for="exampleInputPassword">密 码:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
                                 </div>
+                                <div>
+                                    <input type="checkbox"  class="xianshi" id="showPassword"> 显示密码
+                                </div>
+                                <br>
                                 <button type="button" class="btn btn-primary" id="submit">登录</button>
                                 <button type="reset" class="btn btn-info">清空</button>
                             </form>
@@ -82,6 +92,16 @@
             if(username==1234&&password==1234){
                 window.location = "backLogin.html";
             }
+        });
+
+        i=0;
+        $("#showPassword").click(function(){
+            if(i%2==0){
+                $("#exampleInputPassword").attr({"type":"text"});
+            }else if(i%2==1){
+                $("#exampleInputPassword").attr({"type":"password"});
+            }
+            i++;
         });
 
     </script>

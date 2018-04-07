@@ -799,7 +799,7 @@ function getLine13(){
 function getLine14(){
     $("#partsN1").text(receptionCard);
     $("#partsN2").text(5);
-    $("#partsN3").text( $("#partsK3").text(receptionCard,5));
+    $("#partsN3").text(receptionCard*5);
 }
 //2.9 第15行数据 -[网线三米]
 function getLine15(){
@@ -817,7 +817,7 @@ function getLine16(){
 
     $("#partsP1").text(number);
     $("#partsP2").text(5);
-    $("#partsP3").text( $("#partsK3").text(number,5));
+    $("#partsP3").text( number*5);
 }
 //2.9 第17行数据 -[视频处理器]
 function getLine17(){

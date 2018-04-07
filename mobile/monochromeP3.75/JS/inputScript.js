@@ -259,49 +259,17 @@ function getLine1(){
     var boardPrice = 0;
     switch(productType)
     {
-        case "P10插灯全户外红":
-            boardPrice = "25.3";
-            tc = "插灯全红";
+        case "3.75单色":
+            boardPrice = "39";
+            tc = "单色";
             break;
-        case "P10插灯半户外红":
-            boardPrice = "23.5";
-            tc = "插灯半红";
-            break;
-        case "P10插灯全户外白":
-            boardPrice = "32";
-            tc = "插灯全白";
-            break;
-        case "P10插灯半户外白":
-            boardPrice = "28";
-            tc = "插灯半白";
-            break;
-        case "P10表贴全户外红":
-            boardPrice = "26.8";
-            tc = "表贴全红";
-            break;
-        case "P10表贴半户外红":
-            boardPrice = "24.8";
-            tc = "表贴半红";
-            break;
-        case "P10表贴全户外白":
-            boardPrice = "32.8";
-            tc = "表贴全白";
-            break;
-        case "P10表贴半户外白":
-            boardPrice = "28.8";
-            tc = "表贴半白";
-            break;
-        case "P10户外双色":
-            boardPrice = "56";
-            tc = "户外双色";
-            break;
-        case "P10全彩走字":
+        case "3.75双色":
             boardPrice = "58";
-            tc = "全彩走字";
+            tc = "双色";
             break;
     }
     $(" #headline span").html(tc);
-    $("#partsA1").html(tc +"单元板");  //获取单元板型号
+    $("#partsA1").html("3.75"+tc +"单元板");  //获取单元板型号
     var number = accMul(moduleWidthNumber,moduleHeightNumber) //获取单元板数量
 
     $("#partsA2").html(number);
@@ -565,10 +533,10 @@ function getLine2(){
 function getLine3(){
     var getPowerNumber = 0;
 
-    if(moduleHeightNumber>16){
+    if(moduleHeightNumber>8){
         getPowerNumber = 2;
         $("#partsC1").text(getPowerNumber); //转接板数量
-    }else if(moduleHeightNumber>8){
+    }else if(moduleHeightNumber>4){
         getPowerNumber = 1;
         $("#partsC1").text(getPowerNumber); //转接板数量
     }else{
@@ -587,19 +555,9 @@ function getLine3(){
 function getLine4(){
 
     var banNumber = moduleWidthNumber* moduleHeightNumber;//单元板总数
-    getPowerNumber  = 0;  //电源数量
-    var price = 0;
 
-    if($("#selectType").val() == "P10户外双色"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 33;
-    }else if($("#selectType").val() == "P10全彩走字"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 45;
-    }else{
-        getPowerNumber = Math.ceil(banNumber/10);
-        price = 33;
-    }
+    getPowerNumber = Math.ceil(banNumber/6);
+    price = 33;
     $("#partsD1").text(getPowerNumber);
     $("#partsD2").text(price);            //电源价格
     $("#partsD3").text(accMul(getPowerNumber,price)); //发送卡合计
@@ -842,8 +800,8 @@ function getLine14(){
 //2.15 第15行数据 -[包装费]
 function getLine15(){
     $("#partsO1").text(allSquare);
-    $("#partsO2").text(15);
-    $("#partsO3").text(accMul(allSquare,15));
+    $("#partsO2").text(30);
+    $("#partsO3").text(accMul(allSquare,30));
 }
 //2.16 第16行数据 -[组装加工费]
 function getLine16(){

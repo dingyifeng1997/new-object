@@ -18,9 +18,9 @@ $("#selectType").click(function(){
     getHeightSumPixel();    //获取高总像素(要等到获取到尺寸后再获取高总像素)
 
     getDataList();  //计算数据主体表格
-    getSelectsIO()      //调用选择发送卡接收卡设备
+    getSelectsIO();     //调用选择发送卡接收卡设备
 
-    selects()   //判断是否选择
+    selects();  //判断是否选择
 
 })
 // 二:长度输入后调用方法
@@ -31,14 +31,14 @@ function inwidth(){
     getSingleWidth();   //调用单元板长度方法
     getSingleHeight();  //调用单元板高度方法
     getWidthNumber();   //调用获取单元板长个数方法
-    getScreenWidth()    //调用获取显示屏长度方法
+    getScreenWidth();    //调用获取显示屏长度方法
     getOverWdith();     //长度输入的时候调用最终加边框长度方法
     getWidthSumPixel(); //长度输入后调用获取长总像素的方法
 
     getDataList();      //计算数据主体表格
 
     getPower();         //根据表格中电源的数量来获取功率(因为要根据电源的数量去获取,所以要等到getDataList()方法走完之后再走这一个方法)
-    getArea()           //设置长度后获取总平方数
+    getArea();           //设置长度后获取总平方数
 
     getLine15(); //第15行数据 包装费
     getLine16(); //第16行数据 组装加工费
@@ -53,13 +53,13 @@ function inheight(){
     getSingleHeight();   //调用单元板高度方法
     getHeightNumber();   //调用获取单元板长个数方法
     getScreenHeight();   //调用获取显示屏长度方法
-    getOverHeight()      //高度输入的时候调用最终加边框高度方法
-    getHeightSumPixel()  //高度输入后调用获取高总像素方法
+    getOverHeight();     //高度输入的时候调用最终加边框高度方法
+    getHeightSumPixel();  //高度输入后调用获取高总像素方法
 
     getDataList();       //计算数据主体表格
 
     getPower();          //根据表格中电源的数量来获取功率(因为要根据电源的数量去获取,所以要等到getDataList()方法走完之后再走这一个方法)
-    getArea()           //设置高度后获取总平方数
+    getArea();          //设置高度后获取总平方数
 
     getLine15(); //第15行数据 包装费
     getLine16(); //第16行数据 组装加工费
@@ -70,30 +70,31 @@ function inheight(){
 // 四:选择控制卡后调用方法
 $("#selectIO").click(function(){
     getSelectsIO()
-    selects()   //判断是否选择
+    selects();  //判断是否选择
 });
 function getSelectsIO(){
-    getLine2()  //设置控制卡型号
+    getLine2(); //设置控制卡型号
     getLine12();    //选择长排线
-    getLine14()     //选择网线根数
+    getLine14();     //选择网线根数
 }
 
 // 五:选择外边框后调用方法
 $("#selectBorder").click(function(){
     selectBorderFunction();
-    selects()   //判断是否选择
+    selects();   //判断是否选择
 });
 
 function selectBorderFunction(){
     getOverWdith();         //获取加边框后长度
-    getOverHeight()         //获取加边框后高度
+    getOverHeight();         //获取加边框后高度
     getArea();              //设置边框后获取总平方数
 
-    getLine5()  //选择边框的时候调用选择型号
-    getLine7()  //选择边框的时候调用选择型号
-    getLine8()  //选择边框的时候调用选择拐角方法
+    getLine5();  //选择边框的时候调用选择型号
+    getLine7();  //选择边框的时候调用选择型号
+    getLine8();  //选择边框的时候调用选择拐角方法
     getLine9(); //选择型材后调用选择接头方法
-
+    getLine15();//计算包装费总面积
+    getLine16();//选择型材后调用计算组装加工费方法
 }
 
 

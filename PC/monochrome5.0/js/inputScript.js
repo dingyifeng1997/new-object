@@ -252,12 +252,12 @@ function getLine1(){
     var boardPrice = 0;
     switch(productType)
     {
-        case "3.75单色":
-            boardPrice = "39";
+        case "5.0单色":
+            boardPrice = "58";
             tc = "单色";
             break;
-        case "3.75双色":
-            boardPrice = "58";
+        case "5.0双色":
+            boardPrice = "83";
             tc = "双色";
             break;
     }

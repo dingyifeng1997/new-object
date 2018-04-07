@@ -79,18 +79,18 @@ function getSelectsIO(){
 // 五:选择外边框后调用方法
 $("#selectBorder").click(function(){
     selectBorderFunction();
-    selects()   //判断是否选择
+    selects();   //判断是否选择
 });
 
 function selectBorderFunction(){
     getOverWdith();         //获取加边框后长度
-    getOverHeight()         //获取加边框后高度
+    getOverHeight();        //获取加边框后高度
     getArea();              //设置边框后获取总平方数
 
-    getLine7()  //选择边框的时候调用选择型号
-    getLine8()  //选择边框的时候调用选择拐角方法
+    getLine7();  //选择边框的时候调用选择型号
+    getLine8();  //选择边框的时候调用选择拐角方法
     getLine9(); //选择型材后调用选择接头方法
-
+    getLine18();//选择型材后调用计算总面积方法
 }
 // 六:选择处理器后调用方法
 

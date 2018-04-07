@@ -135,7 +135,8 @@ function selectBorderFunction(){
     getLine7()  //选择边框的时候调用选择型号
     getLine8()  //选择边框的时候调用选择拐角方法
     getLine9(); //选择型材后调用选择接头方法
-
+    getLine15();//选择型材后调用计算包装费方法
+    getLine16();//选择型材后调用计算组装费方法
 }
 
 

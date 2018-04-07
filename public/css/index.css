@@ -1,0 +1,58 @@
+
+.navbar{
+    margin-bottom:0px;
+}
+
+.navbar-left{
+    padding: 5px;
+}
+
+.navbar-right{
+    float: right;
+}
+
+.banner img{
+    width: 100%;
+    position:relative;
+    /*top:-20px;*/
+}
+.nav-wrap{
+    margin:30px 0;
+}
+.footer{
+    height: 100px;
+    font-size:12px;
+    padding-top: 35px;
+    margin-top:100px;
+    text-align:center;
+    background: #eeedea;
+}
+.gotoTop{
+    width: 40px;
+    height: 40px;
+    background: #9c9c9c;
+    position: fixed;
+    top: 80%;
+    right:10%;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border-radius:5px;
+    transition:background 1s;
+}
+.gotoTop:hover{
+    background:red;
+    cursor:pointer;
+}
+
+.glyphicon-menu-up{
+    margin-top:5px;
+    font-size:30px;
+}
+.nav-tabs{
+    cursor: pointer;
+}
+.panel{
+    cursor: pointer;
+}

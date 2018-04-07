@@ -842,8 +842,8 @@ function getLine14(){
 //2.15 第15行数据 -[包装费]
 function getLine15(){
     $("#partsO1").text(allSquare);
-    $("#partsO2").text(15);
-    $("#partsO3").text(accMul(allSquare,15));
+    $("#partsO2").text(30);
+    $("#partsO3").text(accMul(allSquare,30));
 }
 //2.16 第16行数据 -[组装加工费]
 function getLine16(){
