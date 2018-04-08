@@ -262,7 +262,7 @@ function getLine1(){
             break;
     }
     $(" #headline span").html(tc);
-    $("#partsA1").html(tc +"单元板");  //获取单元板型号
+    $("#partsA1").html("3.75"+tc +"单元板");  //获取单元板型号
     var number = accMul(moduleWidthNumber,moduleHeightNumber) //获取单元板数量
 
     $("#partsA2").html(number);
@@ -486,19 +486,9 @@ function getLine3(){
 function getLine4(){
 
     var banNumber = moduleWidthNumber* moduleHeightNumber;//单元板总数
-    getPowerNumber  = 0;  //电源数量
-    var price = 0;
 
-    if($("#selectType").val() == "P10户外双色"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 33;
-    }else if($("#selectType").val() == "P10全彩走字"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 45;
-    }else{
-        getPowerNumber = Math.ceil(banNumber/10);
-        price = 33;
-    }
+    getPowerNumber = Math.ceil(banNumber/6);
+    price = 33;
     $("#partsD1").text(getPowerNumber);
     $("#partsD2").text(price);            //电源价格
     $("#partsD3").text(accMul(getPowerNumber,price)); //发送卡合计
@@ -586,7 +576,7 @@ function getLine6(){
     }
 
 
-    $("#partsF1").text(name);               //名称
+    $("#partsF1").text("方管");               //名称
     $("#partsF2").text(number);             //龙骨数量
     $("#partsF3").text(price);              //龙骨价格
     $("#partsF4").text(accMul(price,number));       //龙骨合计

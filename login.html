@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>郑州炫风网络科技有限公司-后台登录系统</title>
-    <link rel="stylesheet" href="public/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="public/bs/js/jquery-1.11.0.min.js"></script>
     <script src="public/bs/js/bootstrap.min.js"></script>
     <script src="public/js/holder.min.js"></script>
@@ -12,7 +12,7 @@
     <style>
 
     body{
-        background: url("public/img/bg4.jpg") center no-repeat fixed;;
+        background: url("public/img/bg/bg1.jpg") center no-repeat fixed;;
         background-size: cover;
     }
     .home-wrapper{
@@ -53,7 +53,7 @@
                 <img src="public/img/logo.png" alt="">
             </div>
             <div class="col-md-6">
-                <section class="box vertical home-wrapper">
+                <section class="box vertical home-wrapper" id="shuru">
 
                     <div class=" login-body">
                         <div class="box">
@@ -76,10 +76,22 @@
                             </form>
                         </div>
                     </div>
-
                 </section>
+
+
+                <div style=" margin:62% 30px; display: none;" id="jindt">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 style="color:#ff8331;">LOADING . . .</h2>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="2"  style="width: 0">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3" >
+
+            </div>
 
         </div>
     </div>
@@ -89,9 +101,25 @@
         $("#submit").click(function(){
             username = $("#exampleInputName").val();
             password = $("#exampleInputPassword").val();
+
             if(username==1234&&password==1234){
-                window.location = "backLogin.html";
+                //点击后计时三秒
+                $("#shuru").fadeOut("slow");
+                $("#jindt").delay(650).fadeIn("slow");  //延迟0.6秒后执行
+
+                for(var i = 0;i<100;i++){
+                    setTimeout(function(){
+                        $(".progress-bar").css({"width":i+"%"});
+                    },900)
+                }
+
+                setTimeout(function(){
+                    window.location = "backLogin.html";
+                },2500)
             }
+
+
+
         });
 
         i=0;
@@ -103,6 +131,7 @@
             }
             i++;
         });
+
 
     </script>
 </body>

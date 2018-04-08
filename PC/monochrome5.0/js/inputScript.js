@@ -53,14 +53,13 @@ function types(){
 
 //  1.1 填充单元板单板长度
 function getSingleWidth(){
-    moduleWidth = "30.4";
-
+    moduleWidth = "48.8";
     $("#dataA1").text(moduleWidth);
 }
 
 //  1.2 填充单元板单板高度
 function getSingleHeight(){
-    moduleHeight = "15.2";
+    moduleHeight = "24.4";
     $("#dataB1").text(moduleHeight);
 }
 
@@ -262,7 +261,7 @@ function getLine1(){
             break;
     }
     $(" #headline span").html(tc);
-    $("#partsA1").html(tc +"单元板");  //获取单元板型号
+    $("#partsA1").html("5.0"+tc +"单元板");  //获取单元板型号
     var number = accMul(moduleWidthNumber,moduleHeightNumber) //获取单元板数量
 
     $("#partsA2").html(number);
@@ -486,19 +485,8 @@ function getLine3(){
 function getLine4(){
 
     var banNumber = moduleWidthNumber* moduleHeightNumber;//单元板总数
-    getPowerNumber  = 0;  //电源数量
-    var price = 0;
-
-    if($("#selectType").val() == "P10户外双色"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 33;
-    }else if($("#selectType").val() == "P10全彩走字"){
-        getPowerNumber = Math.ceil(banNumber/6);
-        price = 45;
-    }else{
-        getPowerNumber = Math.ceil(banNumber/10);
-        price = 33;
-    }
+    getPowerNumber = Math.ceil(banNumber/6);
+    var price = 33;
     $("#partsD1").text(getPowerNumber);
     $("#partsD2").text(price);            //电源价格
     $("#partsD3").text(accMul(getPowerNumber,price)); //发送卡合计
@@ -550,43 +538,14 @@ function getLine5(){
 //2.6 第6行数据 -[龙骨]
 function getLine6(){
     var number = 0;     //龙骨根数
-    var price = 0;      //龙骨价格
-    var name = "";
-    //如果是五排高以内用龙骨
-    if(moduleHeightNumber<=5){
-        number = moduleWidthNumber+1+Math.floor(screenWidth/300);
-        switch(moduleHeightNumber){
-            case 1:
-                price = 1;
-                break;
-            case 2:
-                price = 2;
-                break;
-            case 3:
-                price = 3;
-                break;
-            case 4:
-                price = 4;
-                break;
-            case 5:
-                price = 5;
-                break;
-        }
-       name = "龙骨";
-
-    }else{
         //如果是五排高以外用方管
-        if(screenHeight>600){
+    if(screenHeight>600){
             number = Math.ceil(screenHeight/600) * Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3))));
-        }else{
+    }else{
             number = Math.ceil((moduleWidthNumber+1+Math.floor(screenWidth/300))/(Math.floor(600/(screenHeight+3))));
-        }
-        name = "方管";
-        price = 25;
     }
+    var price = 25;
 
-
-    $("#partsF1").text(name);               //名称
     $("#partsF2").text(number);             //龙骨数量
     $("#partsF3").text(price);              //龙骨价格
     $("#partsF4").text(accMul(price,number));       //龙骨合计
@@ -683,12 +642,7 @@ function getLine8(){
 }
 //2.9 第9行数据 -[短燕尾丝]
 function getLine9(){
-    var number = 0;
-    if(moduleHeightNumber <= 5){
-        number = (moduleWidthNumber+1+Math.floor(screenWidth/300))*6;
-    }else{
-        number = 24;
-    }
+    number = 24;
 
     $("#partsI1").text(number+30);          //短燕尾丝数量
     $("#partsI2").text(0.03);       //短燕尾丝单价
@@ -697,11 +651,7 @@ function getLine9(){
 
 //2.10 第10行数据 -[长燕尾丝]
 function getLine10(){
-    if(moduleHeightNumber > 5){
-        number = (moduleWidthNumber+1+Math.floor(screenWidth/300))*6;
-    }else{
-        number = 0;
-    }
+    number = (moduleWidthNumber+1+Math.floor(screenWidth/300))*6;
 
     $("#partsJ1").text(number+30);          //长燕尾丝数量
     $("#partsJ2").text(0.2);                //长燕尾丝单价
@@ -710,7 +660,7 @@ function getLine10(){
 //2.11 第11行数据 -[插头]
 function getLine11(){
 
-    $("#partsK1").text(1 );  //接头数量
+    $("#partsK1").text(1);  //接头数量
     $("#partsK2").text(2);   //接头单价
     $("#partsK3").text(2);   //接头合计
 }

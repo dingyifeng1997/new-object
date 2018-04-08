@@ -56,14 +56,14 @@ function types(){
 
 //  1.1 填充单元板单板长度
 function getSingleWidth(){
-    moduleWidth = "32.0";
+    moduleWidth = "30.4";
 
     $("#dataA1").text(moduleWidth);
 }
 
 //  1.2 填充单元板单板高度
 function getSingleHeight(){
-    moduleHeight = "16.0";
+    moduleHeight = "15.2";
     $("#dataB1").text(moduleHeight);
 }
 
@@ -189,17 +189,13 @@ function getOverHeight(){
 
 //  1.9 单元板长像素,通过单元板型号switch匹配
 function getWidthPixel(){
-    if($("#selectType").val() == "P10户外双色"){
-        WidthPixel = "64";
-    }else{
-        WidthPixel = "32";
-    }
+    WidthPixel = "64";
     $("#dataA5").text(WidthPixel);
 }
 
 //  1.10 单元板高像素,通过单元板型号switch匹配
 function getHeightPixel(){
-    HeightPixel = "16";
+    HeightPixel = "32";
     $("#dataB5").text(HeightPixel);
 }
 

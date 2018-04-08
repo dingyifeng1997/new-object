@@ -2,51 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0cc8f5d-5987-478e-a9ba-b93a0eb905f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/css/此文件夹是室内全彩型材专用css文件" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/danse3.75.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/danse5.0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/danseP10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/snqcxc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/snqcyzl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/swqcxc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/swqcxt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/swqcyzl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/页面计算逻辑JS文件.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/outdoorColorYZL/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/css/此文件夹是室内全彩型材专用css文件" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/JS/此文档为室内全彩型材特定逻辑JS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/css/此文档为室内全彩型材特定样式" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/img/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner/banner1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner/banner2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/banner/banner3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/bg7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bg/hyd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/danse3.75.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/danse5.0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/danseP10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/snqcxc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/snqcyzl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/swqcxc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/swqcxt.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/xinghao/swqcyzl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/表格输入框.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/inputScript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/页面计算逻辑JS文件.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/JS/inputScript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/JS/myStyleScript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/开发文档.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Led Control System V6.0.0.56（支持SM16188B走线） Setup.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/banner1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/banner2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/banner3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/danse3.75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/danse5.0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/danseP10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/snqcxc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/snqcyzl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/swqcxc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/swqcxt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/swqcyzl.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/indoorColorXC/css/demo.css" afterPath="$PROJECT_DIR$/PC/indoorColorXC/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/indoorColorXC/index.html" afterPath="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochrome5.0/css/demo.css" afterPath="$PROJECT_DIR$/PC/monochrome5.0/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochrome5.0/index.html" afterPath="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP10/css/demo.css" afterPath="$PROJECT_DIR$/PC/monochromeP10/css/demo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP10/index.html" afterPath="$PROJECT_DIR$/PC/monochromeP10/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP3.75/css/demo.css" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/css/demo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backLogin.html" afterPath="$PROJECT_DIR$/backLogin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/indoorColorXC/JS/myStyleScript.js" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/JS/myStyleScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/indoorColorXC/index.html" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js" afterPath="$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP10/JS/myStyleScript.js" afterPath="$PROJECT_DIR$/mobile/monochromeP10/JS/myStyleScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP10/index.html" afterPath="$PROJECT_DIR$/mobile/monochromeP10/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/myStyleScript.js" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/myStyleScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/myStyleScript.js" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/myStyleScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/index2.js" afterPath="$PROJECT_DIR$/public/js/index2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/新建文本文档.txt" afterPath="$PROJECT_DIR$/新建文本文档.txt" />
     </list>
     <ignored path="LED.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,64 +104,7 @@
     <favorites_list name="LED" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.45970488">
-                  <caret line="196" column="85" selection-start-line="196" selection-start-column="85" selection-end-line="196" selection-end-column="85" />
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#4;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#5;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#6;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#7;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="backLogin.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backLogin.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35754824">
-                  <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#4;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#5;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#6;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#7;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,15 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mobile/室内全彩型材/全彩计算页面.html" />
-        <option value="$PROJECT_DIR$/PC/室内全彩型材/index.html" />
-        <option value="$PROJECT_DIR$/mobile/indoorColorYZL/index.html" />
-        <option value="$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/PC/indoorColorXC/css/demo.css" />
-        <option value="$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css" />
-        <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
-        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/~fx25B8AA6E.tmp/myStyleScript.js" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js" />
         <option value="$PROJECT_DIR$/mobile/indoorColorXC/JS/inputScript.js" />
@@ -164,28 +136,42 @@
         <option value="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" />
         <option value="$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js" />
         <option value="$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js" />
-        <option value="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" />
-        <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
-        <option value="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" />
-        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
-        <option value="$PROJECT_DIR$/mobile/indoorColorXC/index.html" />
-        <option value="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" />
-        <option value="$PROJECT_DIR$/mobile/monochromeP10/index.html" />
-        <option value="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" />
-        <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
         <option value="$PROJECT_DIR$/public/css/index.css.html" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/PC/indoorColorXC/js/index.js" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
-        <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/public/js/index1.js" />
-        <option value="$PROJECT_DIR$/public/js/index2.js" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
         <option value="$PROJECT_DIR$/PC/outdoorColorYZL/index.html" />
         <option value="$PROJECT_DIR$/mobile/monochromeP3.75/css/demo.css" />
+        <option value="$PROJECT_DIR$/public/js/index2.js" />
+        <option value="$PROJECT_DIR$/mobile/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/mobile/monochromeP10/index.html" />
+        <option value="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" />
         <option value="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" />
+        <option value="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" />
+        <option value="$PROJECT_DIR$/mobile/monochrome5.0/index.html" />
+        <option value="$PROJECT_DIR$/mobile/monochrome5.0/JS/inputScript.js" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" />
+        <option value="$PROJECT_DIR$/PC/indoorColorYZL/js/inputScript.js" />
+        <option value="$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/jindu.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/backLogin.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/css/demo.css" />
+        <option value="$PROJECT_DIR$/PC/monochromeP10/css/demo.css" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/css/demo.css" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/css/demo.css" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css" />
+        <option value="$PROJECT_DIR$/PC/indoorColorYZL/css/demo.css" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorYZL/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
       </list>
     </option>
   </component>
@@ -195,10 +181,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="329" />
+    <option name="y" value="84" />
+    <option name="width" value="1593" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -225,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,10 +231,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LED" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LED" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,11 +263,11 @@
       <recent name="E:\HTML代码\LED\PC\indoorColorYZL" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HTML\LED\public\img" />
+      <recent name="E:\HTML代码\LED\PC\indoorColorYZL" />
+      <recent name="E:\HTML代码\LED\mobile\monochrome5.0" />
       <recent name="E:\HTML代码\LED\public\img" />
       <recent name="E:\HTML代码\LED\public\js" />
-      <recent name="E:\HTML代码\LED\PC\monochrome5.0" />
-      <recent name="E:\HTML代码\LED\mobile\monochromeP3.75" />
-      <recent name="E:\HTML代码\LED\PC\monochromeP3.75" />
     </key>
   </component>
   <component name="RunManager">
@@ -418,14 +418,20 @@
       <option name="project" value="LOCAL" />
       <updated>1522820391312</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="布局&#10;首页">
+      <created>1523071692992</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1523071692992</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="329" y="84" width="1593" height="820" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26632848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2230444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -443,25 +449,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55179703" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -486,394 +473,167 @@
     <MESSAGE value="优化title" />
     <MESSAGE value="单色P10" />
     <MESSAGE value="单色P10更新,修复了求和中的多位小数bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="单色P10更新,修复了求和中的多位小数bug" />
+    <MESSAGE value="布局&#10;首页" />
+    <option name="LAST_COMMIT_MESSAGE" value="布局&#10;首页" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css">
+    <entry file="file://$PROJECT_DIR$/public/js/index2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97164667">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
+    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="191" column="76" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33260632">
-          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6014068">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.25">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5516459">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.90625">
-          <caret line="536" column="26" selection-start-line="536" selection-start-column="26" selection-end-line="536" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31952018">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="855" column="9" selection-start-line="855" selection-start-column="9" selection-end-line="855" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5594329">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="854" column="20" selection-start-line="854" selection-start-column="9" selection-end-line="854" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/JS/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33587787">
-          <caret line="120" column="15" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64776444">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35986915">
-          <caret line="280" column="24" selection-start-line="280" selection-start-column="24" selection-end-line="280" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6194111">
-          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/页面计算逻辑JS文件.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058887675">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="493" column="19" selection-start-line="493" selection-start-column="19" selection-end-line="493" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="264.27777">
-          <caret line="481" column="0" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
-          <folding>
-            <element signature="n#select#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5277777">
-          <caret line="671" column="0" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/JS/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="125" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.068703">
-          <caret line="672" column="30" selection-start-line="672" selection-start-column="30" selection-end-line="672" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!block;n#getSingleWidth#0" expanded="false" />
-            <element signature="n#!!block;n#getSingleHeight#0" expanded="false" />
-            <element signature="n#!!block;n#getLine2#0" expanded="false" />
-            <element signature="n#!!block;n#getLine11#0" expanded="false" />
-            <element signature="n#!!block;n#getLine12#0" expanded="false" />
-            <element signature="n#!!block;n#getLine13#0" expanded="false" />
-            <element signature="n#!!block;n#getLine14#0" expanded="false" />
-            <element signature="n#!!block;n#getLine15#0" expanded="false" />
-            <element signature="n#!!block;n#getLine16#0" expanded="false" />
-            <element signature="n#!!block;n#getLine17#0" expanded="false" />
-            <element signature="n#!!block;n#getLine18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="347" column="34" selection-start-line="347" selection-start-column="34" selection-end-line="347" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15891033">
-          <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15323496">
-          <caret line="210" column="68" selection-start-line="210" selection-start-column="68" selection-end-line="210" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/JS/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="138" column="30" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="302" column="34" selection-start-line="302" selection-start-column="34" selection-end-line="302" selection-end-column="34" />
+        <state vertical-scroll-proportion="2.2871737">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2222223">
-          <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-12.75">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js">
+    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09194098">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52099884">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="254" column="8" selection-start-line="254" selection-start-column="8" selection-end-line="261" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!block;n#selects#0" expanded="false" />
-            <element signature="n#!!block;n#types#0" expanded="false" />
-            <element signature="n#!!block;n#getScreenWidth#0" expanded="false" />
-            <element signature="n#!!block;n#getScreenHeight#0" expanded="false" />
-            <element signature="n#!!block;n#getOverWdith#0" expanded="false" />
-            <element signature="n#!!block;n#getOverHeight#0" expanded="false" />
-            <element signature="n#!!block;n#getWidthPixel#0" expanded="false" />
-            <element signature="n#!!block;n#getHeightPixel#0" expanded="false" />
-            <element signature="n#!!block;n#getWidthSumPixel#0" expanded="false" />
-            <element signature="n#!!block;n#getHeightSumPixel#0" expanded="false" />
-            <element signature="n#!!block;n#getLine2#0" expanded="false" />
-            <element signature="n#!!block;n#getLine3#0" expanded="false" />
-            <element signature="n#!!block;n#getLine4#0" expanded="false" />
-            <element signature="n#!!block;n#getLine5#0" expanded="false" />
-            <element signature="n#!!block;n#getLine6#0" expanded="false" />
-            <element signature="n#!!block;n#getLine7#0" expanded="false" />
-            <element signature="n#!!block;n#getLine8#0" expanded="false" />
-            <element signature="n#!!block;n#getLine9#0" expanded="false" />
-            <element signature="n#!!block;n#getLine10#0" expanded="false" />
-            <element signature="n#!!block;n#getLine11#0" expanded="false" />
-            <element signature="n#!!block;n#getLine12#0" expanded="false" />
-            <element signature="n#!!block;n#getLine13#0" expanded="false" />
-            <element signature="n#!!block;n#getLine14#0" expanded="false" />
-            <element signature="n#!!block;n#getLine15#0" expanded="false" />
-            <element signature="n#!!block;n#getLine16#0" expanded="false" />
-            <element signature="n#!!block;n#accMul#0" expanded="false" />
-            <element signature="n#!!block;n#intToChinese#0" expanded="false" />
-          </folding>
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="810" column="1" selection-start-line="810" selection-start-column="1" selection-end-line="810" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#getLine2#0" expanded="false" />
-            <element signature="n#!!block;n#getLine3#0" expanded="false" />
-            <element signature="n#!!block;n#getLine5#0" expanded="false" />
-            <element signature="n#!!block;n#getLine6#0" expanded="false" />
-            <element signature="n#!!block;n#getLine7#0" expanded="false" />
-            <element signature="n#!!block;n#getLine8#0" expanded="false" />
-            <element signature="n#!!block;n#getLine9#0" expanded="false" />
-            <element signature="n#!!block;n#getLine10#0" expanded="false" />
-            <element signature="n#!!block;n#getLine11#0" expanded="false" />
-            <element signature="n#!!block;n#getLine12#0" expanded="false" />
-            <element signature="n#!!block;n#getLine13#0" expanded="false" />
-            <element signature="n#!!block;n#getLine14#0" expanded="false" />
-            <element signature="n#!!block;n#getLine15#0" expanded="false" />
-            <element signature="n#!!block;n#getLine16#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-19.25736">
+          <caret line="198" column="34" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/JS/myStyleScript.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6804798">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58229285">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9738277">
+          <caret line="570" column="14" selection-start-line="570" selection-start-column="14" selection-end-line="570" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.305555">
+          <caret line="424" column="40" selection-start-line="424" selection-start-column="40" selection-end-line="424" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38495094">
+          <caret line="712" column="58" selection-start-line="712" selection-start-column="58" selection-end-line="712" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6194111">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/JS/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4711014">
+          <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/JS/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.35332605">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="138" column="32" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5594329">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+    <entry file="file://$PROJECT_DIR$/新建文本文档.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12258797">
-          <caret line="237" column="8" selection-start-line="237" selection-start-column="8" selection-end-line="237" selection-end-column="8" />
-          <folding>
-            <element signature="n#select#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.091941">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+    <entry file="file://$PROJECT_DIR$/开发文档.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.75">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="63" />
+        <state vertical-scroll-proportion="-2.2966194">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index1.js">
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorYZL/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17666303">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.22222">
-          <caret line="99" column="59" selection-start-line="99" selection-start-column="59" selection-end-line="99" selection-end-column="59" />
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -886,92 +646,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index2.js">
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/js/inputScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79389316">
-          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12258797">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorYZL/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12258797">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3938706">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.17557251">
+          <caret line="458" column="1" selection-start-line="458" selection-start-column="1" selection-end-line="458" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#form#0;n#li#0;n#ul#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#selects#0" expanded="false" />
+            <element signature="n#!!block;n#types#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getSingleHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenWidth#0" expanded="false" />
+            <element signature="n#!!block;n#getScreenHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getOverWdith#0" expanded="false" />
+            <element signature="n#!!block;n#getOverHeight#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getWidthSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getHeightSumPixel#0" expanded="false" />
+            <element signature="n#!!block;n#getPower#0" expanded="false" />
+            <element signature="n#!!block;n#getArea#0" expanded="false" />
+            <element signature="n#!!block;n#getboxNumber#0" expanded="false" />
+            <element signature="n#!!block;n#getLine1#0" expanded="false" />
+            <element signature="n#!!block;n#getLine2#0" expanded="false" />
+            <element signature="n#!!block;n#getLine3#0" expanded="false" />
+            <element signature="n#!!block;n#getLine4#0" expanded="false" />
+            <element signature="n#!!block;n#getLine5#0" expanded="false" />
+            <element signature="n#!!block;n#getLine6#0" expanded="false" />
+            <element signature="n#!!block;n#getLine7#0" expanded="false" />
+            <element signature="n#!!block;n#getLine8#0" expanded="false" />
+            <element signature="n#!!block;n#getLine9#0" expanded="false" />
+            <element signature="n#!!block;n#getLine10#0" expanded="false" />
+            <element signature="n#!!block;n#getLine11#0" expanded="false" />
+            <element signature="n#!!block;n#getLine12#0" expanded="false" />
+            <element signature="n#!!block;n#getLine13#0" expanded="false" />
+            <element signature="n#!!block;n#accMul#0" expanded="false" />
+            <element signature="n#!!block;n#zhuanhuan#0" expanded="false" />
+            <element signature="n#!!block;n#intToChinese#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278957">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.029443838">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/xinghao/danseP10.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66401815">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45970488">
-          <caret line="196" column="85" selection-start-line="196" selection-start-column="85" selection-end-line="196" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.20885357">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#4;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#5;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#6;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#7;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backLogin.html">
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35754824">
-          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
+        <state vertical-scroll-proportion="-5.75">
+          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6435868">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3643587">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7139614">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7820658">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.524404">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#4;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#5;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#6;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#7;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30533484">
+          <caret line="541" column="18" selection-start-line="541" selection-start-column="18" selection-end-line="541" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7604994">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2292849">
+          <caret line="495" column="100" selection-start-line="495" selection-start-column="100" selection-end-line="495" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7219069">
+          <caret line="655" column="100" selection-start-line="655" selection-start-column="100" selection-end-line="655" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27355278">
+          <caret line="642" column="100" selection-start-line="642" selection-start-column="100" selection-end-line="642" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2383655">
+          <caret line="815" column="100" selection-start-line="815" selection-start-column="100" selection-end-line="815" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7196368">
+          <caret line="547" column="100" selection-start-line="547" selection-start-column="100" selection-end-line="547" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>

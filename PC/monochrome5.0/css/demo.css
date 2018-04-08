@@ -42,7 +42,7 @@ html{overflow-x:hidden}
 
 body{
 	font-family: "微软 ","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
-	background: url("../../../public/img/bg2.jpg") center no-repeat fixed;;
+	background: url("../../../public/img/bg/bg3.jpg") center no-repeat fixed;;
 	background-size: cover;
 }
 
@@ -95,10 +95,9 @@ body{
 	/*left:0px;					所以我们改用float来实现输入框漂浮在左侧*/
 	/*padding-top:50px;*/
 	/*border-right:2px solid black;*/
-	border-left:2px solid black;
 	float: left;
 	margin-left:-350px;
-	background: #23262f;
+	background: rgba(35,38,37,0.4);
 	position: fixed;
 	color:white;
 }

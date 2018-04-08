@@ -30,35 +30,73 @@ $("#goTop").click(function(){
 
 //点击后进入单色P10链接
 $("#monochromeP10").click(function(){
-    window.location = "PC/monochromeP10/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/monochromeP10/index.html";
+    }else{
+        window.location = "PC/monochromeP10/index.html";
+    }
+
 });
 //点击后进入单色3.75链接
 $("#monochromeP375").click(function(){
-    window.location = "PC/monochromeP3.75/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/monochromeP3.75/index.html";
+    }else{
+        window.location = "PC/monochromeP3.75/index.html";
+    }
+
 });
 //点击后进入单色5.0链接
 $("#monochrome5").click(function(){
-    window.location = "PC/monochrome5.0/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/monochrome5.0/index.html";
+    }else{
+        window.location = "PC/monochrome5.0/index.html";
+    }
 });
 //点击后进入室内全彩压铸铝链接
 $("#indoorColorYZL").click(function(){
-    window.location = "PC/indoorColorYZL/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/indoorColorYZL/index.html";
+    }else{
+        window.location = "PC/indoorColorYZL/index.html";
+    }
+
 });
 //点击后进入室内全彩型材链接
 $("#indoorColorXC").click(function(){
-    window.location = "PC/indoorColorXC/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/indoorColorXC/index.html";
+    }else{
+        window.location = "PC/indoorColorXC/index.html";
+    }
+
 });
 //点击后进入室外全彩型材链接
 $("#outdoorColorXC").click(function(){
-    window.location = "PC/outdoorColorXC/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/outdoorColorXC/index.html";
+    }else{
+        window.location = "PC/outdoorColorXC/index.html";
+    }
+
 });
 //点击后进入室外全彩箱体链接
 $("#outdoorColorXT").click(function(){
-    window.location = "PC/outdoorColorXT/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/outdoorColorXT/index.html";
+    }else{
+        window.location = "PC/outdoorColorXT/index.html";
+    }
+
 });
 //点击后进入室外全彩压铸铝链接
 $("#outdoorColorYZL").click(function(){
-    window.location = "PC/outdoorColorYZL/index.html";
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        window.location = "mobile/outdoorColorYZL/index.html";
+    }else{
+        window.location = "PC/outdoorColorYZL/index.html";
+    }
 });
 
 
