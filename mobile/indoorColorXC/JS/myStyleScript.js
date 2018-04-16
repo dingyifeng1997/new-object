@@ -8,37 +8,18 @@
 
 
 
-//编辑按钮点击特效
-j = 0;
-$(" #copyreader").click(
-    function(){
-        if(j%2 == 0){
-            $(this).css({"background":"#eb1d1d","color":"black"});  //按钮颜色变红
-            $(" #mytable tr td:nth-child(6)").show();               //删除按钮显示
-            //$(" #bd1 td:nth-child(6)").text("");                  //设置第一行没有删除按钮
-            $("#dropDownIcon").addClass("glyphicon glyphicon-chevron-up");
-            $("#dropDownIcon").removeClass("glyphicon glyphicon-chevron-down");
-        }else{
-            $(" #mytable tr td:nth-child(6)").hide();               //删除按钮隐藏
-            $(this).css({"background":"#efac4e","color":"white"});  //按钮颜色变回原色
-            $("#dropDownIcon").addClass("glyphicon glyphicon-chevron-down");
-            $("#dropDownIcon").removeClass("glyphicon glyphicon-chevron-up");
-        }
-        j++;
-    }
-);
 //下拉按钮点击特效
-i = 0;
+p = 0;
 $(" #dropDown").click(
     function(){
-        if(i%2 == 0){
+        if(p%2 == 0){
             $("#dropDownSpan1").hide();
             $("#dropDownSpan2").show();
         }else{
             $("#dropDownSpan1").show();
             $("#dropDownSpan2").hide();
         }
-        i++;
+        p++;
     }
 );
 
@@ -141,11 +122,30 @@ $("#videoProcessing").blur(function(){
     selects()   //判断是否选择
 });
 
-// 七:添加新的表格按钮
-$('#mytable').SetEditable({
-    $addButton: $('#add')
 
-});
+
+
+//七:编辑按钮点击特效
+j = 0;
+$(" #copyreader").click(
+    function(){
+        if(j%2 == 0){
+            $(this).css({"background":"#eb1d1d","color":"black"});  //按钮颜色变红
+            $(" #mytable tr td:nth-child(6)").show();               //删除按钮显示
+            //$(" #bd1 td:nth-child(6)").text("");                  //设置第一行没有删除按钮
+            $("#dropDownIcon").addClass("glyphicon glyphicon-chevron-up");
+            $("#dropDownIcon").removeClass("glyphicon glyphicon-chevron-down");
+        }else{
+            $(" #mytable tr td:nth-child(6)").hide();               //删除按钮隐藏
+            $(this).css({"background":"#efac4e","color":"white"});  //按钮颜色变回原色
+            $("#dropDownIcon").addClass("glyphicon glyphicon-chevron-down");
+            $("#dropDownIcon").removeClass("glyphicon glyphicon-chevron-up");
+        }
+        j++;
+    }
+);
+
+
 
 
 // 八:表格的提交计算按钮
@@ -218,6 +218,7 @@ function getSum(){
 
 
 // 九:表格的编辑按钮
+/*
 i = 0;
 $("#butin").click(  //jquery1.8 之后没有toggle(fn(),fn()) 方法,用下列方式替代
     function(){
@@ -240,11 +241,15 @@ $("#butin").click(  //jquery1.8 之后没有toggle(fn(),fn()) 方法,用下列�
         i++;
     }
 );
+*/
 
 
 
 
-
+// 九:添加新的表格按钮
+$('#mytable').SetEditable({
+    $addButton: $('#add')
+});
 
 
 
