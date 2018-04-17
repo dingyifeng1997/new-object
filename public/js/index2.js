@@ -40,62 +40,76 @@ $("#monochromeP10").click(function(){
 //点击后进入单色3.75链接
 $("#monochromeP375").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/monochromeP3.75/index.html";
+        //window.location = "mobile/monochromeP3.75/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/monochromeP3.75/index.html";
+        //window.location = "PC/monochromeP3.75/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入单色5.0链接
 $("#monochrome5").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/monochrome5.0/index.html";
+        //window.location = "mobile/monochrome5.0/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/monochrome5.0/index.html";
+        //window.location = "PC/monochrome5.0/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 });
 //点击后进入室内全彩压铸铝链接
 $("#indoorColorYZL").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/indoorColorYZL/index.html";
+        //window.location = "mobile/indoorColorYZL/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/indoorColorYZL/index.html";
+        //window.location = "PC/indoorColorYZL/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入室内全彩型材链接
 $("#indoorColorXC").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/indoorColorXC/index.html";
+        //window.location = "mobile/indoorColorXC/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/indoorColorXC/index.html";
+        //window.location = "PC/indoorColorXC/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入室外全彩型材链接
 $("#outdoorColorXC").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/outdoorColorXC/index.html";
+        //window.location = "mobile/outdoorColorXC/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/outdoorColorXC/index.html";
+        //window.location = "PC/outdoorColorXC/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入室外全彩箱体链接
 $("#outdoorColorXT").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/outdoorColorXT/index.html";
+        //window.location = "mobile/outdoorColorXT/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/outdoorColorXT/index.html";
+        //window.location = "PC/outdoorColorXT/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入室外全彩压铸铝链接
 $("#outdoorColorYZL").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/outdoorColorYZL/index.html";
+        //window.location = "mobile/outdoorColorYZL/index.html";
+        window.location = "mobile/m404.html";   //进入404页面
     }else{
-        window.location = "PC/outdoorColorYZL/index.html";
+        //window.location = "PC/outdoorColorYZL/index.html";
+        window.location = "PC/pc404.html";  //进入404页面
     }
 });
 
