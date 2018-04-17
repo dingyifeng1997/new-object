@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="../public/js/holder.min.js"></script>
     <style>
         body{
-            background: url("../public/img/error/pc404.jpg") center no-repeat fixed;;
+            background: url("../public/img/error/pc404.jpg") center no-repeat fixed;
             background-size: cover;
         }
         a{
@@ -27,13 +27,23 @@
     </style>
 </head>
 <body>
-    <a  id="gotohome"> <span class="glyphicon glyphicon-arrow-left"></span> 回到首页
+    <a  id="gotohome"> <span class="glyphicon glyphicon-arrow-left"></span> 回到首页 ( <b id="sec">5</b> 秒)
     </a>
 
     <script>
         $("#gotohome").click(function(){
             window.location = "../backLogin.html";
         });
+
+        i = 4;
+        setInterval(function(){
+            if(i>0){
+                $("#sec").html(i);
+                i--;
+            }else if(i==0){
+                window.location = "../backLogin.html";
+            }
+        },1000)
     </script>
 </body>
 </html>
