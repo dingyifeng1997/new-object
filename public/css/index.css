@@ -56,3 +56,115 @@
 .panel{
     cursor: pointer;
 }
+.left_banner{
+    width: 120px;
+    padding:0;
+    margin-left:15px;
+    position:fixed;
+    left:0;
+    top:470px;
+    cursor: pointer;
+}
+.right_QRcode{
+    width:120px;
+    padding:0;
+    margin-left:15px;
+    position:fixed;
+    right:10px;
+    top:470px;
+    cursor: pointer;
+}
+.right_QRcode img{
+    width:120px;
+    display: inline-block;
+}
+.thumbnail{
+    margin:0;
+}
+.thumbnail .gdft{
+    margin: 5px 0;
+}
+
+
+.thumbnail h4{
+    color: #1461ac;
+    font-weight:bold;
+}
+
+.thumbnail dl{
+    border-bottom: 1px dashed #828282;
+    margin: 0 15px;
+}
+.thumbnail dt a{
+    text-decoration:none;
+    font-size:20px;
+}
+.thumbnail dd a{
+    text-decoration:none;
+    display: block;
+    padding:10px 0;
+    color: #000;
+}
+.thumbnail dd a:hover{
+    color: #1461ac;
+}
+
+.thumbnail .caption a{
+    text-decoration:none;
+    display: block;
+    padding:2px 0;
+    color: #000;
+}
+.thumbnail .caption a:hover{
+    color: #1461ac;
+}
+.thumbnail ul{
+    padding-left:30px;
+}
+.thumbnail ul li{
+    margin:5px 0 ;
+}
+.thumbnail ul li a{
+    text-decoration:none;
+    display: block;
+    padding:2px 0;
+    color: #000;
+}
+
+.thumbnail ul li a:hover{
+    color: #1461ac;
+}
+.thumbnail ul li a span{
+    float:right;
+    margin-right:15px;
+}
+.thumbnail .row .col-md-5 img{
+    width:76px;
+    height:62px;
+}
+.thumbnail .row{
+    padding:5px;
+}
+.panel-heading .panel-title{
+    color: #1461ac;
+    font-weight:bold;
+}
+.fc_head_menu .field{
+    text-align:center;
+    font-weight:bold;
+}
+
+.phone_background{
+    width: 207px;
+    height:351px;
+    background:url("../img/page/phone_back.jpg");
+}
+
+/*产品详情*/
+.ProCon{
+    border-bottom:1px dashed #e4e4e4;
+    margin:0 15px;
+}
+.list-group .list-group-item:hover{
+    cursor: pointer;
+}

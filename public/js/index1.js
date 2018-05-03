@@ -36,3 +36,34 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
 })();
+
+
+
+//左侧悬浮广告栏关闭单击
+$("#close_left_banner").click(function(){
+    $(this).parent().hide();
+});
+
+//右侧悬浮广告栏关闭单击
+$("#close_right_QRcode").click(function(){
+    $(this).parent().hide();
+});
+
+//判断:如果是手机页面就隐藏广告,如果不是就显示广告
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+    $(".left_banner").hide();
+    $(".right_QRcode").hide();
+}else{
+    $(".left_banner").show();
+    $(".right_QRcode").show();
+}
+
+//帮助一栏切换
+$(".list-group-item").click(function(){
+    var idx = $(this).index();
+    $(this).addClass("active");
+    $(".list-group-item").not($(this)).removeClass("active");
+
+    $(".help-content").eq(idx).show();
+    $(".help-content").not($(".help-content").eq(idx)).hide();
+});

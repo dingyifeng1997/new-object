@@ -42,7 +42,7 @@ html{overflow-x:hidden}
 
 body{
 	font-family: "微软 ","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
-	background: url("../../../public/img/bg/bg4.jpg") center no-repeat fixed;;
+	background: url("../img/bg/bg4.jpg") center no-repeat fixed;;
 	background-size: cover;
 }
 

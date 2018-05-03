@@ -40,22 +40,22 @@ $("#monochromeP10").click(function(){
 //点击后进入单色3.75链接
 $("#monochromeP375").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        //window.location = "mobile/monochromeP3.75/index.html";
-        window.location = "mobile/m404.html";   //进入404页面
+        window.location = "mobile/monochromeP3.75/index.html";
+        //window.location = "mobile/m404.html";   //进入404页面
     }else{
-        //window.location = "PC/monochromeP3.75/index.html";
-        window.location = "PC/pc404.html";  //进入404页面
+        window.location = "PC/monochromeP3.75/index.html";
+        //window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入单色5.0链接
 $("#monochrome5").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        //window.location = "mobile/monochrome5.0/index.html";
-        window.location = "mobile/m404.html";   //进入404页面
+        window.location = "mobile/monochrome5.0/index.html";
+        //window.location = "mobile/m404.html";   //进入404页面
     }else{
-        //window.location = "PC/monochrome5.0/index.html";
-        window.location = "PC/pc404.html";  //进入404页面
+        window.location = "PC/monochrome5.0/index.html";
+        //window.location = "PC/pc404.html";  //进入404页面
     }
 });
 //点击后进入室内全彩压铸铝链接
@@ -72,22 +72,22 @@ $("#indoorColorYZL").click(function(){
 //点击后进入室内全彩型材链接
 $("#indoorColorXC").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        //window.location = "mobile/indoorColorXC/index.html";
-        window.location = "mobile/m404.html";   //进入404页面
+        window.location = "mobile/indoorColorXC/index.html";
+        //window.location = "mobile/m404.html";   //进入404页面
     }else{
-        //window.location = "PC/indoorColorXC/index.html";
-        window.location = "PC/pc404.html";  //进入404页面
+        window.location = "PC/indoorColorXC/index.html";
+        //window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
 //点击后进入室外全彩型材链接
 $("#outdoorColorXC").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        //window.location = "mobile/outdoorColorXC/index.html";
-        window.location = "mobile/m404.html";   //进入404页面
+        window.location = "mobile/outdoorColorXC/index.html";
+        //window.location = "mobile/m404.html";   //进入404页面
     }else{
-        //window.location = "PC/outdoorColorXC/index.html";
-        window.location = "PC/pc404.html";  //进入404页面
+        window.location = "PC/outdoorColorXC/index.html";
+        //window.location = "PC/pc404.html";  //进入404页面
     }
 
 });
@@ -119,14 +119,6 @@ $("#outdoorColorYZL").click(function(){
 
 
 
-
-
-
-
-
-
-
-
 //百度统计代码
 var _hmt = _hmt || [];
 (function() {
@@ -135,3 +127,34 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
 })();
+
+
+
+//左侧悬浮广告栏关闭单击
+$("#close_left_banner").click(function(){
+    $(this).parent().hide();
+});
+
+//右侧悬浮广告栏关闭单击
+$("#close_right_QRcode").click(function(){
+    $(this).parent().hide();
+});
+
+//判断:如果是手机页面就隐藏广告,如果不是就显示广告
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+    $(".left_banner").hide();
+    $(".right_QRcode").hide();
+}else{
+    $(".left_banner").show();
+    $(".right_QRcode").show();
+}
+
+//帮助一栏切换
+$(".list-group-item").click(function(){
+    var idx = $(this).index();
+    $(this).addClass("active");
+    $(".list-group-item").not($(this)).removeClass("active");
+
+    $(".help-content").eq(idx).show();
+    $(".help-content").not($(".help-content").eq(idx)).hide();
+});
