@@ -115,7 +115,7 @@
                             <div class="form-group">
                                 <label for="inputWidth" class="col-sm-2 control-label">长度:</label>
                                 <div class="col-sm-10">
-                                    <select  class="col-sm-9 form-control" id="inputWidth"  style=" padding:0px 0px 0px 10px;">
+                                    <!--<select  class="col-sm-9 form-control" id="inputWidth"  style=" padding:0px 0px 0px 10px;">
                                         <option disabled selected>选择长度 :</option>
                                         <option>48.8</option>
                                         <option>97.6</option>
@@ -242,7 +242,8 @@
                                         <option>6002.4</option>
                                         <option>6051.2</option>
                                         <option>6100</option>
-                                    </select>
+                                    </select>-->
+                                    <input type="email" class="form-control"  id="inputWidth" placeholder="请输入长度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" >
                                 </div>
                             </div>
                             <div class="warning" style="display: none;">
@@ -252,7 +253,7 @@
                             <div class="form-group">
                                 <label for="inputHeight" class="col-sm-2 control-label">高度:</label>
                                 <div class="col-sm-10">
-                                    <select  class=" form-control" id="inputHeight">
+                                    <!--<select  class=" form-control" id="inputHeight">
                                         <option disabled selected>选择高度 :</option>
                                         <option>24.4</option>
                                         <option>48.8</option>
@@ -267,7 +268,8 @@
                                         <option>268.4</option>
                                         <option>292.8</option>
                                         <option>317.2</option>
-                                </select>
+                                </select>-->
+                                    <input type="email" class="form-control" id="inputHeight" placeholder="请输入高度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" >
                                 </div>
                             </div>
                             <div class="warning" style="display: none;">
@@ -502,7 +504,7 @@
                 <tr id="bd15">
                     <td>挂件膨胀丝</td>
                     <td id="partsN1" class="astrict-number"></td>
-                    <td>平</td>
+                    <td>套</td>
                     <td id="partsN2" class="astrict-number"></td>
                     <td id="partsN3" class="astrict-number"></td>
                 </tr>

@@ -24,7 +24,7 @@ $("#selectType").click(function(){
 
 })
 // 二:长度输入后调用方法
-$("#inputWidth").click(function(){
+$("#inputWidth").blur(function(){
     inwidth();
 });
 function inwidth(){
@@ -45,7 +45,7 @@ function inwidth(){
 }
 
 // 三:高度输入后调用方法
-$("#inputHeight").click(function(){
+$("#inputHeight").blur(function(){
     inheight();
 })
 function inheight(){
