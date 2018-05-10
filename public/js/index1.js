@@ -50,7 +50,7 @@ $("#close_right_QRcode").click(function(){
 });
 
 //判断:如果是手机页面就隐藏广告,如果不是就显示广告
-if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+if ((navigator.userAgent.toLowerCase().match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
     $(".left_banner").hide();
     $(".right_QRcode").hide();
 }else{
