@@ -213,6 +213,7 @@ $("#contract").click(function(){
         $("#tableFooter").hide();                 //表格页脚隐藏
         $(" #signatory").show();          //合同签订方显示
         $(" #contract-message").show();     //合同主体显示
+        $(" #yunfeiyejiao").hide();     //运费显示
         $(" #headline h2").text("购销合同");  //合同标题修改
     }else if(j%2==1){
         $(this).css({"background":"#5bbfdd"});  //按钮颜色变化
@@ -224,6 +225,7 @@ $("#contract").click(function(){
         $("#tableFooter").show();         //表格页脚显示
         $(" #signatory").hide();      //合同签订方隐藏
         $(" #contract-message").hide(); //合同主体隐藏
+        $(" #yunfeiyejiao").show(); //运费隐藏
         $(" #headline h2").text(v);  //合同标题修改
     }
     j++;

@@ -5,23 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+
+
+<div style="width: 100%;height:100px;background:red;">页头</div>
+<div>
+    <div style="width: 200px;height:80vh;background:blue;float: left;"></div>
+    <div style="width: 1650px;height:80vh;background:green;float: left;">
+        <iframe src="https://www.baidu.com" style="width: 100%;height:100%;"></iframe>
+    </div>
+</div>
+
+
+
 <script>
-
-    //闭包
-    function f(){
-        var x = "in";
-        return function(){
-            console.log(x);
-        }
-
-    }
-//    f()();
-
-//    或者下边这种
-    var fu = f();
-    fu();
-
-
+//    alert("你好,我是弹出框");
+//    confirm("我是对话框?");
+    prompt("请输入您的名字 : ");
 
 </script>
 </body>
