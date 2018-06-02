@@ -42,6 +42,7 @@ function inwidth(){
 
     getLine15(); //第15行数据 包装费
     getLine16(); //第16行数据 组装加工费
+    types()             //判断是否输入
 }
 
 // 三:高度输入后调用方法
@@ -63,6 +64,7 @@ function inheight(){
 
     getLine15(); //第15行数据 包装费
     getLine16(); //第16行数据 组装加工费
+    types()             //判断是否输入
 }
 
 
