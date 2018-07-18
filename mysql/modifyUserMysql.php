@@ -23,15 +23,15 @@ $password = @$_POST['password'];
 
 //打断点测试得到的ID参数
 //echo "<script>alert({$id})</script>";
-//echo "<script>alert({$username})</script>";
-//echo "<script>alert({$password})</script>";
+//echo "<script>alert('{$username}')</script>";
+//echo "<script>alert('{$password}')</script>";
 //echo "<script>alert({$_POST['user']})</script>";
 //echo "<script>alert({$id})</script>";
 
 
 echo "<a href='../backLogin.html'>回首页</a> ";
 
-$sql = "update entryTable set username={$username},password={$password},repassword={$password} where id={$id};";
+$sql = "update entryTable set username='{$username}',password='{$password}',repassword='{$password}' where id={$id};";
 //$sql = "update entryTable set username=123,password=123,repassword=123,issue=123,answer=123  where id=15;";
 
 
