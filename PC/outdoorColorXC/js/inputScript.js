@@ -371,7 +371,7 @@ function getLine3(){
             powerSource = "4";
             break;
         case "P5室外表贴全彩":
-            powerSource = "4";
+            powerSource = "3";
             break;
         case "P6室外表贴全彩":
             powerSource = "6";
@@ -698,7 +698,7 @@ function getLine10(){
 //2.9 第11行数据 -[配电柜]
 function getLine11(){
 
-    if(getPowerNumber > 48){
+    if(getPowerNumber > 50){
         $("#partsK1").text(1);  //配电柜数量
     }else{
         $("#partsK1").text(0);  //配电柜数量
@@ -708,29 +708,29 @@ function getLine11(){
     var KW = getPowerNumber;     //数据表千瓦数
     var number  = 0;
 
-    if(getPowerNumber>48){
+    if(getPowerNumber>50&&getPowerNumber<100){
         xinghao ="20KW";
-    }else if(getPowerNumber>96){
+    }else if(getPowerNumber>100&&getPowerNumber<150){
         xinghao ="30KW";
-    }else if(getPowerNumber>130){
+    }else if(getPowerNumber>150&&getPowerNumber<200){
         xinghao ="40KW";
-    }else if(getPowerNumber>175){
+    }else if(getPowerNumber>200&&getPowerNumber<250){
         xinghao ="50KW";
-    }else if(getPowerNumber>225){
+    }else if(getPowerNumber>250&&getPowerNumber<300){
         xinghao ="60KW";
-    }else if(getPowerNumber>275){
+    }else if(getPowerNumber>300&&getPowerNumber<400){
         xinghao ="80KW";
-    }else if(getPowerNumber>375){
+    }else if(getPowerNumber>400&&getPowerNumber<500){
         xinghao ="100KW";
-    }else if(getPowerNumber>450){
+    }else if(getPowerNumber>500&&getPowerNumber<600){
         xinghao ="120KW";
-    }else if(getPowerNumber>550){
+    }else if(getPowerNumber>600&&getPowerNumber<700){
         xinghao ="140KW";
-    }else if(getPowerNumber>650){
+    }else if(getPowerNumber>700&&getPowerNumber<800){
         xinghao ="160KW";
-    }else if(getPowerNumber>750){
+    }else if(getPowerNumber>800&&getPowerNumber<900){
         xinghao ="180KW";
-    }else if(getPowerNumber>850){
+    }else if(getPowerNumber>900&&getPowerNumber<1000){
         xinghao ="200KW";
     }
 

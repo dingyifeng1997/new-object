@@ -39,14 +39,21 @@ html{overflow-x:hidden}
 	.copyright{display:none}	/*底部版权不打印*/
 }
 
-
 body{
 	font-family: "微软 ","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
-	background: url("../img/bg/bg4.jpg") center no-repeat fixed;;
+	background: url("../img/bg/bg9.jpg") center no-repeat fixed;;
 	background-size: cover;
 }
-
-
+/*返回按钮开始*/
+.btn-link{
+	color: #ffff67;
+	text-decoration:none;
+}
+.btn-link:hover{
+	color: #edffe9;
+	text-decoration:none;
+}
+/*返回按钮结束*/
 
 /*左侧开始*/
 /*1.1型号选择*/

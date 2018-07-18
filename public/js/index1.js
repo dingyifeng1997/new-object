@@ -5,7 +5,7 @@
 
 //点击后进入登录界面
 $(".goto-login").click(function(){
-    window.location = "login.html";
+    window.location = "login.php";
 });
 //导航栏点击后显示特定画面
 $(".nav-tabs li").click(function(){

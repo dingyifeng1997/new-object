@@ -257,11 +257,11 @@ function getLine1(){
     switch(productType)
     {
         case "P10插灯全户外红":
-            boardPrice = "25.3";
+            boardPrice = "24.8";
             tc = "插灯全红";
             break;
         case "P10插灯半户外红":
-            boardPrice = "23.5";
+            boardPrice = "21.5";
             tc = "插灯半红";
             break;
         case "P10插灯全户外白":
