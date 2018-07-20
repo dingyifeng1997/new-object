@@ -95,6 +95,7 @@ function getPage($pageLine){
         <input type='text' name='password'><br>
         
         <input type='submit' value='修改'>
+        <input type='button' value='首页' id='goIndex'>
     </form>
 </div>
 
@@ -117,12 +118,20 @@ function getPage($pageLine){
         ";
     echo "</center>";
 
-    echo "<script>document.getElementById('submits').onsubmit = function(){
+    echo "<script>
+document.getElementById('submits').onsubmit = function(){
     //判断输入的页数如果大于总页数的话 那么就变为最大页数
             if(document.getElementById('inputs').value >{$pageCount}){
                 document.getElementById('inputs').value ={$pageCount}
             }
-        }</script>";
+        }
+document.getElementById('goIndex').onclick = function(){
+    //判断输入的页数如果大于总页数的话 那么就变为最大页数
+            location.href = '../backLogin.html';
+        }
+        
+        
+        </script>";
     echo "<script>document.getElementById('dijiye').innerHTML = {$currentPage}</script>";
     echo "<script>document.getElementById('sumPage').innerHTML = {$pageCount}</script>";
     //5.执行sql语句

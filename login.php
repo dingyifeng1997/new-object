@@ -65,11 +65,12 @@
                     <div class=" login-body">
                         <div class="box">
                             <h3 class="page-header">用户登录</h3>
+
                             <form>
                                 <div class="form-group">
                                     <label for="exampleInputName">账 名:</label>
                                     <div style="width:100%;height:100%;border: 1px solid #cbcbcb;border-radius:4px;">
-                                        <input type="text" class="form-control" id="exampleInputName" placeholder="请输入账号" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" style="outline:none;border:0;box-shadow: none;" >
+                                        <input type="text" class="form-control" id="exampleInputName" placeholder="请输入账号" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" style="outline:none;border:0;box-shadow: none;" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -84,10 +85,12 @@
 
                                 <br>
                                 <button type="button" class="btn btn-primary" id="submit">登录</button>
+<!--                                <input type="submit" class="btn btn-primary" id="submit" value="登录">-->
                                 <button type="reset" class="btn btn-info">清空</button>
                                 <!--<button type="reset" class="btn btn-warning"><a id="getQQ" style="text-decoration:none;">Q Q</a></button>-->
                                 <button type="button" class="btn btn-warning"><a href="mysql/register.html" style="text-decoration:none;">注册</a></button>
                             </form>
+
                         </div>
                     </div>
                 </section>
@@ -108,8 +111,24 @@
     </div>
 
     <script>
+
         //点击登录逻辑
         $("#submit").click(function(){
+            verdict();
+        });
+        document.onkeydown =  function(event){
+            //获取需要改变的标签对象
+            var divobj = document.getElementById("divid");
+
+            //获取键盘输入键位的代表数字
+            var keyobj = event.keyCode;
+            if(keyobj ==13){
+                verdict();
+            }
+        }
+
+        //点击按钮后的判断方法
+        function verdict(){
             user = $("#exampleInputName").val();
             pass = $("#exampleInputPassword").val();
 
@@ -118,20 +137,38 @@
                 url: "mysql/verify.php",
                 data: {username: user, password: pass},
                 success: function (msg) {
-                        // console.log(msg);
+                    // console.log(msg);
                     if (msg == 1) {
                         alert("登录成功");
                         goIn();
+                        addCookie();
                     }else{
                         alert("您的用户名和账户不匹配,请重新输入!");
-                        $("#exampleInputPassword").val("");
+                        $("#exampleInputPassword").val(""); //输入错误清空输入框
                     }
                 },
                 error: function (msg) {
                     alert("用户名匹配错误");
                 }
             });
-        });
+        }
+
+
+        //成功后发送一个Cookie
+        function addCookie(){
+            val = $("#exampleInputName").val();
+
+            $.ajax({
+                type:"GET",
+                url:"cookies/addCookie.php",
+                data:{cook:val},
+                success: function(msg){
+                },
+                error:function(msg){
+                    alert("发送失败");
+                }
+            });
+        }
 
         //登录成功特效和进入页面
         function goIn(){
@@ -151,8 +188,7 @@
         }
 
 
-
-
+        //判断显示密码按钮是否被点击
         i=0;
         $("#showPassword").click(function(){
             if(i%2==0){

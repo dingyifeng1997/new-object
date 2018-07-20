@@ -29,7 +29,6 @@ $password = @$_POST['password'];
 //echo "<script>alert({$id})</script>";
 
 
-echo "<a href='../backLogin.html'>回首页</a> ";
 
 $sql = "update entryTable set username='{$username}',password='{$password}',repassword='{$password}' where id={$id};";
 //$sql = "update entryTable set username=123,password=123,repassword=123,issue=123,answer=123  where id=15;";

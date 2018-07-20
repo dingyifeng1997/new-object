@@ -26,5 +26,24 @@
 <body>
     <!--<img src="../public/img/error/m404.jpg" alt="" style="width:100%;">-->
     <a href="../backLogin.html" id="gotohome"><span class="glyphicon glyphicon-arrow-left"></span> 回到首页</a>
+
+    <script>
+        //客户端cookie验证
+        function getCookid(){
+            $.ajax({
+                type:"POST",
+                url:"../../cookies/checkCookie.php",
+                success: function(msg){
+                    if(msg == ""){
+                        location.href = "../login.php";
+                    }
+                },
+                error:function(msg){
+                    alert("发送失败");
+                }
+            });
+        }
+        getCookid();
+    </script>
 </body>
 </html>

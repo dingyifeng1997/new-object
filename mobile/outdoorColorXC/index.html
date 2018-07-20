@@ -442,6 +442,25 @@
             window.location.href="../../PC/outdoorColorXC/index.html";
 
         }
+
+
     });
+
+
+    //客户端cookie验证
+    function getCookid(){
+        $.ajax({
+            type:"POST",
+            url:"../../cookies/checkCookie.php",
+            success: function(msg){
+                if(msg == ""){
+                    location.href = "../../login.php";
+                }
+            },
+            error:function(msg){
+                alert("发送失败");
+            }
+        });
+    }
 </script>
 </html>

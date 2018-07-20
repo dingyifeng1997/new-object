@@ -27,8 +27,8 @@
         }
 
         html,body{
-            /*background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532336752&di=3ab9eb94021781056d20e0d71f2d8b59&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017b4b5664dc4f32f8754573a454ea.jpg%401280w_1l_2o_100sh.jpg") center no-repeat fixed;;*/
-            background: url("../public/img/bg/zc1.jpg") center no-repeat fixed;
+            /*background: url("../public/img/bg/zc1.jpg") center no-repeat fixed;*/
+            background: #322b32;
             background-size:cover;
             height: 100vh;
             font-family:"宋体";
@@ -101,13 +101,8 @@
             <span class="glyphicon glyphicon-menu-left" style="color:white;"></span>
         </a>
     </div>
-    <div class="top-btn" style="position:absolute;left:50%;margin-left:-20px;">
-        注 册
-    </div>
-    <div class="top-btn" style="float: right;">
-        <a href="../login.php">
-            去登录
-        </a>
+    <div class="top-btn" style="position:absolute;left:50%;margin-left:-25px;">
+        修改密码
     </div>
 </div>
 
@@ -118,28 +113,29 @@
 
         <div class="col-md-4 c4">
         </div>
-        <!--注册表单页面-->
+        <!--修改密码表单页面-->
         <div class="col-md-4 c4">
-            <form action="registry.php?bool=true" method="POST" id="from">
+            <form action="setAccountPhp.php" method="POST" id="from">
 
 
-                <!--用户名-->
+
+                <!--旧密码-->
                 <div class="row">
-                    <div class="col-md-3 titles">账号:</div>
+                    <div class="col-md-3 titles">旧密码:</div>
                     <div class="col-md-9 inputs">
-                        <input type="text" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');"  name="username" class="auth form-control"  placeholder="请输入账号" >
-                        <span class="error" id="sc">
+                        <input type="text" name="oldPassword" class="auth form-control"  placeholder="请输入旧密码">
+                        <span class="error">
                             <spna class="glyphicon glyphicon-minus-sign"></spna>
-                            用户名至少6位!
+                            两次密码必须一致!
                         </span>
                     </div>
                 </div>
 
-                <!--密码-->
+                <!--新密码-->
                 <div class="row">
-                    <div class="col-md-3 titles">密码:</div>
+                    <div class="col-md-3 titles">新密码:</div>
                     <div class="col-md-9 inputs">
-                        <input type="password" name="password" class="auth form-control"  placeholder="请输入密码">
+                        <input type="text" name="newPassword" class="auth form-control"  placeholder="请输入新密码">
                         <span class="error">
                             <spna class="glyphicon glyphicon-minus-sign"></spna>
                             密码至少8位!
@@ -151,7 +147,7 @@
                 <div class="row">
                     <div class="col-md-3 titles">确认密码:</div>
                     <div class="col-md-9 inputs">
-                        <input type="password" name="repassword" class="auth form-control"  placeholder="请再次输入密码">
+                        <input type="text" name="reNewPassword" class="auth form-control"  placeholder="请再次输入新密码">
                         <span class="error">
                             <spna class="glyphicon glyphicon-minus-sign"></spna>
                             两次密码必须一致!
@@ -159,52 +155,12 @@
                     </div>
                 </div>
 
-                <!--密保问题-->
-                <div class="row">
-                    <div class="col-md-3 titles">密保问题:</div>
-                    <div class="col-md-9 inputs">
-                        <!--密保问题输入-->
-                        <select name="issue"  style="color: #000;" class="auth form-control">
-                            <option value="" disabled selected>请选择密保问题</option>
-                            <option value="您母亲的姓名是？">您母亲的姓名是？</option>
-                            <option value="您父亲的姓名是？">您父亲的姓名是？</option>
-                            <option value="您配偶的姓名是？">您配偶的姓名是？</option>
-                            <option value="您的出生地是？">您的出生地是？</option>
-                            <option value="您高中班主任的名字是？">您高中班主任的名字是？</option>
-                            <option value="您初中班主任的名字是？">您初中班主任的名字是？</option>
-                            <option value="您小学班主任的名字是？">您小学班主任的名字是？</option>
-                            <option value="您的小学校名是？您的学号（或工号）是？">您的小学校名是？您的学号（或工号）是？</option>
-                            <option value="您父亲的生日是？">您父亲的生日是？</option>
-                            <option value="您母亲的生日是？">您母亲的生日是？</option>
-                            <option value="您配偶的生日是？">您配偶的生日是？</option>
-                        </select>
-                        <span class="error">
-                            <spna class="glyphicon glyphicon-minus-sign"></spna>
-                            未选择密保问题!
-                        </span>
-                    </div>
-                </div>
-
-                <!--密保答案-->
-                <div class="row">
-                    <div class="col-md-3 titles" >密保答案:</div>
-                    <div class="col-md-9 inputs">
-                        <!--密保答案输入-->
-                        <input type="text" name="answer" class="auth form-control" maxlength="11"  placeholder="请输入密保答案">
-                        <span class="error">
-                            <spna class="glyphicon glyphicon-minus-sign"></spna>
-                            未输入密保答案!
-                        </span>
-                    </div>
-                </div>
 
                 <!--提交按钮-->
                 <div style="padding:15px;">
-                    <input type="submit" value="提&nbsp;&nbsp;交" class="btn btn-primary form-control" id="inputSubmit" >
+                    <input type="submit" value="确 认 修 改" class="btn btn-warning form-control" id="inputSubmit" >
                 </div>
             </form>
-
-
 
 
         </div>
@@ -217,31 +173,49 @@
 </div>
 
 <script>
-    //匹配用户名:
-    $("input[name=username]").blur(
+
+    var username;
+    // 返回一个登录账户
+    function getCookid(){
+        $.ajax({
+            type:"POST",
+            url:"../cookies/checkCookie.php",
+            async:false,    //设备为同步,可以将获取到的值复制给username变量
+            success: function(msg){
+                username = msg;
+            },
+            error:function(msg){
+                alert("发送失败");
+            }
+        });
+    }
+    getCookid();
+
+    //匹配旧密码:
+    $("input[name=oldPassword]").blur(
         function(){
             //获取输入内容的长度 this表示获取元素的DOM写法
             var val= this.value;
-            if(val.length<6){
+            if(val.length<8){
                 //给Jquery对象加一个属性,不影响元素本身,用于判断是否都已经输入正确
                 $(this).data({"s":0});
                 //如果小于,则将这个对象($(this)表示获取元素的Jquery写法)的下一个紧跟元素调用show()方法显示出来
-                $(this).next().html(" <spna class='glyphicon glyphicon-minus-sign'></spna> 用户名至少6位").addClass("show-error");
+                $(this).next().html(" <spna class='glyphicon glyphicon-minus-sign'></spna>旧密码少于8位").addClass("show-error");
             }else{
                 $.ajax({
                     type:"POST",
-                    url:"selectTable.php",
-                    data:{username:val},
+                    url:"matchOldPassword.php",
+                    data:{oldPassword:val},
                     success: function(msg){
                         if(msg == 0){
-                            console.log(msg);
+                            // console.log(msg);
                             // 当用户名已经被注册过时,这里使用JS的方法,将下边的内容直接换成下列标签内容显示出来
-                            $("input[name=username]").next().html(" <div style='color:#dd00ea;'><spna class='glyphicon glyphicon-remove-sign'></spna> 用户名已被注册过</div>").addClass("show-error");
-                            $("input[name=username]").data({"s":0});    //设置data的s属性为0 表示不通过这项
+                            $("input[name=oldPassword]").next().html(" <div style='color:#dd00ea;'><spna class='glyphicon glyphicon-remove-sign'></spna>旧密码不正确</div>").addClass("show-error");
+                            $("input[name=oldPassword]").data({"s":0});    //设置data的s属性为0 表示不通过这项
                         }else{
-                            console.log(msg);
-                            $("input[name=username]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna> 用户名可用</div>").addClass("show-error");
-                            $("input[name=username]").data({"s":1});    //设置data的s属性为1 表示通过这项
+                            // console.log(msg);
+                            $("input[name=oldPassword]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna> 旧密码正确</div>").addClass("show-error");
+                            $("input[name=oldPassword]").data({"s":1});    //设置data的s属性为1 表示通过这项
                         }
                     },
                     error:function(msg){
@@ -258,24 +232,26 @@
         }
     );
 
+
     //匹配密码:
-    $("input[name=password]").blur(
+    $("input[name=newPassword]").blur(
         function(){
             var val= this.value;
             if(val.length<8){
                 $(this).data({"s":0});
-                $("input[name=password]").next().html(" <div style='color:red;'><spna class='glyphicon glyphicon-minus-sign'></spna>密码至少8位</div>").addClass("show-error");
+                $("input[name=newPassword]").next().html(" <div style='color:red;'><spna class='glyphicon glyphicon-minus-sign'></spna>密码至少8位</div>").addClass("show-error");
             }else{
                 $(this).data({"s":1});
-                $("input[name=password]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna>密码格式正确</div>").addClass("show-error");
+                $("input[name=newPassword]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna>密码格式正确</div>").addClass("show-error");
             }
         }
     );
+
     //匹配二次密码:
-    $("input[name=repassword]").blur(
+    $("input[name=reNewPassword]").blur(
         function(){
             //获取第一次输入密码
-            var oneVal = $("input[name=password]").val();
+            var oneVal = $("input[name=newPassword]").val();
             //获取第二次输入的密码
             var thisVal= this.value;
             //判断输入框是否为空
@@ -288,41 +264,11 @@
                 $(this).next().html(" <spna class='glyphicon glyphicon-minus-sign'></spna> 两次密码必须一致").addClass("show-error");
             }else{
                 $(this).data({"s":1});
-                $("input[name=repassword]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna>密码一致</div>").addClass("show-error");
+                $("input[name=reNewPassword]").next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna>密码一致</div>").addClass("show-error");
             }
         }
     );
 
-    //密保问题:
-    $("select[name=issue]").blur(
-        function(){
-            var val = $(this).val();
-            // alert(val);
-            if(val == ""){
-                $(this).data({"s":0});
-                $(this).next().addClass("show-error");
-                // alert("没有选");
-            }else{
-                // alert("选了");
-                $(this).data({"s":1});
-                $(this).next().removeClass("show-error");
-            }
-        }
-    );
-
-    //密保答案:
-    $("input[name=answer]").blur(
-        function(){
-            var val= this.value;
-            if(val.length<1){
-                $(this).data({"s":0});
-                $(this).next().addClass("show-error");
-            }else{
-                $(this).data({"s":1});
-                $(this).next().removeClass("show-error");
-            }
-        }
-    );
 
     //提交表单前综合验证
     $("form").submit(function sss(){
@@ -337,9 +283,8 @@
                 tot += $(this).data("s");
             }
         );
-
-        // console.log($("input[name=username]").data("s"));  //测试每个表情身上都添加有 s 属性
-        // console.log("当前tot的值为:"+tot);  //测试每个表情身上都添加有 s 属性
+        // console.log($("input[name=oldPassword]").data("s"));  //测试每个表情身上都添加有 s 属性
+        console.log("当前tot的值为:"+tot);  //测试每个表情身上都添加有 s 属性
         // alert($("input[name=password]").data("s"));
         // alert($("input[name=repassword]").data("s"));
         // alert($("#issue")).data("s");
@@ -347,14 +292,16 @@
 
 
         //判断输入框匹配数量是否正确
-        if(tot!=5){
+        if(tot!=3){
+            alert('请检查输入框内容');
             //如果不正确就返回false阻止表单提交
             return false;
-        }else{
-            alert("注册成功!");
         }
+        //php服务器自己返回修改成功和修改失败
+        // else{
+        //     alert("修改成功!");
+        // }
     });
-
 
 
 </script>
