@@ -12,29 +12,31 @@
     <style>
 
     body{
-        background: url("public/img/bg/dlbg2.jpg") center no-repeat fixed;;
+        background: url("public/img/bg/dlbg3.jpg") center no-repeat fixed;;
         background-size:cover;
         height: 100vh;
     }
     .home-wrapper{
         width: 100%;
-        height: 380px;
+        height:100%;
         /*background: red;*/
-        margin-top:40%;
+        margin-top:70%;
+        padding-top:15%!important;
+        position: relative;
     }
     .login-body{
         width: 100%;
         height:100%;
-        background: rgba(238, 237, 234, 1);
+        /*background: rgba(251, 255, 255,0.5);*/
         /*background: #c1fff8;*/
         margin:0 auto;
-        border-radius:1px;
+        border-radius:5px;
     }
     .box{
         padding:15px;
     }
     .form-control{
-        background: rgba(238, 237, 234, 0.1);
+        background: rgba(0, 0, 0, 0);
     }
     .col-md-3 img{
         width:250px;
@@ -45,6 +47,30 @@
         height: 17px;
         position: relative;
         top: 3px;
+    }
+    .page-header{
+        margin:20px 0;
+    }
+
+    /*用户图标*/
+    .icon-sheet{
+        width: 33px;
+        height:30px;
+        position: relative;
+        top: 9px;
+        left:-5px;
+        display: inline-block;
+        background:url("public/img/spriteSheet/spriteSheetIcon.png") no-repeat;
+        background-size:200px 200px;
+        /*background-position: 20px 20px;*/
+        background-position:-37px -37px;
+        margin-left:10px;
+    }
+    .icon2{
+        background-position:-69px -37px;
+    }
+    .form-group{
+        border-bottom: 1px solid #878787;
     }
     </style>
 </head>
@@ -64,31 +90,33 @@
 
                     <div class=" login-body">
                         <div class="box">
-                            <h3 class="page-header">用户登录</h3>
+                            <h3 style="text-align: center;color: white;">用户登录</h3>
 
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleInputName">账 名:</label>
-                                    <div style="width:100%;height:100%;border: 1px solid #cbcbcb;border-radius:4px;">
+<!--                                    <label for="exampleInputName">账 名:</label>-->
+                                    <span class="icon-sheet"></span>
+                                    <div style="width:70%;height:100%;display: inline-block;">
                                         <input type="text" class="form-control" id="exampleInputName" placeholder="请输入账号" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" style="outline:none;border:0;box-shadow: none;" >
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword">密 码:</label>
-                                    <div style="width:100%;height:100%;border: 1px solid #cbcbcb;border-radius:4px;position: relative;">
-
+<!--                                    <label for="exampleInputPassword">密 码:</label>-->
+                                    <span class="icon-sheet icon2"></span>
+                                    <div style="width:70%;height:100%;display: inline-block;position:relative;">
+<!--                                        密码输入框-->
                                         <input type="password" class="form-control" id="exampleInputPassword" placeholder="请输入密码" style="display:block;border:0;outline: none;box-shadow: none;" >
-                                        <input type="checkbox"  class="xianshi" id="showPassword" style="position: absolute;right: 10px;width: 14px; ">
+<!--                                        显示密码按钮-->
+                                        <input type="checkbox"  class="xianshi" id="showPassword" style="position: absolute;right: 0;width: 14px; ">
                                     </div>
 
                                 </div>
-
                                 <br>
-                                <button type="button" class="btn btn-primary" id="submit">登录</button>
+                                <button type="button" class="btn btn-primary" id="submit" style="position:absolute;width:25%;">登录</button>
 <!--                                <input type="submit" class="btn btn-primary" id="submit" value="登录">-->
-                                <button type="reset" class="btn btn-info">清空</button>
+                                <button type="reset" class="btn btn-info" style="margin-left:50%;position:absolute;left:-10%;width:25%;">清空</button>
                                 <!--<button type="reset" class="btn btn-warning"><a id="getQQ" style="text-decoration:none;">Q Q</a></button>-->
-                                <button type="button" class="btn btn-warning"><a href="mysql/register.html" style="text-decoration:none;">注册</a></button>
+                                <button type="button" class="btn btn-warning" style="position: absolute;right:20px;width:25%;"><a href="mysql/register.html" style="text-decoration:none;">注册</a></button>
                             </form>
 
                         </div>

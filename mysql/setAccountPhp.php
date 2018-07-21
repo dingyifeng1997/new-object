@@ -23,10 +23,10 @@ $username = @$_COOKIE['name'];
 $oldPassword = @$_POST['oldPassword'];
 $newPassword = $_POST['newPassword'];
 
-
-echo $username;
-echo $oldPassword;
-echo $newPassword;
+//
+//echo $username;
+//echo $oldPassword;
+//echo $newPassword;
 $sql = "update entryTable set password='{$newPassword}',repassword='{$newPassword}' where username='{$username}';";
 
 if (mysqli_query($conn,$sql)){
