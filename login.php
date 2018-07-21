@@ -12,7 +12,7 @@
     <style>
 
     body{
-        background: url("public/img/bg/dlbg3.jpg") center no-repeat fixed;;
+        background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532176219769&di=07ce487ee8d20441c4f9c62e6aade212&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01820c58b4e5a3a801219c7726ed51.jpg%402o.jpg") center no-repeat fixed;;
         background-size:cover;
         height: 100vh;
     }
