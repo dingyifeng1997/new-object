@@ -4,7 +4,7 @@
  * User: Administrator
  * Date: 2018/7/18
  * Time: 12:57
- * 链接数据库 验证登录页面发送过来的数据是否和数据库中的匹配,若不匹配返回 0  若匹配返回 1
+ * 链接数据库 验证 登录页面 发送过来的数据是否和数据库中的匹配,若不匹配返回 0  若匹配返回 1
  */
 header("content-type:text/html;charset=utf-8;");
 

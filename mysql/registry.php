@@ -5,7 +5,7 @@
  * User: Administrator
  * Date: 2018/7/13
  * Time: 12:57
- * 链接数据库 插入数据
+ * 链接数据库 注册页面插入数据
  */
 header("content-type:text/html;charset=utf-8;");
 

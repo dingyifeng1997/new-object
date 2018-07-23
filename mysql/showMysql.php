@@ -4,6 +4,7 @@
  * User: Administrator
  * Date: 2018/7/15
  * Time: 8:43
+ * 显示数据库内容页面
  */
 
 
@@ -54,15 +55,17 @@ function getPage($pageLine){
     echo "<center style='margin:100px;'>";
     echo "<div style='height:600px;'>";
     echo "<table border='1'>";
-    echo "<h2>数据库资料</h2>";
+    echo "<h3>数据库资料</h3>";
 
     echo "<tr style='background: #4ae347;'>";
     echo "<td width='150'>"."ID"."</td>";
     echo "<td width='150'>"."用户名"."</td>";
     echo "<td width='150'>"."密码"."</td>";
     echo "<td width='150'>"."确认密码"."</td>";
-    echo "<td width='150'>"."密保问题"."</td>";
-    echo "<td width='150'>"."密保答案"."</td>";
+//    echo "<td width='150'>"."密保问题"."</td>";
+//    echo "<td width='150'>"."密保答案"."</td>";
+    echo "<td width='150'>"."手机号码"."</td>";
+    echo "<td width='150'>"."注册验证码"."</td>";
 //    echo "<td width='150'>"."修改"."</td>";
     echo "<td width='150'>"."删除"."</td>";
     echo "</tr>";
@@ -82,7 +85,7 @@ function getPage($pageLine){
 
     echo "
 
-<div style='width:300px;height: 400px;border: 1px solid #000;position: absolute;left:20px;top:15%;background:rgba(250,250,250,0.7)' id='setBox'>
+<div style='width:300px;height: 230px;border: 1px solid #000;position: fixed;bottom:3%;background:rgba(250,250,250,0.2)' id='setBox'>
     <h1>修改内容</h1>
     <form action='modifyUserMysql.php' method='POST'>
         <div style='width:100px;height:30px;display: inline-block;'>ID : </div>
@@ -95,7 +98,7 @@ function getPage($pageLine){
         <input type='text' name='password'><br>
         
         <input type='submit' value='修改'>
-        <input type='button' value='首页' id='goIndex'>
+        <input type='button' value='回首页' id='goIndex'>
     </form>
 </div>
 

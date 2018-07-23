@@ -694,7 +694,7 @@
 
     <!--进入数据库控制台-->
     <div style="display:none;width: 300px;height:200px;background:#e3e3e3;position: fixed;left:50%;margin-left:-150px;top:10%;z-index: 100" id="rootBox">
-        <h3 class="page-header" style="text-align: center;padding:15px;margin:0;background:#6584ff;">数据管理中心</h3>
+        <h3 class="page-header" style="text-align: center;padding:7px;margin:0;background:#54606e;color: #ffffff">数据管理中心</h3>
         <div style="margin-left:50px;width:300px;">
             <div style="width:50px;">
                 username:
@@ -707,7 +707,14 @@
             </div>
             <input type="password" style="width:200px;" id="pass">
         </div>
-        <input type="submit" style="margin:10px 50px 0 50px;" id="goAdmin">
+        <div style="width:100%;background:red;margin-top:10px;">
+            <div style="width:100px;height:35px;background: yellow;float: left;margin-left:50px;">
+                <input type="submit"  id="goAdmin" value="进 入" style="width:100%;height:100%;font-size:16px;">
+            </div>
+            <div style="width:100px;height:35px;background: blue;float: left;">
+                <input type="submit" id="close"  value="关 闭" style="width:100%;height:100%;font-size:16px;">
+            </div>
+        </div>
     </div>
 
     <!--回到顶部-->
@@ -749,6 +756,13 @@
     $("#admin").click(function(){
             $("#rootBox").show();
     });
+
+    //点击关闭数据管理中心登录窗口
+    $("#close").click(function(){
+            $("#rootBox").hide();
+    });
+
+
 
     //判断是否可以去往数据管理页面
     $("#goAdmin").click(function(){

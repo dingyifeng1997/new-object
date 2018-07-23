@@ -4,7 +4,7 @@
  * User: Administrator
  * Date: 2018/7/15
  * Time: 8:43
- * 修改数据库中的内容
+ * 数据库管理页面 修改数据库中的内容
  */
 
 
@@ -16,7 +16,7 @@ $conn= mysqli_connect("gxyiovmx.2365.dnstoo.com","dingyifeng_f","zxcvbn","dingyi
 //3.设置客户端和连接字符集;
 mysqli_query($conn,"set names utf8");
 
-//接收到传递过来的del参数
+//接收到传递过来的参数
 $id = @$_POST['id'];
 $username = @$_POST['username'];
 $password = @$_POST['password'];
@@ -25,9 +25,6 @@ $password = @$_POST['password'];
 //echo "<script>alert({$id})</script>";
 //echo "<script>alert('{$username}')</script>";
 //echo "<script>alert('{$password}')</script>";
-//echo "<script>alert({$_POST['user']})</script>";
-//echo "<script>alert({$id})</script>";
-
 
 
 $sql = "update entryTable set username='{$username}',password='{$password}',repassword='{$password}' where id={$id};";
