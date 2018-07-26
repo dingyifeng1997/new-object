@@ -5,6 +5,7 @@
  * Date: 2018/7/19
  * Time: 15:16
  * 添加一个登录成功Cookie
+ * 链接页面: login.php
  */
 header("content-type:text/html;charset=utf-8;");
 

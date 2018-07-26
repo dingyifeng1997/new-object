@@ -5,6 +5,8 @@
  * Date: 2018/7/18
  * Time: 12:57
  * 链接数据库 验证 登录页面 发送过来的数据是否和数据库中的匹配,若不匹配返回 0  若匹配返回 1
+ * 判断登录
+ * 链接页面: login.php
  */
 header("content-type:text/html;charset=utf-8;");
 
@@ -23,11 +25,11 @@ function select(){
     while($row = mysqli_fetch_row($zhixing)){
         //和数据库中的username数据做对比,发现数据有相同的时候就返回 [0] 没有则返回 [1]
         if($username == $row[1]&&$password == $row[2]){
-            echo 1;//用户名可用
+            echo 1;//登录成功
             return;
         }
     }
-    echo 0; //用户名不可用
+    echo 0; //登录失败
     return;
 }
 select();

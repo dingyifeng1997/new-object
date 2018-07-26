@@ -6,6 +6,7 @@
  * Date: 2018/7/13
  * Time: 12:57
  * 链接数据库 查找有没有重复的用户名,返回 0表示重复 1表示不重复
+ * 链接页面: register.html
  */
     header("content-type:text/html;charset=utf-8;");
 

@@ -6,6 +6,7 @@
  * Date: 2018/7/13
  * Time: 12:57
  * 链接数据库 注册页面插入数据
+ * 链接页面: register.html
  */
 header("content-type:text/html;charset=utf-8;");
 
@@ -34,8 +35,7 @@ $conn= mysqli_connect("gxyiovmx.2365.dnstoo.com","dingyifeng_f","zxcvbn","dingyi
 $username = @$_POST['username'];
 $password = @$_POST['password'];
 $repassword = @$_POST['repassword'];
-$issue = @$_POST['issue'];
-$answer = @$_POST['answer'];
+$phoneNumber = @$_POST['phoneNumber'];
 
 
 //    $conn= mysql_connect("localhost","root","199707142510dyf");
@@ -47,7 +47,7 @@ $answer = @$_POST['answer'];
 mysqli_query($conn,"set names utf8");
 
 if(@$_GET['bool'] == true){
-    $insertSql = "insert into entryTable(username,password,repassword,issue,answer) values('{$username}','{$password}','{$repassword}','{$issue}','{$answer}')";
+    $insertSql = "insert into entryTable(username,password,repassword,phoneNumber) values('{$username}','{$password}','{$repassword}','{$phoneNumber}')";
     $result = @mysqli_query($conn,$insertSql);
 }
 echo "<script>location.href = 'skip.php?username='+'{$username}'</script>";

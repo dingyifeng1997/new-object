@@ -4,7 +4,8 @@
  * User: Administrator
  * Date: 2018/7/20
  * Time: 11:35
- * 设置密码的时候,AJAX发送过来一个username和password值匹配旧密码
+ * 用户修改密码的时候,AJAX发送过来一个username和password值匹配旧密码是否正确
+ * 链接页面: setAccount.html
  */
 
 

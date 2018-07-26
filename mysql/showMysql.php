@@ -5,6 +5,7 @@
  * Date: 2018/7/15
  * Time: 8:43
  * 显示数据库内容页面
+ * 链接页面:backLogin.html
  */
 
 
@@ -65,7 +66,6 @@ function getPage($pageLine){
 //    echo "<td width='150'>"."密保问题"."</td>";
 //    echo "<td width='150'>"."密保答案"."</td>";
     echo "<td width='150'>"."手机号码"."</td>";
-    echo "<td width='150'>"."注册验证码"."</td>";
 //    echo "<td width='150'>"."修改"."</td>";
     echo "<td width='150'>"."删除"."</td>";
     echo "</tr>";
@@ -77,7 +77,6 @@ function getPage($pageLine){
         echo "<td width='150'>"."{$rows[2]}"."</td>";
         echo "<td width='150'>"."{$rows[3]}"."</td>";
         echo "<td width='150'>"."{$rows[4]}"."</td>";
-        echo "<td width='150'>"."{$rows[5]}"."</td>";
 //        echo "<td width='150'>"." <a href='javascript:;' id='setButton'>修改</a>"."</td>";
         echo "<td width='150'>"." <a href='delUserMysql.php?delId={$rows[0]}&&pg=$currentPage'>删除</a>"."</td>";
         echo "</tr>";
