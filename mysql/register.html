@@ -8,7 +8,10 @@
     <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <!--    引入layer弹出层-->
+    <script src="../layer/layer.js"></script>
+    <!--    引入弹出层css-->
+    <link rel="shortcut icon" href="../layer/mobile/need/layer.css" >
     <!--创建表单验证步骤 :-->
     <!--
         1:先给表单元素设置blur(获取焦点事件)判断各个输入框内的值是否匹配
@@ -30,7 +33,7 @@
 
         html, body {
             /*background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532336752&di=3ab9eb94021781056d20e0d71f2d8b59&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017b4b5664dc4f32f8754573a454ea.jpg%401280w_1l_2o_100sh.jpg") center no-repeat fixed;;*/
-            background: url("../public/img/bg/zc2.jpg") center no-repeat fixed;
+            background: url("../public/img/bg/zc3.jpg") center no-repeat fixed;
             background-size: cover;
             height: 100vh;
             font-family: "宋体";
@@ -132,9 +135,7 @@
         </div>
         <!--注册表单页面-->
         <div class="col-md-4 c4">
-            <form action="registry.php?bool=true" method="POST" id="from">
-
-
+            <form action="registry.php?bool=true" method="POST" id="forms">
                 <!--用户名-->
                 <div class="row">
                     <div class="col-md-3 titles">账号:</div>
@@ -172,52 +173,14 @@
                     </div>
                 </div>
 
-                <!--密保问题-->
-                <!--<div class="row">
-                    <div class="col-md-3 titles">密保问题:</div>
-                    <div class="col-md-9 inputs">
-                        &lt;!&ndash;密保问题输入&ndash;&gt;
-                        <select name="issue"  style="color: #000;" class="auth form-control">
-                            <option value="" disabled selected>请选择密保问题</option>
-                            <option value="您母亲的姓名是？">您母亲的姓名是？</option>
-                            <option value="您父亲的姓名是？">您父亲的姓名是？</option>
-                            <option value="您配偶的姓名是？">您配偶的姓名是？</option>
-                            <option value="您的出生地是？">您的出生地是？</option>
-                            <option value="您高中班主任的名字是？">您高中班主任的名字是？</option>
-                            <option value="您初中班主任的名字是？">您初中班主任的名字是？</option>
-                            <option value="您小学班主任的名字是？">您小学班主任的名字是？</option>
-                            <option value="您的小学校名是？您的学号（或工号）是？">您的小学校名是？您的学号（或工号）是？</option>
-                            <option value="您父亲的生日是？">您父亲的生日是？</option>
-                            <option value="您母亲的生日是？">您母亲的生日是？</option>
-                            <option value="您配偶的生日是？">您配偶的生日是？</option>
-                        </select>
-                        <span class="error">
-                            <spna class="glyphicon glyphicon-minus-sign"></spna>
-                            未选择密保问题!
-                        </span>
-                    </div>
-                </div>
-
-                &lt;!&ndash;密保答案&ndash;&gt;
-                <div class="row">
-                    <div class="col-md-3 titles" >密保答案:</div>
-                    <div class="col-md-9 inputs">
-                        &lt;!&ndash;密保答案输入&ndash;&gt;
-                        <input type="text" name="answer" class="auth form-control" maxlength="11"  placeholder="请输入密保答案">
-                        <span class="error">
-                            <spna class="glyphicon glyphicon-minus-sign"></spna>
-                            未输入密保答案!
-                        </span>
-                    </div>
-                </div>-->
-
 
                 <!--接收验证码的手机号-->
                 <div class="row">
                     <div class="col-md-3 titles">手机号码:</div>
                     <div class="col-md-9 inputs">
                         <!--手机号码输入-->
-                        <input type="text" name="phoneNumber" class="auth form-control" maxlength="11" placeholder="输入手机号码"
+                        <input type="text" name="phoneNumber" class="auth form-control" maxlength="11"
+                               placeholder="输入手机号码"
                                onkeyup="value=value.replace(/[^\d]/g,'')">
                         <span class="error">
             <spna class="glyphicon glyphicon-minus-sign"></spna>
@@ -257,6 +220,8 @@
                 <!--提交按钮-->
                 <div style="padding:15px;">
                     <input type="submit" value="提&nbsp;&nbsp;交" class="btn btn-primary form-control" id="inputSubmit">
+
+                    <!--<button class="btn btn-primary form-control" id="inputSubmit">提交</button>-->
                 </div>
             </form>
 
@@ -282,9 +247,9 @@
                 $.ajax({
                     type: "POST",
                     url: "selectTable.php",
-                    data: {username:val},
+                    data: {username: val},
                     success: function (msg) {
-                        console.log("当前msg的值为"+msg)
+                        // console.log("当前msg的值为"+msg)
                         if (msg == 0) {
                             // console.log(msg);
                             // 当用户名已经被注册过时,这里使用JS的方法,将下边的内容直接换成下列标签内容显示出来
@@ -297,7 +262,7 @@
                         }
                     },
                     error: function (msg) {
-                        alert("用户名匹配错误");
+                        console.log("用户名匹配错误");
                     }
                 });
                 //给元素用Jquery加一个属性,不影响标签本身
@@ -341,35 +306,7 @@
             }
         }
     );
-    //4:密保问题:
-    /*$("select[name=issue]").blur(
-        function(){
-            var val = $(this).val();
-            // alert(val);
-            if(val == ""){
-                $(this).data({"s":0});
-                $(this).next().addClass("show-error");
-                // alert("没有选");
-            }else{
-                // alert("选了");
-                $(this).data({"s":1});
-                $(this).next().removeClass("show-error");
-            }
-        }
-    );
-    //5:密保答案:
-    $("input[name=answer]").blur(
-        function(){
-            var val= this.value;
-            if(val.length<1){
-                $(this).data({"s":0});
-                $(this).next().addClass("show-error");
-            }else{
-                $(this).data({"s":1});
-                $(this).next().removeClass("show-error");
-            }
-        }
-    );*/
+
 
     //4:接收验证码的手机号:
     $("input[name=phoneNumber]").blur(
@@ -386,7 +323,7 @@
         }
     );
 
-    LiuWei = 0; //返回来的验证码
+    YZcode = 100000; //返回来的验证码
 
     //5:验证码输入框:
     $("input[name=answer]").blur(
@@ -396,48 +333,55 @@
                 $(this).data({"s": 0});
                 $(this).next().next().html(" <div style='color:red;'><spna class='glyphicon glyphicon-minus-sign'></spna>验证码少于6位</div>").addClass("show-error");
             } else {
-                var ms = JSON.parse(LiuWei); //把字符串解析为json
-                if (number == val) {
+                // 判断生成的验证码和输入的验证码是否一致
+                if (YZcode == val) {
+                    // 调用layer弹出层 弹出验证码正确信息
+                    // layer.alert('验证码匹配正确', {time: 1500,icon: 1});
+
                     $(this).data({"s": 1});
                     $(this).next().next().html(" <div style='color:#0097ea;'><spna class='glyphicon glyphicon-ok-sign'></spna>验证码正确</div>").addClass("show-error");
                 } else {
+                    // 调用layer弹出层 弹出验证码错误信息
+                    layer.alert('验证码匹配错误', { time: 1500,anim:6,icon: 2});
                     $(this).data({"s": 0});
                     $(this).next().next().html(" <div style='color:red;'><spna class='glyphicon glyphicon-minus-sign'></spna>验证码错误</div>").addClass("show-error");
                 }
             }
         }
     );
-    //5.2:获取验证码 a标签点击后,先检查手机号码是否输入
 
+    //5.2:获取验证码 a标签点击后,先检查手机号码是否输入
     $("#getCaptcha").click(function () {
         if ($("input[name=phoneNumber]").val() < 11) {
             $("input[name=phoneNumber]").blur();
         } else {
             //调用发送按钮
-            i = 3;
+            i = 60;
             Countdown = setInterval("set()", 1000);
             var phoneNumber = $("input[name=phoneNumber]").val(); //取到输入手机号码
-            number = parseInt(500000*Math.random()+100000); 　//全局变量 : 生成一个6位数验证码
-            console.log(number);
+            number = parseInt(500000 * Math.random() + 100000); 　//全局变量 : 生成一个6位数验证码
+            // console.log(number);
+
             //调用AJAX向服务器发送一个请求验证码的信息,使用AJAX发送
             $.ajax({
                 type: "GET",
-                url: "http://api.sms.cn/sms/?ac=send&uid=dingyifeng&pwd=16451e3082ea5e9bbb519309c0f8e91d&template=437713&mobile=" + phoneNumber + "&content={\"variable\":"+ number + "}",
+                url: "http://api.sms.cn/sms/?ac=send&uid=jingtai&pwd=4b5ef353b6f4b61ff6b1c3c89f2eb263&template=438230&mobile=" + phoneNumber + "&content={\"variable\":" + number + "}",
                 success: function (msg) {
                     //服务器返回 {"stat":"状态码","message":"执行结果"} 状态码:100 为发送成功
-                    LiuWei = msg;
+                    YZcode = number;
 
                     var ms = JSON.parse(msg); //把字符串解析为json
-                    if(ms.stat == 100){
-                        alert("验证码发送成功");
-
-                    }else{
-                        alert(ms.message);
+                    if (ms.stat == 100) {
+                        // 调用layer弹出层 弹出验证码正确信息
+                        layer.alert('验证码发送成功', {time: 1500,icon: 1});
+                    } else {
+                        // 调用layer弹出层 弹出验证码错误信息
+                        layer.alert(ms.message, { time: 1500,anim:6,icon: 2});
                         clearInterval(Countdown);
                     }
                 },
                 error: function (msg) {
-                    alert("验证码发送失败");
+                    layer.alert('验证码发送失败', { time: 1500,anim:6,icon: 2});
                 }
             });
         }
@@ -464,7 +408,7 @@
 
 
     //提交表单前综合验证
-    $("form").submit(function sss() {
+    $("#forms").submit(function sss() {
         //提交表单按钮每点击一次就获取所有的class类名为auth的输入框的焦点进行判断
         $(".auth").blur();
         //定义一个计数器,计算表单输入框的填写正确数量
@@ -478,18 +422,19 @@
         );
 
         // console.log($("input[name=username]").data("s"));  //测试每个表情身上都添加有 s 属性
-        console.log("当前tot的值为:" + tot);  //测试每个表情身上都添加有 s 属性
+        // console.log("当前tot的值为:" + tot);  //测试每个表情身上都添加有 s 属性
         // alert($("input[name=password]").data("s"));
         // alert($("input[name=repassword]").data("s"));
         // alert($("#issue")).data("s");
         // alert($("input[name=answer]")).data("s");
         //判断输入框匹配数量是否正确
 
-        if (tot != 5) {
+        if (tot == 5) {
+            // 调用layer弹出层 弹出验证码正确信息
+            // layer.alert('注册成功', {time: 1500,icon: 1});
+        } else {
             //如果不正确就返回false阻止表单提交
             return false;
-        } else {
-            alert("注册成功!");
         }
     });
 </script>

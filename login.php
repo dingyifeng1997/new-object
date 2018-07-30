@@ -9,10 +9,18 @@
     <script src="public/bs/js/jquery-1.11.0.min.js"></script>
     <script src="public/bs/js/bootstrap.min.js"></script>
     <script src="public/js/holder.min.js"></script>
+<!--    引入layer弹出层-->
+    <script src="layer/layer.js"></script>
+<!--    引入弹出层css-->
+    <link rel="shortcut icon" href="layer/mobile/need/layer.css" >
+
+
+
+
     <style>
 
     body{
-        background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532176219769&di=07ce487ee8d20441c4f9c62e6aade212&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01820c58b4e5a3a801219c7726ed51.jpg%402o.jpg") center no-repeat fixed;;
+        background: url("public/img/bg/dlbg2.jpg") center no-repeat fixed;;
         background-size:cover;
         height: 100vh;
     }
@@ -27,16 +35,17 @@
     .login-body{
         width: 100%;
         height:100%;
-        /*background: rgba(251, 255, 255,0.5);*/
+        background: rgba(251, 255, 255,0.8);
         /*background: #c1fff8;*/
         margin:0 auto;
-        border-radius:5px;
+        border-radius:10px;
     }
     .box{
         padding:15px;
     }
     .form-control{
         background: rgba(0, 0, 0, 0);
+
     }
     .col-md-3 img{
         width:250px;
@@ -72,6 +81,7 @@
     .form-group{
         border-bottom: 1px solid #878787;
     }
+
     </style>
 </head>
 <body>
@@ -92,7 +102,7 @@
                         <div class="box">
                             <h3 style="text-align: center;color: white;">用户登录</h3>
 
-                            <form>
+                            <form style="padding-bottom:10px;">
                                 <div class="form-group">
 <!--                                    <label for="exampleInputName">账 名:</label>-->
                                     <span class="icon-sheet"></span>
@@ -112,14 +122,22 @@
 
                                 </div>
                                 <br>
-                                <button type="button" class="btn btn-primary" id="submit" style="position:absolute;width:25%;">登录</button>
+                                <button type="button" class="btn btn-primary" id="submit" style="width:100%;">登录</button>
 <!--                                <input type="submit" class="btn btn-primary" id="submit" value="登录">-->
-                                <button type="reset" class="btn btn-info" style="margin-left:50%;position:absolute;left:-10%;width:25%;">清空</button>
+
+
+<!--                                清空按钮-->
+<!--                                <button type="reset" class="btn btn-info" style="margin-left:50%;position:absolute;left:-10%;width:25%;">清空</button>-->
+
+<!--                                qq按钮-->
                                 <!--<button type="reset" class="btn btn-warning"><a id="getQQ" style="text-decoration:none;">Q Q</a></button>-->
-                                <button type="button" class="btn btn-warning" style="position: absolute;right:20px;width:25%;"><a href="mysql/register.html" style="text-decoration:none;">注册</a></button>
+
+<!--                                <button type="button" class="btn btn-warning" style="position: absolute;right:20px;width:25%;"><a href="mysql/register.html" style="text-decoration:none;">注册</a></button>-->
                             </form>
+                                <a href="mysql/register.html" style="color: #2c6eff;">立即注册</a>
 
                         </div>
+
                     </div>
                 </section>
 
@@ -136,7 +154,9 @@
             </div>
 
         </div>
+
     </div>
+
 
     <script>
 
@@ -167,11 +187,12 @@
                 success: function (msg) {
                     // console.log(msg);
                     if (msg == 1) {
-                        alert("登录成功");
                         goIn();
                         addCookie();
                     }else{
-                        alert("您的用户名和账户不匹配,请重新输入!");
+                        // 调用layer弹出层 弹出密码错误信息
+                        layer.alert('用户名或密码错误', { anim:6,icon: 2});
+
                         $("#exampleInputPassword").val(""); //输入错误清空输入框
                     }
                 },
@@ -198,21 +219,19 @@
             });
         }
 
+
+
         //登录成功特效和进入页面
         function goIn(){
-            //点击后计时三秒
-            $("#shuru").fadeOut("slow");
-            $("#jindt").delay(650).fadeIn("slow");  //延迟0.6秒后执行
-
-            for(var i = 0;i<100;i++){
-                setTimeout(function(){
-                    $(".progress-bar").css({"width":i+"%"});
-                },900)
-            }
 
             setTimeout(function(){
-                window.location = "backLogin.html";
-            },2500)
+                layer.load(1,
+                    {shade:[0.5, '#dbdede'],}
+                ); //layer弹出层加载中页面
+                setTimeout(function(){
+                    window.location = "backLogin.html";
+                },1300)
+            },200)
         }
 
 
