@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner广告栏效果</title>
+    <!--百度在线压缩地址-->
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <script src="jquery.slider.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #shang{
+            width: 100%;
+            height: 500px;
+            background:red;
+            text-align: center;
+        }
+
+        /*这里是外层的包裹,主要作用限制img的显示范围*/
+        #shang #imgdiv{
+            width: 1920px;
+            height:500px;
+            position:absolute;
+            left:50%;
+            overflow: hidden;
+            margin-left:-960px;
+        }
+        /*这里是内层包裹.主要作用承载img图片,使得img排成一列,并根据点击做出特效*/
+        #shang #imgdiv #aa{
+            width: 9600px;
+            /*background: blue;*/
+        }
+        #aa img{
+            float: left;
+        }
+        #xia{
+            width:300px;
+            height: 40px;
+            margin:0 auto;
+            position: absolute;
+            top: 440px;
+            left:50%;
+            margin-left: -150px;
+            z-index:1;
+        }
+        #xia li{
+            width: 52px;
+            height: 40px;
+            margin:0;
+            padding:0;
+            float: left;
+            list-style:none;
+        }
+        #xia li p{
+            width:13px;
+            height:13px;
+            border: 2px solid black;
+            border-radius:20px;
+            /*background: blue;*/
+            position: relative;
+            top: 10px;
+            transition:border 0.5s,height 0.5s,width 0.5s;
+        }
+        #xia li p:hover{
+            border:2px solid yellow;
+            width:15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="shang">
+        <div id="xia">
+            <ul>
+                <li><p style="border: 2px solid yellow;"></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+            </ul>
+        </div>
+        <div id="imgdiv">
+            <div id="aa">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532530196777&di=b2d88db503b81e04e4776e6ed0e9df0d&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0161c95690b86032f87574beaa54c2.jpg" alt="">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532530196777&di=242b9e8957e31e6a2c2b0b793a2ec6a1&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F01%2F85%2Fe91154d88193fac261a67f53c4bf8c3c.jpg" alt="">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532530196779&di=3c8e5e61c724a9b2a92253c1d28174b3&imgtype=0&src=http%3A%2F%2Fimages.hisupplier.com%2Fvar%2FuserImages%2F201609%2F29%2F122015785981_s.jpg" alt="">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532530196777&di=c431e411ae75ab81a2221107350efa9f&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F03%2F74%2F524d68f8a1c8bb0081d186178c10290f.jpg" alt="">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532530196777&di=42f4ce2550708f7d92a00a62665a274e&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F02%2F39%2Fae90b5ac34b2b41da0bdced81e618e20.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+<script>
+    //    给li按钮添加点击事件
+    $(" #xia li").click(function(){
+        //当li元素点击的时候,把li按钮的索引拿到
+        val = $(this).index();
+        i = val;    //当li点击的时候,就把全局变量计数器变为点击的元素的索引
+        //给img图片的外包裹添加一个自定义动画,每点击一次就让他的margin-left值变化 索引值 * 1920,在一秒内完成
+        $("#aa").animate({
+            "margin-left":val*-1920+"px"
+        },500);
+        $(" #xia li p").eq(val).css({"border":"2px solid yellow"})
+        $(" #xia li p").not($(" #xia li p").eq(val)).css({"border":"2px solid black"})
+
+    });
+
+
+    //定时器,2秒执行一次
+    setInterval(sss,2000);
+    //全局变量,用于表示当前出现的图片的索引
+    i = 0;
+    function sss(){
+        $("#aa").animate({
+            "margin-left":i*-1920+"px"
+        },500);
+        panduan();
+        $(" #xia li p").eq(i-1).css({"border":"2px solid yellow"})
+        $(" #xia li p").not($(" #xia li p").eq(i-1)).css({"border":"2px solid black"})
+    }
+
+    function panduan(){
+        i++;
+        if(i >= 5){
+            i = 0;
+        }
+    }
+</script>
+</html>

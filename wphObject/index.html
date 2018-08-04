@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+    <meta name="description" content="晶泰光电LED显示屏报价网是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+    <title>晶泰光电-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修,晶泰光电安装</title>
+
+    <!--引入jquery-->
+    <script src="js/jquery.min.js"></script>
+
+    <!--引入bootstrap-->
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
+    <!--引入bootstrap.js-->
+    <script src="./bs/js/bootstrap.js"></script>
+
+    <!--自定义css样式需在bootstarp下方-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <script src="swiper/js/swiper.js"></script>
+
+    <!--引入layUI的CSS-->
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <!--引入layUI的所有包含JS,使用jquery做依赖-->
+    <script src="./layui/layui.all.js"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- 点击汉堡按钮 -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--左侧logo-->
+            <img src="img/logo/jtlogo.png" alt="" class="jtlogo">
+ <!--
+            <a href="#">
+                <img src="img/logo/wph.png" width="99" alt="万屏汇旗下" class="wph">
+            </a>
+-->
+        </div>
+        <!--右侧菜单栏-->
+        <div class="collapse navbar-collapse  navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id="navs">
+                <li><a href="../backLogin.html" class="active" id="cases">首页</a></li>
+                <li><a data-href="#case" id="caseID">项目案例</a></li>
+                <li><a data-href="#service" id="serviceID">服务保障</a></li>
+                <li><a data-href="#product" id="productID">产品展示</a></li>
+                <li><a data-href="#partner" id="partnerID">合作伙伴</a></li>
+                <li><a data-href="#about" id="aboutID">了解我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--banner-->
+<section id="banner" class="topContent">
+    <img src="http://p99vpab4j.bkt.clouddn.com/8ba2b47319c949b880dc7cc98ef0d395" class="banner">
+
+    <!--左侧内容,如果是手机则隐藏-->
+    <div class="container">
+        <div class="left-pane">
+            <h1>行业超越，质优显示</h1>
+            <h5>信誉品牌，值得信赖</h5>
+            <img src="http://p99vpab4j.bkt.clouddn.com/d0ab6183d1a84c44a13b6ff4e0768b1c" alt="电话" style="width:280px;">
+        </div>
+    </div>
+    <div class="inquiry-panel" id="topMessage">
+        <h4>5秒获取报价</h4>
+        <p class="inq-num">今天已有<span>23</span>位获取报价</p>
+        <p class="pos-city">
+            <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top: 5px;"></span>
+            <span class="currCity main-color">郑州市</span></p>
+        <p class="input-title">使用场景</p>
+        <div class="choose-pane ">
+            <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
+            <span class="layui-icon layui-icon-down UpDown"></span>
+            <ul class="options main-color" id="usageScenario">
+                <li>商业广告屏</li>
+                <li>门头屏</li>
+                <li>室内高清屏</li>
+                <li>交通诱导屏</li>
+                <li>安防监控屏</li>
+            </ul>
+        </div>
+        <p class="input-title">屏幕面积</p>
+        <div class="input-pane">
+            <input type="number" class="screen-high main-color" style="color: rgb(25, 105, 255);" value="4.5">
+            <span class="unit">m 高</span>
+        </div>
+
+        <span class="iconfont icon-guanbi">X</span>
+
+        <div class="input-pane">
+            <input type="number" class="screen-width main-color" style="color: rgb(25, 105, 255);" value="8">
+            <span class="unit">m 宽</span>
+        </div>
+        <p class="input-title">联系方式</p>
+        <input type="tel" placeholder="用于接收报价的手机号" class="input-pane-lg phone main-color" maxlength="11">
+        <p class="errorTip">请输入正确的手机号</p>
+        <button class="btn submit-inquiry main-color-bg get-quote-calculate" style="background-color: rgb(25, 105, 255);">开始计算
+        </button>
+        <div class="-swiper scroll-tips">
+            <div class="swiper-wrapper scroll-tips-view">
+                <p class="swiper-slide">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
+                    元</p>
+                <p class="swiper-slide">133****2201获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 139400 </span>
+                    元</p>
+                <p class="swiper-slide">137****6783获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 310000 </span>
+                    元</p>
+                <p class="swiper-slide">131****7176获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 146400 </span>
+                    元</p>
+                <p class="swiper-slide">132****9119获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 335800 </span>
+                    元</p>
+                <p class="swiper-slide">152****8981获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 416400 </span>
+                    元</p>
+                <p class="swiper-slide">152****4494获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 63100 </span>
+                    元</p>
+                <p class="swiper-slide">175****2645获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 242200 </span>
+                    元</p>
+                <p class="swiper-slide">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
+                    元</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!--项目案例-->
+<section id="case" class="projectCase" style="margin-bottom:80px ">
+    <div class="container" style="position:relative;">
+        <h2 class="sec-title">项目案例</h2>
+        <h5 class="sec-subtitle">专业案例展示</h5>
+        <div class="cate-items" id="projectbtn">
+            <span cid="0" class="item main-color-bg">所有</span>
+            <span cid="1" class="item">室内高清屏</span>
+            <span cid="2" class="item">商业广告屏</span>
+        </div>
+
+
+        <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:27px;">
+            <div class="swiper-wrapper" id="projectCase">
+
+                <div class="swiper-slide indoor" ><img
+                        src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
+                    <p class="slide-cate">室内高清屏P2.5 30m²</p>
+                    <p class="slide-info"> 2017-5建于郑州 </p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">20万</span></h4>
+                    <p class="slide-cate">室内高清屏P3 50m² </p>
+                    <p class="slide-info">2017-04建于郑州</p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                    <p class="slide-cate">室内高清屏P4 15m² </p>
+                    <p class="slide-info">2017-10建于郑州</p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                    <p class="slide-cate">室内高清屏P6 9m²</p>
+                    <p class="slide-info">2017-10建于郑州</p></div>
+
+                <div class="swiper-slide outdoor"><img
+                        src="http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">68万</span></h4>
+                    <p class="slide-cate">室内高清屏P8 180m²</p>
+                    <p class="slide-info">2018-04建于郑州</p></div>
+                <div class="swiper-slide outdoor" ><img
+                        src="http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">9千</span></h4>
+                    <p class="slide-cate">室内高清屏P3.75 6m² </p>
+                    <p class="slide-info">2017-10建于郑州银行</p></div>
+                <div class="swiper-slide outdoor"><img
+                        src="http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">2.2千</span></h4>
+                    <p class="slide-cate">室内高清屏P10 5m² </p>
+                    <p class="slide-info">2018-04建于郑州</p></div>
+
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="swiper-button-prev swiper-button-black" tabindex="0" role="button"
+             aria-label="Previous slide"></div> <!-- 黑色 -->
+        <div class="swiper-button-next swiper-button-black" tabindex="0" role="button" aria-label="Next slide"></div>
+        <!-- 黑色 -->
+    </div>
+</section>
+<!--保障体系-->
+<section id="service" class="security">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <h2 class="title">四大保障体系</h2>
+                <h5 class="subtitle">4大保障，放心消费</h5>
+            </div>
+            <div class="col-xs-4" style="padding-left: 120px;">
+                <div class="service-item">
+                    <span class="layui-icon layui-icon-home" style="color: rgb(25, 105, 255);"></span>
+                    <h5>厂家直销</h5>
+                    <p></p>
+                </div>
+                <div class="service-item">
+                    <span class="layui-icon layui-icon-vercode" style="color: rgb(25, 105, 255);"></span>
+                    <h5>快速上门安装</h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-xs-4" style="padding-left: 100px;">
+                <div class="service-item">
+                    <span class="layui-icon layui-icon-form" style="color: rgb(25, 105, 255);"></span>
+                    <h5>免费报价</h5>
+                    <p></p>
+                </div>
+                <div class="service-item">
+                    <span class="layui-icon layui-icon-util"
+                          style="color: rgb(25, 105, 255);"></span>
+                    <h5>质量保障</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--产品展示-->
+<section id="product" class="productDisplay">
+    <div class="container">
+        <h2 class="sec-title">产品展示</h2>
+        <h5 class="sec-subtitle">产品质优，行业超越</h5>
+        <div class="cate-items" id="productCenter">
+            <span cid="0" class="item main-color-bg">所有</span>
+            <span cid="2" class="item">室内显示</span>
+            <span cid="3" class="item">室外显示</span>
+            <span cid="1" class="item">小间距</span>
+        </div>
+        <div class="swiper-container product-swiper swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transition-duration: 0ms;" id="productShow">
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                     data-swiper-slide-index="15" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
+                    <p class="slide-info">KRM2</p></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                     data-swiper-slide-index="16" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
+                    <p class="slide-info">USDII10</p></div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="17"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
+                    <p class="slide-info">UTW-025SS</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="0" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
+                    <p class="slide-info">P1.926</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="1" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
+                    <p class="slide-info">P2</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="2" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
+                    <p class="slide-info">P2.5</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1">
+                    <p class="slide-info">P3</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458">
+                    <p class="slide-info">P4</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="5" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700">
+                    <p class="slide-info">P5</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="6" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b">
+                    <p class="slide-info">P6</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="7" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6">
+                    <p class="slide-info">P8</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="8" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc">
+                    <p class="slide-info">P10</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="9" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79">
+                    <p class="slide-info">P2</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="10" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/2f94d3045c6e45119b281ea03e847c72">
+                    <p class="slide-info">P2.5</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="11" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4">
+                    <p class="slide-info">P3</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="12" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56">
+                    <p class="slide-info">P3.91</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="13" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e">
+                    <p class="slide-info">P4</p></div>
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="14"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73">
+                    <p class="slide-info">P4.81</p></div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="15"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
+                    <p class="slide-info">KRM2</p></div>
+                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="16"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
+                    <p class="slide-info">USDII10</p></div>
+                <div class="swiper-slide" data-swiper-slide-index="17" style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
+                    <p class="slide-info">UTW-025SS</p></div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
+                    <p class="slide-info">P1.926</p></div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
+                    <p class="slide-info">P2</p></div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                     style="width: 360px; margin-right: 30px;"><img
+                        src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
+                    <p class="slide-info">P2.5</p></div>
+            </div>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="swiper-button-prev swiper-button-black b1"></div> <!-- 黑色 -->
+        <div class="swiper-button-next swiper-button-black b2"></div> <!-- 黑色 -->
+    </div>
+</section>
+
+<!--合作伙伴-->
+<section id="partner" class="partners">
+    <h2 class="sec-title">合作伙伴</h2>
+    <h5 class="sec-subtitle">可以信赖的合作伙伴</h5>
+    <img src="http://p99vpab4j.bkt.clouddn.com/e53f7c1f5e64414f99c3caf8846706f4" alt="合作伙伴" class="partner-img">
+</section>
+
+<!--了解我们-->
+<section id="about" class="know-we">
+    <h2 class="sec-title">了解我们</h2>
+    <h5 class="sec-subtitle">专业团队打造卓越显示</h5>
+    <div class="container about-honor">
+        <h5 class="small-title">资质荣誉</h5>
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="fuck-pane">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/b5f1bd16de3e44c79a6463e2eb5499b1" alt="证书">
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="fuck-pane">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/b05458a932a44acf9e82f75107bef24f" alt="证书">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container about-info">
+        <h5 class="small-title">公司规模</h5>
+        <div class="col-xs-6 left-pane">
+            <img src="http://p99vpab4j.bkt.clouddn.com/c5e9d1ff9fd64b728c7131ef55d20218" alt="头像" width="77"
+                 class="user-avatar">
+            <div class="law-man"><p>法人代表</p> <h5>张鑫</h5></div>
+            <div class="com-pane-3"><p>注册资金</p> <h5>1010万元</h5></div>
+            <div class="com-pane-3"><p>注册时间</p> <h5>2015-09-02</h5></div>
+            <div class="com-pane-3"><p>人员规模</p> <h5>40~99人</h5></div>
+        </div>
+        <div class="col-xs-6 swiper-pane">
+            <div class="swiper-containe com-swiper swiper-container-horizontal">
+                <div class="swiper-wrapper"
+                     style="transition-duration: 0ms; transform: translate3d(-1755px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                         data-swiper-slide-index="3" style="width: 585px;"><h6 class="slide-title">会议室</h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="0" style="width: 585px;"><h6
+                            class="slide-title"></h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d"></div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 585px;"><h6
+                            class="slide-title">办公环境</h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/65f66aa165804844a7ba173829411fed"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 585px;"><h6
+                            class="slide-title">独立办公室</h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/7805dce017cf4ab886134f3f4963dfb5"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" style="width: 585px;"><h6
+                            class="slide-title">会议室</h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232"></div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 585px;">
+                        <h6 class="slide-title"></h6> <img
+                            src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d"></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                        class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                        class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                        class="swiper-pagination-bullet"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--页脚-->
+<footer id="footer" class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 nav-links xmal"><h6>项目案例</h6>
+                <p cid="0">所有案例</p>
+                <p cid="2">室内高清屏</p>
+                <p cid="1">商业广告屏</p></div>
+            <div class="col-xs-2 nav-links cpzs" style="padding-left: 50px;"><h6>产品展示</h6>
+                <p cid="0">所有产品</p>
+                <p cid="2">室内显示</p>
+                <p cid="3">室外显示</p>
+                <p cid="1">小间距</p></div>
+            <div class="col-xs-2 nav-links ljwm" style="padding-left: 60px;">
+                <h6>了解我们</h6>
+                <p data-href=".about-honor">资质荣誉</p>
+                <p data-href=".about-info">公司规模</p>
+            </div>
+            <div class="col-xs-12">
+                <img src="http://p99vpab4j.bkt.clouddn.com/b89cf57e176b4602ae065e68258c2ea9" alt="logo"
+                     class="footer-logo">
+                <div class="comInfo">
+                    <h6>河南晶泰光电科技有限公司</h6>
+                    <p><span>地址：郑州市郑东新区通泰路东宏伟街南中力七里湾5号楼113号</span> <span>&nbsp;&nbsp; 豫ICP备16034273号-2</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="service"><h6>客服热线：</h6>
+            <p>周一至周日 9:00-22:00</p>
+            <strong>
+                <span class="iconfont icon-dianhua"></span>
+                130-2771-2540
+            </strong>
+        </div>
+    </div>
+</footer>
+
+<!--底部获取报价窗口-->
+<div id="InquiryBottom" class="phone-window">
+    <div class="container">
+        <div class="cityLocation ">
+            <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top:5px;"></span>
+            <span class="currCity-bottom">郑州市</span>
+        </div>
+        <input maxlength="11" placeholder="请输入您的手机号" class="phone-bottom">
+        <button class="btn main-color-bg make-an-inquiry" style="background-color: rgb(25, 105, 255);">询价</button>
+        <img src="img/page/inquiry-tip.png" class="tip-img">
+        <span class="errorTip">请输入正确的手机号</span>
+    </div>
+</div>
+
+
+<!--自定义JS特效-->
+<script src="js/index.js"></script>
+<script>
+</script>
+</body>
+</html>
