@@ -166,12 +166,12 @@ function getSum(){
     })
     $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
     $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
-    alert("折合每平方价格为 : "+(summation/allSquare).toFixed(1)+" 元")  //弹出每平方价格
+    layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6});  //弹出每平方价格
 
 }
 
-
-
+// alert(1);
+// layer.alert('酷毙了', {icon: 1});
 
 
 // 九:表格的编辑按钮

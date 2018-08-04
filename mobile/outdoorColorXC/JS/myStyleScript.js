@@ -222,6 +222,7 @@ function onlyNumber(){
     //判断,当输入框中发现有一个或者一个以上的内容不为数字,就打印出有几个输入框不为数字
     if(c != 0){
         alert("报错! 编辑表格中有"+c+"个输入框的内容为空.或者不为数字,请检查后再提交");
+
     }
 
 }
@@ -237,8 +238,8 @@ function getSum(){
     })
     $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
     $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
-    alert("折合每平方价格为 : "+(summation/allSquare).toFixed(1)+" 元")  //弹出每平方价格
-
+    // alert("折合每平方价格为 : "+(summation/allSquare).toFixed(1)+" 元")  //弹出每平方价格
+    layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6});  //弹出每平方价格
 }
 
 

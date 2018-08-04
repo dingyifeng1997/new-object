@@ -6,8 +6,9 @@
     <title>注册成功</title>
 <!--    用户注册成功页面-->
     <!--百度在线压缩地址-->
-    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="../public/bs/js/jquery-1.11.0.min.js"></script>
+    <!--bootstarp官方样式-->
+    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
 
     <style>
         *{

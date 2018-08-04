@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>河南晶泰光电科技有限公司-后台登录系统</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/bs/css/bootstrap.css">
     <link rel="shortcut icon" href="public/img/icon/icon.png" >
     <script src="public/bs/js/jquery-1.11.0.min.js"></script>
     <script src="public/bs/js/bootstrap.min.js"></script>
@@ -16,11 +16,10 @@
 
 
 
-
     <style>
 
     body{
-        background: url("public/img/bg/dlbg2.jpg") center no-repeat fixed;;
+        background: url("public/img/bg/dlbg2.jpg") center no-repeat fixed;
         background-size:cover;
         height: 100vh;
     }
@@ -226,7 +225,7 @@
 
             setTimeout(function(){
                 layer.load(1,
-                    {shade:[0.5, '#dbdede'],}
+                    {time:1300,shade:[0.5, '#dbdede'],}
                 ); //layer弹出层加载中页面
                 setTimeout(function(){
                     window.location = "backLogin.html";
