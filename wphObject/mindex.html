@@ -19,7 +19,7 @@
     <script src="./bs/js/bootstrap.js"></script>
 
     <!--自定义css样式需在bootstarp下方-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mindex.css">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <script src="swiper/js/swiper.js"></script>
 
@@ -30,36 +30,36 @@
 
 
 </head>
-<body>
+<body style="overflow-x: hidden">
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- 点击汉堡按钮 -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="padding:5px;">
+                <span type="button"  class=" glyphicon glyphicon-menu-hamburger" style="width:30px;font-size: 18px;"></span>
             </button>
+
             <!--左侧logo-->
             <img src="img/logo/jtlogo.png" alt="" class="jtlogo">
- <!--
-            <a href="#">
-                <img src="img/logo/wph.png" width="99" alt="万屏汇旗下" class="wph">
-            </a>
--->
         </div>
         <!--右侧菜单栏-->
         <div class="collapse navbar-collapse  navbar-right" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="navs">
-                <li><a href="../backLogin.html" class="active" id="cases">首页</a></li>
+                <li><a href="../backLogin.html" class="active" id="cases">回到首页</a></li>
                 <li><a data-href="#case" id="caseID">项目案例</a></li>
                 <li><a data-href="#service" id="serviceID">服务保障</a></li>
                 <li><a data-href="#product" id="productID">产品展示</a></li>
                 <li><a data-href="#partner" id="partnerID">合作伙伴</a></li>
                 <li><a data-href="#about" id="aboutID">了解我们</a></li>
+                <li style="height:100px;">
+                    <div class="btns"  style="width:60px;height:60px;border-radius:60px;background:#ffa538;margin:0 auto;">
+                        <a href="tel:13027712540">
+                            <span class="glyphicon glyphicon-earphone"  style="font-size:40px;color: #fff;margin:10px;"></span>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -67,158 +67,148 @@
 
 <!--banner-->
 <section id="banner" class="topContent">
-    <img src="http://p99vpab4j.bkt.clouddn.com/8ba2b47319c949b880dc7cc98ef0d395" class="banner">
 
-    <!--左侧内容,如果是手机则隐藏-->
-    <div class="container">
-        <div class="left-pane">
-            <h1>行业超越，质优显示</h1>
-            <h5>信誉品牌，值得信赖</h5>
-            <img src="http://p99vpab4j.bkt.clouddn.com/d0ab6183d1a84c44a13b6ff4e0768b1c" alt="电话" style="width:280px;">
-        </div>
-    </div>
     <div class="inquiry-panel" id="topMessage">
-        <h4>5秒获取报价</h4>
-        <p class="inq-num">今天已有<span>23</span>位获取报价</p>
-        <p class="pos-city">
-            <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top: 5px;"></span>
-            <span class="currCity main-color">郑州市</span></p>
-        <p class="input-title">使用场景</p>
-        <div class="choose-pane ">
-            <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
-            <span class="layui-icon layui-icon-down UpDown"></span>
-            <ul class="options main-color" id="usageScenario">
-                <li>商业广告屏</li>
-                <li>门头屏</li>
-                <li>室内高清屏</li>
-                <li>交通诱导屏</li>
-                <li>安防监控屏</li>
-            </ul>
-        </div>
-        <p class="input-title">屏幕面积</p>
-        <div class="input-pane">
-            <input type="number" class="screen-high main-color" style="color: rgb(25, 105, 255);" value="4.5">
-            <span class="unit">m 高</span>
-        </div>
+        <h2 class="font_semibold">行业超越，质优显示</h2>
+        <p class="font_regular">信誉品牌，值得信赖</p>
+        <div class="get_price">
+            <h4>5秒获取报价</h4>
+            <p class="inq-num">今天已有<span style="color: rgb(0,0,0);">23</span>位获取报价</p>
+            <p class="pos-city">
+                <span class="glyphicon glyphicon-map-marker" style="color:rgb(55,124,255);font-size: 16px;top: 2px;"></span>
+                <span class="currCity main-color">郑州市</span></p>
+            <p class="input-title">使用场景</p>
+            <div class="choose-pane ">
+                <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
+                <span class="layui-icon layui-icon-down UpDown"></span>
+                <ul class="options main-color" id="usageScenario">
+                    <li>商业广告屏</li>
+                    <li>门头屏</li>
+                    <li>室内高清屏</li>
+                    <li>交通诱导屏</li>
+                    <li>安防监控屏</li>
+                </ul>
+            </div>
+            <p class="input-title">屏幕面积</p>
 
-        <span class="iconfont icon-guanbi">X</span>
+            <div style="width:100%;height: 50px;">
+                <div class="input-pane">
+                    <input type="number" class="screen-high main-color" style="color: rgb(25, 105, 255);" value="4.5">
+                    <span class="unit">m 高</span>
+                </div>
 
-        <div class="input-pane">
-            <input type="number" class="screen-width main-color" style="color: rgb(25, 105, 255);" value="8">
-            <span class="unit">m 宽</span>
-        </div>
-        <p class="input-title">联系方式</p>
-        <input type="tel" placeholder="用于接收报价的手机号" class="input-pane-lg phone main-color" maxlength="11">
-        <p class="errorTip">请输入正确的手机号</p>
-        <button class="btn submit-inquiry main-color-bg get-quote-calculate" style="background-color: rgb(25, 105, 255);">开始计算
-        </button>
-        <div class="-swiper scroll-tips">
-            <div class="swiper-wrapper scroll-tips-view">
-                <p class="swiper-slide">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
+                <span class="iconfont icon-guanbi">X</span>
+
+                <div class="input-pane">
+                    <input type="number" class="screen-width main-color" style="color: rgb(25, 105, 255);" value="8">
+                    <span class="unit">m 宽</span>
+                </div>
+            </div>
+
+            <p class="input-title">联系方式</p>
+            <input type="tel" placeholder="用于接收报价的手机号" class="input-pane-lg phone main-color" maxlength="11">
+            <p class="errorTip">请输入正确的手机号</p>
+            <button class="btn submit-inquiry main-color-bg get-quote-calculate" style="background-color: rgb(25, 105, 255);">开始计算
+            </button>
+            <div class="-swiper scroll-tips swiper-container-vertical swiper-container-android">
+                <div class="swiper-wrapper scroll-tips-view" style="transition-duration: 0ms; transform: translate3d(0px, -80px, 0px);"><p class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="height: 20px;">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
                     元</p>
-                <p class="swiper-slide">133****2201获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 139400 </span>
-                    元</p>
-                <p class="swiper-slide">137****6783获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 310000 </span>
-                    元</p>
-                <p class="swiper-slide">131****7176获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 146400 </span>
-                    元</p>
-                <p class="swiper-slide">132****9119获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 335800 </span>
-                    元</p>
-                <p class="swiper-slide">152****8981获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 416400 </span>
-                    元</p>
-                <p class="swiper-slide">152****4494获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 63100 </span>
-                    元</p>
-                <p class="swiper-slide">175****2645获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 242200 </span>
-                    元</p>
-                <p class="swiper-slide">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
-                    元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="0" style="height: 20px;">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
+                        元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="1" style="height: 20px;">133****2201获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 139400 </span>
+                        元</p>
+                    <p class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="height: 20px;">137****6783获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 310000 </span>
+                        元</p>
+                    <p class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="height: 20px;">131****7176获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 146400 </span>
+                        元</p>
+                    <p class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" style="height: 20px;">132****9119获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 335800 </span>
+                        元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="5" style="height: 20px;">152****8981获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 416400 </span>
+                        元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="6" style="height: 20px;">152****4494获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 63100 </span>
+                        元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="7" style="height: 20px;">175****2645获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 242200 </span>
+                        元</p>
+                    <p class="swiper-slide" data-swiper-slide-index="8" style="height: 20px;">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
+                        元</p>
+                    <p class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="height: 20px;">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
+                        元</p></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
         </div>
-
-
     </div>
-
 </section>
 
 <!--项目案例-->
-<section id="case" class="projectCase" style="margin-bottom:80px ">
+<section id="case" class="projectCase">
     <div class="container" style="position:relative;">
-        <h2 class="sec-title">项目案例</h2>
-        <h5 class="sec-subtitle">专业案例展示</h5>
-        <div class="cate-items" id="projectbtn">
-            <span cid="0" class="item main-color-bg">所有</span>
-            <span cid="1" class="item">室内高清屏</span>
-            <span cid="2" class="item">商业广告屏</span>
-        </div>
-
-
-        <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:27px;">
-            <div class="swiper-wrapper" id="projectCase">
-
-                <div class="swiper-slide indoor" ><img
-                        src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
-                    <p class="slide-cate">室内高清屏P2.5 30m²</p>
-                    <p class="slide-info"> 2017-5建于郑州 </p></div>
-                <div class="swiper-slide indoor"><img
-                        src="http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">20万</span></h4>
-                    <p class="slide-cate">室内高清屏P3 50m² </p>
-                    <p class="slide-info">2017-04建于郑州</p></div>
-                <div class="swiper-slide indoor"><img
-                        src="http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
-                    <p class="slide-cate">室内高清屏P4 15m² </p>
-                    <p class="slide-info">2017-10建于郑州</p></div>
-                <div class="swiper-slide indoor"><img
-                        src="http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
-                    <p class="slide-cate">室内高清屏P6 9m²</p>
-                    <p class="slide-info">2017-10建于郑州</p></div>
-
-                <div class="swiper-slide outdoor"><img
-                        src="http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">68万</span></h4>
-                    <p class="slide-cate">室内高清屏P8 180m²</p>
-                    <p class="slide-info">2018-04建于郑州</p></div>
-                <div class="swiper-slide outdoor" ><img
-                        src="http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">9千</span></h4>
-                    <p class="slide-cate">室内高清屏P3.75 6m² </p>
-                    <p class="slide-info">2017-10建于郑州银行</p></div>
-                <div class="swiper-slide outdoor"><img
-                        src="http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64"> <h4 class="slide-title">
-                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">2.2千</span></h4>
-                    <p class="slide-cate">室内高清屏P10 5m² </p>
-                    <p class="slide-info">2018-04建于郑州</p></div>
-
+            <h2 class="sec-title">项目案例</h2>
+            <h5 class="sec-subtitle">专业案例展示</h5>
+            <div class="cate-items" id="projectbtn">
+                <span cid="0" class="item main-color-bg">所有</span>
+                <span cid="1" class="item">室内高清屏</span>
+                <span cid="2" class="item">商业广告屏</span>
             </div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
 
-        <div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="swiper-button-prev swiper-button-black" tabindex="0" role="button"
-             aria-label="Previous slide"></div> <!-- 黑色 -->
-        <div class="swiper-button-next swiper-button-black" tabindex="0" role="button" aria-label="Next slide"></div>
-        <!-- 黑色 -->
+            <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:15px;">
+                <div class="swiper-wrapper" id="projectCase">
+
+                    <div class="swiper-slide indoor" ><img
+                            src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
+                        <p class="slide-cate">室内高清屏P2.5 30m²</p>
+                        <p class="slide-info"> 2017-5建于郑州 </p></div>
+                    <div class="swiper-slide indoor"><img
+                            src="http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">20万</span></h4>
+                        <p class="slide-cate">室内高清屏P3 50m² </p>
+                        <p class="slide-info">2017-04建于郑州</p></div>
+                    <div class="swiper-slide indoor"><img
+                            src="http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                        <p class="slide-cate">室内高清屏P4 15m² </p>
+                        <p class="slide-info">2017-10建于郑州</p></div>
+                    <div class="swiper-slide indoor"><img
+                            src="http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                        <p class="slide-cate">室内高清屏P6 9m²</p>
+                        <p class="slide-info">2017-10建于郑州</p></div>
+
+                    <div class="swiper-slide outdoor"><img
+                            src="http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">68万</span></h4>
+                        <p class="slide-cate">室内高清屏P8 180m²</p>
+                        <p class="slide-info">2018-04建于郑州</p></div>
+                    <div class="swiper-slide outdoor" ><img
+                            src="http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">9千</span></h4>
+                        <p class="slide-cate">室内高清屏P3.75 6m² </p>
+                        <p class="slide-info">2017-10建于郑州银行</p></div>
+                    <div class="swiper-slide outdoor"><img
+                            src="http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64"> <h4 class="slide-title">
+                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">2.2千</span></h4>
+                        <p class="slide-cate">室内高清屏P10 5m² </p>
+                        <p class="slide-info">2018-04建于郑州</p></div>
+
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+
+
+
     </div>
 </section>
 <!--保障体系-->
 <section id="service" class="security">
     <div class="container">
+        <div >
+            <h2 class="title">四大保障体系</h2>
+            <h5 class="subtitle">4大保障，放心消费</h5>
+        </div>
+
         <div class="row">
-            <div class="col-xs-4">
-                <h2 class="title">四大保障体系</h2>
-                <h5 class="subtitle">4大保障，放心消费</h5>
-            </div>
-            <div class="col-xs-4" style="padding-left: 120px;">
+            <div class="col-xs-6">
                 <div class="service-item">
                     <span class="layui-icon layui-icon-home" style="color: rgb(25, 105, 255);"></span>
                     <h5>厂家直销</h5>
@@ -230,7 +220,7 @@
                     <p></p>
                 </div>
             </div>
-            <div class="col-xs-4" style="padding-left: 100px;">
+            <div class="col-xs-6" >
                 <div class="service-item">
                     <span class="layui-icon layui-icon-form" style="color: rgb(25, 105, 255);"></span>
                     <h5>免费报价</h5>
@@ -343,16 +333,7 @@
                     <p class="slide-info">P2.5</p></div>
             </div>
         </div>
-        <div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="swiper-button-prev swiper-button-black b1"></div> <!-- 黑色 -->
-        <div class="swiper-button-next swiper-button-black b2"></div> <!-- 黑色 -->
+
     </div>
 </section>
 
@@ -360,44 +341,32 @@
 <section id="partner" class="partners">
     <h2 class="sec-title">合作伙伴</h2>
     <h5 class="sec-subtitle">可以信赖的合作伙伴</h5>
-    <img src="http://p99vpab4j.bkt.clouddn.com/e53f7c1f5e64414f99c3caf8846706f4" alt="合作伙伴" class="partner-img">
+    <div class="partner_img">
+        <img src="http://p99vpab4j.bkt.clouddn.com/e53f7c1f5e64414f99c3caf8846706f4" alt="合作伙伴">
+    </div>
 </section>
 
 <!--了解我们-->
 <section id="about" class="know-we">
     <h2 class="sec-title">了解我们</h2>
     <h5 class="sec-subtitle">专业团队打造卓越显示</h5>
-    <div class="container about-honor">
+    <div class="container about-honor" style="width:100%;height:100%;">
         <h5 class="small-title">资质荣誉</h5>
-        <div class="row">
-            <div class="col-xs-3">
-                <div class="fuck-pane">
-                    <img src="http://p99vpab4j.bkt.clouddn.com/b5f1bd16de3e44c79a6463e2eb5499b1" alt="证书">
-                    <p></p>
+            <div class="swiper-container com-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="http://p99vpab4j.bkt.clouddn.com/b5f1bd16de3e44c79a6463e2eb5499b1" alt="证书" style="height:100%;"></div>
+                    <div class="swiper-slide"><img src="http://p99vpab4j.bkt.clouddn.com/b05458a932a44acf9e82f75107bef24f" alt="证书" style="height:100%;"></div>
                 </div>
             </div>
-            <div class="col-xs-3">
-                <div class="fuck-pane">
-                    <img src="http://p99vpab4j.bkt.clouddn.com/b05458a932a44acf9e82f75107bef24f" alt="证书">
-                    <p></p>
-                </div>
-            </div>
-        </div>
     </div>
+
+
     <div class="container about-info">
         <h5 class="small-title">公司规模</h5>
-        <div class="col-xs-6 left-pane">
-            <img src="http://p99vpab4j.bkt.clouddn.com/c5e9d1ff9fd64b728c7131ef55d20218" alt="头像" width="77"
-                 class="user-avatar">
-            <div class="law-man"><p>法人代表</p> <h5>张鑫</h5></div>
-            <div class="com-pane-3"><p>注册资金</p> <h5>1010万元</h5></div>
-            <div class="com-pane-3"><p>注册时间</p> <h5>2015-09-02</h5></div>
-            <div class="com-pane-3"><p>人员规模</p> <h5>40~99人</h5></div>
-        </div>
-        <div class="col-xs-6 swiper-pane">
+
+        <div class="swiper-pane">
             <div class="swiper-containe com-swiper swiper-container-horizontal">
-                <div class="swiper-wrapper"
-                     style="transition-duration: 0ms; transform: translate3d(-1755px, 0px, 0px);">
+                <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
                          data-swiper-slide-index="3" style="width: 585px;"><h6 class="slide-title">会议室</h6> <img
                             src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232"></div>
@@ -417,79 +386,79 @@
                         <h6 class="slide-title"></h6> <img
                             src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d"></div>
                 </div>
-                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
-                        class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
-                        class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
-                        class="swiper-pagination-bullet"></span></div>
+
+            </div>
+        </div>
+
+
+        <div class="leftPortrait" style="background:red;padding-bottom:20px;">
+            <div class="left-pane">
+                <div class="law-man">
+                    <div style="width:60px;height:60px;float: left;">
+                        <img src="http://p99vpab4j.bkt.clouddn.com/c5e9d1ff9fd64b728c7131ef55d20218" alt="头像"
+                             class="user-avatar">
+                    </div>
+
+                    <div  class="legalPerson">
+                        <p>法人代表</p>
+                        <h5>张鑫</h5>
+                    </div>
+                </div>
+                <ul class="company_info">
+                    <li>
+                        <p>注册资金<span class="company_info_money">1010万元</span></p>
+                    </li>
+                    <li>
+                        <p>注册时间<span class="company_info_time">2015-09-02</span></p>
+                    </li>
+                    <li style="padding-left: .2rem;box-sizing: border-box;">
+                        <p>人员规模<span class="company_info_people">40~99人</span></p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!--页脚-->
-<footer id="footer" class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-2 nav-links xmal"><h6>项目案例</h6>
-                <p cid="0">所有案例</p>
-                <p cid="2">室内高清屏</p>
-                <p cid="1">商业广告屏</p></div>
-            <div class="col-xs-2 nav-links cpzs" style="padding-left: 50px;"><h6>产品展示</h6>
-                <p cid="0">所有产品</p>
-                <p cid="2">室内显示</p>
-                <p cid="3">室外显示</p>
-                <p cid="1">小间距</p></div>
-            <div class="col-xs-2 nav-links ljwm" style="padding-left: 60px;">
-                <h6>了解我们</h6>
-                <p data-href=".about-honor">资质荣誉</p>
-                <p data-href=".about-info">公司规模</p>
-            </div>
-            <div class="col-xs-12">
-                <img src="http://p99vpab4j.bkt.clouddn.com/b89cf57e176b4602ae065e68258c2ea9" alt="logo"
-                     class="footer-logo">
-                <div class="comInfo">
-                    <h6>河南晶泰光电科技有限公司</h6>
-                    <p><span>地址：郑州市郑东新区通泰路东宏伟街南中力七里湾5号楼113号</span> <span>&nbsp;&nbsp; 豫ICP备16034273号-2</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="service"><h6>客服热线：</h6>
-            <p>周一至周日 9:00-22:00</p>
-            <strong>
-                <span class="iconfont icon-dianhua"></span>
-                130-2771-2540
-            </strong>
-        </div>
+<div class="footer">
+    <ul class="customer_service">
+        <li class="customer_service_title font_semibold">客服热线：</li>
+        <li class="customer_service_time font_light">周一至周日 9:00-22:00</li>
+        <li class="customer_service_num font_semibold">
+            <i class="glyphicon glyphicon-earphone"></i>
+            <a href="tel:13203835589">13203835589</a>
+        </li>
+    </ul>
+    <div class="preparation_number">
+        <span class="font_semibold">河南晶泰光电科技有限公司</span>
+        <p class="font_light">  豫ICP备16034273号-2</p>
     </div>
-</footer>
+</div>
+
 
 <!--底部获取报价窗口-->
 <div id="InquiryBottom" class="phone-window">
-    <div class="container">
-        <div class="cityLocation ">
-            <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top:5px;"></span>
-            <span class="currCity-bottom">郑州市</span>
-        </div>
-        <input maxlength="11" placeholder="请输入您的手机号" class="phone-bottom">
-        <button class="btn main-color-bg make-an-inquiry" style="background-color: rgb(25, 105, 255);">询价</button>
-        <img src="img/page/inquiry-tip.png" class="tip-img">
-        <span class="errorTip">请输入正确的手机号</span>
+    <div style="width:70%;height:100%;margin:0 auto;">
+        <a href="tel:13027712540"><button class="btn btn-primary">电话咨询</button></a>
+        <button class="btn btn-warning" id="getPrice">获取报价</button>
     </div>
 </div>
 
 
 <!--自定义JS特效-->
-<script src="js/index.js"></script>
+<script src="js/mindex.js"></script>
 <script>
 
-    //	移动端端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
+//	移动端端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
     $(document).ready(function(){
         if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-            window.location.href="./mindex.html";
-        }else{
             return false;
+        }else{
+            window.location.href="./index.html";
         }
     });
+
 
 
 </script>

@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>注册成功</title>
 <!--    用户注册成功页面-->
-    <!--百度在线压缩地址-->
     <script src="../public/bs/js/jquery-1.11.0.min.js"></script>
-    <!--bootstarp官方样式-->
-    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <style>
         *{
