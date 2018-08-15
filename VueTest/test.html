@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="../wphObject/swiper/css/swiper.min.css">
+    <script src="../wphObject/swiper/js/swiper.js"></script>
+
+    <style>
+        .swiper-container {
+            width: 600px;
+            height: 300px;
+        }
+        .red{
+            width:100%;
+            height: 300px;
+            background:red;
+        }
+        .blue{
+            width:100%;
+            height: 300px;
+            background:blue;
+        }
+        .green{
+            width:100%;
+            height: 300px;
+            background:green;
+        }
+    </style>
+
+
+
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="vueObject.js"></script>
+</head>
+<body>
+
+<div class="swiper-container sw" >
+    <div class="swiper-wrapper" id="app">
+        <div v-for="cs in styles" :class="cls">
+            <div :class="cs.st"></div>
+        </div>
+
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+</body>
+
+<!-- 生产环境版本，优化了尺寸和速度 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="vueObject.js"></script>
+
+
+</html>

@@ -28,6 +28,28 @@
     <!--引入layUI的所有包含JS,使用jquery做依赖-->
     <script src="./layui/layui.all.js"></script>
 
+    <style>
+        .swiper-container {
+            width: 300px;
+            height: 200px;
+        }
+        .red{
+            width:100%;
+            height:100%;
+            background:red;
+        }
+        .blue{
+            width:100%;
+            height: 100%;
+            background:blue;
+        }
+        .green{
+            width:100%;
+            height:100%;
+            background:green;
+        }
+    </style>
+
 
 </head>
 <body style="overflow-x: hidden">
@@ -110,9 +132,11 @@
             <p class="errorTip">请输入正确的手机号</p>
             <button class="btn submit-inquiry main-color-bg get-quote-calculate" style="background-color: rgb(25, 105, 255);">开始计算
             </button>
-            <div class="-swiper scroll-tips swiper-container-vertical swiper-container-android">
-                <div class="swiper-wrapper scroll-tips-view" style="transition-duration: 0ms; transform: translate3d(0px, -80px, 0px);"><p class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="height: 20px;">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
-                    元</p>
+            <div class="-swiper swiper-container">
+                <div class="swiper-wrapper" style="height:20px;text-align: center;">
+                    <p class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="height: 20px;">
+                        171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>元
+                    </p>
                     <p class="swiper-slide" data-swiper-slide-index="0" style="height: 20px;">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
                         元</p>
                     <p class="swiper-slide" data-swiper-slide-index="1" style="height: 20px;">133****2201获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 139400 </span>
@@ -132,67 +156,69 @@
                     <p class="swiper-slide" data-swiper-slide-index="8" style="height: 20px;">171****6131获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 187400 </span>
                         元</p>
                     <p class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="height: 20px;">154****4391获得报价 <span class="main-color" style="color: rgb(25, 105, 255);"> 341200 </span>
-                        元</p></div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        元</p>
+                </div>
             </div>
-        </div>
+
+
+    </div>
     </div>
 </section>
 
 <!--项目案例-->
 <section id="case" class="projectCase">
     <div class="container" style="position:relative;">
-            <h2 class="sec-title">项目案例</h2>
-            <h5 class="sec-subtitle">专业案例展示</h5>
-            <div class="cate-items" id="projectbtn">
-                <span cid="0" class="item main-color-bg">所有</span>
-                <span cid="1" class="item">室内高清屏</span>
-                <span cid="2" class="item">商业广告屏</span>
+        <h2 class="sec-title">项目案例</h2>
+        <h5 class="sec-subtitle">专业案例展示</h5>
+        <div class="cate-items" id="projectbtn">
+            <span cid="0" class="item main-color-bg">所有</span>
+            <span cid="1" class="item">室内高清屏</span>
+            <span cid="2" class="item">商业广告屏</span>
+        </div>
+
+
+        <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:15px;">
+            <div class="swiper-wrapper" id="projectCase">
+
+                <div class="swiper-slide indoor" ><img
+                        src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
+                    <p class="slide-cate">室内高清屏P2.5 30m²</p>
+                    <p class="slide-info"> 2017-5建于郑州 </p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">20万</span></h4>
+                    <p class="slide-cate">室内高清屏P3 50m² </p>
+                    <p class="slide-info">2017-04建于郑州</p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                    <p class="slide-cate">室内高清屏P4 15m² </p>
+                    <p class="slide-info">2017-10建于郑州</p></div>
+                <div class="swiper-slide indoor"><img
+                        src="http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
+                    <p class="slide-cate">室内高清屏P6 9m²</p>
+                    <p class="slide-info">2017-10建于郑州</p></div>
+
+                <div class="swiper-slide outdoor"><img
+                        src="http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">68万</span></h4>
+                    <p class="slide-cate">室内高清屏P8 180m²</p>
+                    <p class="slide-info">2018-04建于郑州</p></div>
+                <div class="swiper-slide outdoor" ><img
+                        src="http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">9千</span></h4>
+                    <p class="slide-cate">室内高清屏P3.75 6m² </p>
+                    <p class="slide-info">2017-10建于郑州银行</p></div>
+                <div class="swiper-slide outdoor"><img
+                        src="http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64"> <h4 class="slide-title">
+                    造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">2.2千</span></h4>
+                    <p class="slide-cate">室内高清屏P10 5m² </p>
+                    <p class="slide-info">2018-04建于郑州</p></div>
+
             </div>
-
-
-            <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:15px;">
-                <div class="swiper-wrapper" id="projectCase">
-
-                    <div class="swiper-slide indoor" ><img
-                            src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
-                        <p class="slide-cate">室内高清屏P2.5 30m²</p>
-                        <p class="slide-info"> 2017-5建于郑州 </p></div>
-                    <div class="swiper-slide indoor"><img
-                            src="http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">20万</span></h4>
-                        <p class="slide-cate">室内高清屏P3 50m² </p>
-                        <p class="slide-info">2017-04建于郑州</p></div>
-                    <div class="swiper-slide indoor"><img
-                            src="http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
-                        <p class="slide-cate">室内高清屏P4 15m² </p>
-                        <p class="slide-info">2017-10建于郑州</p></div>
-                    <div class="swiper-slide indoor"><img
-                            src="http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">4.5万</span></h4>
-                        <p class="slide-cate">室内高清屏P6 9m²</p>
-                        <p class="slide-info">2017-10建于郑州</p></div>
-
-                    <div class="swiper-slide outdoor"><img
-                            src="http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">68万</span></h4>
-                        <p class="slide-cate">室内高清屏P8 180m²</p>
-                        <p class="slide-info">2018-04建于郑州</p></div>
-                    <div class="swiper-slide outdoor" ><img
-                            src="http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">9千</span></h4>
-                        <p class="slide-cate">室内高清屏P3.75 6m² </p>
-                        <p class="slide-info">2017-10建于郑州银行</p></div>
-                    <div class="swiper-slide outdoor"><img
-                            src="http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64"> <h4 class="slide-title">
-                        造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">2.2千</span></h4>
-                        <p class="slide-cate">室内高清屏P10 5m² </p>
-                        <p class="slide-info">2018-04建于郑州</p></div>
-
-                </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
 
 
@@ -248,89 +274,104 @@
             <span cid="3" class="item">室外显示</span>
             <span cid="1" class="item">小间距</span>
         </div>
-        <div class="swiper-container product-swiper swiper-container-horizontal">
-            <div class="swiper-wrapper" style="transition-duration: 0ms;" id="productShow">
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                     data-swiper-slide-index="15" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
-                    <p class="slide-info">KRM2</p></div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                     data-swiper-slide-index="16" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
-                    <p class="slide-info">USDII10</p></div>
-                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="17"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
-                    <p class="slide-info">UTW-025SS</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="0" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
-                    <p class="slide-info">P1.926</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="1" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
-                    <p class="slide-info">P2</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="2" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
-                    <p class="slide-info">P2.5</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1">
-                    <p class="slide-info">P3</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458">
-                    <p class="slide-info">P4</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="5" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700">
-                    <p class="slide-info">P5</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="6" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b">
-                    <p class="slide-info">P6</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="7" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6">
-                    <p class="slide-info">P8</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="8" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc">
-                    <p class="slide-info">P10</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="9" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79">
-                    <p class="slide-info">P2</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="10" style="width: 360px; margin-right: 30px;"><img
+
+        <div class="swiper-container product-swiper">
+            <div class="swiper-wrapper" id="productShow">
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
+                    <p class="slide-info">KRM2</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
+                    <p class="slide-info">USDII10</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
+                    <p class="slide-info">UTW-025SS</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
+                    <p class="slide-info">P1.926</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
+                    <p class="slide-info">P2</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
+                    <p class="slide-info">P2.5</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1">
+                    <p class="slide-info">P3</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458">
+                    <p class="slide-info">P4</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700">
+                    <p class="slide-info">P5</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b">
+                    <p class="slide-info">P6</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6">
+                    <p class="slide-info">P8</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc">
+                    <p class="slide-info">P10</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79">
+                    <p class="slide-info">P2</p>
+                </div>
+                <div class="swiper-slide"><img
                         src="http://p99vpab4j.bkt.clouddn.com/2f94d3045c6e45119b281ea03e847c72">
                     <p class="slide-info">P2.5</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="11" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4">
-                    <p class="slide-info">P3</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="12" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56">
-                    <p class="slide-info">P3.91</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="13" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e">
-                    <p class="slide-info">P4</p></div>
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="14"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73">
-                    <p class="slide-info">P4.81</p></div>
-                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="15"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
-                    <p class="slide-info">KRM2</p></div>
-                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="16"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
-                    <p class="slide-info">USDII10</p></div>
-                <div class="swiper-slide" data-swiper-slide-index="17" style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
-                    <p class="slide-info">UTW-025SS</p></div>
-                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
-                    <p class="slide-info">P1.926</p></div>
-                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
-                    <p class="slide-info">P2</p></div>
-                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
-                     style="width: 360px; margin-right: 30px;"><img
-                        src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
-                    <p class="slide-info">P2.5</p></div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4">
+                    <p class="slide-info">P3</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56">
+                    <p class="slide-info">P3.91</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e">
+                    <p class="slide-info">P4</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73">
+                    <p class="slide-info">P4.81</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89">
+                    <p class="slide-info">KRM2</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946">
+                    <p class="slide-info">USDII10</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902">
+                    <p class="slide-info">UTW-025SS</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704">
+                    <p class="slide-info">P1.926</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486">
+                    <p class="slide-info">P2</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a">
+                    <p class="slide-info">P2.5</p>
+                </div>
             </div>
         </div>
 
@@ -352,12 +393,15 @@
     <h5 class="sec-subtitle">专业团队打造卓越显示</h5>
     <div class="container about-honor" style="width:100%;height:100%;">
         <h5 class="small-title">资质荣誉</h5>
-            <div class="swiper-container com-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="http://p99vpab4j.bkt.clouddn.com/b5f1bd16de3e44c79a6463e2eb5499b1" alt="证书" style="height:100%;"></div>
-                    <div class="swiper-slide"><img src="http://p99vpab4j.bkt.clouddn.com/b05458a932a44acf9e82f75107bef24f" alt="证书" style="height:100%;"></div>
+
+        <div class="swiper-container sw" >
+            <div class="swiper-wrapper" id="app">
+                <div v-for="cs in styles" :class="cls">
+                    <img :src="cs.st" alt="">
                 </div>
+
             </div>
+        </div>
     </div>
 
 
@@ -366,32 +410,38 @@
 
         <div class="swiper-pane">
             <div class="swiper-containe com-swiper swiper-container-horizontal">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                         data-swiper-slide-index="3" style="width: 585px;"><h6 class="slide-title">会议室</h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232"></div>
-                    <div class="swiper-slide" data-swiper-slide-index="0" style="width: 585px;"><h6
-                            class="slide-title"></h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d"></div>
-                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 585px;"><h6
-                            class="slide-title">办公环境</h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/65f66aa165804844a7ba173829411fed"></div>
-                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 585px;"><h6
-                            class="slide-title">独立办公室</h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/7805dce017cf4ab886134f3f4963dfb5"></div>
-                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" style="width: 585px;"><h6
-                            class="slide-title">会议室</h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232"></div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 585px;">
-                        <h6 class="slide-title"></h6> <img
-                            src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d"></div>
+                <div class="swiper-wrapper" id="app2">
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title">会议室</h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232">
+                    </div>
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title"></h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d">
+                    </div>
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title">办公环境</h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/65f66aa165804844a7ba173829411fed">
+                    </div>
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title">独立办公室</h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/7805dce017cf4ab886134f3f4963dfb5">
+                    </div>
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title">会议室</h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232">
+                    </div>
+                    <div class="swiper-slide"  style="width: 585px;">
+                        <h6 class="slide-title"></h6>
+                        <img src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d">
+                    </div>
                 </div>
 
             </div>
         </div>
 
 
-        <div class="leftPortrait" style="background:red;padding-bottom:20px;">
+        <div class="leftPortrait" style="padding-bottom:20px;">
             <div class="left-pane">
                 <div class="law-man">
                     <div style="width:60px;height:60px;float: left;">
@@ -448,9 +498,14 @@
 
 <!--自定义JS特效-->
 <script src="js/mindex.js"></script>
-<script>
+<!-- 生产环境版本，优化了尺寸和速度 -->
+<!-- 生产环境版本，优化了尺寸和速度 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="Vue/mindexVue.js"></script>
 
-//	移动端端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
+
+<script>
+    //	移动端端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
     $(document).ready(function(){
         if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
             return false;
@@ -458,9 +513,6 @@
             window.location.href="./index.html";
         }
     });
-
-
-
 </script>
 </body>
 </html>

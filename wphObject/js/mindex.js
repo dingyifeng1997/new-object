@@ -68,17 +68,17 @@ var mSwiper = new Swiper ('.product-swiper', {
 var mywiper = new Swiper ('.com-swiper', {
     loop: true,
     autoplay:true,//自动滚动
-
 });
+
 
 
 // 获取报价用户的手机号
 var my = new Swiper ('.-swiper', {
     autoplay:true,//自动滚动
     direction: 'vertical',
-    loop: true
+    loop: true,
+    slidesPerView :1,
 });
-
 
 // ------  swiper设置结束  ------
 

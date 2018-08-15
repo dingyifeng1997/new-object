@@ -35,7 +35,7 @@
             <!-- 手机下拉菜单 -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="max-height: 600px;">
                 <ul class="nav navbar-nav">
-                    <li class="hidden-sm hidden-md"><a href="wphObject/index.html" target="_blank" >定制屏幕</a></li>
+                    <li class="hidden-sm hidden-md"><a href="javascript:;" target="_blank" id="wph">定制屏幕</a></li>
                     <li><a href="tel:13203835589">电话咨询</a></li>
                     <li><a href="https://www.cnledw.com/shangji.htm" target="_blank">B2B</a></li>
                     <li><a href="https://www.cnledw.com/exhibition.htm" target="_blank">会展</a></li>
@@ -804,6 +804,24 @@
         });
     }
     getCookid();
+
+
+    $("#goAdmin").click(function(){
+        if($("#user").val() == 'root'&&$("#pass").val()=='root'){
+            location.href = "mysql/showMysql.php";
+            $("#rootBox").head();
+        }
+    });
+
+    $("#wph").click(
+        function(){
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                window.location.href="wphObject/mindex.html";
+            }else{
+                window.location.href="wphObject/index.html";
+            }
+        }
+    )
 
 
 </script>
