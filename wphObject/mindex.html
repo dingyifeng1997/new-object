@@ -28,27 +28,6 @@
     <!--引入layUI的所有包含JS,使用jquery做依赖-->
     <script src="./layui/layui.all.js"></script>
 
-    <style>
-        .swiper-container {
-            width: 300px;
-            height: 200px;
-        }
-        .red{
-            width:100%;
-            height:100%;
-            background:red;
-        }
-        .blue{
-            width:100%;
-            height: 100%;
-            background:blue;
-        }
-        .green{
-            width:100%;
-            height:100%;
-            background:green;
-        }
-    </style>
 
 
 </head>
@@ -180,7 +159,7 @@
         <div class="swiper-container case-swiper swiper-container-horizontal" style="margin-top:15px;">
             <div class="swiper-wrapper" id="projectCase">
 
-                <div class="swiper-slide indoor" ><img
+                <div class="swiper-slide indoor"><img
                         src="http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83"> <h4 class="slide-title">
                     造价约￥&nbsp;<span class="main-color" style="color: rgb(25, 105, 255);">18万</span></h4>
                     <p class="slide-cate">室内高清屏P2.5 30m²</p>
@@ -219,8 +198,6 @@
 
             </div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-
 
 
     </div>
@@ -394,6 +371,7 @@
     <div class="container about-honor" style="width:100%;height:100%;">
         <h5 class="small-title">资质荣誉</h5>
 
+        <!--资质荣誉滚动-->
         <div class="swiper-container sw" >
             <div class="swiper-wrapper" id="app">
                 <div v-for="cs in styles" :class="cls">
@@ -408,40 +386,22 @@
     <div class="container about-info">
         <h5 class="small-title">公司规模</h5>
 
-        <div class="swiper-pane">
-            <div class="swiper-containe com-swiper swiper-container-horizontal">
+        <!--公司展示滚动-->
+        <div class="swiper-pane" >
+            <div class="swiper-containe com-swiper">
                 <div class="swiper-wrapper" id="app2">
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title">会议室</h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232">
-                    </div>
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title"></h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d">
-                    </div>
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title">办公环境</h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/65f66aa165804844a7ba173829411fed">
-                    </div>
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title">独立办公室</h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/7805dce017cf4ab886134f3f4963dfb5">
-                    </div>
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title">会议室</h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232">
-                    </div>
-                    <div class="swiper-slide"  style="width: 585px;">
-                        <h6 class="slide-title"></h6>
-                        <img src="http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d">
+                    <!--swiper-slide组件-->
+                    <div v-for="s in styles" :class="s.cls">
+                        <h6 class="slide-title">{{s.tit}}</h6>
+                        <img :src="s.st">
                     </div>
                 </div>
 
             </div>
         </div>
 
-
-        <div class="leftPortrait" style="padding-bottom:20px;">
+        <!--法人代表-->
+        <div class="leftPortrait">
             <div class="left-pane">
                 <div class="law-man">
                     <div style="width:60px;height:60px;float: left;">
@@ -473,9 +433,9 @@
 <!--页脚-->
 <div class="footer">
     <ul class="customer_service">
-        <li class="customer_service_title font_semibold">客服热线：</li>
-        <li class="customer_service_time font_light">周一至周日 9:00-22:00</li>
-        <li class="customer_service_num font_semibold">
+        <li class="customer_service_title">客服热线：</li>
+        <li class="customer_service_time">周一至周日 9:00-22:00</li>
+        <li class="customer_service_num">
             <i class="glyphicon glyphicon-earphone"></i>
             <a href="tel:13203835589">13203835589</a>
         </li>
@@ -490,7 +450,9 @@
 <!--底部获取报价窗口-->
 <div id="InquiryBottom" class="phone-window">
     <div style="width:70%;height:100%;margin:0 auto;">
-        <a href="tel:13027712540"><button class="btn btn-primary">电话咨询</button></a>
+        <a href="tel:13027712540">
+            <button class="btn btn-primary">电话咨询</button>
+        </a>
         <button class="btn btn-warning" id="getPrice">获取报价</button>
     </div>
 </div>

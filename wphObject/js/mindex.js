@@ -65,10 +65,6 @@ var mSwiper = new Swiper ('.product-swiper', {
 
 
 
-var mywiper = new Swiper ('.com-swiper', {
-    loop: true,
-    autoplay:true,//自动滚动
-});
 
 
 
@@ -152,19 +148,19 @@ $("#projectbtn .item").click(function(){
     switch(btnId)
     {
         case '0':
-            $("#projectCase").css({'transform':'translate3d(-1190px, 0px, 0px)'});
+            $("#projectCase").css({'transform':'translate3d(-350px, 0px, 0px)'});
             break;
         case '1':
-            $("#projectCase").css({'transform':'translate3d(-3966.67px, 0px, 0px)'});
+            $("#projectCase").css({'transform':'translate3d(-350px, 0px, 0px)'});
             break;
         case '2':
-            $("#projectCase").css({'transform':'translate3d(-3173.33px, 0px, 0px)'});
+            $("#projectCase").css({'transform':'translate3d(-1400px, 0px, 0px)'});
             break;
     }
 });
 
 
-//产品展示按钮点击特效
+//产品展示按钮点击特效(根据坐标移动位置)
 $("#productCenter .item").click(function(){
     $(this).addClass("main-color-bg");
     $("#productCenter .item").not($(this)).removeClass("main-color-bg");
@@ -174,35 +170,19 @@ $("#productCenter .item").click(function(){
     switch(btnId)
     {
         case '0':
-            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-1390px, 0px, 0px)'});
             break;
         case '2':
-            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-1390px, 0px, 0px)'});
             break;
         case '3':
-            $("#productShow").css({'transform':'translate3d(-3173.33px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-3150px, 0px, 0px)'});
             break;
         case '1':
-            $("#productShow").css({'transform':'translate3d(-4760px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-4550px, 0px, 0px)'});
             break;
     }
 
-});
-
-//底部项目案例按钮点击特效
-$(".xmal p").click(function(){
-    $('body,html').animate({scrollTop:700},500);
-});
-//底部产品展示按钮点击特效
-$(".cpzs p").click(function(){
-    $('body,html').animate({scrollTop:1800},500);
-});
-//底部了解我们按钮点击特效
-$(".ljwm p").eq(0).click(function(){
-    $('body,html').animate({scrollTop:3200},500);
-});
-$(".ljwm p").eq(1).click(function(){
-    $('body,html').animate({scrollTop:3650},500);
 });
 
 
@@ -223,23 +203,6 @@ $(".get-quote-calculate").click(function(){
 });
 $(".phone").focus(function(){
     $("#topMessage .errorTip").hide();
-});
-
-// 设置 询价按钮点击后事件
-$(".make-an-inquiry").click(function(){
-    if($(".phone-bottom").val().length <11){
-        $("#InquiryBottom .errorTip").css({"display":"inline-block"});
-    }else{
-        layer.open({
-            type: 1,
-            title:" ",
-            area: ['420px', '340px'], //宽高
-            content: '<div style="padding:20px;margin-top:60px;text-align:center"><span class="layui-icon layui-icon-ok-circle" style="font-size:80px;color: #F49F13;"></span><br><h4 style="font-size:20px;line-height: 28px;margin:14px 0;color:#212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;font-weight: 300;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
-        });
-    }
-});
-$(".phone-bottom").focus(function(){
-    $("#InquiryBottom .errorTip").hide();
 });
 
 
