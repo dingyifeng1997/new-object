@@ -102,49 +102,10 @@ var mySwiper = new Swiper ('.case-swiper', {
 
 });
 
-var mSwiper = new Swiper ('.product-swiper', {
-    // direction: 'vertical',
-    autoplay:true,//自动滚动
-    loop: true,
-    slidesPerView : 3,
-    spaceBetween : 20,
-
-
-    // 如果需要前进后退按钮
-    navigation: {
-        nextEl: '.b2',
-        prevEl: '.b1',
-        hideOnClick: true,
-    },
-});
 
 
 
-var mywiper = new Swiper ('.com-swiper', {
-    // direction: 'vertical',
-    loop: true,
-    autoplay:true,//自动滚动
-    // slidesPerView : 3,
-    // spaceBetween : 20,
 
-    // 如果需要分页器
-    pagination: {
-        el: '.swiper-pagination',
-        clickable :true,
-    },
-
-    // 如果需要前进后退按钮
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
-
-    // 如果需要滚动条
-    scrollbar: {
-        el: '.swiper-scrollbar',
-
-    }
-});
 
 var my = new Swiper ('.-swiper', {
     autoplay:true,//自动滚动
@@ -222,7 +183,7 @@ $("#projectbtn .item").click(function(){
             $("#projectCase").css({'transform':'translate3d(-3966.67px, 0px, 0px)'});
             break;
         case '2':
-            $("#projectCase").css({'transform':'translate3d(-3173.33px, 0px, 0px)'});
+            $("#projectCase").css({'transform':'translate3d(-2380px, 0px, 0px)'});
             break;
     }
 });
@@ -241,13 +202,13 @@ $("#productCenter .item").click(function(){
             $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
             break;
         case '2':
-            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-4760px, 0px, 0px)'});
             break;
         case '3':
-            $("#productShow").css({'transform':'translate3d(-3173.33px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-6743.33px, 0px, 0px)'});
             break;
         case '1':
-            $("#productShow").css({'transform':'translate3d(-4760px, 0px, 0px)'});
+            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
             break;
     }
 

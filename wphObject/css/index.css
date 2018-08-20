@@ -427,6 +427,9 @@ header {
     font-size: 12px;
     line-height: 12px;
 }
+.projectCase .swiper-button-black{
+    margin-top:60px;
+}
 
 
 /*项目案例滚动结束*/
@@ -514,6 +517,9 @@ header {
     font-weight: bold;
     font-size: 24px;
 }
+.productDisplay .swiper-button-black{
+    margin-top:40px;
+}
 
 
 /*产品展示结束*/
@@ -580,15 +586,14 @@ header {
 .know-we .swiper-slide{
     width:100%;
 }
-.know-we .swiper-pane{
 
-}
 .know-we .swiper-containe{
     overflow: hidden;
     height:360px;
 }
 .know-we .swiper-slide img{
     width:100%;
+    height:100%;
 }
 .know-we .swiper-slide h6{
     position: absolute;
@@ -869,7 +874,7 @@ header {
     width: 220px;
     position: absolute;
     top: -35px;
-    right: 250px;
+    right:450px;
 }
 .phone-window .errorTip{
     display: none;

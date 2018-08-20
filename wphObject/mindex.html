@@ -390,7 +390,7 @@
         <div class="swiper-pane" >
             <div class="swiper-containe com-swiper">
                 <div class="swiper-wrapper" id="app2">
-                    <!--swiper-slide组件-->
+                    <!--使用Vue插入swiper-slide组件-->
                     <div v-for="s in styles" :class="s.cls">
                         <h6 class="slide-title">{{s.tit}}</h6>
                         <img :src="s.st">
@@ -460,7 +460,6 @@
 
 <!--自定义JS特效-->
 <script src="js/mindex.js"></script>
-<!-- 生产环境版本，优化了尺寸和速度 -->
 <!-- 生产环境版本，优化了尺寸和速度 -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="Vue/mindexVue.js"></script>
