@@ -42,5 +42,16 @@ $(".bar-tab .external").click(function(){
         $(".pull-to-refresh-layer").addClass("defaultNotDisplay");  //下拉刷新隐藏
     }
 
-
 });
+
+
+// 获取号码按钮点击
+$(".layui-btn-normal").click(function(){
+    // alert($(this).attr("cid"));
+    //设置电话号码显示
+    $(this).parent().next().children(".card-content-inner").children(".defaultHide").removeClass("defaultHide");
+    //设置点击按钮为不可点击
+    $(this).removeClass("layui-btn layui-btn-sm layui-btn-radius layui-btn-normal");
+    $(this).addClass("  layui-btn layui-btn-sm layui-btn-radius layui-btn-disabled");
+
+})

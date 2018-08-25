@@ -12,7 +12,11 @@
 		<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
 		<link rel="stylesheet" href="css/index.css">
 		<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
-		
+
+		<!--引入LayUI-->
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<script src="../layui/layui.all.js"></script>
+
 		<style type="text/css">
 			.bar-tab .tab-item.active{
 				color: #214fff;!important;
@@ -25,9 +29,19 @@
 				background:red;
 			}
 			.pull-to-refresh-content{
-				margin-bottom:50px;
+				margin-bottom:70px;
+			}
+			.card-content-inner span{
+				margin:0 15px;
+			}
+			.topTitle{
+				color: #327bff;
+			}
+			.defaultHide{
+				display: none;
 			}
 		</style>
+
 	</head>
 
 <body>
@@ -43,120 +57,123 @@
 			</header>
 			<div class="content pull-to-refresh-content">
 
-				<!--下拉刷新模块-->
+				<!--下拉刷新模块 开始 -->
 				<div class="pull-to-refresh-layer">
 					<div class="preloader"></div>
 					<div class="pull-to-refresh-arrow"></div>
 				</div>
+				<!--下拉刷新模块 开始 -->
 
-				<!-- 下面是正文 (客户信息) -->
+				<!-- 左侧客户信息 -->
 				<div class="card-container">
+
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal" cid="0">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
+								<div class="defaultHide">
+									<span>电 话</span><b>13203835589</b><br>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-disabled" cid="1">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal" cid="2">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
+								<div class="defaultHide">
+									<span>电 话</span><b>13203835589</b><br>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-disabled" cid="3">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
 							</div>
 						</div>
 					</div>
+
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal" cid="4">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
+								<div class="defaultHide">
+									<span>电 话</span><b>13203835589</b><br>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
+						<div class="card-header">
+							<b class="topTitle">商业广告屏</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-disabled" cid="5">获取电话号码</button>
+						</div>
 						<div class="card-content">
 							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
+								<span>位 置</span><b>郑州</b><br>
+								<span>屏 宽</span><b>8</b><b>米</b><br>
+								<span>屏 高</span><b>4.5</b><b>米</b><br>
 							</div>
 						</div>
 					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-header">下拉刷新</h1>
-						<div class="card-content">
-							<div class="card-content-inner">
-								↓ 下拉屏幕查看最新客户信息 . . .
-							</div>
-						</div>
-					</div>
+
 				</div>
-
-
+				<div style="text-align: center;color: #a3a3a3;">
+					<span>-------</span>
+					<span>我是有底线的</span>
+					<span>-------</span>
+				</div>
 			</div>
 			<!-- 下面是正文 (我的)-->
 			<div class="myMessage defaultNotDisplay">
 				<h1 style="text-align: center">我的信息</h1>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- 工具栏 -->
