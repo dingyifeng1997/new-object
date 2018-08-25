@@ -41,67 +41,6 @@ $(document).scroll(
 );
 
 
-// ------  swiper设置开始  ------
-
-//开始项目案例滚动
-// 1:先给所有,室内显示等 按钮添加上点击特效
-// 2:再设置定时器 自动移动容器的margin值
-var mySwiper = new Swiper ('.case-swiper', {
-    autoplay:true,//自动滚动
-    loop: true,
-    slidesPerView :1,
-    spaceBetween : 20,
-
-});
-//开始产品展示滚动
-var mSwiper = new Swiper ('.product-swiper', {
-    autoplay:true,//自动滚动
-    loop: true,
-    slidesPerView :1,
-    spaceBetween : 20,
-
-});
-
-
-
-
-
-
-
-// 获取报价用户的手机号
-var my = new Swiper ('.-swiper', {
-    autoplay:true,//自动滚动
-    direction: 'vertical',
-    loop: true,
-    slidesPerView :1,
-});
-
-// ------  swiper设置结束  ------
-
-
-
-//设置顶部导航栏按钮点击后scrollTop滚动到指定位置
-$("#cases").click(function(){
-    $('body,html').animate({scrollTop:0},500);
-});
-$("#caseID").click(function(){
-    $('body,html').animate({scrollTop:700},500);
-});
-$("#serviceID").click(function(){
-    $('body,html').animate({scrollTop:1300},500);
-});
-$("#productID").click(function(){
-    $('body,html').animate({scrollTop:1800},500);
-});
-$("#partnerID").click(function(){
-    $('body,html').animate({scrollTop:2580},500);
-});
-$("#aboutID").click(function(){
-    $('body,html').animate({scrollTop:3200},500);
-});
-$("#getPrice").click(function(){
-    $('body,html').animate({scrollTop:0},500);
-});
 
 //输入框获取焦点方法
 $(".input-pane-lg").focus(function(){
@@ -111,7 +50,6 @@ $(".input-pane-lg").focus(function(){
 $(".input-pane-lg").blur(function(){
     $(this).css({borderColor:'rgb(194, 194, 194)'})
 });
-
 
 
 var a = 0;
@@ -143,20 +81,6 @@ $("#projectbtn .item").click(function(){
     $(this).addClass("main-color-bg");
     $("#projectbtn .item").not($(this)).removeClass("main-color-bg");
     var btnId = $(this).attr('cid');
-
-    // 判断点击的是哪一个按钮
-    switch(btnId)
-    {
-        case '0':
-            $("#projectCase").css({'transform':'translate3d(-350px, 0px, 0px)'});
-            break;
-        case '1':
-            $("#projectCase").css({'transform':'translate3d(-350px, 0px, 0px)'});
-            break;
-        case '2':
-            $("#projectCase").css({'transform':'translate3d(-1400px, 0px, 0px)'});
-            break;
-    }
 });
 
 
@@ -166,22 +90,6 @@ $("#productCenter .item").click(function(){
     $("#productCenter .item").not($(this)).removeClass("main-color-bg");
     var btnId = $(this).attr('cid');
 
-    // 判断点击的是哪一个按钮
-    switch(btnId)
-    {
-        case '0':
-            $("#productShow").css({'transform':'translate3d(-1390px, 0px, 0px)'});
-            break;
-        case '2':
-            $("#productShow").css({'transform':'translate3d(-1390px, 0px, 0px)'});
-            break;
-        case '3':
-            $("#productShow").css({'transform':'translate3d(-3150px, 0px, 0px)'});
-            break;
-        case '1':
-            $("#productShow").css({'transform':'translate3d(-4550px, 0px, 0px)'});
-            break;
-    }
 
 });
 
@@ -199,6 +107,16 @@ $(".get-quote-calculate").click(function(){
             area: ['80%', '340px'], //宽高
             content: '<div style="padding:20px;margin-top: 60px;text-align: center"><span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br><h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
         });
+
+        //提交到数据库
+        var scenario = $("#selectd").html();          //屏幕类型
+        var address= $("#address").html();            //地址
+        var white = $("#screenWidth").val();          //宽度
+        var height = $("#screenHeight").val();        //高度
+        var contact = $("#phoneNumner").val();        //手机号码
+
+        // 提交到数据库
+        $.post("server/insertDatabase.php",{ scenario:scenario, address:address ,white:white,height:height ,contact:contact  })
     }
 });
 $(".phone").focus(function(){

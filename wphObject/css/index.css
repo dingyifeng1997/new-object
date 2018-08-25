@@ -872,9 +872,9 @@ header {
 
 .phone-window .tip-img{
     width: 220px;
-    position: absolute;
-    top: -35px;
-    right:450px;
+    position: relative;
+    left: 880px;
+    bottom:100px;
 }
 .phone-window .errorTip{
     display: none;
@@ -890,12 +890,7 @@ header {
 }
 
 /*提交成功弹出层*/
-#layui-layer1{
-    border-radius: 10px;
-}
-#layui-layer2{
-    border-radius: 10px;
-}
+
 .layui-layer-title{
     display:none;
 }
@@ -903,14 +898,8 @@ header {
     margin:20px 20px 0 0;
     font-size:20px;
 }
+
 /*底部获取报价窗口结束*/
-
-
-
-
-
-
-
 
 
 

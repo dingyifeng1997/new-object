@@ -2,6 +2,9 @@
  * Created by 丁毅峰 on 2018/5/25.
  */
 
+
+
+
 //默认的回到顶部按钮是隐藏的,我们要先获取滚动条离顶部的高度,超过100px就设置为显示
 //当页面滚动条发生滚动的时候,window 或者document 都可以
 
@@ -14,7 +17,6 @@ $(document).scroll(
             $("#InquiryBottom").css({ "transform":"translateY(200px)"});
         }
 
-
         //滚动时,判断顶部导航选中
         var top = $(document).scrollTop();
 
@@ -22,148 +24,48 @@ $(document).scroll(
         if(top<600){
             nli.eq(0).find("a").addClass("active");
             nli.not(nli.eq(0)).find("a").removeClass("active")}else if(top>600&& top<1000){
-                nli.eq(1).find("a").addClass("active");
-                nli.not(nli.eq(1)).find("a").removeClass("active");
-            }else if(top>1000&& top<1600){
-                nli.eq(2).find("a").addClass("active");
-                nli.not(nli.eq(2)).find("a").removeClass("active");
-            }else if(top>1600&& top<2500){
-                nli.eq(3).find("a").addClass("active");
-                nli.not(nli.eq(3)).find("a").removeClass("active");
-            }else if(top>2500&& top<3100){
-                nli.eq(4).find("a").addClass("active");
-                nli.not(nli.eq(4)).find("a").removeClass("active");
-            }else if(top>3100&& top<4000){
-                nli.eq(5).find("a").addClass("active");
-                nli.not(nli.eq(5)).find("a").removeClass("active");
-            }
+            nli.eq(1).find("a").addClass("active");
+            nli.not(nli.eq(1)).find("a").removeClass("active");
+        }else if(top>1000&& top<1600){
+            nli.eq(2).find("a").addClass("active");
+            nli.not(nli.eq(2)).find("a").removeClass("active");
+        }else if(top>1600&& top<2500){
+            nli.eq(3).find("a").addClass("active");
+            nli.not(nli.eq(3)).find("a").removeClass("active");
+        }else if(top>2500&& top<3100){
+            nli.eq(4).find("a").addClass("active");
+            nli.not(nli.eq(4)).find("a").removeClass("active");
+        }else if(top>3100&& top<4000){
+            nli.eq(5).find("a").addClass("active");
+            nli.not(nli.eq(5)).find("a").removeClass("active");
+        }
     }
 );
 
-//开始设置最底部指示灯
-//设置总长度为子元素的 个数 * 585
-/*var childNum = $(" #companySize > .swiper-slide").length;   //获取子元素个数
-var companyLength = $("#companySize").css({"width":childNum*585+"px"}); //设置长度
-// 设置从右往左自动滚动
-lampIndex = 1;
-setInterval('companyRolling()',3000);
-
-function companyRolling(){
-
-    $("#companySize").animate({
-        "margin-left":lampIndex*-585+"px"
-    },300)
-
-    console.log(lampIndex);
-    lampIndex++;
-    //判断,当索引等于子元素的个数的时候,就把索引设置为0
-    if(lampIndex == childNum){
-        lampIndex = 0;
-    }
-    // 滚动的时候也同样去查找指示灯的位置
-    $(".swiper-pagination-bullet").eq(lampIndex-1).css({"background":"#fff"});
-    $(".swiper-pagination-bullet").not($(".swiper-pagination-bullet").eq(lampIndex-1)).css({"background":"#b6b6b6"});
-}
-
-$(".swiper-pagination-bullet").click(function(){
-    //当li元素点击的时候,把li按钮的索引拿到
-    var val = $(this).index();
-    lampIndex = val;
-    $("#companySize").animate({
-        "margin-left":lampIndex*-585+"px"
-    },500);
-    $(this).css({"background":"#fff"});
-    $(".swiper-pagination-bullet").not($(this)).css({"background":"#b6b6b6"});
-
-})*/
 
 
-//开始设置产品展示
-// 1:先给所有,室内显示等 按钮添加上点击特效
-
-// 2:再设置定时器 自动移动容器的margin值
-
-var mySwiper = new Swiper ('.case-swiper', {
-    // direction: 'vertical',
-    autoplay:true,//自动滚动
-    loop: true,
-    slidesPerView : 3,
-    spaceBetween : 20,
-
-
-
-    // 如果需要前进后退按钮
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        hideOnClick: true,
-    },
-
-
-});
-
-
-
-
-
-
-var my = new Swiper ('.-swiper', {
-    autoplay:true,//自动滚动
-    direction: 'vertical',
-    loop: true
-});
-
-//设置顶部导航栏按钮点击后scrollTop滚动到指定位置
-$("#cases").click(function(){
-    $('body,html').animate({scrollTop:0},500);
-});
-$("#caseID").click(function(){
-    $('body,html').animate({scrollTop:700},500);
-});
-$("#serviceID").click(function(){
-    $('body,html').animate({scrollTop:1300},500);
-});
-$("#productID").click(function(){
-    $('body,html').animate({scrollTop:1800},500);
-});
-$("#partnerID").click(function(){
-    $('body,html').animate({scrollTop:2580},500);
-});
-$("#aboutID").click(function(){
-    $('body,html').animate({scrollTop:3200},500);
-});
-
-//输入框获取焦点方法
-$(".input-pane-lg").focus(function(){
-    // 输入框点击后变换边框颜色
-    $(this).css({borderColor:'rgb(25, 105, 255)'})
-});
-$(".input-pane-lg").blur(function(){
-    $(this).css({borderColor:'rgb(194, 194, 194)'})
-});
-
-
-
-var a = 0;
+// 使用场景点击特效
+var a = false;
 $(".psc,.UpDown").click(function(){
-    if(a%2 == 0){
+    if(a){
         $("#usageScenario").slideDown();    //定义选项下滑显示
-        $(".choose-pane").css({borderColor:'rgb(25, 105, 255)'});   //定义外框变为蓝色
-        $(".UpDown").css({"transform":" rotate(180deg)"});  //定义方向顺时针旋转180度
-    }else if(a%2 == 1){
+        $(".choose-pane").css({borderColor:'rgb(25, 105, 255)'});       //定义外框变为蓝色
+        $(".UpDown").css({"transform":" rotate(180deg)"});              //定义方向顺时针旋转180度
+    }else{
         $("#usageScenario").slideUp();
         $(".choose-pane").css({borderColor:'rgb(194, 194, 194)'})
         $(".UpDown").css({"transform":" rotate(0deg)"});
     }
-    a++;
+    a = !a;
 });
 
 //选项选择点击后 标签内容就变为此选项
 $(" #usageScenario li").click(function(){
+    $(".UpDown").css({"transform":" rotate(0deg)"});
     $("#selectd").html($(this).html());
     $("#usageScenario").slideUp();
     $(".choose-pane").css({borderColor:'rgb(194, 194, 194)'})
-    a++;
+    a = !a;
 });
 
 
@@ -173,19 +75,6 @@ $("#projectbtn .item").click(function(){
     $("#projectbtn .item").not($(this)).removeClass("main-color-bg");
     var btnId = $(this).attr('cid');
 
-    // 判断点击的是哪一个按钮
-    switch(btnId)
-    {
-        case '0':
-            $("#projectCase").css({'transform':'translate3d(-1190px, 0px, 0px)'});
-            break;
-        case '1':
-            $("#projectCase").css({'transform':'translate3d(-3966.67px, 0px, 0px)'});
-            break;
-        case '2':
-            $("#projectCase").css({'transform':'translate3d(-2380px, 0px, 0px)'});
-            break;
-    }
 });
 
 
@@ -195,22 +84,6 @@ $("#productCenter .item").click(function(){
     $("#productCenter .item").not($(this)).removeClass("main-color-bg");
     var btnId = $(this).attr('cid');
 
-    // 判断点击的是哪一个按钮
-    switch(btnId)
-    {
-        case '0':
-            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
-            break;
-        case '2':
-            $("#productShow").css({'transform':'translate3d(-4760px, 0px, 0px)'});
-            break;
-        case '3':
-            $("#productShow").css({'transform':'translate3d(-6743.33px, 0px, 0px)'});
-            break;
-        case '1':
-            $("#productShow").css({'transform':'translate3d(-1190px, 0px, 0px)'});
-            break;
-    }
 
 });
 
@@ -242,9 +115,24 @@ $(".get-quote-calculate").click(function(){
             type: 1,
             title:" ",
             area: ['420px', '340px'], //宽高
-            content: '<div style="padding:20px;margin-top: 60px;text-align: center"><span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br><h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
+            content: '<div style="padding:20px;margin-top: 60px;text-align: center;border-radius: 10px;">' +
+            '<span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br>' +
+            '<h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4>' +
+            '<p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p>' +
+            '</div>'
         });
+
+        //提交到数据库
+        var scenario = $("#selectd").html();          //屏幕类型
+        var address= $("#address").html();     //地址
+        var white = $("#screenWidth").val();         //宽度
+        var height = $("#screenHeight").val();        //高度
+        var contact = $("#phoneNumner").val();        //手机号码
+
+        // 提交到数据库
+        $.post("server/insertDatabase.php",{ scenario:scenario, address:address ,white:white,height:height ,contact:contact  })
     }
+
 });
 $(".phone").focus(function(){
     $("#topMessage .errorTip").hide();
@@ -261,6 +149,10 @@ $(".make-an-inquiry").click(function(){
             area: ['420px', '340px'], //宽高
             content: '<div style="padding:20px;margin-top:60px;text-align:center"><span class="layui-icon layui-icon-ok-circle" style="font-size:80px;color: #F49F13;"></span><br><h4 style="font-size:20px;line-height: 28px;margin:14px 0;color:#212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;font-weight: 300;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
         });
+        var place= $("#place").html();     //地址
+        var contact = $("#contact").val(); //手机号码
+        // 提交到数据库
+        $.post("server/insertDatabase.php",{ scenario:'暂无', address:place ,white: 0,height:0 ,contact:contact  })
     }
 });
 $(".phone-bottom").focus(function(){
