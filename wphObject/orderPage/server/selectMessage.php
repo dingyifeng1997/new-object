@@ -19,7 +19,7 @@
     $sql = "select * from message order by id  desc";
     $result = @mysqli_query($conn,$sql);
     while($row = mysqli_fetch_row($result)){
-        $st .=  "{"."id:\""."$row[0]"."\","."scenario:\""."$row[1]"."\","."address:\""."$row[2]"."\","."white:"."$row[3]".","."height:"."$row[4]".","."height:"."$row[4]".","."contact:"."$row[5]".","."checkPerson:\""."$row[6]\""."},";
+        @$st .=  "{"."id:\""."$row[0]"."\","."scenario:\""."$row[1]"."\","."address:\""."$row[2]"."\","."white:"."$row[3]".","."height:"."$row[4]".","."height:"."$row[4]".","."contact:"."$row[5]".","."checkPerson:\""."$row[6]\""."},";
     }
     $nums = substr($st, 0, -1); //将拼接好的字符串最后一个 , 逗号去掉
     $strs = "[".$nums."]";  //再拼接上大括号
