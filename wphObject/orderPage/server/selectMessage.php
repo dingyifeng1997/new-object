@@ -4,6 +4,7 @@
  * User: 丁毅峰
  * Date: 2018/8/24
  * Time: 9:13
+ * usage:返回查找到数据库的所有信息
  */
 
     header("content-type:text/html;charset=utf-8;");
@@ -15,24 +16,14 @@
     mysqli_query($conn,"set names utf8");
 
     //3.编写插入sql语句
-    $sql = "select * from message";
-
+    $sql = "select * from message order by id  desc";
     $result = @mysqli_query($conn,$sql);
-echo "<table border='1'>";
     while($row = mysqli_fetch_row($result)){
-
-        echo "<tr>";
-        echo "<td>$row[1]</td>";
-        echo "<td>$row[2]</td>";
-        echo "<td>$row[3]</td>";
-        echo "<td>$row[4]</td>";
-        echo "<td>$row[5]</td>";
-
-        echo "</tr>";
-
+        $st .=  "{"."id:\""."$row[0]"."\","."scenario:\""."$row[1]"."\","."address:\""."$row[2]"."\","."white:"."$row[3]".","."height:"."$row[4]".","."height:"."$row[4]".","."contact:"."$row[5]".","."checkPerson:\""."$row[6]\""."},";
     }
-echo "</table>";
-
+    $nums = substr($st, 0, -1); //将拼接好的字符串最后一个 , 逗号去掉
+    $strs = "[".$nums."]";  //再拼接上大括号
+    echo $strs;
 
 //    得到的参数
     /*

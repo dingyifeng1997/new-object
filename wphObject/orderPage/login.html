@@ -74,8 +74,8 @@
     $("#loginBtn").click(function(){
         var user = $("#username").val();
         var pass = $("#password").val();
-        if(user == "李行"&&pass==1234||user == "刘建功"&&pass==1234||user == "刘攀"&&pass==1234||user == "李飞宇"&&pass==1234||user == "何春辉"&&pass==1234||user == "韩涛"&&pass==1234){
-            location.href = "index.html"
+        if((user == "李行"||user == "刘建功"||user == "刘攀"||user == "李飞宇"||user == "何春辉"||user == "韩涛")&&(pass==12345678)){
+            location.href = "index.html?username="+ user+"&";
         }else{
             layer.alert('账号或密码错误', {
                 title:"提示信息",
@@ -84,9 +84,6 @@
             })
         }
     })
-
-
-
 </script>
 
 </html>

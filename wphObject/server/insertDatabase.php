@@ -18,9 +18,9 @@ mysqli_query($conn,"set names utf8");
 //3.接收到传递过来的del参数
 $scenario = @$_POST['scenario'];  //屏幕类型
 $address= @$_POST['address'];     //地址
-$white = $_POST['white'];         //宽度
-$height = $_POST['height'];       //高度
-$contact = $_POST['contact'];     //手机号码
+$white = @$_POST['white'];         //宽度
+$height = @$_POST['height'];       //高度
+$contact = @$_POST['contact'];     //手机号码
 
 
 //4.编写插入sql语句

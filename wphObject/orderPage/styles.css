@@ -1,0 +1,22 @@
+.bar-tab .tab-item.active{
+    color: #214fff;!important;
+}
+.defaultNotDisplay{
+    display: none;
+}
+.myMessage{
+    margin-top: 50px;
+    background: #ced1d1;
+}
+.pull-to-refresh-content{
+    margin-bottom:70px;
+}
+.card-content-inner span{
+    margin:0 15px;
+}
+.topTitle{
+    color: #327bff;
+}
+.defaultHide{
+    display: none;
+}
