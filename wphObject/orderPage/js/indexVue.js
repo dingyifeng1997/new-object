@@ -13,7 +13,7 @@ $(function () {
             setTimeout(function() {
 
                 //下拉后先将容器内部重新清理,只留一个Vue模板,给下边的Vue渲染操作预留位置
-                $("#userinfo").html('<div class="card"  v-for="ms in messages"><div class="card-header"><b class="topTitle">{{ms.scenario}}</b> <button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal"  :cid="ms.id">获取电话号码</button></div><div class="card-content"><div class="card-content-inner"><span>位 置</span><b>{{ms.address}}</b><br> <span>屏 宽</span><b>{{ms.white}}</b><br> <span>屏 高</span><b>{{ms.height}}</b><br> <div class="defaultHide"><span>电 话</span><b>{{ms.contact}}</b><br></div><div class="whether-follow-up"><span>是否跟进</span><b>{{ms.checkPerson}}</b><br></div></div></div></div>')
+                $("#userinfo").html('<div class="card"  v-for="ms in messages"><div class="card-header"><b class="topTitle">{{ms.scenario}}</b> <button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal"  :cid="ms.id">获取电话号码</button></div><div class="card-content"><div class="card-content-inner"><span>位 置</span><b>{{ms.address}}</b><br> <span>屏 宽</span><b>{{ms.white}}</b><br> <span>屏 高</span><b>{{ms.height}}</b><br> <span>时 间</span><b>{{ms.foundDate}}</b><br><div class="defaultHide"><span>电 话</span><b>{{ms.contact}}</b><br></div><div class="whether-follow-up"><span>是否跟进</span><b>{{ms.checkPerson}}</b><br></div></div></div></div>')
 
                 //下拉执行 AJAX ,将数据获取到并使用Vue渲染出来
 

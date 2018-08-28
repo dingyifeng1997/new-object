@@ -21,10 +21,11 @@ $address= @$_POST['address'];     //地址
 $white = @$_POST['white'];         //宽度
 $height = @$_POST['height'];       //高度
 $contact = @$_POST['contact'];     //手机号码
+$foundDate = @$_POST['foundDate'];     //手机号码
 
 
 //4.编写插入sql语句
-$sql = "insert into message(scenario,address,white,height,contact) values('{$scenario}','{$address}',{$white},{$height},'{$contact}')";
+$sql = "insert into message(scenario,address,white,height,contact,foundDate) values('{$scenario}','{$address}',{$white},{$height},'{$contact}','{$foundDate}')";
 
 $result = @mysqli_query($conn,$sql);
 

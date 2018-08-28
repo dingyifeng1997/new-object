@@ -114,9 +114,10 @@ $(".get-quote-calculate").click(function(){
         var white = $("#screenWidth").val();          //宽度
         var height = $("#screenHeight").val();        //高度
         var contact = $("#phoneNumner").val();        //手机号码
-
+        var dt = new Date();    //提交时间
+        var foundDate = dt.getFullYear()+"-"+dt.getMonth()+"-"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes();
         // 提交到数据库
-        $.post("server/insertDatabase.php",{ scenario:scenario, address:address ,white:white,height:height ,contact:contact  })
+        $.post("server/insertDatabase.php",{ scenario:scenario, address:address ,white:white,height:height ,contact:contact,foundDate:foundDate })
     }
 });
 $(".phone").focus(function(){
