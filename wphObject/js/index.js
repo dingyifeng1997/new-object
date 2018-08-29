@@ -124,8 +124,8 @@ $(".get-quote-calculate").click(function(){
 
         //提交到数据库
         var scenario = $("#selectd").html();          //屏幕类型
-        var address= $("#address").html();     //地址
-        var white = $("#screenWidth").val();         //宽度
+        var address= $("#address").val();             //地址/修改为input的按钮的值
+        var white = $("#screenWidth").val();          //宽度
         var height = $("#screenHeight").val();        //高度
         var contact = $("#phoneNumner").val();        //手机号码
         var dt = new Date();
@@ -151,7 +151,7 @@ $(".make-an-inquiry").click(function(){
             area: ['420px', '340px'], //宽高
             content: '<div style="padding:20px;margin-top:60px;text-align:center"><span class="layui-icon layui-icon-ok-circle" style="font-size:80px;color: #F49F13;"></span><br><h4 style="font-size:20px;line-height: 28px;margin:14px 0;color:#212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;font-weight: 300;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
         });
-        var place= $("#place").html();     //地址
+        var place= $("#place").val();     //地址/设置为input按钮的值
         var contact = $("#contact").val(); //手机号码
         var dt = new Date();    //提交时间
         var foundDate = dt.getFullYear()+"-"+dt.getMonth()+"-"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes();

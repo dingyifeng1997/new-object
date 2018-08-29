@@ -28,6 +28,12 @@
     <!--引入layUI的所有包含JS,使用jquery做依赖-->
     <script src="./layui/layui.all.js"></script>
 
+    <!--引入城市选择插件-->
+    <link rel="stylesheet" href="positions/pcPosition/css/style.css">
+    <script src="positions/pcPosition/js/City_data.js"></script>
+    <script src="positions/pcPosition/js/areadata.js"></script>
+    <script src="positions/pcPosition/js/auto_area.js"></script>
+
 
 </head>
 <body>
@@ -73,7 +79,10 @@
         <p class="inq-num">今天已有<span>23</span>位获取报价</p>
         <p class="pos-city">
             <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top: 5px;"></span>
-            <span class="currCity main-color" id="address">郑州市</span></p>
+
+            <!--<span class="currCity main-color" id="address">郑州市</span>-->
+            <input id="address" type="button" class="area-danxuan" value="郑州" data-value="" />
+        </p>
         <p class="input-title">使用场景</p>
         <div class="choose-pane" id="screenType">
             <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
@@ -313,7 +322,8 @@
     <div class="container">
         <div class="cityLocation ">
             <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top:5px;"></span>
-            <span class="currCity-bottom" id="place">郑州市</span>
+            <!--<span class="currCity-bottom" id="place">郑州市</span>-->
+            <input id="place" type="button" class="area-danxuan" value="郑州" data-value="" />
             <img src="img/page/inquiry-tip.png" class="tip-img">
         </div>
         <input maxlength="11" placeholder="请输入您的手机号" class="phone-bottom" id="contact">
@@ -348,6 +358,7 @@
             return false;
         }
     });
+
 </script>
 </body>
 </html>

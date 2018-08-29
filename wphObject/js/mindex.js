@@ -110,7 +110,7 @@ $(".get-quote-calculate").click(function(){
 
         //提交到数据库
         var scenario = $("#selectd").html();          //屏幕类型
-        var address= $("#address").html();            //地址
+        var address= $("#address").val();            //地址
         var white = $("#screenWidth").val();          //宽度
         var height = $("#screenHeight").val();        //高度
         var contact = $("#phoneNumner").val();        //手机号码

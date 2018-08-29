@@ -28,6 +28,12 @@
     <!--引入layUI的所有包含JS,使用jquery做依赖-->
     <script src="./layui/layui.all.js"></script>
 
+    <!--引入城市定位插件-->
+    <script src="positions/mobilePosition/js/LArea.js"></script>
+    <script src="positions/mobilePosition/js/LAreaData1.js"></script>
+    <link rel="stylesheet" href="positions/mobilePosition/css/LArea.css">
+
+
 </head>
 <body style="overflow-x: hidden">
 
@@ -74,8 +80,12 @@
             <h4>5秒获取报价</h4>
             <p class="inq-num">今天已有<span style="color: rgb(0,0,0);">23</span>位获取报价</p>
             <p class="pos-city">
-                <span class="glyphicon glyphicon-map-marker" style="color:rgb(55,124,255);font-size: 16px;top: 2px;"></span>
-                <span class="currCity main-color" id="address">郑州市</span></p>
+                <!--<span class="glyphicon glyphicon-map-marker" style="color:rgb(55,124,255);font-size: 16px;top: 2px;"></span>-->
+                <!--<span class="currCity main-color" id="address">郑州市</span></p>-->
+            <div class="content-block">
+            <span class="glyphicon glyphicon-map-marker" style="color:rgb(55,124,255);font-size: 16px;top: 2px;"></span>
+                <input  id="address" type="button" readonly="" placeholder="城市选择特效"  value="河南省,郑州市,郑东新区">
+            </div>
             <p class="input-title">使用场景</p>
             <div class="choose-pane ">
                 <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
@@ -328,6 +338,26 @@
             window.location.href="./index.html";
         }
     });
+    //点击获取报价就回到顶部
+    $("#getPrice").click(function(){
+        $('body,html').animate({scrollTop:0},500);
+    })
+
+</script>
+<script>
+    var area1 = new LArea();
+    area1.init({
+        'trigger': '#address', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+        'keys': {
+            id: 'id',
+            name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+    });
+    area1.value=[32,0,0];//控制初始位置，注意：该方法并不会影响到input的value
+
 </script>
 
 </body>

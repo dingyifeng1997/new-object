@@ -3,14 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c0cc8f5d-5987-478e-a9ba-b93a0eb905f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueTest/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/VueTest/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/bs/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/bs/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/css/mindex.css" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/css/mindex.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wphObject/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wphObject/js/mindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/js/mindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/layui/lay/modules/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/layui/lay/modules/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/layui/lay/modules/mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/layui/layui.all.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wphObject/mindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/mindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/server/selectMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/server/selectMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/server/insertDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/server/insertDatabase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/server/gitPhoneState.php" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/server/gitPhoneState.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/styles.css" afterDir="false" />
     </list>
     <ignored path="LED.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,37 +36,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wphObject/orderPage/index.html">
+        <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="57" column="65" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="65" />
-            </state>
+            <state relative-caret-position="-1350" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/index.js">
+      <file leaf-file-name="LArea.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LArea.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexVue.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1000">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectMessage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wphObject/orderPage/server/selectMessage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="21" column="243" selection-start-line="21" selection-start-column="234" selection-end-line="21" selection-end-column="243" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -99,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
         <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
         <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
@@ -150,6 +135,7 @@
         <option value="$PROJECT_DIR$/wphObject/orderPage/server/selectMessage.php" />
         <option value="$PROJECT_DIR$/wphObject/orderPage/index.html" />
         <option value="$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js" />
+        <option value="$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LArea.js" />
       </list>
     </option>
   </component>
@@ -163,8 +149,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="443" />
-    <option name="y" value="149" />
+    <option name="x" value="407" />
+    <option name="y" value="105" />
     <option name="width" value="1313" />
     <option name="height" value="714" />
   </component>
@@ -189,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,26 +191,28 @@
               <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
               <item name="new-object" type="462c0819:PsiDirectoryNode" />
               <item name="wphObject" type="462c0819:PsiDirectoryNode" />
-              <item name="orderPage" type="462c0819:PsiDirectoryNode" />
+              <item name="positions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
               <item name="new-object" type="462c0819:PsiDirectoryNode" />
               <item name="wphObject" type="462c0819:PsiDirectoryNode" />
-              <item name="orderPage" type="462c0819:PsiDirectoryNode" />
+              <item name="positions" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilePosition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new-object" type="462c0819:PsiDirectoryNode" />
+              <item name="wphObject" type="462c0819:PsiDirectoryNode" />
+              <item name="positions" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilePosition" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="wphObject" type="462c0819:PsiDirectoryNode" />
-              <item name="orderPage" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +353,9 @@
       <workItem from="1535366142870" duration="297000" />
       <workItem from="1535416499128" duration="601000" />
       <workItem from="1535439458923" duration="1715000" />
-      <workItem from="1535441244298" duration="777000" />
+      <workItem from="1535441244298" duration="1070000" />
+      <workItem from="1535444332825" duration="20000" />
+      <workItem from="1535523955962" duration="266000" />
     </task>
     <task id="LOCAL-00001" summary="删除LEDproject">
       <created>1521780601943</created>
@@ -585,23 +574,30 @@
       <option name="project" value="LOCAL" />
       <updated>1535416763681</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="客户信息留言时间">
+      <created>1535442120238</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1535442120238</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73463000" />
+    <option name="totallyTimeSpent" value="74042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13854167" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11875" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32888147" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="2" />
@@ -655,7 +651,8 @@
     <MESSAGE value="更改为晶泰光电" />
     <MESSAGE value="添加员工登录和客户信息页面" />
     <MESSAGE value="上线员工信息接收系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="上线员工信息接收系统" />
+    <MESSAGE value="客户信息留言时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="客户信息留言时间" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -663,56 +660,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueTest/app.vue" />
-    <entry file="file://$PROJECT_DIR$/VueTest/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="179" column="56" selection-start-line="179" selection-start-column="56" selection-end-line="179" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="404" column="12" selection-start-line="404" selection-start-column="12" selection-end-line="404" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="471" column="45" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -916,20 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VueTest/vueObject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -982,29 +915,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/orderPage/server/selectMessage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
+        <state relative-caret-position="480">
           <caret line="21" column="243" selection-start-line="21" selection-start-column="234" selection-end-line="21" selection-end-column="243" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/orderPage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="1710">
           <caret line="57" column="65" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="660">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="2760">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/pcPosition/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/pcPosition/js/areadata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/pcPosition/js/auto_area.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/pcPosition/js/City_data.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/pcPosition/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LAreaData1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
