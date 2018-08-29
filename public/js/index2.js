@@ -8,9 +8,9 @@ $(".goto-login").click(function(){
     window.location = "login.php";
 });
 //导航栏点击后显示特定画面
-$(".nav-tabs li").click(function(){
+$(".nav-li").click(function(){
     $(this).addClass("active");
-    $(".nav-tabs li").not($(this)).removeClass("active");
+    $(".nav-li").not($(this)).removeClass("active");
     var idx = $(this).index();
     $(".forum").eq(idx).show();
     $(".forum").not($(".forum").eq(idx)).hide();

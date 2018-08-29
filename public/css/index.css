@@ -7,7 +7,9 @@
     padding: 5px;
 }
 
-
+.nav-li{
+    cursor: pointer;
+}
 .navbar-right{
     float: right;
 }
@@ -46,7 +48,9 @@
     background:red;
     cursor:pointer;
 }
-
+.main-container{
+    margin-top:15px;
+}
 .glyphicon-menu-up{
     margin-top:5px;
     font-size:30px;
