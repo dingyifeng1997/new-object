@@ -364,7 +364,7 @@
             //调用AJAX向服务器发送一个请求验证码的信息,使用AJAX发送
             $.ajax({
                 type: "GET",
-                url: "http://api.sms.cn/sms/?ac=send&uid=jingtai&pwd=4b5ef353b6f4b61ff6b1c3c89f2eb263&template=438230&mobile=" + phoneNumber + "&content={\"variable\":" + number + "}",
+                url: "http://api.sms.cn/sms/?ac=send&uid=dingding1997&pwd=d8040da76c295fea8804b385d0f9d8dc&template=472818&mobile=" + phoneNumber + "&content={\"variable\":" + number + "}",
                 success: function (msg) {
                     //服务器返回 {"stat":"状态码","message":"执行结果"} 状态码:100 为发送成功
                     YZcode = number;
