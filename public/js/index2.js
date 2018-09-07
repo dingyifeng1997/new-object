@@ -72,7 +72,7 @@ $("#indoorColorYZL").click(function(){
 //点击后进入室内全彩型材链接
 $("#indoorColorXC").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        window.location = "mobile/indoorColorXC/index.html";
+        window.location = "../../mobile/indoorColorXC/index.html";
         //window.location = "mobile/m404.html";   //进入404页面
     }else{
         window.location = "PC/indoorColorXC/index.html";
@@ -94,11 +94,11 @@ $("#outdoorColorXC").click(function(){
 //点击后进入室外全彩箱体链接
 $("#outdoorColorXT").click(function(){
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        //window.location = "mobile/outdoorColorXT/index.html";
-        window.location = "mobile/m404.html";   //进入404页面
+        window.location = "mobile/outdoorColorXT/index.html";
+        // window.location = "mobile/m404.html";   //进入404页面
     }else{
-        //window.location = "PC/outdoorColorXT/index.html";
-        window.location = "PC/pc404.html";  //进入404页面
+        window.location = "PC/outdoorColorXT/index.html";
+        // window.location = "PC/pc404.html";  //进入404页面
     }
 
 });

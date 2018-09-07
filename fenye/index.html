@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script  src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div style="width: 960px;margin:0 auto;text-align: center">
+    <div style="border: 1px solid #000;height:800px;" id="cent">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="test1"></div>
+</div>
+
+<script src="layui/layui.all.js"></script>
+<script>
+
+    var  pageWhole= 0
+    $.ajax({
+        url: "whole.php",
+        async:false,
+        type:"post",
+        success: function(sp){
+            pageWhole = sp; //取到数据总条数
+        }
+    });
+
+
+    layui.use('laypage', function(){
+
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: pageWhole //数据总数，从服务端得到
+            ,limit:10   //每页显示的条数
+            ,jump: function(obj){
+
+                $.ajax({
+                    url: "paging.php",
+                    type:"post",
+                    data:{tex:50,pageNumber:obj.curr},
+                    success: function(sp){
+                        jsp =  eval('(' + sp + ')');    //把字符串转换为json
+
+                        var i = 0;
+                        var ct = "";
+                        while(i<jsp.length){
+                            ct+="<div>"+"<span>"+jsp[i].id+"</span>"+"<span>"+jsp[i].text+"</span>"+"<span>"+jsp[i].age+"</span>"+"</div>" ;
+                            i++;
+                        }
+                        $("#cent").html(ct);
+                    }
+                });
+
+            }
+        });
+    });
+</script>
+</body>
+</html>

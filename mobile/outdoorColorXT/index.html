@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--匹配移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>河南晶泰光电科技有限公司-室外全彩箱体移动端报价</title>
+
+
+    <!--bootstarp官方样式,因为引入本地的css文件会导致上传后不显示图标,所以引入官方在线文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--自定义样式css-->
+    <link rel="stylesheet" href="../../public/css/mobile.style.css">
+    <!--    引入弹出层css-->
+    <link rel="shortcut icon" href="../../layer/theme/default/layer.css" >
+    <style>
+        body{
+            padding-top:50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container" style="padding:0;"> <!--外层的div类container是为了吧所有的内容部分限制为居中-->
+    <!--导航条最外部 navbar-fixed-top 表示固定在顶部,(直接固定在顶部会使得标题被遮住,所以需要给body添加一个padding-top值)-->
+    <nav class="navbar  navbar-inverse navbar-fixed-top"> <!-- navbar-inverse 是整个导航条为黑色, 默认是navbar-default -->
+
+        <!--<div class="container"> &lt;!&ndash;这里再加一个div 类container是为了当导航条固定在顶部的时候,把里边的内容居中&ndash;&gt;-->
+
+            <!-- 1 . 左侧logo部分和右侧汉堡菜单部分-->
+            <div class="navbar-header">
+
+                <!--1.1 回到首页按钮-->
+                <a href="../../backLogin.html" class="navbar-brand">首页</a>   <!-- 左侧logo部分 a连接加 navbar-brand 起对齐作用 -->
+
+                <!--1.2 汉堡菜单-->
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!--1.3 下拉计算菜单按钮-->
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shuru" id="dropDown">
+                    <span class="glyphicon glyphicon-menu-down" id="dropDownSpan1"></span>
+                    <span class="glyphicon glyphicon-menu-up"  id="dropDownSpan2" style="display: none;"></span>
+                </button>
+            </div>
+
+
+            <!-- 2 . 这里是手机端显示出来的合并区,点击汉堡按钮出现的内容,加上collapse类默认手机端是隐藏-->
+            <div class="collapse navbar-collapse" id="mynavbar" style="padding:0px;">
+                <!-- 2.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+                <ul class="nav navbar-nav" style="margin:0px; padding-left:15px;">
+                    <h3 class="navbar-text navbar-right" style="margin-left: 15px;">型号选择:</h3>
+                    <li>
+                        <!--<a href="../m404.html">单 色 P10</a>-->
+                        <a href="../monochromeP10/index.html">单 色 P10</a>
+                    </li>
+                    <li>
+                        <!--<a href="../m404.html">单 色 3.75</a>-->
+                        <a href="../monochromeP3.75/index.html">单 色 3.75</a>
+                    </li>
+                    <li>
+                        <!--<a href="../m404.html">单 色 5.0</a>-->
+                        <a href="../monochrome5.0/index.html">单 色 5.0</a>
+                    </li>
+                    <li>
+                        <!--<a href="../m404.html">室内全彩型材</a>-->
+                        <a href="../indoorColorXC/index.html">室内全彩型材</a>
+                    </li>
+                    <li>
+                        <!--<a href="../m404.html">室外全彩型材</a>-->
+                        <a href="../outdoorColorXC/index.html">室外全彩型材</a>
+                    </li>
+                    <li>
+                        <!--<a href="../m404.html">室外全彩箱体</a>-->
+                        <a href="../outdoorColorXT/index.html">室外全彩箱体</a>
+                    </li>
+                    <li>
+                        <a href="../m404.html">室内全彩压铸铝</a>
+                        <!--<a href="../indoorColorYZL/index.html">室内全彩压铸铝</a>-->
+                    </li>
+                    <li>
+                        <a href="../m404.html">室外全彩压铸铝</a>
+                        <!--<a href="../outdoorColorYZL/index.html">室外全彩压铸铝</a>-->
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3 .下拉计算菜单 -->
+            <div class="collapse navbar-collapse" id="shuru" style="width: 100%">
+                <!-- 3.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+                <ul class="nav navbar-nav" style="margin: 0;">
+                    <h3 class="navbar-text navbar-right" style="margin-left: 15px;">输入参数:</h3>
+                    <li class="active">
+                        <form class="navbar-form navbar-left form-horizontal" role="search"  style="color:#9c9c9c;">
+                            <!--1.产品型号-->
+                            <div class="form-group">
+                                <label for="selectType" class="col-sm-2 control-label" >型号:</label>
+                                <div class="col-sm-10">
+                                    <select  class="col-sm-9 form-control" id="selectType"  style="padding:0px 0px 0px 10px;">
+                                        <option disabled >请选择型号 :</option>
+                                        <option>室外P4</option>
+                                        <option selected>室外P5</option>
+                                        <option>室外P6</option>
+                                        <option>室外P8</option>
+                                        <option>室外P10</option>
+                                    </select>
+                                </div>
+                                <div class="warning" style="display:none;">
+                                    <span >未 选 择 型 号 !</span>
+                                </div>
+                            </div>
+                            <!--2.长度输入框-->
+                            <div class="form-group">
+                                <label for="inputWidth" class="col-sm-2 control-label">长度:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control"  id="inputWidth" placeholder="请输入长度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" >
+                                </div>
+                                <div class="warning" style="display:none;">
+                                    <span >未 输 入 长 度 !</span>
+                                </div>
+                            </div>
+                            <!--3.高度输入框-->
+                            <div class="form-group">
+                                <label for="inputHeight" class="col-sm-2 control-label">高度:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputHeight" placeholder="请输入高度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');" >
+                                </div>
+                                <div class="warning" style="display:none;">
+                                    <span >未 输 入 高 度 !</span>
+                                </div>
+                            </div>
+                            <!--4.发送接收设备-->
+                            <div class="form-group">
+                                <label for="selectIO" class="col-sm-2 control-label">发送接收:</label>
+                                <div class="col-sm-10">
+                                    <select  class="form-control" id="selectIO">
+                                        <option disabled>选择控制系统 :</option>
+                                        <option selected>聚诚</option>
+                                        <option>诺瓦</option>
+                                        <option>灵星雨</option>
+                                    </select>
+                                </div>
+                                <div class="warning" style="display:none;">
+                                    <span >未 选 择 控 制 系 统 !</span>
+                                </div>
+                            </div>
+
+                            <!--6.处理器-->
+                            <div class="form-group">
+                                <label for="videoProcessing" class="col-sm-2 control-label">处理器:</label>
+                                <div class="col-sm-10">
+                                    <select id="videoProcessing" class="form-control" >
+                                        <option disabled>选择视频处理器 :</option>
+                                        <option selected>华瑞视界800</option>
+                                        <option>维奥505</option>
+                                        <option>BVP3200</option>
+                                        <option>异步盒子</option>
+                                    </select>
+                                </div>
+                                <div class="warning" style="display:none;">
+                                    <span >未 选 择 视 频 处 理 器 !</span>
+                                </div>
+                            </div>
+
+
+
+                            <!--编辑按钮-->
+                            <div class="form-group" style="padding: 8px 15px; margin:0;">
+                                <button  type="button" class="btn btn-warning  btn-block"  id="copyreader" >编 辑 表 单&nbsp;&nbsp;
+                                    <span class='glyphicon glyphicon-list-alt'></span>
+                                </button>
+                            </div>
+
+                            <!--计算按钮-->
+                            <div class="form-group" style="padding: 8px 15px; margin:0;">
+                                <button  type="button" class="btn btn-success  btn-block"  id="numeration" >计 算 报 价&nbsp;&nbsp;&nbsp;
+                                    <spna class='glyphicon glyphicon-list-alt'></spna>
+                                </button>
+                            </div>
+                            <div class="form-group" style="padding: 8px 15px; margin:0;">
+                              	<button  type="button" id="add"  class="btn btn-primary btn-block">
+                                    添 加 新 行&nbsp;&nbsp;&nbsp;<spna class='glyphicon glyphicon-plus'></spna>
+                                </button>
+                            </div>
+
+                        </form>
+                    </li>
+                </ul>
+        </div>
+        <!--</div>-->
+
+    </nav>
+
+
+    <!--表格内容区域-->
+    <div class="container" style="padding:0;">
+
+        <!--2.1:表格标题-->
+        <div class="biaoti" id="headline">
+            <h4 class="page-header" style="margin:30px 0px 0px 0px;">室外全彩箱体<span></span> LED显示屏报价</h4>
+            <br>
+        </div>
+
+        <!--2.3.1:信息栏-->
+        <div class="table-responsive" id="xinxilan">	<!--响应式表格-->
+            <table class="table table-bordered table-striped table-condensed">
+                <tbody class="xinxi" >
+                <tr>
+                    <td >单板长度</td>
+                    <td >单元板长个数</td>
+                    <td >显示总长度</td>
+                    <td >单元板长像素</td>
+                    <td >显示屏长总像素</td>
+                    <td >总千瓦数</td>
+                </tr>
+                <tr id="dataX">
+                    <td id="dataA1"></td>
+                    <td id="dataA2"></td>
+                    <td id="dataA4"></td>
+                    <td id="dataA5"></td>
+                    <td id="dataA6"></td>
+                    <td id="dataA7"></td>
+                </tr>
+                <tr id="bdy">
+                    <td>单板高度</td>
+                    <td>单元板高个数</td>
+                    <td>显示总高度</td>
+                    <td>单元板高像素</td>
+                    <td>显示屏高总像素</td>
+                    <td>总平方数㎡</td>
+                </tr>
+                <tr id="dataY">
+                    <td id="dataB1"></td>
+                    <td id="dataB2"></td>
+                    <td id="dataB4"></td>
+                    <td id="dataB5"></td>
+                    <td id="dataB6"></td>
+                    <td id="dataB7"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--2.3.2:报价表主体-->
+        <table class="table table-bordered table-striped" id="mytable">
+            <tr id="bd1">
+                <td>产品名称</td>
+                <td>数量</td>
+                <td>单位</td>
+                <td>单价</td>
+                <td>总价</td>
+            </tr>
+            <tbody class="warp-tbody">
+            <tr id="bd2">
+                <td id="partsA1">单元板</td>
+                <td id="partsA2" class="astrict-number"></td>
+                <td>张</td>
+                <td id="partsA3" class="astrict-number"></td>
+                <td id="partsA4" class="astrict-number"></td>
+            </tr>
+            <tr id="bd3">
+                <td>电源</td>
+                <td id="partsB1" class="astrict-number"></td>
+                <td>台</td>
+                <td id="partsB2" class="astrict-number"></td>
+                <td id="partsB3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd4">
+                <td>发送卡</td>
+                <td id="partsC1" class="astrict-number"></td>
+                <td>张</td>
+                <td id="partsC2" class="astrict-number"></td>
+                <td id="partsC3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd5">
+                <td>接收卡</td>
+                <td id="partsD1" class="astrict-number"></td>
+                <td>张</td>
+                <td id="partsD2" class="astrict-number"></td>
+                <td id="partsD3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd6">
+                <td>箱体</td>
+                <td id="partsF1" class="astrict-number"></td>
+                <td >个</td>
+                <td id="partsF2" class="astrict-number"></td>
+                <td id="partsF3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd7">
+                <td>配电柜</td>
+                <td id="partsG1" class="astrict-number"></td>
+                <td id="partsG2">台</td>
+                <td id="partsG3" class="astrict-number"></td>
+                <td id="partsG4" class="astrict-number"></td>
+            </tr>
+            <tr id="bd8">
+                <td>长排线</td>
+                <td id="partsH1" class="astrict-number"></td>
+                <td>根</td>
+                <td id="partsH2" class="astrict-number"></td>
+                <td id="partsH3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd9">
+                <td>电源线</td>
+                <td id="partsI1" class="astrict-number"></td>
+                <td>米</td>
+                <td id="partsI2" class="astrict-number"></td>
+                <td id="partsI3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd10">
+                <td>网线1米</td>
+                <td id="partsJ1" class="astrict-number"></td>
+                <td>根</td>
+                <td id="partsJ2" class="astrict-number"></td>
+                <td id="partsJ3" class="astrict-number"></td>
+            </tr>
+
+            <tr id="bd11">
+                <td>网线3米</td>
+                <td id="partsK1" class="astrict-number"></td>
+                <td>根</td>
+                <td id="partsK2" class="astrict-number"></td>
+                <td id="partsK3" class="astrict-number"></td>
+            </tr>
+            <tr id="bd12">
+                <td id="partsL1">视频处理器</td>
+                <td id="partsL2" class="astrict-number"></td>
+                <td >台</td>
+                <td id="partsL3" class="astrict-number"></td>
+                <td id="partsL4" class="astrict-number"></td>
+            </tr>
+            <tr id="bd13">
+                <td>组装加工费</td>
+                <td id="partsM1" class="astrict-number"></td>
+                <td>平</td>
+                <td id="partsM2" class="astrict-number"></td>
+                <td id="partsM3" class="astrict-number"></td>
+            </tr>
+
+            </tbody>
+        </table>
+        <!--2.3.3:报价表合计-->
+        <table class="table table-bordered ">
+            <tr id="bd20">
+                <td style="width: 10%" >合计</td>
+                <td>大写 : <span id="allDaXie"></span></td>
+                <td style="width: 18.5%" id="zongHeJi"></td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align:center; font-size: 12px; background:#eeedea;">
+        <p style="margin:0;line-height:30px;">河南晶泰光电科技有限公司版权所有 ©2017-2018</p>
+        <p style="margin:0;line-height:30px;">河南晶泰光电科技有限公司运营：<a href="http://www.miitbeian.gov.cn/">豫ICP备18016214号</a></p>
+    </div>
+</div>
+</body>
+
+<!--jquery包-->
+<script src="../../public/bs/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<!--    引入layer弹出层-->
+<script src="../../layer/layer.js"></script>
+<script type="text/javascript" src="../../public/bs/js/bootstable.js"></script>
+<script type="text/javascript" src="../../public/bs/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="JS/myStyleScript.js"></script>
+<script type="text/javascript" src="JS/inputScript.js"></script>
+
+<script>
+
+    //	PC端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
+    $(document).ready(function(){
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            return false;
+        }else{
+            window.location.href="../../PC/outdoorColorXT/index.html";
+
+        }
+    });
+
+
+    //客户端cookie验证
+    function getCookid(){
+        $.ajax({
+            type:"POST",
+            url:"../../cookies/checkCookie.php",
+            success: function(msg){
+                if(msg == ""){
+                    location.href = "../../login.php";
+                }
+            },
+            error:function(msg){
+                // alert("发送失败");
+            }
+        });
+    }
+</script>
+</html>
