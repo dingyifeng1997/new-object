@@ -172,7 +172,7 @@
 
     <!--首页开始-->
     <div class="forum" style="display: block;">
-        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  科技资讯</h4>
+        <h4 class="page-header" > &nbsp;&nbsp;&nbsp;&nbsp;▶  科技资讯</h4>
         <div class="row" id="science" style="padding-left: 5px;">
             <div class="col-md-12" v-for="item in data">
                 <h4>
@@ -188,12 +188,9 @@
 
     <!--辅材信息开始-->
     <div class="forum"  style="display:none;">
-        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  最新产品</h4>
+        <h4 class="page-header"> &nbsp;&nbsp;&nbsp;&nbsp;▶  最新产品</h4>
         <div class="row" id="Materials" style="padding-left: 5px;">
             <div class="col-md-12" v-for="item in data">
-                <div >
-                    <img :src="item.title" alt="" width="100px">
-                </div>
                 <div >
                     <h4>
                         <a  :href= "hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"></a>
@@ -209,7 +206,7 @@
 
     <!--使用帮助开始-->
     <div class="forum"  style="display:none;">
-        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  使用帮助</h4>
+        <h4 class="page-header" > &nbsp;&nbsp;&nbsp;&nbsp;▶  使用帮助</h4>
         <div class="row">
             <div class="col-md-2" style="">
                 <div class="list-group">
