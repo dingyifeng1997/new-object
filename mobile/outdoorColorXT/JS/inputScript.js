@@ -138,9 +138,6 @@ function getOverWdith(){
     var price = 0;  //这里把这个型材单价设置成局部变量
     switch($("#selectBorder").val()) {
 
-
-
-
         case "9025常规型材":
             borderWidth = 5;
             break;
@@ -328,8 +325,6 @@ function getLine1(){
     var boardPrice = 0;
     switch(productType)
     {
-
-
         case "室外P4":
             boardPrice = "135";
             tc = "P4";

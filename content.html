@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title id="tit"></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" href="public/img/icon/icon.png">
+    <script src="public/bs/js/jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+    <div class="container main-container" style="text-align: center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 style="margin:20px 0;font-weight:700;" id="contentTitle"></h3>
+            <p style="margin:20px 0;" id="contentDate"></p>
+            <div id="contentText"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <script>
+
+        var aid = location .href.split("?")[1];
+
+        function getContent(){
+            $.ajax({
+                type:"POST",
+                url:"selectContent.php",
+                data:aid,
+                success: function(msg){
+                    var str = eval("("+msg+")");    //把返回的字符串解析为JSON
+                    $("#contentTitle").html(str.title)
+                    $("#tit").html(str.title)
+                    $("#contentDate").html(str.adddate)
+                    $("#contentText").html(str.content)
+                }
+            });
+        }
+        getContent();
+    </script>
+</body>
+</html>

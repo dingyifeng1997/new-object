@@ -11,11 +11,11 @@
     <script src="public/bs/js/bootstrap.min.js"></script>
     <script src="public/js/holder.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <link rel="shortcut icon"href="public/img/icon/icon.png">
-
+    <link rel="shortcut icon" href="public/img/icon/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 
 </head>
-<body style="padding-top:50px;">
+<body style="padding-top:50px;background-color: #f4f5f6;">
 <!--顶部导航栏-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -40,7 +40,7 @@
                 <ul class="nav navbar-nav">
                     <!--内容栏-->
                     <li class="nav-li active"><a>首页</a></li>
-                    <li class="nav-li "><a >辅材</a></li>
+                    <li class="nav-li "><a >产品</a></li>
                     <li class="nav-li "><a >帮助</a></li>
                     <li class="nav-li "><a >报价系统</a></li>
                     <li class="hidden-sm hidden-md"><a href="javascript:;" target="_blank" id="wph">定制屏幕</a></li>
@@ -116,6 +116,17 @@
     </a>
 </div>
 
+<!--右侧广告栏 start-->
+<div class="col-md-3 right_QRcode "  style="z-index:10;">
+    <a href="https://shop140979949.taobao.com/?spm=a1z10.1-c.0.0.65b671aev9mowg">
+        <img src="public/img/banner/QRcode3.png" alt="">
+        <p>请扫描二维码联系客服</p>
+        <p> <span class="glyphicon glyphicon-send"></span> 点击进入淘宝网店</p>
+        <p><span class="glyphicon glyphicon-phone-alt"></span> 13203835589</p>
+    </a>
+</div>
+<!--右侧广告栏 stop-->
+
 
 <!--内容区域-->
 <div class="container main-container">
@@ -158,467 +169,39 @@
     </div>
     <!--左侧广告栏 stop-->
 
-    <!--右侧广告栏 start-->
-    <div class="col-md-3 right_QRcode"  style="z-index:10;">
-        <div id="close_right_QRcode" style="float: right;">
-            X
-        </div>
-        <img src="public/img/banner/QRcode2.png" alt="">
-
-    </div>
-    <!--右侧广告栏 stop-->
-
 
     <!--首页开始-->
     <div class="forum" style="display: block;">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">LED显示屏资讯</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <dl>
-                            <dt>
-                                <a title="明纬：电源会越来越“聪明”，让Powered by MEAN WELL深入人心" href="https://www.cnledw.com/info/newsdetail-51968.htm" target="_blank">明纬：电源会越来越“聪明”，让Powered by MEAN WELL深入人心</a>
-                            </dt>
-                            <dd>
-                                <a href="https://www.cnledw.com/info/newsdetail-51968.htm">近年来，LED行业的竞争相当激烈，逐渐白日化，各大LED品牌之间的市场争夺战也是有目共睹，行业洗牌加速。</a>
-                            </dd>
-                        </dl>
-                        <ul>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51811.htm">
-                                    飞利浦照明：深耕中国，看好中国舞台照明市场前景   <span>2018-05-11</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51602.htm">
-                                    木林森：扩展产品版图，持续强化欧美渗透率     <span>2018-03-20</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51441.htm">
-                                    东昊光电子：看好汽车照明市场，未来将继续突破CSP技术     <span>2018-01-31</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">高端访谈</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="row gdft">
-                            <div class="col-md-5">
-                                <img src="public/img/page/lijun.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <h4>
-                                    <a href="https://www.cnledw.com/info/newsdetail-51834.htm">
-                                        利亚德李军：创新为本 四轮驱动发力LED
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <a title="利亚德集团创始人李军：创新发展是唯一出路" href="https://www.cnledw.com/info/newsdetail-51834.htm" target="_blank">从“九三阅兵”的天安门广场到朱日和训练基地，从大屏电视机到巨幅户外广告屏，人们很难想象一家不太知名的中关村企业——利亚德集团的...</a>
-                        </div>
-                    </div>
-                </div>
+        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  科技资讯</h4>
+        <div class="row" id="science" style="padding-left: 5px;">
+            <div class="col-md-12" v-for="item in data">
+                <h4>
+                    <a :href= "hrefs+item.aid" target="_blank" class="content-title" id="scienceTitle" v-html="item.title"></a>
+                </h4>
+                <div class="content-text" id="scienceContent"></div>
+                <span class="content-date" id="scienceDate" v-html="item.adddate"></span>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">LED行业资讯</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <ul>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51967.htm">
-                                    GE照明将花落谁家？传9月将出最终竞标及谈判结果<span>2018-06-20</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51965.htm">
-                                    亿光叶寅夫：照明会往高阶市场走，不跟大陆厂商拼价格<span>2018-06-20</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51964.htm">
-                                    友达光电将于Q4出货Mini LED游戏显示器面板<span>2018-06-20</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51963.htm">
-                                    LED首家公司公布半年业绩预告，净利预增超1.5倍<span>2018-06-20</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51961.htm">
-                                    物联网时代下的智能照明：跨界融合与可持续发展<span>2018-06-19</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/info/newsdetail-51962.htm">
-                                    LED显示屏进军电影市场，背后潜藏的机会与挑战<span>2018-06-19</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">公司资讯</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <ul>
-                            <li>
-                                <a href="https://www.cnledw.com/companynews/detail-405.htm">
-                                    昕诺飞点亮10座俄罗斯运动场馆，助力今夏足球运动盛会<span>2018-06-15</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/companynews/detail-404.htm">
-                                    大咖云集 荣耀盛典，2018阿拉丁神灯奖颁奖典礼成功举办<span>2018-06-14</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/companynews/detail-403.htm">
-                                    Signify与Agro-Inwest签署协议，将全球最大的LED园艺照明项目扩容，达68.5公顷<span>2018-06-12</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.cnledw.com/companynews/detail-402.htm">
-                                    欧司朗助力宝马征战勒芒耐力赛<span>2018-06-07</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">推荐展会</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/xp01.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://www.cnledw.com/exhibition/detail-12080.htm">2018广州国际照明展览会</a>
-                                <p>2018/6/9至2018/6/12　广州市</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/xp02.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://www.cnledw.com/exhibition/detail-12091.htm">2018中国（青岛）国际LED暨LED照明展览会 </a>
-                                <p>2018/7/20至2018/7/23　青岛市</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/xp03.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="">2018上海国际照明展览会</a>
-                                <p>2018/9/3至2018/9/5　上海市</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">境外展会</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gc01.png" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://www.cnledw.com/exhibition/detail-11697.htm">2018年第54届美国国际信息显示周   </a>
-                                <p>2018/5/22至2018/5/24 </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gc02.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://www.cnledw.com/exhibition/detail-11602.htm">2018墨西哥国际广告标识展览会</a>
-                                <p>2018/5/23至2018/5/25 墨西哥，墨西哥城</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gc03.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://www.cnledw.com/exhibition/detail-11275.htm">2018年菲律宾太阳能展</a>
-                                <p>2018/5/23至2018/5/24</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">推荐供应商</h3>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gs01.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://1489150.cnledw.com/">深圳市森华纳光电科技有限公司</a>
-                                <p>深圳市森华纳光电科技有限公司（ShiNe）是专业...</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gs02.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://1509626.cnledw.com/">深圳市亮鑫光电有限公司</a>
-                                <p>深圳市亮鑫光电有限公司创建于2008年是一家集开...</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="public/img/page/gs03.jpg" alt="..." >
-                            </div>
-                            <div class="col-md-7">
-                                <a href="https://1487701.cnledw.com/">深圳市靶心配比科技有限公司</a>
-                                <p>深圳市靶心配比科技有限公...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
 
     </div>
     <!--首页结束-->
 
     <!--辅材信息开始-->
     <div class="forum"  style="display:none;">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">全部产品</h3>
-                    </div>
-                    <div class="row fc_head_menu">
-                        <ul style="list-style: none;line-height:30px;border-bottom:1px solid #e4e4e4; height:35px; margin:0 15px;">
-                            <li style="float:left; margin-left:2%;">产品图片</li>
-                            <li style="float:left; margin-left:15%;">产品信息</li>
-                            <li style="float:left; margin-left:25%;">发布时间</li>
-                        </ul>
-
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-517957.html">
-                                    <img src="https://img.cnledw.com/upload/2016/05/16/2016051616411898363_small.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-517957.html">深圳AVX钽电容F930J476MAA</a></strong>
-                                <p>产品特点： 在电源及音频上面能够解决噪音问题 产品应用： 车载导航、智能手机、...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">深圳市怡海能达有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://hi-mantech.cnledw.com" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2016-05-16 04:41:32<br>[广东省深圳市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-536940.html">
-                                    <img src="https://img.cnledw.com/upload/2017/12/18/2017121814494158104_sdk.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-536940.html">硬对硬贴合设备 除泡设备 COG邦定设备</a></strong>
-                                <p>深圳市精科达机电设备有限公司是一家专业生产各种自动化热压设备、液晶显示设...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">深圳市精科达机电设备有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1510438" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-04-23 04:58:00<br>[广东省深圳市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-401506.html">
-                                    <img src="https://img.cnledw.com/upload/2012/10/11/2012101118142167731.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-401506.html">升压恒流1- 3w手电筒IC</a></strong>
-                                <p>3W 大功率升压型白光LED 驱动器特点：AP2803是一款PWM 控制模式的开关型DC/DC 升...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">深圳市世微半导体有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1334513" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-04-08 10:00:03<br>[广东省深圳市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-538658.html">
-                                    <img src="https://img.cnledw.com/upload/2018/03/30/2018033009055980206_sdk.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-538658.html">芯片镭刻机</a></strong>
-                                <p>芯片镭刻机外延片激光雕刻机，芯片镭刻机，磊晶激光雕刻机产品说明:原装进口LTT-I...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">广州华之尊光电科技有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1407870" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-03-30 09:06:28<br>[广东省深圳市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-538621.html">
-                                    <img src="https://img.cnledw.com/upload/2018/03/28/2018032816372981229_sdk.png" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-538621.html">多晶蓝宝石</a></strong>
-                                <p>公司多晶蓝宝石产品目前应用于LED衬底、灯丝、灯丝基板、视窗显示镜片、指纹识别...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">兰台（湖北）科技实业有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1511818" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-03-28 04:41:44<br>[湖北省宜昌市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-538481.html">
-                                    <img src="https://img.cnledw.com/upload/2018/03/24/2018032417274097015_sdk.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-538481.html">等离子清洗机,大气压等离子清洗机,等离子处</a></strong>
-                                <p>本公司专业生产等离子清洗处理机，表面清洗，刻蚀处理，灰化处理，表面活化广泛应...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">招远普斯玛等离子技术有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1266605" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-03-24 05:27:51<br>[山东省烟台市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-538391.html">
-                                    <img src="https://img.cnledw.com/upload/2018/03/22/2018032210002968894_sdk.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-538391.html">吉永商事日本6/8/12mm英寸硅片晶圆边缘抛光</a></strong>
-                                <p>本设备是对6/8英寸(150mm/200mm)硅片外周边缘用抛光布加压的方式来进行硅片边缘（...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">深圳市天和利塑胶材料有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1488175" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2018-03-19 10:56:15<br>[广东省深圳市]</div>
-                            </div>
-
-                        </div>
-                        <div class="ProCon" style="display:inline-block;">
-                            <div class="col-md-2">
-                                <a target="_blank" href="https://chip.cnledw.com/products/Detail-462651.html">
-                                    <img src="https://img.cnledw.com/upload/2013/12/18/2013121810523621125_small.jpg" alt=" " width="94" height="86" style="margin:15px 0;">
-                                </a>
-                            </div>
-                            <div class="col-md-5" style="margin:15px;padding:0;">
-                                <strong class="bluecolor"><a target="_blank" href="https://chip.cnledw.com/products/Detail-462651.html"> 韩国LED蓝光芯片4020</a></strong>
-                                <p>本产品为韩国LED蓝光芯片4020，波长455-457.5nm,2.5nm分档，电压3.4以下，发光功...</p>
-                                <p class="overflow"><a href="http://hi-mantech.cnledw.com" target="_blank"><strong class="bluecolor float_left">广州耀邦电子有限公司</strong></a><span class="float_left" style="margin-top:2px; margin-left:10px;"><a href="http://www.cnledw.com/aboutled/service.asp" target="_blank"></a></span></p>
-                                <div class="ProCon2">
-                                    <ul style="padding:0;">
-                                        <button style="float:left; list-style: none;" class="btn btn-warning" >发送留言</button>
-                                        <a href="http://www.cnledw.com/free/?id=1401841" target="_blank" class="bt1"><button style="float:left; list-style: none; margin-left: 50px;" class="btn btn-primary">联系我们</button></a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3" style="margin:15px;padding:0;">
-                                <div class="" >2017-12-19 10:19:55<br>[广东省广州市]</div>
-                            </div>
-
-                        </div>
-                    </div>
-
+        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  最新产品</h4>
+        <div class="row" id="Materials" style="padding-left: 5px;">
+            <div class="col-md-12" v-for="item in data">
+                <div >
+                    <img :src="item.title" alt="" width="100px">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="phone_background"></div>
+                <div >
+                    <h4>
+                        <a  :href= "hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"></a>
+                    </h4>
+                    <div class="content-text" id="MaterialsContent">
+                    </div>
+                    <span class="content-date" v-html="item.adddate"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -626,8 +209,9 @@
 
     <!--使用帮助开始-->
     <div class="forum"  style="display:none;">
+        <h4 class="page-header" style="background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537184125408&di=5d334340aa746dd2abccf390d84311d8&imgtype=0&src=http%3A%2F%2Fpic155.nipic.com%2Ffile%2F20180131%2F8572479_155040698036_2.jpg');background-size:100%;line-height:40px;padding:0;margin:10px 0;"> &nbsp;&nbsp;&nbsp;&nbsp;▶  使用帮助</h4>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2" style="">
                 <div class="list-group">
                     <a class="list-group-item active" id="greenHands">新手入门</a>
                     <a class="list-group-item" id="FAQ">常见问题</a>
@@ -644,10 +228,14 @@
 
 
                 </div>
-                <div class="help-content" style="display: none;height: 300px;">
-                    <p>一 : 每次输入所有的参数后,务必要点击提交计算或者计算报价,否则不会显示总金额</p>
-                    <p>二 : 编辑表格修改的范围只有单价和数量,新增加的空行编辑时仍然要按照上方逻辑.数量,单价,总价列内只允许输入数字,名称和单位列内可以是任意内容</p>
-                    <p>三 : 打印表单时.可根据浏览器调整参数,推荐使用谷歌及IE浏览器</p>
+                <div class="help-content" style="display: none;">
+                    <h4>一 : 每次输入所有的参数后,务必要点击提交计算或者计算报价,否则不会显示总金额</h4>
+                    <img src="public/img/help/zhuyi1.jpg" alt="" width="100%">
+                    <h4>二 : 编辑表格修改的范围只有单价和数量,新增加的空行编辑时仍然要按照上方逻辑.数量,单价,总价列内只允许输入数字,名称和单位列内可以是任意内容</h4>
+                    <img src="public/img/help/zhuyi2.jpg" alt="" width="100%">
+                    <h4>三 : 打印表单时.可根据浏览器调整参数,推荐使用谷歌及IE浏览器</h4>
+                    <img src="public/img/help/zhuyi3.jpg" alt="" width="50%">
+
                 </div>
             </div>
         </div>
@@ -660,7 +248,7 @@
             <div class="panel panel-danger" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading">单色P10</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/danseP10.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/danseP10.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -668,7 +256,7 @@
             <div class="panel panel-danger"  data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading">单色P3.75</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/danse3.75.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/danse3.75.jpg" alt="" >
                 </div>
             </div>
         </div>
@@ -676,7 +264,7 @@
             <div class="panel panel-danger" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading">单色5.0</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/danse5.0.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/danse5.0.jpg" alt="" >
                 </div>
             </div>
         </div>
@@ -684,7 +272,7 @@
             <div class="panel panel-warning" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading" >室内全彩压铸铝</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/snqcyzl.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/snqcyzl.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -692,7 +280,7 @@
             <div class="panel panel-success" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading" >室内全彩型材</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/snqcxc.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/snqcxc.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -700,7 +288,7 @@
             <div class="panel panel-success" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading" >室外全彩型材</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/swqcxc.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/swqcxc.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -708,7 +296,7 @@
             <div class="panel panel-info" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading" >室外全彩箱体</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/swqcxt.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/swqcxt.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -716,7 +304,7 @@
             <div class="panel panel-warning" data-toggle="modal" data-target="#myModal">
                 <div class="panel-heading">室外全彩压铸铝</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/swqcyzl.jpg" alt="" style="width:100%;">
+                    <img src="public/img/xinghao/swqcyzl.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -738,6 +326,23 @@
 </div>
 <script src="public/js/index1.js"></script>
 <script>
+
+
+
+
+
+    // 右侧二维码定位
+    $(document).scroll(function(){
+        if($(window).scrollTop() > 590){
+            $(".right_QRcode").addClass("right_QRcode_Fixed");
+        }else if($(window).scrollTop() < 590){
+            $(".right_QRcode").removeClass("right_QRcode_Fixed");
+        }
+    });
+
+
+
+    //百度统计代码
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -746,6 +351,7 @@
         s.parentNode.insertBefore(hm, s);
     })();
 
+
     $(function(){
         // 监听 input 和 textarea 输入框内容改变
         $("body").delegate(".元素","propertychange input",function(){
@@ -753,7 +359,7 @@
         })
     })
 
-    // 查看cookie是否是
+    // 验证cookie是否登录
     function getCookid(){
         $.ajax({
             type:"POST",
@@ -770,6 +376,7 @@
     }
     getCookid();
 
+    // 进入定制屏幕
     $("#wph").click(
         function(){
             if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
@@ -778,7 +385,47 @@
                 window.location.href="wphObject/index.html";
             }
         }
-    )
+    );
+
+
+
+    //开启Vue写入
+    new Vue({
+        el:'#science',
+        data:{data:"",hrefs:"content.html?aid="},
+        beforeCreate:function(){
+            var url="json.jsp";
+            var _self=this;
+            $.get("selectIndexContent.php",function(data){
+                _self.data=eval("(" + data +")");
+            })
+        }
+
+
+    })
+    new Vue({
+        el:'#Materials',
+        data:{data:"",hrefs:"content.html?aid="},
+        beforeCreate:function(){
+            var url="json.jsp";
+            var _self=this;
+            $.get("MaterialsContent.php",function(data){
+                _self.data=eval("(" + data +")");
+            })
+        }
+    })
+
+
+    window.onload= function(){
+        // $(".content-text").text($(this).text())
+        //将渲染出来的字符变成不可点击的
+        for (var i = 0;i <$(".content-text").length;i++){
+            $(".content-text").eq(i).text($(".content-text").eq(i).text().slice(0,120))
+        }
+        //将文本内容设置为一行以内
+    }
+
+
 
 
 </script>

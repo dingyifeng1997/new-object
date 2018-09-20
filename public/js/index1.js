@@ -22,6 +22,7 @@ $(document).scroll(function(){
     }else if($(window).scrollTop() < 100){
         $("#goTop").hide();
     }
+
 });
 $("#goTop").click(function(){
     $(' body ,html').animate({scrollTop:0},300)
@@ -67,3 +68,6 @@ $(".list-group-item").click(function(){
     $(".help-content").eq(idx).show();
     $(".help-content").not($(".help-content").eq(idx)).hide();
 });
+
+
+

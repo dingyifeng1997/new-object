@@ -346,7 +346,7 @@ function getLine1(){
             break;
     }
     $(" #headline span").html(tc);
-    $("#partsA1").html("室内"+tc +"单元板");  //获取单元板型号
+    $("#partsA1").html("室外"+tc +"单元板");  //获取单元板型号
     $("#partsA3").text(boardPrice); //单元板单价
     $("#partsA4").text(accMul(boardPrice ,(accMul(moduleWidthNumber,moduleHeightNumber))));//单元板总价
 }
