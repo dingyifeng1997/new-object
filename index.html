@@ -176,7 +176,7 @@
         <div class="row" id="science" style="padding-left: 5px;">
             <div class="col-md-12" v-for="item in data">
                 <h4>
-                    <a :href= "hrefs+item.aid" target="_blank" class="content-title" id="scienceTitle" v-html="item.title"></a>
+                    <a :href= "hrefs+item.aid" target="_blank" class="content-title" id="scienceTitle" v-html="item.title" style="text-decoration:none;"></a>
                 </h4>
                 <div class="content-text" id="scienceContent"></div>
                 <span class="content-date" id="scienceDate" v-html="item.adddate"></span>
@@ -193,7 +193,7 @@
             <div class="col-md-12" v-for="item in data">
                 <div >
                     <h4>
-                        <a  :href= "hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"></a>
+                        <a  :href= "hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"style="text-decoration:none;"></a>
                     </h4>
                     <div class="content-text" id="MaterialsContent">
                     </div>
