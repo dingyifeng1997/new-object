@@ -17,7 +17,7 @@
         a{
             position:absolute;
             left:50%;
-            margin-left:-37px;
+            margin-left:-55px;
             bottom:5%;
             color: white;
         }
@@ -25,11 +25,24 @@
 </head>
 <body>
     <!--<img src="../public/img/error/m404.jpg" alt="" style="width:100%;">-->
-    <a href="../backLogin.html" id="gotohome"><span class="glyphicon glyphicon-arrow-left"></span> 回到首页</a>
-
+    <a  id="gotohome"> <span class="glyphicon glyphicon-arrow-left"></span> 回到首页 ( <b id="sec">5</b> 秒)
+    </a>
     <script>
+        $("#gotohome").click(function(){
+            window.location = "../index.html";
+        });
+
+        i = 4;
+        setInterval(function(){
+            if(i>0){
+                $("#sec").html(i);
+                i--;
+            }else if(i==0){
+                window.location = "../index.html";
+            }
+        },1000)
         //客户端cookie验证
-        function getCookid(){
+        /*function getCookid(){
             $.ajax({
                 type:"POST",
                 url:"../../cookies/checkCookie.php",
@@ -43,7 +56,13 @@
                 }
             });
         }
-        getCookid();
+        getCookid();*/
+
+        // 判断是电脑则进入电脑地址
+        if (!(navigator.userAgent.toLowerCase().match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href="../PC/m404.html";
+        }
+
     </script>
 </body>
 </html>

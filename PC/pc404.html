@@ -33,7 +33,7 @@
     </a>
     <script>
         $("#gotohome").click(function(){
-            window.location = "../backLogin.html";
+            window.location = "../index.html";
         });
 
         i = 4;
@@ -42,19 +42,19 @@
                 $("#sec").html(i);
                 i--;
             }else if(i==0){
-                window.location = "../backLogin.html";
+                window.location = "../index.html";
             }
         },1000)
 
 
         //客户端cookie验证
-        function getCookid(){
+        /*function getCookid(){
             $.ajax({
                 type:"POST",
                 url:"../cookies/checkCookie.php",
                 success: function(msg){
                     if(msg == ""){
-                        location.href = "../login.php";
+                        location.href = "../index.html";
                     }
                 },
                 error:function(msg){
@@ -62,8 +62,13 @@
                 }
             });
         }
-        getCookid();
+        getCookid();*/
 
+
+        // 判断是手机则进入手机地址
+        if ((navigator.userAgent.toLowerCase().match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href="../mobile/m404.html";
+        }
     </script>
 </body>
 </html>
