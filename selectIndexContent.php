@@ -21,7 +21,7 @@ mysqli_query($conn,"set names utf8");
 //迭代出需要点击的内容
 function select(){
     global $conn;
-    $sql = "select aid,title,cid,content,adddate from yiqi_article where cid=2";
+    $sql = "select aid,title,cid,content,adddate from yiqi_article where cid=2 order by aid desc;";
     $zhixing = mysqli_query($conn,$sql);
     $str = "";
     while($rows = mysqli_fetch_row($zhixing)){
