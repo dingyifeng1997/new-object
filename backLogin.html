@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>河南晶泰光电科技有限公司</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/bs/css/bootstrap.css">
     <script src="public/bs/js/jquery-1.11.0.min.js"></script>
     <script src="public/bs/js/bootstrap.min.js"></script>
     <script src="public/js/holder.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <link rel="shortcut icon" href="public/img/icon/icon.png" >
+    <link rel="shortcut icon" href="public/img/icon/icon.png">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-
+    <script src="layer/layer.js"></script>
 </head>
 <body style="padding-top:50px;">
 <!--顶部导航栏-->
@@ -22,7 +22,8 @@
         <div class="container top">
             <!-- 点击汉堡按钮 -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -37,17 +38,52 @@
             <!-- 手机下拉菜单 -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="max-height: 600px;">
                 <ul class="nav navbar-nav">
-                    <li class="nav-li active"><a >首页</a></li>
-                    <li class="nav-li"><a >产品</a></li>
-                    <li class="nav-li"><a >帮助</a></li>
-                    <li class="nav-li"><a >报价系统</a></li>
+                    <li class="nav-li active"><a>首页</a></li>
+                    <li class="nav-li"><a>产品</a></li>
+                    <li class="nav-li"><a>帮助</a></li>
+                    <li class="nav-li price" style="position: relative;">
+                        <a>报价系统</a>
+                        <div style="position: absolute;width:120px;background: #222222;color: #fff;display:none"
+                             id="priceNav">
+                            <ul style="list-style: none;padding:0;" class="priceUL">
+                                <a href="PC/monochromeP10/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">单色P10</li>
+                                </a>
+                                <a href="PC/monochromeP3.75/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">单色3.75</li>
+                                </a>
+                                <a href="PC/monochrome5.0/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">单色5.0</li>
+                                </a>
+                                <a href="PC/indoorColorXC/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">室内全彩型材</li>
+                                </a>
+                                <a href="PC/outdoorColorXC/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">室外全彩型材</li>
+                                </a>
+                                <a href="PC/outdoorColorXT/index.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">室外全彩箱体</li>
+                                </a>
+                                <a href="PC/pc404.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">室内全彩压铸铝</li>
+                                </a>
+                                <a href="PC/pc404.html" style="color: #fff; text-decoration: none;">
+                                    <li style="padding: 5px">室外全彩压铸铝</li>
+                                </a>
+
+                            </ul>
+                        </div>
+
+                    </li>
                     <li class="hidden-sm hidden-md"><a href="javascript:;" target="_blank" id="wph">定制屏幕</a></li>
                     <li><a href="wphObject/orderPage/login.html" target="_blank">客户信息</a></li>
                     <li><a href="tel:13203835589">电话咨询</a></li>
+                    <li><a id="fankui" href="javascript:;">意见反馈</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-sm">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="users">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false" id="users">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="mysql/setAccount.html" id="setAccount">修改账户</a></li>
                             <li><a href="javascript:;" id="logOut">退出登录</a></li>
@@ -112,11 +148,11 @@
 </div>
 
 <!--右侧广告栏 start-->
-<div class="col-md-3 right_QRcode "  style="z-index:10;">
+<div class="col-md-3 right_QRcode " style="z-index:10;">
     <a href="https://shop140979949.taobao.com/?spm=a1z10.1-c.0.0.65b671aev9mowg">
         <img src="public/img/banner/QRcode3.png" alt="">
         <p>请扫描二维码联系客服</p>
-        <p> <span class="glyphicon glyphicon-send"></span> 点击进入淘宝网店</p>
+        <p><span class="glyphicon glyphicon-send"></span> 点击进入淘宝网店</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> 13203835589</p>
     </a>
 </div>
@@ -127,7 +163,7 @@
 
 
     <!--左侧广告栏 start-->
-    <div class="col-md-3 left_banner" >
+    <div class="col-md-3 left_banner">
         <div id="close_left_banner" style="float: right;">
             X
         </div>
@@ -138,15 +174,14 @@
     <!--左侧广告栏 stop-->
 
 
-
-
     <!--首页开始-->
     <div class="forum" style="display: block;">
-        <h4 class="page-header" > &nbsp;&nbsp;&nbsp;&nbsp;▶  科技资讯</h4>
+        <h4 class="page-header"> &nbsp;&nbsp;&nbsp;&nbsp;▶ 科技资讯</h4>
         <div class="row" id="science" style="padding-left: 5px;">
             <div class="col-md-12" v-for="item in data">
                 <h4>
-                    <a  :href= "hrefs+item.aid" target="_blank" class="content-title" id="scienceTitle" v-html="item.title"style="text-decoration:none;"></a>
+                    <a :href="hrefs+item.aid" target="_blank" class="content-title" id="scienceTitle"
+                       v-html="item.title" style="text-decoration:none;"></a>
                 </h4>
                 <div class="content-text" id="scienceContent"></div>
                 <span class="content-date" id="scienceDate" v-html="item.adddate"></span>
@@ -157,14 +192,15 @@
     <!--首页结束-->
 
     <!--辅材信息开始-->
-    <div class="forum"  style="display:none;">
-        <h4 class="page-header" > &nbsp;&nbsp;&nbsp;&nbsp;▶  最新产品</h4>
+    <div class="forum" style="display:none;">
+        <h4 class="page-header"> &nbsp;&nbsp;&nbsp;&nbsp;▶ 最新产品</h4>
         <div class="row" id="Materials" style="padding-left: 5px;">
             <div class="col-md-12" v-for="item in data">
 
-                <div >
+                <div>
                     <h4>
-                        <a :href= "hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"style="text-decoration:none;"></a>
+                        <a :href="hrefs+item.aid" target="_blank" class="content-title" v-html="item.title"
+                           style="text-decoration:none;"></a>
                     </h4>
                     <div class="content-text" id="MaterialsContent">
                     </div>
@@ -176,8 +212,8 @@
     <!--辅材信息结束-->
 
     <!--使用帮助开始-->
-    <div class="forum"  style="display:none;">
-        <h4 class="page-header"> &nbsp;&nbsp;&nbsp;&nbsp;▶  使用帮助</h4>
+    <div class="forum" style="display:none;">
+        <h4 class="page-header"> &nbsp;&nbsp;&nbsp;&nbsp;▶ 使用帮助</h4>
 
         <div class="row">
             <div class="col-md-2">
@@ -185,7 +221,7 @@
                     <a class="list-group-item active" id="greenHands">新手入门</a>
                     <a class="list-group-item" id="FAQ">常见问题</a>
                     <a class="list-group-item" href="javascript:;" id="admin">数据管理</a>
-                    <a class="list-group-item" href="./admin/index.php" >后台管理</a>
+                    <a class="list-group-item" href="./admin/index.php">后台管理</a>
                 </div>
             </div>
             <div class="col-md-10">
@@ -244,7 +280,7 @@
         </div>
         <div class="col-md-3">
             <div class="panel panel-warning" id="indoorColorYZL">
-                <div class="panel-heading" >室内全彩压铸铝</div>
+                <div class="panel-heading">室内全彩压铸铝</div>
                 <div class="panel-body">
                     <img src="public/img/xinghao/snqcyzl.jpg" alt="">
                 </div>
@@ -252,23 +288,23 @@
         </div>
         <div class="col-md-3">
             <div class="panel panel-success" id="indoorColorXC">
-                <div class="panel-heading" >室内全彩型材</div>
+                <div class="panel-heading">室内全彩型材</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/snqcxc.jpg" alt="" >
+                    <img src="public/img/xinghao/snqcxc.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="panel panel-success" id="outdoorColorXC">
-                <div class="panel-heading" >室外全彩型材</div>
+                <div class="panel-heading">室外全彩型材</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/swqcxc.jpg" alt="" >
+                    <img src="public/img/xinghao/swqcxc.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="panel panel-info" id="outdoorColorXT">
-                <div class="panel-heading" >室外全彩箱体</div>
+                <div class="panel-heading">室外全彩箱体</div>
                 <div class="panel-body">
                     <img src="public/img/xinghao/swqcxt.jpg" alt="">
                 </div>
@@ -278,7 +314,7 @@
             <div class="panel panel-warning" id="outdoorColorYZL">
                 <div class="panel-heading">室外全彩压铸铝</div>
                 <div class="panel-body">
-                    <img src="public/img/xinghao/swqcyzl.jpg" alt="" >
+                    <img src="public/img/xinghao/swqcyzl.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -287,8 +323,10 @@
 
 
     <!--进入数据库控制台-->
-    <div style="display:none;width: 300px;height:200px;background:#e3e3e3;position: fixed;left:50%;margin-left:-150px;top:10%;z-index: 100" id="rootBox">
-        <h3 class="page-header" style="text-align: center;padding:7px;margin:0;background:#54606e;color: #ffffff">数据管理</h3>
+    <div style="display:none;width: 300px;height:200px;background:#e3e3e3;position: fixed;left:50%;margin-left:-150px;top:10%;z-index: 100"
+         id="rootBox">
+        <h3 class="page-header" style="text-align: center;padding:7px;margin:0;background:#54606e;color: #ffffff">
+            数据管理</h3>
         <div style="margin-left:50px;width:300px;">
             <div style="width:50px;">
                 username:
@@ -303,10 +341,10 @@
         </div>
         <div style="width:100%;background:red;margin-top:10px;">
             <div style="width:100px;height:35px;background: yellow;float: left;margin-left:50px;">
-                <input type="submit"  id="goAdmin" value="进 入" style="width:100%;height:100%;font-size:16px;">
+                <input type="submit" id="goAdmin" value="进 入" style="width:100%;height:100%;font-size:16px;">
             </div>
             <div style="width:100px;height:35px;background: blue;float: left;">
-                <input type="submit" id="close"  value="关 闭" style="width:100%;height:100%;font-size:16px;">
+                <input type="submit" id="close" value="关 闭" style="width:100%;height:100%;font-size:16px;">
             </div>
         </div>
     </div>
@@ -323,135 +361,271 @@
     <p>河南晶泰光电科技有限公司版权所有 ©2017-2018</p>
     <p>河南晶泰光电科技有限公司运营：<a href="http://www.miitbeian.gov.cn/">豫ICP备18016214号</a></p>
 </div>
+
+<!--粒子线条特效-->
+<canvas id="c_n12" width="1829" height="585"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
+<script>
+    //非手机端不显示canvas动画
+    if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        !function () {
+            function o(w, v, i) {
+                return w.getAttribute(v) || i
+            }
+
+            function j(i) {
+                return document.getElementsByTagName(i)
+            }
+
+            function l() {
+                var i = j("script"), w = i.length, v = i[w - 1];
+                return {
+                    l: w,
+                    z: o(v, "zIndex", -1),
+                    o: o(v, "opacity", 0.5),
+                    c: o(v, "color", "0,100,100"),
+                    n: o(v, "count", 199)
+                }
+            }
+
+            function k() {
+                r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+            }
+
+            function b() {
+                e.clearRect(0, 0, r, n);
+                var w = [f].concat(t);
+                var x, v, A, B, z, y;
+                t.forEach(function (i) {
+                    i.x += i.xa, i.y += i.ya, i.xa *= i.x > r || i.x < 0 ? -1 : 1, i.ya *= i.y > n || i.y < 0 ? -1 : 1, e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
+                    for (v = 0; v < w.length; v++) {
+                        x = w[v];
+                        if (i !== x && null !== x.x && null !== x.y) {
+                            B = i.x - x.x, z = i.y - x.y, y = B * B + z * z;
+                            y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+                        }
+                    }
+                    w.splice(w.indexOf(i), 1)
+                }), m(b)
+            }
+
+            var u = document.createElement("canvas"), s = l(), c = "c_n" + s.l, e = u.getContext("2d"), r, n,
+                m = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (i) {
+                        window.setTimeout(i, 1000 / 45)
+                    }, a = Math.random, f = {x: null, y: null, max: 20000};
+            u.id = c;
+            u.style.cssText = "position:fixed;top:0;left:0;z-index:" + s.z + ";opacity:" + s.o;
+            j("body")[0].appendChild(u);
+            k(), window.onresize = k;
+            window.onmousemove = function (i) {
+                i = i || window.event, f.x = i.clientX, f.y = i.clientY
+            }, window.onmouseout = function () {
+                f.x = null, f.y = null
+            };
+            for (var t = [], p = 0; s.n > p; p++) {
+                var h = a() * r, g = a() * n, q = 2 * a() - 1, d = 2 * a() - 1;
+                t.push({x: h, y: g, xa: q, ya: d, max: 6000})
+            }
+            setTimeout(function () {
+                b()
+            }, 100)
+        }();
+    }
+</script>
 <script src="public/js/index2.js"></script>
 <script>
-
-
     // 右侧二维码定位
-    $(document).scroll(function(){
-        if($(window).scrollTop() > 590){
+    $(document).scroll(function () {
+        if ($(window).scrollTop() > 590) {
             $(".right_QRcode").addClass("right_QRcode_Fixed");
-        }else if($(window).scrollTop() < 590){
+        } else if ($(window).scrollTop() < 590) {
             $(".right_QRcode").removeClass("right_QRcode_Fixed");
         }
     });
-
-
     //退出登录按钮点击后,ajax到delCookie页面,然后跳转到登录页面
-    $("#logOut").click(function(){
+    $("#logOut").click(function () {
         delCookie();
         // alert(1);
     });
-    function delCookie(){
+    function delCookie() {
         $.ajax({
-            type:"POST",
-            url:"cookies/delCookie.php",
-            success: function(msg){
+            type: "POST",
+            url: "cookies/delCookie.php",
+            success: function (msg) {
                 // alert(msg);
                 location.href = "index.html ";
             },
-            error:function(msg){
+            error: function (msg) {
             }
         });
     }
-
     //点击显示数据管理中心登录窗口
-    $("#admin").click(function(){
-            $("#rootBox").show();
+    $("#admin").click(function () {
+        $("#rootBox").show();
     });
-
     //点击关闭数据管理中心登录窗口
-    $("#close").click(function(){
-            $("#rootBox").hide();
+    $("#close").click(function () {
+        $("#rootBox").hide();
     });
-
-
-
     //判断是否可以去往数据管理页面
-    $("#goAdmin").click(function(){
-        if($("#user").val() == 'root'&&$("#pass").val()=='root'){
+    $("#goAdmin").click(function () {
+        if ($("#user").val() == 'root' && $("#pass").val() == 'root') {
             location.href = "mysql/showMysql.php";
             $("#rootBox").head();
         }
     });
-
-
-
-
-    function getCookid(){
+    function getCookid() {
         $.ajax({
-            type:"POST",
-            url:"cookies/checkCookie.php",
-            success: function(msg){
-                if(msg == ""){
+            type: "POST",
+            url: "cookies/checkCookie.php",
+            success: function (msg) {
+                if (msg == "") {
                     location.href = "login.php";
-                }else{
-                    $("#users").html(msg +' <span class="caret"></span>');
+                } else {
+                    $("#users").html(msg + ' <span class="caret"></span>');
                 }
             },
-            error:function(msg){
+            error: function (msg) {
                 alert("发送失败");
             }
         });
     }
     getCookid();
-
-
-    $("#goAdmin").click(function(){
-        if($("#user").val() == 'root'&&$("#pass").val()=='root'){
+    $("#goAdmin").click(function () {
+        if ($("#user").val() == 'root' && $("#pass").val() == 'root') {
             location.href = "mysql/showMysql.php";
             $("#rootBox").head();
         }
     });
-
     $("#wph").click(
-        function(){
+        function () {
             if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-                window.location.href="wphObject/mindex.html";
-            }else{
-                window.location.href="wphObject/index.html";
+                window.location.href = "wphObject/mindex.html";
+            } else {
+                window.location.href = "wphObject/index.html";
             }
         }
     )
     //开启Vue写入
     new Vue({
-        el:'#science',
-        data:{data:"",hrefs:"content.html?aid="},
-        beforeCreate:function(){
-            var url="json.jsp";
-            var _self=this;
-            $.get("selectIndexContent.php",function(data){
-                _self.data=eval("(" + data +")");
+        el: '#science',
+        data: {data: "", hrefs: "content.html?aid="},
+        beforeCreate: function () {
+            var url = "json.jsp";
+            var _self = this;
+            $.get("selectIndexContent.php", function (data) {
+                _self.data = eval("(" + data + ")");
             })
         }
     })
     new Vue({
-        el:'#Materials',
-        data:{data:"",hrefs:"content.html?aid="},
-        beforeCreate:function(){
-            var url="json.jsp";
-            var _self=this;
-            $.get("MaterialsContent.php",function(data){
-                _self.data=eval("(" + data +")");
+        el: '#Materials',
+        data: {data: "", hrefs: "content.html?aid="},
+        beforeCreate: function () {
+            var url = "json.jsp";
+            var _self = this;
+            $.get("MaterialsContent.php", function (data) {
+                _self.data = eval("(" + data + ")");
             })
         }
     })
-
-
-    window.onload= function(){
+    window.onload = function () {
         // $(".content-text").text($(this).text())
         //将渲染出来的字符变成不可点击的
-        for (var i = 0;i <$(".content-text").length;i++){
-            $(".content-text").eq(i).text($(".content-text").eq(i).text().slice(0,120))
+        for (var i = 0; i < $(".content-text").length; i++) {
+            $(".content-text").eq(i).text($(".content-text").eq(i).text().slice(0, 120))
         }
         //将文本内容设置为一行以内
-}
 
+        //意见反馈弹出层
+        $("#fankui").click(function () {
+            if ($(window).width() > 600) {
+                layer.open({
+                    type: 1,
+                    title: ['意见反馈', 'font-size:22px;'],
+                    skin: 'layui-layer-demo', //样式类名
+                    closeBtn: 1, //不显示关闭按钮
+                    anim: 0,
+                    area: ['600px', '400px'],
+                    shadeClose: true, //开启遮罩关闭
+                    content: `<div style="height:300px;width:600px;">
+                <div class="content" style="padding:15px">
+                    <p class="label" style="color:black;font-size: 16px;" id="lianxif">联系方式（必填）</p>
+                    <div class="input-group">
+                        <input placeholder="您的邮箱/QQ号" type="text" class="email" style="border-radius: 4px;border: 1px solid #d7d7d7;color: #5e5e5e;width:560px;outline: none;padding: 5px 10px;resize: none;margin:15px 0; " id="emails">
+                        </div>
+                        <p class="label" style="color:black;font-size: 16px;">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea maxlength="140" placeholder="请填写您的意见，不超过140字" class="text" style="border-radius: 4px;border: 1px solid #d7d7d7;color: #5e5e5e;width:560px;outline: none;padding: 5px 10px;resize: none;margin:15px 0;height: 120px;"></textarea>
+                        </div>
+                    </div>
+            </div>`
+                    , btn: ['提交', '取消']
+                    , btn1: function (index, layero) {
+                        alert("提交成功")
+                        layer.close(index);
+                    }
+                    , btn2: function (index, layero) {
+                    }
+
+                });
+            } else {
+                layer.open({
+                    type: 1,
+                    title: ['意见反馈', 'font-size:22px;'],
+                    skin: 'layui-layer-demo', //样式类名
+                    closeBtn: 1, //不显示关闭按钮
+                    anim: 0,
+                    shadeClose: true, //开启遮罩关闭
+                    content: `<div style="height:220px;width:300px;">
+                <div class="content" style="padding:15px">
+                    <p class="label" style="color:black;font-size: 16px;" id="lianxif">联系方式（必填）</p>
+                    <div class="input-group">
+                        <input placeholder="您的邮箱/QQ号" type="text" class="email" style="border-radius: 4px;border: 1px solid #d7d7d7;color: #5e5e5e;width:240px;outline: none;padding: 5px 10px;resize: none;margin:15px 0; " id="emails">
+                        </div>
+                        <p class="label" style="color:black;font-size: 16px;">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea maxlength="140" placeholder="请填写您的意见，不超过140字" class="text" style="border-radius: 4px;border: 1px solid #d7d7d7;color: #5e5e5e;width:240px;outline: none;padding: 5px 10px;resize: none;margin:15px 0;height: 100%"></textarea>
+                        </div>
+                    </div>
+            </div>`
+                    , btn: ['提交', '取消']
+                    , btn1: function (index, layero) {
+                        alert("提交成功")
+                        layer.close(index);
+                    }
+                    , btn2: function (index, layero) {
+                    }
+
+                });
+            }
+        })
+    }
+
+
+    if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        //报价系统标签
+        $(".price").hover(
+            function () {
+                $("#priceNav").slideDown();
+            },
+            function () {
+                $("#priceNav").slideUp();
+            }
+        )
+        //标签移动上去改变背景色
+        $(".priceUL li").hover(
+            function () {
+                $(this).css({"background": "#2f73fd"});
+            },
+            function () {
+                $(this).css({"background": "fff"});
+            }
+        )
+    }
 
 
 </script>
 
 </body>
 </html>
-
-

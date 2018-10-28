@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>404</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
+
     <!--设置标志-->
     <link rel="shortcut icon" href="../public/img/icon/icon.png">
     <script src="../public/bs/js/jquery-1.11.0.min.js"></script>
@@ -32,38 +33,27 @@
 <body>
     <a  id="gotohome"> <span class="glyphicon glyphicon-arrow-left"></span> 回到首页 ( <b id="sec">5</b> 秒)
     </a>
+
     <script>
-        $("#gotohome").click(function(){
-            window.location = "../index.html";
+        $(function() {// 初始化内容
+            $("#gotohome").click(function(){
+                window.location = "../index.html";
+            });
+            i = 4;
+            setInterval(function(){
+                if(i>0){
+                    $("#sec").html(i);
+                    i--;
+                }else if(i==0){
+                    window.location = "../index.html";
+                }
+            },1000)
         });
 
-        i = 4;
-        setInterval(function(){
-            if(i>0){
-                $("#sec").html(i);
-                i--;
-            }else if(i==0){
-                window.location = "../index.html";
-            }
-        },1000)
 
 
-        //客户端cookie验证
-        /*function getCookid(){
-            $.ajax({
-                type:"POST",
-                url:"../cookies/checkCookie.php",
-                success: function(msg){
-                    if(msg == ""){
-                        location.href = "../index.html";
-                    }
-                },
-                error:function(msg){
-                    alert("发送失败");
-                }
-            });
-        }
-        getCookid();*/
+
+
 
 
         // 判断是手机则进入手机地址

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请求</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<button id="btn">请求</button>
+<script>
+    $("#btn").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "https://api.mysubmail.com/message/send",
+            data: {appid:27936,to:13203835589,content:"【测试接口】您的验证码是：1234，请在15分钟内输入",signature:"4880ea6dfdc416bbb90d2eb66f3984d3"}
+        });
+    })
+</script>
+</body>
+</html>

@@ -6,7 +6,8 @@
     <title>注册成功</title>
 <!--    用户注册成功页面-->
     <script src="../public/bs/js/jquery-1.11.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
+
 
     <style>
         *{

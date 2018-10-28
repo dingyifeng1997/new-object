@@ -2,11 +2,153 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0cc8f5d-5987-478e-a9ba-b93a0eb905f6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LED.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MaterialsContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/MaterialsContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/.idea/报价系统.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/.idea/报价系统.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/.idea/表格输入框.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/.idea/表格输入框.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/表格输入框.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/.idea/表格输入框.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/.idea/表格输入框.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/.idea/表格输入框.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/表格输入框.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/.idea/表格输入框.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/表格输入框.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/.idea/表格输入框.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/js/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/js/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/js/页面计算逻辑JS文件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/js/页面计算逻辑JS文件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorYZL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorYZL/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/pc404.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/pc404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueTest/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueTest/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueTest/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/VueTest/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueTest/vueObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueTest/vueObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/backLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookies/addCookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/addCookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookies/checkCookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/checkCookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookies/delCookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/delCookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fenye/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fenye/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fenye/paging.php" beforeDir="false" afterPath="$PROJECT_DIR$/fenye/paging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fenye/whole.php" beforeDir="false" afterPath="$PROJECT_DIR$/fenye/whole.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/.idea/手机下拉.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/.idea/手机下拉.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/indoorColorXC/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/indoorColorXC/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/indoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/indoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/m404.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/m404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochrome5.0/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochrome5.0/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochrome5.0/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochrome5.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochrome5.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP10/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP10/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP10/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP10/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP10/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXT/JS/inputScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXT/JS/inputScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXT/JS/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXT/JS/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXT/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXT/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/outdoorColorXT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/outdoorColorXT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/delUserMysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/delUserMysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/getCaptcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/getCaptcha.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/matchOldPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/matchOldPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/modifyUserMysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/modifyUserMysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/registrationProtocol.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/registrationProtocol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/registry.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/registry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/selectTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/selectTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/setAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/setAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/setAccountPhp.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/setAccountPhp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/showMysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/showMysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/skip.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/skip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/verify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/js/bootstable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/js/bootstable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bs/js/jquery-1.11.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bs/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/mobile.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/mobile.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/pc_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/pc_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/img/error/pc404.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/error/pc404.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/holder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/holder.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selectContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/selectContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selectIndexContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/selectIndexContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/positions/pcPosition/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/positions/pcPosition/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/positions/pcPosition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/positions/pcPosition/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/City_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/City_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/areadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/areadata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/auto_area.js" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/positions/pcPosition/js/auto_area.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/目录结构文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/目录结构文档.txt" afterDir="false" />
     </list>
     <ignored path="LED.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,12 +166,21 @@
     <favorites_list name="LED" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pc404.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PC/pc404.html">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="341" lean-forward="true" selection-start-line="341" selection-end-line="341" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +209,9 @@
       <find>security</find>
       <find>infinite-scroll-preloader</find>
       <find>发送失败</find>
+      <find>background: url</find>
       <find>right_QRcode</find>
+      <find>left_banner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,12 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wphObject/layui/province.js" />
-        <option value="$PROJECT_DIR$/VueTest/app.vue.js" />
-        <option value="$PROJECT_DIR$/VueTest/CitySelect.vue.js" />
-        <option value="$PROJECT_DIR$/VueTest/app.vue" />
-        <option value="$PROJECT_DIR$/VueTest/test.html" />
-        <option value="$PROJECT_DIR$/wphObject/server/insertDatabase.php" />
         <option value="$PROJECT_DIR$/wphObject/js/index.js" />
         <option value="$PROJECT_DIR$/wphObject/js/mindex.js" />
         <option value="$PROJECT_DIR$/wphObject/mindex.html" />
@@ -83,7 +230,6 @@
         <option value="$PROJECT_DIR$/wphObject/orderPage/index.html" />
         <option value="$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js" />
         <option value="$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LArea.js" />
-        <option value="$PROJECT_DIR$/mysql/register.html" />
         <option value="$PROJECT_DIR$/fenye.html" />
         <option value="$PROJECT_DIR$/fenye/ps.php" />
         <option value="$PROJECT_DIR$/fenye/whole.php" />
@@ -91,41 +237,54 @@
         <option value="$PROJECT_DIR$/PC/outdoorColorXT/js/inputScript.js" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" />
         <option value="$PROJECT_DIR$/mobile/outdoorColorXT/JS/myStyleScript.js" />
-        <option value="$PROJECT_DIR$/public/js/index2.js" />
+        <option value="$PROJECT_DIR$/mobile/outdoorColorXT/JS/inputScript.js" />
+        <option value="$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js" />
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/t2.html" />
+        <option value="$PROJECT_DIR$/t2.css" />
+        <option value="$PROJECT_DIR$/selectContent.php" />
+        <option value="$PROJECT_DIR$/MaterialsContent.php" />
+        <option value="$PROJECT_DIR$/selectIndexContent.php" />
+        <option value="$PROJECT_DIR$/content.html" />
         <option value="$PROJECT_DIR$/mobile/indoorColorXC/index.html" />
         <option value="$PROJECT_DIR$/mobile/monochrome5.0/index.html" />
         <option value="$PROJECT_DIR$/mobile/monochromeP3.75/index.html" />
         <option value="$PROJECT_DIR$/mobile/monochromeP10/index.html" />
         <option value="$PROJECT_DIR$/mobile/outdoorColorXC/index.html" />
         <option value="$PROJECT_DIR$/mobile/outdoorColorXT/index.html" />
-        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/mobile/m404.html" />
+        <option value="$PROJECT_DIR$/mysql/register.html" />
+        <option value="$PROJECT_DIR$/mysql/registrationProtocol.html" />
+        <option value="$PROJECT_DIR$/mysql/setAccount.html" />
+        <option value="$PROJECT_DIR$/mysql/skip.php" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js" />
         <option value="$PROJECT_DIR$/PC/indoorColorYZL/index.html" />
         <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
         <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
         <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
-        <option value="$PROJECT_DIR$/mobile/outdoorColorXT/JS/inputScript.js" />
-        <option value="$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js" />
-        <option value="$PROJECT_DIR$/test1.html" />
-        <option value="$PROJECT_DIR$/public/js/index1.js" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/t2.html" />
-        <option value="$PROJECT_DIR$/t2.css" />
+        <option value="$PROJECT_DIR$/PC/pc404.html" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/public/css/pc_style.css" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
-        <option value="$PROJECT_DIR$/selectContent.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/backLogin.html" />
-        <option value="$PROJECT_DIR$/content.html" />
-        <option value="$PROJECT_DIR$/mobile/m404.html" />
-        <option value="$PROJECT_DIR$/MaterialsContent.php" />
-        <option value="$PROJECT_DIR$/selectIndexContent.php" />
-        <option value="$PROJECT_DIR$/PC/pc404.html" />
+        <option value="$PROJECT_DIR$/public/js/index2.js" />
+        <option value="$PROJECT_DIR$/public/js/index1.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -134,10 +293,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="479" />
-    <option name="y" value="111" />
-    <option name="width" value="1036" />
-    <option name="height" value="867" />
+    <option name="x" value="464" />
+    <option name="y" value="80" />
+    <option name="width" value="1367" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -160,6 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,54 +327,30 @@
               <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
               <item name="new-object" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="PC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/appserv/www/PJ/new-object/PC/pc404.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\软件安装地址\ps安装地址\Adobe Photoshop CC 2014\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\anZhuang\appserv\www\new-object-master\public\css" />
       <recent name="D:\appserv\www\PJ\new-object\public\img\error" />
       <recent name="D:\appserv\www\PJ\new-object\public\img\icon" />
       <recent name="D:\appserv\www\PJ\new-object\public\img\banner" />
       <recent name="D:\appserv\www\PJ\new-object\public\img\help" />
-      <recent name="D:\appserv\www\PJ\new-object\mobile\outdoorColorXT" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\appserv\www\PJ\new-object\mobile" />
@@ -237,28 +373,48 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -381,6 +537,27 @@
       <workItem from="1537602321011" duration="100000" />
       <workItem from="1537602575783" duration="605000" />
       <workItem from="1537605089084" duration="1035000" />
+      <workItem from="1538373880150" duration="2369000" />
+      <workItem from="1538387089575" duration="32000" />
+      <workItem from="1538658814841" duration="5218000" />
+      <workItem from="1538993996547" duration="168000" />
+      <workItem from="1539007601833" duration="1184000" />
+      <workItem from="1539068013857" duration="2764000" />
+      <workItem from="1539480560122" duration="7766000" />
+      <workItem from="1539758218778" duration="623000" />
+      <workItem from="1539832686967" duration="9135000" />
+      <workItem from="1539856116676" duration="45000" />
+      <workItem from="1539856340274" duration="973000" />
+      <workItem from="1539857627796" duration="170000" />
+      <workItem from="1539857872785" duration="452000" />
+      <workItem from="1539916813859" duration="430000" />
+      <workItem from="1539936386998" duration="495000" />
+      <workItem from="1540001056306" duration="609000" />
+      <workItem from="1540025486996" duration="172000" />
+      <workItem from="1540100607708" duration="37000" />
+      <workItem from="1540129407797" duration="392000" />
+      <workItem from="1540130765893" duration="68000" />
+      <workItem from="1540704959991" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="删除LEDproject">
       <created>1521780601943</created>
@@ -687,53 +864,32 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122081000" />
+    <option name="totallyTimeSpent" value="155200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18385416" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="4" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22291666" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32905483" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.28833693" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18385416" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -779,252 +935,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selectIndexContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/positions/mobilePosition/js/LArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/registry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="49" column="69" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="354" column="40" selection-start-line="354" selection-start-column="40" selection-end-line="354" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/indexVue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="33" selection-end-line="907" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="161" column="58" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" selection-start-line="5" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/js/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="294" column="29" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="525" column="25" selection-start-line="525" selection-start-column="25" selection-end-line="525" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="515" column="25" selection-start-line="515" selection-start-column="25" selection-end-line="515" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="707" column="24" selection-start-line="707" selection-start-column="24" selection-end-line="707" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="412" column="33" selection-start-line="412" selection-start-column="33" selection-end-line="412" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="351" column="33" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="516" column="33" selection-start-line="516" selection-start-column="33" selection-end-line="516" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="505" column="33" selection-start-line="505" selection-start-column="33" selection-end-line="505" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="687" column="33" selection-start-line="687" selection-start-column="33" selection-end-line="687" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="403" column="33" selection-start-line="403" selection-start-column="33" selection-end-line="403" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="338" column="29" selection-start-line="338" selection-start-column="29" selection-end-line="338" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fenye/whole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fenye/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="55" column="94" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fenye/paging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXT/JS/myStyleScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXT/JS/inputScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="339" column="20" selection-start-line="339" selection-start-column="20" selection-end-line="339" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXT/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="342" selection-start-line="342" selection-end-line="342" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/JS/inputScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="842" column="22" selection-start-line="842" selection-start-column="22" selection-end-line="842" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="417" column="60" selection-start-line="417" selection-start-column="60" selection-end-line="417" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/showMysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="82" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/selectTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="44" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="334" column="6" selection-start-line="334" selection-start-column="6" selection-end-line="334" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="287" column="7" selection-start-line="287" selection-start-column="7" selection-end-line="287" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1042,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/delUserMysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" column="4" selection-start-line="20" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/orderPage/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1063,76 +974,294 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.css">
+    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="10725">
+          <caret line="334" column="6" selection-start-line="334" selection-start-column="6" selection-end-line="334" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content.html">
+    <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        <state relative-caret-position="9603">
+          <caret line="287" column="7" selection-start-line="287" selection-start-column="7" selection-end-line="287" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/monochromeP10/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/outdoorColorXT/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/m404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        <state relative-caret-position="198">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backLogin.html">
+    <entry file="file://$PROJECT_DIR$/mysql/getCaptcha.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/delUserMysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="20" column="4" selection-start-line="20" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/modifyUserMysql.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/matchOldPassword.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/registrationProtocol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/registry.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/selectTable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="179" column="69" selection-start-line="179" selection-start-column="69" selection-end-line="179" selection-end-column="69" />
+          <caret selection-end-line="44" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index1.js">
+    <entry file="file://$PROJECT_DIR$/mysql/setAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="264">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/mysql/setAccountPhp.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/showMysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="362" column="14" selection-start-line="362" selection-start-column="14" selection-end-line="362" selection-end-column="14" />
+        <state relative-caret-position="33">
+          <caret line="82" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selectContent.php">
+    <entry file="file://$PROJECT_DIR$/mysql/skip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="297">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MaterialsContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="693">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/selectContent.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/selectIndexContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="759">
           <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/error/pc404.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/verify.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11484">
+          <caret line="348" column="5" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="680" column="13" selection-start-line="680" selection-start-column="13" selection-end-line="680" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="669" column="13" selection-start-line="669" selection-start-column="13" selection-end-line="669" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="506" column="13" selection-start-line="506" selection-start-column="13" selection-end-line="506" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorYZL/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PC/pc404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="614">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="851" column="13" selection-start-line="851" selection-start-column="13" selection-end-line="851" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="570" column="13" selection-start-line="570" selection-start-column="13" selection-end-line="570" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1353">
+          <caret line="581" column="1456" lean-forward="true" selection-start-line="577" selection-start-column="8" selection-end-line="581" selection-end-column="1456" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="514" column="4" lean-forward="true" selection-start-line="514" selection-start-column="4" selection-end-line="519" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/pc_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="150" column="30" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="341" lean-forward="true" selection-start-line="341" selection-end-line="341" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
