@@ -222,7 +222,8 @@ function getPower(){
 
 //  1.14 总平方数,根据加边框后长度和加边框后高度生成
 function getArea(){
-    allSquare = ((accMul(borderSumWidth,borderSumHeight))/10000).toFixed(1);
+    ts = ((accMul(borderSumWidth,borderSumHeight))/1000);
+    allSquare = (Math.ceil(ts))/10
     $("#dataB7").text(allSquare);
 }
 
@@ -273,11 +274,11 @@ function getLine1(){
             tc = "插灯半白";
             break;
         case "P10表贴全户外红":
-            boardPrice = "26.8";
+            boardPrice = "17.5";
             tc = "表贴全红";
             break;
         case "P10表贴半户外红":
-            boardPrice = "24.8";
+            boardPrice = "16.5";
             tc = "表贴半红";
             break;
         case "P10表贴全户外白":
@@ -589,13 +590,13 @@ function getLine4(){
 
     if($("#selectType").val() == "P10户外双色"){
         getPowerNumber = Math.ceil(banNumber/6);
-        price = 33;
+        price = 30;
     }else if($("#selectType").val() == "P10全彩走字"){
         getPowerNumber = Math.ceil(banNumber/6);
-        price = 45;
+        price = 44;
     }else{
         getPowerNumber = Math.ceil(banNumber/10);
-        price = 33;
+        price = 30;
     }
     $("#partsD1").text(getPowerNumber);
     $("#partsD2").text(price);            //电源价格
@@ -603,41 +604,41 @@ function getLine4(){
 }
 //2.5 第5行数据 -[型材]
 function getLine5(){
-    var cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/600);             //型材总根数
+    var cel =Math.ceil(((screenWidth*2)+(screenHeight*2))/100);             //型材总根数
     $("#partsE1").text(cel);
 
     var corner = 0;
     switch($("#selectBorder").val()) {
 
         case "9025常规型材":
-            corner = 60;
+            corner = 10;
             break;
         case "9035常规型材":
-            corner = 60;
+            corner = 10;
             break;
         case "9040常规型材":
-            corner = 60;
+            corner = 10;
             break;
         case "9045常规型材":
-            corner = 60;
+            corner = 10;
             break;
         case "10050常规型材":
-            corner = 100;
+            corner = 17;
             break;
         case "9045金型材":
-            corner = 200;
+            corner = 34;
             break;
         case "10050金型材":
-            corner = 200;
+            corner = 34;
             break;
         case "9045银型材":
-            corner = 230;
+            corner = 38;
             break;
         case "9060银型材":
-            corner = 260;
+            corner = 43;
             break;
         case "10070银型材":
-            corner = 330;
+            corner = 55;
             break;
     }
 
@@ -741,31 +742,31 @@ function getLine8(){
     var corner = 0;
     switch($("#selectBorder").val()) {
         case "9025常规型材":
-            corner = 8;
+            corner = 2;
             break;
         case "9035常规型材":
-            corner = 8;
+            corner = 2;
             break;
         case "9040常规型材":
-            corner = 8;
+            corner = 2;
             break;
         case "9045常规型材":
-            corner = 8;
+            corner = 2;
             break;
         case "10050常规型材":
-            corner = 10;
+            corner = 3;
             break;
         case "9045金型材":
-            corner = 20;
+            corner = 5;
             break;
         case "10050金型材":
-            corner = 20;
+            corner = 5;
             break;
         case "9045银型材":
-            corner = 30;
+            corner = 6;
             break;
         case "9060银型材":
-            corner = 30;
+            corner = 6;
             break;
         case "10070银型材":
             corner = 30;
@@ -833,8 +834,8 @@ function getLine14(){
         number = 4;
     }
     $("#partsN1").text(number);
-    $("#partsN2").text(5);
-    $("#partsN3").text(accMul(number,5));
+    $("#partsN2").text(2);
+    $("#partsN3").text(accMul(number,2));
 }
 //2.15 第15行数据 -[包装费]
 function getLine15(){
