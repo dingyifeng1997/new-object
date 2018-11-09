@@ -282,11 +282,11 @@ function getLine1(){
             tc = "表贴半红";
             break;
         case "P10表贴全户外白":
-            boardPrice = "32.8";
+            boardPrice = "18";
             tc = "表贴全白";
             break;
         case "P10表贴半户外白":
-            boardPrice = "28.8";
+            boardPrice = "17";
             tc = "表贴半白";
             break;
         case "P10户外双色":
@@ -409,37 +409,37 @@ function getLine2(){
             price = 10;
         } else if (UM) {
             type = "ZH-UM";
-            price = 25;
+            price = 20;
         }else if(UC){
             type = "ZH-UC";
-            price = 39;
+            price = 30;
         }else if(U0){
             type = "ZH-U0";
-            price = 39;
+            price = 30;
         }else if(U1){
             type = "ZH-U1";
-            price = 55;
+            price = 40;
         }else if(UF){
             type = "ZH-UF";
-            price = 50;
+            price = 36;
         }else if(U2){
             type = "ZH-U2";
-            price = 78;
+            price = 60;
         }else if(U3){
             type = "ZH-U3";
-            price = 88;
+            price = 70;
         }else if(U4){
             type = "ZH-U4";
-            price = 95;
+            price = 90;
         }else if(U5){
             type = "ZH-U5";
-            price = 130;
+            price = 100;
         }else if(U6){
             type = "ZH-U6";
-            price = 240;
+            price = 160;
         }else if(U7){
             type = "ZH-U7";
-            price = 280;
+            price = 200;
         }else if(U8){
             type = "ZH-U8";
             price = 300;
@@ -453,34 +453,34 @@ function getLine2(){
     function f2(){
         if(WN){
             type = "ZH-WN";
-            price = 39;
+            price = 35;
         }else if(WM) {
             type = "ZH-WM";
-            price = 65;
+            price = 46;
         }else if(W0){
             type = "ZH-W0";
-            price = 78;
+            price = 58;
         }else if(W1){
             type = "ZH-W1";
-            price = 88;
+            price = 70;
         }else if(W2){
             type = "ZH-W2";
-            price = 110;
+            price = 85;
         }else if(W3){
             type = "ZH-W3";
-            price = 150;
+            price = 100;
         }else if(W4){
             type = "ZH-W4";
-            price = 180;
+            price = 118;
         }else if(W5){
             type = "ZH-W5";
-            price = 230;
+            price = 150;
         }else if(W6){
             type = "ZH-W6";
-            price = 320;
+            price = 230;
         }else if(W7){
             type = "ZH-W7";
-            price = 350;
+            price = 290;
         }
         else{
             type = "点数超载";
@@ -490,22 +490,22 @@ function getLine2(){
     function f3(){
         if(E1){
             type = "ZH-E1";
-            price = 85;
+            price = 66;
         }else if(E3) {
             type = "ZH-E3";
-            price = 120;
+            price = 95;
         }else if(E5){
             type = "ZH-E5";
-            price = 180;
+            price = 110;
         }else if(E6){
             type = "ZH-E6";
-            price = 280;
+            price = 230;
         }else if(E7){
             type = "ZH-E7";
-            price = 320;
+            price = 252;
         }else if(E8){
             type = "ZH-E8";
-            price = 380;
+            price = 260;
         }
         else{
             type = "点数超载";
