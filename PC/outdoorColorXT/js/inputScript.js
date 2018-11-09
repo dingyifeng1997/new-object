@@ -422,7 +422,16 @@ function getLine4(){
             break;
     }
 
-    receptionCard =  Math.ceil(moduleHeightNumber/12) * Math.ceil(WidthSumPixel/192)
+    if(type=="聚诚"||type=="灵星雨"){
+        heightNum = moduleHeightNumber/12;
+        widthNum = WidthSumPixel/192;
+    }else if (type=="诺瓦") {
+        heightNum = moduleHeightNumber/8;
+        widthNum = WidthSumPixel/128;
+    }
+
+
+    receptionCard =  Math.ceil(heightNum) * Math.ceil(widthNum)
 
     $("#partsD1").text(receptionCard);
     $("#partsD2").text(price);

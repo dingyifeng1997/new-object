@@ -455,23 +455,23 @@ function getLine5(){
         {
             case "室内P2/32扫":
                 widthNumber = "1";
-                heightNumber = "6";
+                heightNumber = "8";
                 break;
             case "室内P2.5/32扫":
                 widthNumber = "1";
-                heightNumber = "6";
+                heightNumber = "8";
                 break;
             case "室内P3/32扫":
                 widthNumber = "2";
-                heightNumber = "6";
+                heightNumber = "8";
                 break;
             case "室内P4/16扫":
                 widthNumber = "3";
-                heightNumber = "12";
+                heightNumber = "8";
                 break;
             case "室内P5/16扫":
                 widthNumber = "3";
-                heightNumber = "12";
+                heightNumber = "8";
                 break;
         }
     }else if(type=="灵星雨"){
@@ -479,15 +479,15 @@ function getLine5(){
         {
             case "室内P2/32扫":
                 widthNumber = "1";
-                heightNumber = "6";
+                heightNumber = "12";
                 break;
             case "室内P2.5/32扫":
                 widthNumber = "1";
-                heightNumber = "6";
+                heightNumber = "12";
                 break;
             case "室内P3/32扫":
                 widthNumber = "2";
-                heightNumber = "6";
+                heightNumber = "12";
                 break;
             case "室内P4/16扫":
                 widthNumber = "3";

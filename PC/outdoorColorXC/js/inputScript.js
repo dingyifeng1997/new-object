@@ -473,11 +473,11 @@ function getLine5(){
                 break;
             case "P8室外表贴全彩":
                 widthNumber = "4";
-                heightNumber = "12";
+                heightNumber = "8";
                 break;
             case "P10室外表贴全彩/4扫":
                 widthNumber = "3";
-                heightNumber = "12";
+                heightNumber = "8";
                 break;
         }
     }else if(type=="灵星雨"){
