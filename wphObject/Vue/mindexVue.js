@@ -60,92 +60,95 @@ var compan = new Vue({
         projects:[
             // 室内
             {
-                srcs:"http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83",
+                srcs:"img/case/innerP2.5.jpg",
                 price:'18万',
                 cate:'室内高清屏P2.5 30m²',
                 info:'2017-5建于郑州'
             },
             {
-                srcs:"http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf",
+                srcs:"img/case/innerP9.jpg.JPG",
                 price:'20万',
                 cate:'室内高清屏P3 50m²',
                 info:'2017-04建于郑州'
             },
             {
-                srcs:"http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3",
+                srcs:"img/case/innerP4.jpg",
                 price:'20万',
                 cate:'室内高清屏P4 15m²',
                 info:'2017-10建于郑州'
             },
+
             //室外
             {
-                srcs:"http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73",
+                srcs:"img/case/outerP6.JPG",
                 price:'4.5万',
                 cate:'室内高清屏P6 9m²',
                 info:'2017-10建于郑州'
             },
             {
-                srcs:"http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328",
+                srcs:"img/case/outerP8.jpg",
                 price:'68万',
                 cate:'室内高清屏P8 180m²',
                 info:'2018-04建于郑州'
             },
             {
-                srcs:"http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3",
+                srcs:"img/case/outer3.75.jpg",
                 price:'9千',
                 cate:'室内高清屏P3.75 6m²',
                 info:'2017-10建于郑州银行'
             },
             {
-                srcs:"http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64",
+                srcs:"img/case/outerP10.jpg",
                 price:'2.2千',
                 cate:'室内高清屏P10 5m²',
                 info:'2018-04建于郑州'
-            },
+            }
         ]
     },
     methods:{
         whole:function(){
             this.projects = [
-                // 压铸铝
+                // 室内
                 {
-                    srcs:"http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83",
+                    srcs:"img/case/innerP2.5.jpg",
                     price:'18万',
                     cate:'室内高清屏P2.5 30m²',
                     info:'2017-5建于郑州'
                 },
                 {
-                    srcs:"http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf",
+                    srcs:"img/case/innerP9.jpg.JPG",
                     price:'20万',
                     cate:'室内高清屏P3 50m²',
                     info:'2017-04建于郑州'
                 },
                 {
-                    srcs:"http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3",
+                    srcs:"img/case/innerP4.jpg",
                     price:'20万',
                     cate:'室内高清屏P4 15m²',
                     info:'2017-10建于郑州'
                 },
+
+                //室外
                 {
-                    srcs:"http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73",
+                    srcs:"img/case/outerP6.JPG",
                     price:'4.5万',
                     cate:'室内高清屏P6 9m²',
                     info:'2017-10建于郑州'
                 },
                 {
-                    srcs:"http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328",
+                    srcs:"img/case/outerP8.jpg",
                     price:'68万',
                     cate:'室内高清屏P8 180m²',
                     info:'2018-04建于郑州'
                 },
                 {
-                    srcs:"http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3",
+                    srcs:"img/case/outer3.75.jpg",
                     price:'9千',
                     cate:'室内高清屏P3.75 6m²',
                     info:'2017-10建于郑州银行'
                 },
                 {
-                    srcs:"http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64",
+                    srcs:"img/case/outerP10.jpg",
                     price:'2.2千',
                     cate:'室内高清屏P10 5m²',
                     info:'2018-04建于郑州'
@@ -153,51 +156,56 @@ var compan = new Vue({
             ];
         },
         indoor:function(){
-            this.projects = [{
-                srcs:"http://ent-img.wanpinghui.com/6fe4234eaa29435cbce54b0c4c7cbe83",
-                price:'18万',
-                cate:'室内高清屏P2.5 30m²',
-                info:'2017-5建于郑州'
-            },
-                {
-                    srcs:"http://ent-img.wanpinghui.com/f67cf8e8b02349159d94876b28f982bf",
-                    price:'20万',
-                    cate:'室内高清屏P3 50m²',
-                    info:'2017-04建于郑州'
-                },
-                {
-                    srcs:"http://ent-img.wanpinghui.com/3b1216aff3894b5c84eb84e04898c6e3",
-                    price:'20万',
-                    cate:'室内高清屏P4 15m²',
-                    info:'2017-10建于郑州'
-                },
-                {
-                    srcs:"http://ent-img.wanpinghui.com/88a2ad7f7fb94eadb38c0c15e661a4f3",
-                    price:'9千',
-                    cate:'室内高清屏P3.75 6m²',
-                    info:'2017-10建于郑州银行'
-                }];
+            this.projects = [
+                    // 室内
+                    {
+                        srcs:"img/case/innerP2.5.jpg",
+                        price:'18万',
+                        cate:'室内高清屏P2.5 30m²',
+                        info:'2017-5建于郑州'
+                    },
+                    {
+                        srcs:"img/case/innerP9.jpg.JPG",
+                        price:'20万',
+                        cate:'室内高清屏P3 50m²',
+                        info:'2017-04建于郑州'
+                    },
+                    {
+                        srcs:"img/case/innerP4.jpg",
+                        price:'20万',
+                        cate:'室内高清屏P4 15m²',
+                        info:'2017-10建于郑州'
+                    }
+                ];
         },
         outdoor:function(){
             this.projects = [
-                {
-                    srcs:"http://ent-img.wanpinghui.com/03771a1880a14273bfe676eee8022f73",
-                    price:'4.5万',
-                    cate:'室内高清屏P6 9m²',
-                    info:'2017-10建于郑州'
-                },
-                {
-                    srcs:"http://ent-img.wanpinghui.com/3be45ef8c6d74bbea64b82c3f1ee0328",
-                    price:'68万',
-                    cate:'室内高清屏P8 180m²',
-                    info:'2018-04建于郑州'
-                },
-                {
-                    srcs:"http://ent-img.wanpinghui.com/92b0982b158e49de82f10bc4f21ffe64",
-                    price:'2.2千',
-                    cate:'室内高清屏P10 5m²',
-                    info:'2018-04建于郑州'
-                }];
+                    //室外
+                    {
+                        srcs:"img/case/outerP6.JPG",
+                        price:'4.5万',
+                        cate:'室内高清屏P6 9m²',
+                        info:'2017-10建于郑州'
+                    },
+                    {
+                        srcs:"img/case/outerP8.jpg",
+                        price:'68万',
+                        cate:'室内高清屏P8 180m²',
+                        info:'2018-04建于郑州'
+                    },
+                    {
+                        srcs:"img/case/outer3.75.jpg",
+                        price:'9千',
+                        cate:'室内高清屏P3.75 6m²',
+                        info:'2017-10建于郑州银行'
+                    },
+                    {
+                        srcs:"img/case/outerP10.jpg",
+                        price:'2.2千',
+                        cate:'室内高清屏P10 5m²',
+                        info:'2018-04建于郑州'
+                    }
+                ];
         }
     }
 })
@@ -209,83 +217,81 @@ var company = new Vue({
         sty:[
             // 小间距
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89",
+                srcs:"img/product/KRM2.jpg",
                 title:"KRM2"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946",
+                srcs:"img/product/USDII10.jpg",
                 title:"USDII10"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902",
+                srcs:"img/product/UTW-025SS.jpg",
                 title:"UTW-025SS"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79",
+                srcs:"img/product/P2min.jpg",
                 title:"P2"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/2f94d3045c6e45119b281ea03e847c72",
+                srcs:"img/product/P2.5min.jpg",
                 title:"P2.5"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4",
+                srcs:"img/product/P3min.jpg",
                 title:"P3"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56",
+                srcs:"img/product/P3.91.jpg",
                 title:"P3.91"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e",
+                srcs:"img/product/P4min.jpg",
                 title:"P4"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73",
+                srcs:"img/product/P4.81.jpg",
                 title:"P4.81"
             },
 
             //室内型号
-
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704",
+                srcs:"img/product/P1.926.jpg",
                 title:"P1.926"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486",
+                srcs:"img/product/P2.jpg",
                 title:"P2"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a",
+                srcs:"img/product/P2.5.jpg",
                 title:"P2.5"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1",
+                srcs:"img/product/P3.jpg",
                 title:"P3"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458",
+                srcs:"img/product/P4.jpg",
                 title:"P4"
             },
 
             //室外型号
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700",
+                srcs:"img/product/P5.jpg",
                 title:"P5"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b",
+                srcs:"img/product/P6.jpg",
                 title:"P6"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6",
+                srcs:"img/product/P8.jpg",
                 title:"P8"
             },
             {
-                srcs:"http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc",
+                srcs:"img/product/P10.jpg",
                 title:"P10"
             },
-
         ]
     },
     methods:{
@@ -293,164 +299,173 @@ var company = new Vue({
             this.sty = [
                 // 小间距
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89",
+                    srcs:"img/product/KRM2.jpg",
                     title:"KRM2"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946",
+                    srcs:"img/product/USDII10.jpg",
                     title:"USDII10"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902",
+                    srcs:"img/product/UTW-025SS.jpg",
                     title:"UTW-025SS"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79",
+                    srcs:"img/product/P2min.jpg",
                     title:"P2"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/2f94d3045c6e45119b281ea03e847c72",
+                    srcs:"img/product/P2.5min.jpg",
                     title:"P2.5"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4",
+                    srcs:"img/product/P3min.jpg",
                     title:"P3"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56",
+                    srcs:"img/product/P3.91.jpg",
                     title:"P3.91"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e",
+                    srcs:"img/product/P4min.jpg",
                     title:"P4"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73",
+                    srcs:"img/product/P4.81.jpg",
                     title:"P4.81"
                 },
 
                 //室内型号
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704",
+                    srcs:"img/product/P1.926.jpg",
                     title:"P1.926"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486",
+                    srcs:"img/product/P2.jpg",
                     title:"P2"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a",
+                    srcs:"img/product/P2.5.jpg",
                     title:"P2.5"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1",
+                    srcs:"img/product/P3.jpg",
                     title:"P3"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458",
+                    srcs:"img/product/P4.jpg",
                     title:"P4"
                 },
 
                 //室外型号
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700",
+                    srcs:"img/product/P5.jpg",
                     title:"P5"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b",
+                    srcs:"img/product/P6.jpg",
                     title:"P6"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6",
+                    srcs:"img/product/P8.jpg",
                     title:"P8"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc",
+                    srcs:"img/product/P10.jpg",
                     title:"P10"
-                },
+                }
 
             ]
         },
         smallSpacing:function(){
-            this.sty = [// 小间距
+            this.sty = [
+
+                //室内型号
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/8b03f16f73284d9ba6348fd53c4a8f89",
-                    title:"KRM2"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/b19e132ccd7642fc858c30e1a2c19946",
-                    title:"USDII10"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/3e321d79203d4027baf7de80e18fe902",
-                    title:"UTW-025SS"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/4fbf2b72b9164558909666fd6a7c9c79",
-                    title:"P2"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/2f94d3045c6e45119b281ea03e847c72",
-                    title:"P2.5"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/90736f5230d746c598435698ef666ba4",
-                    title:"P3"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/1e64391d01844e38b94c15812f3a1e56",
-                    title:"P3.91"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/42f76ab27d4f42dd8ce85d6d3afc934e",
-                    title:"P4"
-                },
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c9cb48a999604ed8b78d5cd13593ce73",
-                    title:"P4.81"
-                },]
-        },
-        indoor:function(){
-            this.sty = [//室内型号
-                {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/0860866ece784e6fa56ad21871985704",
+                    srcs:"img/product/P1.926.jpg",
                     title:"P1.926"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/e248f863d4094266977d2c720da0d486",
+                    srcs:"img/product/P2.jpg",
                     title:"P2"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/1123a51e5f6d47bc8212174423b2ff8a",
+                    srcs:"img/product/P2.5.jpg",
                     title:"P2.5"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c12f795a514640e792fe541b0d71aab1",
+                    srcs:"img/product/P3.jpg",
                     title:"P3"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/c6c0ddad24274e70906d26be51ef3458",
+                    srcs:"img/product/P4.jpg",
                     title:"P4"
-                },]
+                }
+
+                ]
         },
-        outdoor:function(){
-            this.sty = [//室外型号
+        indoor:function(){
+            this.sty = [
+                //室外型号
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/097afec640294d37b99b0d70c16b4700",
+                    srcs:"img/product/P5.jpg",
                     title:"P5"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/fe378c08c44f4d5eb01e6a773fb0e73b",
+                    srcs:"img/product/P6.jpg",
                     title:"P6"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/cdebbf0f51ee403babb206de3978a7e6",
+                    srcs:"img/product/P8.jpg",
                     title:"P8"
                 },
                 {
-                    srcs:"http://p99vpab4j.bkt.clouddn.com/b379af410be14492ad4001bf4c8a55cc",
+                    srcs:"img/product/P10.jpg",
                     title:"P10"
-                }]
+                }
+
+            ]
+        },
+        outdoor:function(){
+            this.sty = [
+                // 小间距
+                {
+                    srcs:"img/product/KRM2.jpg",
+                    title:"KRM2"
+                },
+                {
+                    srcs:"img/product/USDII10.jpg",
+                    title:"USDII10"
+                },
+                {
+                    srcs:"img/product/UTW-025SS.jpg",
+                    title:"UTW-025SS"
+                },
+                {
+                    srcs:"img/product/P2min.jpg",
+                    title:"P2"
+                },
+                {
+                    srcs:"img/product/P2.5min.jpg",
+                    title:"P2.5"
+                },
+                {
+                    srcs:"img/product/P3min.jpg",
+                    title:"P3"
+                },
+                {
+                    srcs:"img/product/P3.91.jpg",
+                    title:"P3.91"
+                },
+                {
+                    srcs:"img/product/P4min.jpg",
+                    title:"P4"
+                },
+                {
+                    srcs:"img/product/P4.81.jpg",
+                    title:"P4.81"
+                }
+                ]
         }
     }
 })
@@ -467,8 +482,8 @@ var app1 = new Vue({
         cls:'swiper-slide',
         styles:[
             //图片资源
-            {st:'http://p99vpab4j.bkt.clouddn.com/b5f1bd16de3e44c79a6463e2eb5499b1'},
-            {st:'http://p99vpab4j.bkt.clouddn.com/b05458a932a44acf9e82f75107bef24f'}
+            {st:'img/honor/zhengshu1.jpg'},
+            {st:'img/honor/zhengshu2.jpg'}
         ]
     }
 })
@@ -486,22 +501,22 @@ var app2 = new Vue({
             {
                 cls:'swiper-slide',
                 tit:'会议室',
-                st:'http://p99vpab4j.bkt.clouddn.com/cb36fd277adf4ca6a3108f086a6d5232'
+                st:'img/company/huiyishi.jpg'
             },
             {
                 cls:'swiper-slide',
                 tit:'',
-                st:'http://p99vpab4j.bkt.clouddn.com/bb21eb90e70f42928466cd92c1f3ea5d'
+                st:'img/company/mentou.jpg'
             },
             {
                 cls:'swiper-slide',
                 tit:'办公环境',
-                st:'http://p99vpab4j.bkt.clouddn.com/65f66aa165804844a7ba173829411fed'
+                st:'img/company/bangonghuanjing.jpg'
             },
             {
                 cls:'swiper-slide',
                 tit:'独立办公室',
-                st:'http://p99vpab4j.bkt.clouddn.com/7805dce017cf4ab886134f3f4963dfb5'
+                st:'img/company/bangongshi.jpg'
             },
         ]
     }

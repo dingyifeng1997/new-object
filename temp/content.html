@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title id="tit"></title>
+    <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+    <meta name="description" content="晶泰光电是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+    <link rel="stylesheet" href="public/bs/css/bootstrap.css">
+
+    <link rel="shortcut icon" href="public/img/icon/icon.png">
+    <script src="public/bs/js/jquery-1.11.0.min.js"></script>
+    <style>
+        img{
+            max-width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:100%;border-bottom: 1px solid #000;">
+        <a href="../index.html">
+            <img src="img/logo/jtlogo.png " style="height:60px;">
+        </a>
+    </div>
+    <div class="container main-container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 style="margin:20px 0;font-weight:700;text-align: left" id="contentTitle"></h3>
+            <p style="margin:20px 0;text-align: center" id="contentDate"></p>
+            <div id="contentText" style="text-align: left"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!--验证cookie是否登录-->
+    <script>
+        function getCookid() {
+            $.ajax({
+                type: "POST",
+                url: "../cookies/checkCookie.php",
+                success: function (msg) {
+                    console.log("msg")
+                    if (msg != "") {
+                        location.href = "backLogin.html";
+                    }
+                },
+                error: function (msg) {
+                    // alert("发送失败");
+                }
+            });
+        }
+        getCookid();
+    </script>
+
+    <!--文章显示页面-->
+    <script>
+
+        var aid = location .href.split("?")[1];
+console.log(aid)
+        function getContent(){
+            $.ajax({
+                type:"POST",
+                url:"server/selectContent.php",
+                data:aid,
+                success: function(msg){
+                    var str = eval("("+msg+")");    //把返回的字符串解析为JSON
+                    console.log(msg);
+                    console.log(str);
+                    $("#contentTitle").html(str.title)
+                    $("#tit").html(str.title)
+                    $("#contentDate").html(str.adddate)
+                    $("#contentText").html(str.content)
+                    $("title").html(str.title+"-河南晶泰光电科技有限公司")
+                }
+            });
+        }
+        getContent();
+    </script>
+</body>
+</html>

@@ -51,3 +51,13 @@ cookie  :   设置cookie值
     addCookie.php       添加一个登录成功Cookie
     checkCookie.php     返回当前cookie的值
     delCookie.php       删除cookie
+
+temp    :   登录前首页子页面
+    about_us.html
+    contactus.html
+    content.html
+    Installation.html
+    news.html
+    news_detail.html
+    product.html
+    product_detail.html

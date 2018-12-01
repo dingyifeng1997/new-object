@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
     <title>河南晶泰光电科技有限公司</title>
+    <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+    <meta name="description" content="晶泰光电是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
     <link rel="stylesheet" href="public/bs/css/bootstrap.css">
     <script src="public/bs/js/jquery-1.11.0.min.js"></script>
     <script src="public/bs/js/bootstrap.min.js"></script>
@@ -607,10 +610,12 @@
         //报价系统标签
         $(".price").hover(
             function () {
-                $("#priceNav").slideDown();
+                // hover停止动画
+                $("#priceNav").slideDown().stop(true).slideDown();
             },
             function () {
-                $("#priceNav").slideUp();
+                // hover停止动画
+                $("#priceNav").slideUp().stop(true).slideUp();
             }
         )
         //标签移动上去改变背景色

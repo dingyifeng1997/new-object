@@ -23,7 +23,11 @@
 
 	<!--    引入弹出层css-->
 	<link rel="shortcut icon" href="../../layer/theme/default/layer.css" >
-
+	<style>
+		td{
+			contenteditable:true;
+		}
+	</style>
 
 </head>
 <body>
@@ -238,7 +242,7 @@
 			<div>
 				<!--2.3.1:信息栏-->
 				<div class="table-responsive" id="xinxilan">	<!--响应式表格-->
-					<table class="table table-bordered table-striped table-condensed">
+					<table class="table table-bordered table-striped table-condensed" contenteditable="true">
 						<tbody class="xinxi" >
 							<tr>
 								<td >单板长度</td>
@@ -280,7 +284,7 @@
 					</table>
 				</div>
 				<!--2.3.2:报价表主体-->
-				<table class="table table-bordered table-striped" id="mytable">
+				<table class="table table-bordered table-striped" id="mytable" contenteditable="true">
 					<tr id="bd1">
 						<td>产品名称</td>
 						<td>数量</td>

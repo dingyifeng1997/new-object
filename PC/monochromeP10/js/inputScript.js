@@ -816,8 +816,8 @@ function getLine11(){
 //2.12 第12行数据 -[长排线]
 function getLine12(){
     $("#partsL1").text(moduleHeightNumber);
-    $("#partsL2").text(2);
-    $("#partsL3").text(accMul(moduleHeightNumber,2));
+    $("#partsL2").text(1);
+    $("#partsL3").text(moduleHeightNumber);
 }
 //2.13 第13行数据 -[USB延长线]
 function getLine13(){
