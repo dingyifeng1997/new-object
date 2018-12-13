@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5db903-b813-463f-b5e7-ecbc791f2521" name="Default" comment="" />
+    <list default="true" id="fb5db903-b813-463f-b5e7-ecbc791f2521" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/Installation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/contactus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/news_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product_detail.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,23 +20,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wphObject/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="297" column="52" lean-forward="true" selection-start-line="297" selection-start-column="52" selection-end-line="297" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wphObject/css/mindex.css" />
         <option value="$PROJECT_DIR$/wphObject/index.html" />
+        <option value="$PROJECT_DIR$/temp/about_us.html" />
+        <option value="$PROJECT_DIR$/temp/contactus.html" />
+        <option value="$PROJECT_DIR$/temp/content.html" />
+        <option value="$PROJECT_DIR$/temp/Installation.html" />
+        <option value="$PROJECT_DIR$/temp/news.html" />
+        <option value="$PROJECT_DIR$/temp/news_detail.html" />
+        <option value="$PROJECT_DIR$/temp/product.html" />
+        <option value="$PROJECT_DIR$/temp/product_detail.html" />
       </list>
     </option>
   </component>
@@ -40,8 +51,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="288" />
-    <option name="y" value="160" />
+    <option name="x" value="410" />
+    <option name="y" value="92" />
     <option name="width" value="1322" />
     <option name="height" value="783" />
   </component>
@@ -54,13 +65,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="wphObject" type="462c0819:PsiDirectoryNode" />
+              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new-object" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,11 +112,21 @@
       <workItem from="1544438240018" duration="1255000" />
       <workItem from="1544594577766" duration="1721000" />
       <workItem from="1544596376913" duration="53000" />
+      <workItem from="1544677630276" duration="721000" />
+      <workItem from="1544690868868" duration="286000" />
     </task>
+    <task id="LOCAL-00001" summary="All File">
+      <created>1544677742144</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544677742144</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3029000" />
+    <option name="totallyTimeSpent" value="4036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -121,7 +137,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.46407187" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -142,16 +158,31 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="All File" />
+    <option name="LAST_COMMIT_MESSAGE" value="All File" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8880">
+          <caret line="296" column="29" lean-forward="true" selection-start-line="296" selection-start-column="29" selection-end-line="296" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8910">
+          <caret line="297" column="52" lean-forward="true" selection-start-line="297" selection-start-column="52" selection-end-line="297" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8970">
           <caret line="299" column="18" lean-forward="true" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -182,18 +213,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6982">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="-523" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="564" column="42" selection-start-line="564" selection-start-column="37" selection-end-line="564" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="536" column="50" selection-start-line="536" selection-start-column="50" selection-end-line="536" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#22689#23420#0" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/Installation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="514" column="42" selection-start-line="514" selection-start-column="42" selection-end-line="514" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="629" column="42" selection-start-line="629" selection-start-column="42" selection-end-line="629" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/news_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="517" column="42" selection-start-line="517" selection-start-column="42" selection-end-line="517" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="499" column="42" selection-start-line="499" selection-start-column="42" selection-end-line="499" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/product_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="494" column="42" selection-start-line="494" selection-start-column="42" selection-end-line="494" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="297" column="52" lean-forward="true" selection-start-line="297" selection-start-column="52" selection-end-line="297" selection-end-column="52" />
+        <state relative-caret-position="-1320">
+          <caret line="296" column="29" selection-start-line="296" selection-start-column="29" selection-end-line="296" selection-end-column="29" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="456" column="37" lean-forward="true" selection-start-line="456" selection-start-column="37" selection-end-line="456" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19190" />
       </provider>
     </entry>
   </component>
