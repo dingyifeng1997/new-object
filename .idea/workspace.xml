@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5db903-b813-463f-b5e7-ecbc791f2521" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/Installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/Installation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/about_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/contactus.html" afterDir="false" />
@@ -11,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/temp/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/news_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +20,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +51,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wphObject/css/mindex.css" />
-        <option value="$PROJECT_DIR$/wphObject/index.html" />
         <option value="$PROJECT_DIR$/temp/about_us.html" />
         <option value="$PROJECT_DIR$/temp/contactus.html" />
         <option value="$PROJECT_DIR$/temp/content.html" />
@@ -38,6 +59,7 @@
         <option value="$PROJECT_DIR$/temp/news_detail.html" />
         <option value="$PROJECT_DIR$/temp/product.html" />
         <option value="$PROJECT_DIR$/temp/product_detail.html" />
+        <option value="$PROJECT_DIR$/wphObject/index.html" />
       </list>
     </option>
   </component>
@@ -67,6 +89,11 @@
             <path>
               <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
               <item name="new-object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new-object" type="462c0819:PsiDirectoryNode" />
+              <item name="wphObject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -113,7 +140,7 @@
       <workItem from="1544594577766" duration="1721000" />
       <workItem from="1544596376913" duration="53000" />
       <workItem from="1544677630276" duration="721000" />
-      <workItem from="1544690868868" duration="286000" />
+      <workItem from="1544690868868" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="All File">
       <created>1544677742144</created>
@@ -122,14 +149,22 @@
       <option name="project" value="LOCAL" />
       <updated>1544677742144</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="alter cookie path">
+      <created>1544691226335</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544691226335</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4036000" />
+    <option name="totallyTimeSpent" value="4264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13854167" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -160,7 +195,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All File" />
-    <option name="LAST_COMMIT_MESSAGE" value="All File" />
+    <MESSAGE value="alter cookie path" />
+    <option name="LAST_COMMIT_MESSAGE" value="alter cookie path" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wphObject/index.html">
@@ -218,98 +254,6 @@
         <state relative-caret-position="-523" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/contactus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="564" column="42" selection-start-line="564" selection-start-column="37" selection-end-line="564" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/about_us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="536" column="50" selection-start-line="536" selection-start-column="50" selection-end-line="536" selection-end-column="50" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#22689#23420#0" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/Installation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="514" column="42" selection-start-line="514" selection-start-column="42" selection-end-line="514" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="629" column="42" selection-start-line="629" selection-start-column="42" selection-end-line="629" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/news_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="517" column="42" selection-start-line="517" selection-start-column="42" selection-end-line="517" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="499" column="42" selection-start-line="499" selection-start-column="42" selection-end-line="499" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/product_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="494" column="42" selection-start-line="494" selection-start-column="42" selection-end-line="494" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1320">
-          <caret line="296" column="29" selection-start-line="296" selection-start-column="29" selection-end-line="296" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backLogin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -331,6 +275,101 @@
     <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="536" column="54" selection-start-line="536" selection-start-column="45" selection-end-line="536" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/news_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="533" column="21" lean-forward="true" selection-start-line="533" selection-start-column="21" selection-end-line="533" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/product_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="494" column="53" lean-forward="true" selection-start-line="494" selection-start-column="53" selection-end-line="494" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="499" column="46" selection-start-line="499" selection-start-column="37" selection-end-line="499" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="629" column="46" selection-start-line="629" selection-start-column="37" selection-end-line="629" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/Installation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="514" column="46" selection-start-line="514" selection-start-column="37" selection-end-line="514" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="564" column="46" selection-start-line="564" selection-start-column="37" selection-end-line="564" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
