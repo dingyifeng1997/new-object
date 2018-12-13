@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+    <meta name="description" content="晶泰光电是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
     <title id="tit"></title>
     <link rel="stylesheet" href="public/bs/css/bootstrap.css">
 
@@ -37,6 +38,7 @@
                 data:aid,
                 success: function(msg){
                     var str = eval("("+msg+")");    //把返回的字符串解析为JSON
+                    console.log(str);
                     $("#contentTitle").html(str.title)
                     $("#tit").html(str.title)
                     $("#contentDate").html(str.adddate)

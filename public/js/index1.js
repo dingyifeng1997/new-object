@@ -2,7 +2,7 @@
  * Created by Administrator on 2018/4/7 0007.
  * 首页:登录前首页逻辑
  */
-$(function () {
+$(function(){
 
 //点击后进入登录界面
     $(".goto-login").click(function(){

@@ -1,2 +1,0 @@
-inputScript.js			此脚本是输入框点击和选择后页面价格的变化
-myStyleScript			此脚本是当前页面的展示脚本

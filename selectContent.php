@@ -20,11 +20,11 @@ $conn= @mysqli_connect("gxyiovmx.2365.dnstoo.com","dingyifeng_f","zxcvbn","dingy
 $aid = $_POST['aid'];
 //迭代出需要点击的内容
 
-    $sql = "select aid,title,cid,content,adddate from yiqi_article where aid = {$aid}";
+    $sql = "select aid,title,cid,content,adddate,seokeywords,seodescription from yiqi_article where aid = {$aid}";
     $zhixing = @mysqli_query($conn,$sql);
     while($rows = @mysqli_fetch_row($zhixing)){
 //        { "name":"菜鸟教程" , "url":"www.runoob.com" }
-        echo "{'"."aid':'"."{$rows[0]}"."','"."title':'"."{$rows[1]}"."','"."cid':'"."{$rows[2]}"."','"."content':'"."{$rows[3]}"."','"."adddate':'"."{$rows[4]}"."'"."}";
+        echo "{'"."aid':'"."{$rows[0]}"."','"."title':'"."{$rows[1]}"."','"."cid':'"."{$rows[2]}"."','"."content':'"."{$rows[3]}"."','"."adddate':'"."{$rows[4]}"."','"."seokeywords':'"."{$rows[5]}"."','"."seodescription':'"."{$rows[6]}"."'"."}";
     }
 
 

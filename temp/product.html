@@ -94,8 +94,8 @@
 <div class="banner">
     <div style="width: 100%; height:300px;background: linear-gradient(to bottom right, red , blue);position:relative;">
         <canvas id="canv" style="width:100%;height: 300px;"></canvas>
-        <h1 style="position: absolute;top: 120px;left:50%;margin-left:-140px;color: #ffffff;font-size:40px;">
-            视界 · 未来已来</h1>
+        <h1 style="position: absolute;top: 120px;left:50%;margin-left:-150px;color: #ffffff;font-size:35px;text-align: center">
+            信誉为先 客户至上</h1>
     </div>
     <script>
         var num = 200;
@@ -550,7 +550,7 @@
                         for (var i = 0; i < jsp.length; i++) {
                             str += `
                                 <li class="col-md-3" style="margin:0;padding:10px;position:relative;box-sizing: border-box">
-                                    <a href="product_detail.html?pid=` + jsp[i].pid + `">
+                                    <a href="../new/product/` + jsp[i].pid + `/">
                                         <img src="` + jsp[i].thumb + `"  class="product_img" style="width:100%;height:257px;"/>
                                         <p style="background:#848484;color:#fff;font-size:16px;text-align: center;width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;padding:5px;">
                                             <span>` + jsp[i].name + `</span>
@@ -588,18 +588,21 @@
 
 <!--footer产品中心-->
 <script>
+    //设置每几条数据为一页
+    var limitss = 5;  //文本列表的数量
+    var pages = 0;
     $.ajax({
         type: "POST",
         url: "server/products.php",
-        data: {page: 0, sum: 5},
+        data: {page: 0, sum: limitss},
         success: function (msg) {
             jsp = eval('(' + msg + ')');    //把字符串转换为json
             str = "";
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < limitss; i++) {
                 //底部小列表
                 str += `
                     <li class=" col-md-4 " style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                        <a  href="product_detail.html?pid=` + jsp[i].pid + `">` + jsp[i].name + `</a>
+                        <a  href="../new/product/` + jsp[i].pid + `/">` + jsp[i].name + `</a>
                     </li>`;
                 $(".footersect2").html(str);
             }
@@ -608,6 +611,7 @@
 </script>
 <!--footer新闻资讯-->
 <script>
+
     // 底部新闻资讯
     $.ajax({
         type: "POST",
@@ -618,14 +622,24 @@
             for (var i = 0; i < jsp.length; i++) {
                 newMessage +=
                     `<li style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                                                <a href="content.html?aid=` + jsp[i].aid + `" target="_blank" >` + jsp[i].title + `</a>
+                                                <a href="../new/file/` + jsp[i].aid + `/" target="_blank" >` + jsp[i].title + `</a>
                                             </li>`;
                 $(".news").html(newMessage);
             }
         }
     });
 </script>
-
+<!--刷新静态页面-->
+<script>
+    $.ajax({
+        type: "POST",
+        url: "../new/xinjian.php",
+    });
+    $.ajax({
+        type: "POST",
+        url: "../new/addProduct.php",
+    })
+</script>
 </body>
 
 </html>

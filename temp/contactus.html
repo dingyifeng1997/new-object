@@ -543,7 +543,7 @@
                     <li>地址:郑州市郑东新区商都路与通泰路中力广告市场七里湾5-113（利亚德）</li>
                     <li>电话:0371-6022-8870</li>
                     <li>传真:0371-6022-8870</li>
-                    <li>手机:13838017230 </li>
+                    <li>手机:13838017230</li>
                     <li>网址:www.98china.cn</li>
                 </ul>
             </div>
@@ -570,6 +570,7 @@
             }
         });
     }
+
     getCookid();
 </script>
 <!--footer产品中心-->
@@ -588,7 +589,7 @@
                 //底部小列表
                 str += `
                     <li class=" col-md-4 " style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                        <a  href="product_detail.html?pid=` + jsp[i].pid + `">` + jsp[i].name + `</a>
+                        <a  href="../new/product/` + jsp[i].pid + `/">` + jsp[i].name + `</a>
                     </li>`;
                 $(".footersect2").html(str);
             }
@@ -597,6 +598,7 @@
 </script>
 <!--footer新闻资讯-->
 <script>
+
     // 底部新闻资讯
     $.ajax({
         type: "POST",
@@ -607,25 +609,22 @@
             for (var i = 0; i < jsp.length; i++) {
                 newMessage +=
                     `<li style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                                                <a href="content.html?aid=` + jsp[i].aid + `" target="_blank" >` + jsp[i].title + `</a>
+                                                <a href="../new/file/` + jsp[i].aid + `/" target="_blank" >` + jsp[i].title + `</a>
                                             </li>`;
                 $(".news").html(newMessage);
             }
         }
     });
-
-    //发送按钮点击
-    $(".btn-default").click(function(){
-
-        var name = $("#exampleInputName").val();
-        var email1 = $("#exampleInputEmail1").val();
-        if(name!=""&&email1!=""){
-            alert("发送成功!");
-            return false;
-        }else{
-            alert("请输入留言内容!");
-            return false;
-        }
+</script>
+<!--刷新静态页面-->
+<script>
+    $.ajax({
+        type: "POST",
+        url: "../new/xinjian.php",
+    });
+    $.ajax({
+        type: "POST",
+        url: "../new/addProduct.php",
     })
 </script>
 </body>

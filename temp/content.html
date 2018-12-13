@@ -76,5 +76,16 @@ console.log(aid)
         }
         getContent();
     </script>
+    <!--刷新静态页面-->
+    <script>
+        $.ajax({
+            type: "POST",
+            url: "../new/xinjian.php",
+        });
+        $.ajax({
+            type: "POST",
+            url: "../new/addProduct.php",
+        })
+    </script>
 </body>
 </html>

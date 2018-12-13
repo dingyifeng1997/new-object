@@ -8,7 +8,6 @@
  * 链接数据库 查找有没有重复的用户名,返回 0表示重复 1表示不重复
  * 链接页面: register.html
  */
-
 header("content-type:text/html;charset=utf-8;");
 
 //1.建立连接--使用面向过程方法连接数据库，直接就选择好了数据库
@@ -16,6 +15,8 @@ $conn= mysqli_connect("gxyiovmx.2365.dnstoo.com","dingyifeng_f","zxcvbn","dingyi
 
 //2.设置客户端和连接字符集;
 mysqli_query($conn,"set names utf8");
+
+
 
 //迭代出需要点击的内容
 function select(){

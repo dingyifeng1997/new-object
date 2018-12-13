@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>target-input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="https://ds.alipay.com">浏览器跳转支付宝</a>
+
+    <!-- 1. Define some markup -->
+    <input id="foo" type="text" value="597020732" style="opacity:0.1;width:0;height:0;">
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo"  style="opacity:0.1;width:0;height:0;">Copy</button>
+
+    <!-- 2. Include library -->
+    <script src="dist/clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard -->
+    <script>
+        var clipboard = new Clipboard('.btn');
+
+        //加载直接执行
+        clipboard.on('success', function(e) {
+            console.log(e);
+            location.href = "https://ds.alipay.com";
+        }());
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+</body>
+</html>

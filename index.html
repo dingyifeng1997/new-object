@@ -25,6 +25,14 @@
     <title>河南晶泰光电科技有限公司</title>
     <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
     <meta name="description" content="晶泰光电是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+    <style>
+        .hover-slide img{
+            border: 2px solid #dbd3db;
+        }
+        .hover-slide img:hover{
+            border: 2px solid #8e00ff;
+        }
+    </style>
 </head>
 <body>
 <div class="header" id="header">
@@ -190,9 +198,12 @@
         </div>
     </div>
 </div>
-<div class="section w1150 section3">
+<div class="section w1150 section3" style="width:100%">
     <h4 class="indextitleh4">产品中心</h4>
-    <div class="row productList"></div>
+    <div class="swiper-containers">
+        <div class="row productList swiper-wrapper">
+        </div>
+    </div>
     <a href="temp/product.html">查看更多 ▶</a>
 </div>
 <div id="footer" class="footer">
@@ -271,7 +282,6 @@
             type: "POST",
             url: "cookies/checkCookie.php",
             success: function (msg) {
-                console.log("msg")
                 if (msg != "") {
                     location.href = "backLogin.html";
                 }
@@ -282,29 +292,6 @@
         });
     }
     getCookid();
-</script>
-<!--轮播图-->
-<script>
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
-
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // 如果需要前进后退按钮
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // 如果需要滚动条
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    })
 </script>
 <!--footer产品中心-->
 <script>
@@ -321,27 +308,64 @@
             jsp = eval('(' + msg + ')');    //把字符串转换为json
             str = "";
             str2 = "";
-            console.log(jsp)
             for (var i = 0; i < 4; i++) {
                 //footer带图片大列表
                 str += `
+                    <div class="swiper-slide hover-slide col-xs-6 col-md-3" style="width:250px;margin:25px;">
                         <a class="col-xs-6 col-md-3"  href="temp/product_detail.html?pid=` + jsp[i].pid + `" style="margin-top:15px;">
-                            <img src="` + jsp[i].thumb + `"/>
-                            <p>` + jsp[i].name + `</p>
-                        </a>`;
-                $(".productList").html(str);
+                            <img src="` + jsp[i].thumb + `" style="width:246px;height:246px;"/>
+                            <p style="width:242px;margin-left:2px;">` + jsp[i].name + `</p>
+                        </a>
+                    </div>`;
 
             }
+            $(".productList").html(str);
+            var mSwiper = new Swiper('.swiper-containers', {
+                direction: 'horizontal', // 垂直切换选项
+                loop : true,
+                slidesPerView : 'auto',
+                loopedSlides:4,
+                autoplay:true,
+            })
+
             for (var i = 0; i < limit; i++) {
                 //底部小列表
                 str2 += `
-                    <li class=" col-md-4 " style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                        <a  href="temp/product_detail.html?pid=` + jsp[i].pid + `">` + jsp[i].name + `</a>
+                    <li class=" col-md-4 " style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;padding:0;">
+                        <a  href="new/product/` + jsp[i].pid + `/">` + jsp[i].name + `</a>
                     </li>`;
                 $(".footersect2").html(str2);
             }
         }
     });
+</script>
+
+
+<!--轮播图-->
+<script>
+    window.onload=function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay:true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    }
 </script>
 <!--底部新闻资讯-->
 <script>
@@ -351,22 +375,31 @@
         url: "temp/server/MaterialsContent.php",
         success: function (msg) {
             jsp = eval('(' + msg + ')');    //把字符串转换为json
-            console.log(jsp);
             newMessage = "";
             for (var i = 0; i < jsp.length; i++) {
                 $("#newsInformation").append(
-                    "<li style='font-size: 16px;'><a href=" + "temp/content.html?aid=" + jsp[i].aid + " target='_blank'><img src=" + "." + jsp[i].thumb + "><div>" + jsp[i].title + "</div></a><p>" + jsp[i].adddate + "</p></li>"
+                    "<li style='font-size: 16px;'><a href=" + "new/file/" + jsp[i].aid + " target='_blank'><img src=" + "." + jsp[i].thumb + "><div>" + jsp[i].title + "</div></a><p>" + jsp[i].adddate + "</p></li>"
                 )
                 newMessage +=
                     `<li style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
-                            <a href="temp/content.html?aid=` + jsp[i].aid + `" target="_blank" >` + jsp[i].title + `</a>
+                            <a href="new/file/` + jsp[i].aid + `/" target="_blank" >` + jsp[i].title + `</a>
                         </li>`;
                 $(".news").html(newMessage);
     }
     }
     });
 </script>
-
+<!--刷新静态页面-->
+<script>
+    $.ajax({
+        type: "POST",
+        url: "new/xinjian.php",
+    });
+    $.ajax({
+        type: "POST",
+        url: "new/addProduct.php",
+    })
+</script>
 </body>
 
 </html>

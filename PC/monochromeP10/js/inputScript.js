@@ -266,11 +266,11 @@ function getLine1(){
             tc = "插灯半红";
             break;
         case "P10插灯全户外白":
-            boardPrice = "32";
+            boardPrice = "28";
             tc = "插灯全白";
             break;
         case "P10插灯半户外白":
-            boardPrice = "28";
+            boardPrice = "26";
             tc = "插灯半白";
             break;
         case "P10表贴全户外红":

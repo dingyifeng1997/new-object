@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- 避免IE使用兼容模式 -->
+    <meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="Author" contect="fydhem"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../../../temp/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="../../../temp/public/img/icon/icon.png">
+    <link rel="stylesheet" type="text/css" href="../../../temp/css/index.css"/>
+    <link rel="stylesheet" href="../../../temp/css/media.css"/>
+    <link rel="stylesheet" href="../../../temp/layui/css/layui.css">
+    <script type="text/javascript" src="../../../temp/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../temp/js/loading.js"></script>
+    <script type="text/javascript" src="../../../temp/js/bootstrap.min.js"></script>
+    <script src="../../../temp/layui/layui.all.js"></script>
+    <title>航空箱体 -河南晶泰光电科技有限公司</title>
+    <meta name="keywords" content='-'>
+    <meta name="description" content='-'>
+</head>
+
+<body>
+<div class="header" id="header">
+    <div class="headertop">
+        <div class="w1150">
+            <div class="headertopleft">手机微信+13203835589</div>
+            <div class="headerrighttop">
+                <span>晶泰微博</span>
+            </div>
+        </div>
+    </div>
+    <div class=" w1150">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <div style="width:200px;">
+                        <a href="../../../index.html"><img src="../../../temp/img/logo/jtlogo.png " style="width:100%;"></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../../../../index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="../../../temp/about_us.html">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="../../../temp/product.html">产品中心</a>
+                        </li>
+                        <li>
+                            <a href="../../../temp/Installation.html">售后服务</a>
+                        </li>
+                        <li>
+                            <a href="../../../temp/news.html">新闻资讯</a>
+                        </li>
+                        <li>
+                            <a href="../../../temp/contactus.html">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="../../../wphObject/index.html">定制屏幕</a>
+                        </li>
+                        <li>
+                            <a href="../../../wphObject/orderPage/login.html">Message</a>
+                        </li>
+                        <li>
+                            <a href="../../../login.php">登录</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div style="width: 100%; height:300px;background: linear-gradient(to bottom right, red , blue);position:relative;">
+        <canvas id="canv" style="width:100%;height: 300px;"></canvas>
+        <h1 style="position: absolute;top: 120px;left:50%;margin-left:-140px;color: #ffffff;font-size:40px;">
+            视界 · 未来已来</h1>
+    </div>
+    <script>
+        var num = 200;
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var max = 100;
+        var _x = 0;
+        var _y = 0;
+        var _z = 150;
+        var dtr = function (d) {
+            return d * Math.PI / 180;
+        };
+
+        var rnd = function () {
+            return Math.sin(Math.floor(Math.random() * 360) * Math.PI / 180);
+        };
+        var dist = function (p1, p2, p3) {
+            return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2) + Math.pow(p2.z - p1.z, 2));
+        };
+
+        var cam = {
+            obj: {
+                x: _x,
+                y: _y,
+                z: _z
+            },
+            dest: {
+                x: 0,
+                y: 0,
+                z: 1
+            },
+            dist: {
+                x: 0,
+                y: 0,
+                z: 200
+            },
+            ang: {
+                cplane: 0,
+                splane: 0,
+                ctheta: 0,
+                stheta: 0
+            },
+            zoom: 1,
+            disp: {
+                x: w / 2,
+                y: h / 2,
+                z: 0
+            },
+            upd: function () {
+                cam.dist.x = cam.dest.x - cam.obj.x;
+                cam.dist.y = cam.dest.y - cam.obj.y;
+                cam.dist.z = cam.dest.z - cam.obj.z;
+                cam.ang.cplane = -cam.dist.z / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
+                cam.ang.splane = cam.dist.x / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
+                cam.ang.ctheta = Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z) / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
+                cam.ang.stheta = -cam.dist.y / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
+            }
+        };
+
+        var trans = {
+            parts: {
+                sz: function (p, sz) {
+                    return {
+                        x: p.x * sz.x,
+                        y: p.y * sz.y,
+                        z: p.z * sz.z
+                    };
+                },
+                rot: {
+                    x: function (p, rot) {
+                        return {
+                            x: p.x,
+                            y: p.y * Math.cos(dtr(rot.x)) - p.z * Math.sin(dtr(rot.x)),
+                            z: p.y * Math.sin(dtr(rot.x)) + p.z * Math.cos(dtr(rot.x))
+                        };
+                    },
+                    y: function (p, rot) {
+                        return {
+                            x: p.x * Math.cos(dtr(rot.y)) + p.z * Math.sin(dtr(rot.y)),
+                            y: p.y,
+                            z: -p.x * Math.sin(dtr(rot.y)) + p.z * Math.cos(dtr(rot.y))
+                        };
+                    },
+                    z: function (p, rot) {
+                        return {
+                            x: p.x * Math.cos(dtr(rot.z)) - p.y * Math.sin(dtr(rot.z)),
+                            y: p.x * Math.sin(dtr(rot.z)) + p.y * Math.cos(dtr(rot.z)),
+                            z: p.z
+                        };
+                    }
+                },
+                pos: function (p, pos) {
+                    return {
+                        x: p.x + pos.x,
+                        y: p.y + pos.y,
+                        z: p.z + pos.z
+                    };
+                }
+            },
+            pov: {
+                plane: function (p) {
+                    return {
+                        x: p.x * cam.ang.cplane + p.z * cam.ang.splane,
+                        y: p.y,
+                        z: p.x * -cam.ang.splane + p.z * cam.ang.cplane
+                    };
+                },
+                theta: function (p) {
+                    return {
+                        x: p.x,
+                        y: p.y * cam.ang.ctheta - p.z * cam.ang.stheta,
+                        z: p.y * cam.ang.stheta + p.z * cam.ang.ctheta
+                    };
+                },
+                set: function (p) {
+                    return {
+                        x: p.x - cam.obj.x,
+                        y: p.y - cam.obj.y,
+                        z: p.z - cam.obj.z
+                    };
+                }
+            },
+            persp: function (p) {
+                return {
+                    x: p.x * cam.dist.z / p.z * cam.zoom,
+                    y: p.y * cam.dist.z / p.z * cam.zoom,
+                    z: p.z * cam.zoom,
+                    p: cam.dist.z / p.z
+                };
+            },
+            disp: function (p, disp) {
+                return {
+                    x: p.x + disp.x,
+                    y: -p.y + disp.y,
+                    z: p.z + disp.z,
+                    p: p.p
+                };
+            },
+            steps: function (_obj_, sz, rot, pos, disp) {
+                var _args = trans.parts.sz(_obj_, sz);
+                _args = trans.parts.rot.x(_args, rot);
+                _args = trans.parts.rot.y(_args, rot);
+                _args = trans.parts.rot.z(_args, rot);
+                _args = trans.parts.pos(_args, pos);
+                _args = trans.pov.plane(_args);
+                _args = trans.pov.theta(_args);
+                _args = trans.pov.set(_args);
+                _args = trans.persp(_args);
+                _args = trans.disp(_args, disp);
+                return _args;
+            }
+        };
+
+        (function () {
+            "use strict";
+            var threeD = function (param) {
+                this.transIn = {};
+                this.transOut = {};
+                this.transIn.vtx = (param.vtx);
+                this.transIn.sz = (param.sz);
+                this.transIn.rot = (param.rot);
+                this.transIn.pos = (param.pos);
+            };
+
+            threeD.prototype.vupd = function () {
+                this.transOut = trans.steps(
+                    this.transIn.vtx,
+                    this.transIn.sz,
+                    this.transIn.rot,
+                    this.transIn.pos,
+                    cam.disp
+                );
+            };
+
+            var Build = function () {
+                this.vel = 0.04;
+                this.lim = 360;
+                this.diff = 200;
+                this.initPos = 100;
+                this.toX = _x;
+                this.toY = _y;
+                this.go();
+            };
+
+            Build.prototype.go = function () {
+                this.canvas = document.getElementById("canv");
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+                this.$ = canv.getContext("2d");
+                this.$.globalCompositeOperation = 'source-over';
+                this.varr = [];
+                this.dist = [];
+                this.calc = [];
+
+                for (var i = 0, len = num; i < len; i++) {
+                    this.add();
+                }
+
+                this.rotObj = {
+                    x: 0,
+                    y: 0,
+                    z: 0
+                };
+                this.objSz = {
+                    x: w / 5,
+                    y: h / 5,
+                    z: w / 5
+                };
+            };
+
+            Build.prototype.add = function () {
+                this.varr.push(new threeD({
+                    vtx: {
+                        x: rnd(),
+                        y: rnd(),
+                        z: rnd()
+                    },
+                    sz: {
+                        x: 0,
+                        y: 0,
+                        z: 0
+                    },
+                    rot: {
+                        x: 20,
+                        y: -20,
+                        z: 0
+                    },
+                    pos: {
+                        x: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
+                        y: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
+                        z: this.diff * Math.sin(360 * Math.random() * Math.PI / 180)
+                    }
+                }));
+                this.calc.push({
+                    x: 360 * Math.random(),
+                    y: 360 * Math.random(),
+                    z: 360 * Math.random()
+                });
+            };
+
+            Build.prototype.upd = function () {
+                cam.obj.x += (this.toX - cam.obj.x) * 0.05;
+                cam.obj.y += (this.toY - cam.obj.y) * 0.05;
+            };
+
+            Build.prototype.draw = function () {
+                this.$.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                cam.upd();
+                this.rotObj.x += 0.1;
+                this.rotObj.y += 0.1;
+                this.rotObj.z += 0.1;
+
+                for (var i = 0; i < this.varr.length; i++) {
+                    for (var val in this.calc[i]) {
+                        if (this.calc[i].hasOwnProperty(val)) {
+                            this.calc[i][val] += this.vel;
+                            if (this.calc[i][val] > this.lim) this.calc[i][val] = 0;
+                        }
+                    }
+
+                    this.varr[i].transIn.pos = {
+                        x: this.diff * Math.cos(this.calc[i].x * Math.PI / 180),
+                        y: this.diff * Math.sin(this.calc[i].y * Math.PI / 180),
+                        z: this.diff * Math.sin(this.calc[i].z * Math.PI / 180)
+                    };
+                    this.varr[i].transIn.rot = this.rotObj;
+                    this.varr[i].transIn.sz = this.objSz;
+                    this.varr[i].vupd();
+                    if (this.varr[i].transOut.p < 0) continue;
+                    var g = this.$.createRadialGradient(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p, this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p * 2);
+                    this.$.globalCompositeOperation = 'lighter';
+                    g.addColorStop(0, 'hsla(255, 255%, 255%, 1)');
+                    g.addColorStop(.5, 'hsla(' + (i + 2) + ',85%, 40%,1)');
+                    g.addColorStop(1, 'hsla(' + (i) + ',85%, 40%,.5)');
+                    this.$.fillStyle = g;
+                    this.$.beginPath();
+                    this.$.arc(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p * 2, 0, Math.PI * 2, false);
+                    this.$.fill();
+                    this.$.closePath();
+                }
+            };
+            Build.prototype.anim = function () {
+                window.requestAnimationFrame = (function () {
+                    return window.requestAnimationFrame ||
+                        function (callback, element) {
+                            window.setTimeout(callback, 1000 / 60);
+                        };
+                })();
+                var anim = function () {
+                    this.upd();
+                    this.draw();
+                    window.requestAnimationFrame(anim);
+                }.bind(this);
+                window.requestAnimationFrame(anim);
+            };
+
+            Build.prototype.run = function () {
+                this.anim();
+
+                window.addEventListener('mousemove', function (e) {
+                    this.toX = (e.clientX - this.canvas.width / 2) * -0.8;
+                    this.toY = (e.clientY - this.canvas.height / 2) * 0.8;
+                }.bind(this));
+                window.addEventListener('touchmove', function (e) {
+                    e.preventDefault();
+                    this.toX = (e.touches[0].clientX - this.canvas.width / 2) * -0.8;
+                    this.toY = (e.touches[0].clientY - this.canvas.height / 2) * 0.8;
+                }.bind(this));
+
+                //电脑端点击生成更多星星
+                /*window.addEventListener('mousedown', function (e) {
+                    for (var i = 0; i < 100; i++) {
+                        this.add();
+                    }
+                }.bind(this));*/
+                window.addEventListener('touchstart', function (e) {
+                    e.preventDefault();
+                    //移动端点击生成更多星星
+                    /*for (var i = 0; i < 100; i++) {
+                        this.add();
+                    }*/
+                }.bind(this));
+            };
+            var app = new Build();
+            app.run();
+        })();
+        window.addEventListener('resize', function () {
+        }, false);
+    </script>
+</div>
+<div id="product_detail_main" class="product_detail_main">
+    <div class="w1150">
+        <div class="product_info row">
+            <div class="product_img col-xs-6 col-md-7 ">
+                <img src='../../../uploads/20181126/1-1FQ11J3450-L.png' style="width:100%;">
+            </div>
+            <div class="product_name col-xs-6 col-md-5">
+                <h3 class="titleName">航空箱体</h3>
+            </div>
+        </div>
+
+        <div class="content" style="margin-top:15px;">
+            '<p><img src="http://www.ledjtgd.com/uploads/image/20170811/1502444641593279.png" title="1502444641593279.png" alt="635561336793116705431.png" style="box-sizing: border-box; list-style: none; vertical-align: baseline; max-width: 100%; outline: 0px; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; color: rgb(34, 34, 34); font-family: " microsoft="" yahei="" wenquanyi="" micro="" font-size:="" text-align:="" white-space:="" height:="" auto=""/></p>'
+        </div>
+    </div>
+</div>
+<div id="footer" class="footer">
+    <div class="w1110">
+        <div class="row w1110">
+            <div class="col-xs-6 col-md-2 footersect1">
+                <h3>导航</h3>
+                <ul>
+                    <li>
+                        <a href="../../../temp/about_us.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="../../../temp/product.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="../../../temp/Installation.html">安装与保养</a>
+                    </li>
+                    <li>
+                        <a href="../../../temp/news.html">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="../../../temp/contactus.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6  col-md-3 ">
+                <h3>产品中心</h3>
+                <div class="footersect2">
+                    <li class=" col-md-4 ">
+                    </li>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 footersect3">
+                <h3>新闻资讯</h3>
+                <ul class="news">
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 footersect4">
+                <h3>联系我们</h3>
+                <ul>
+                    <li>地址:郑州市郑东新区商都路与通泰路中力广告市场七里湾5-113（利亚德）</li>
+                    <li>电话:0371-6022-8870</li>
+                    <li>传真:0371-6022-8870</li>
+                    <li>手机:13838017230 </li>
+                    <li>网址:www.98china.cn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banquan">
+        <p>版权所有@ 2017-2018 河南晶泰光电科技有限公司 <a href="http://www.miitbeian.gov.cn/">豫ICP备18016214号</a></p>
+    </div>
+</div>
+<!--验证cookie是否登录-->
+<script>
+    function getCookid() {
+        $.ajax({
+            type: "POST",
+            url: "../cookies/checkCookie.php",
+            success: function (msg) {
+                console.log("msg")
+                if (msg != "") {
+                    location.href = "backLogin.html";
+                }
+            },
+            error: function (msg) {
+                // alert("发送失败");
+            }
+        });
+    }
+    getCookid();
+</script>
+<!--商品详情页面-->
+<script>
+
+    var pid = location .href.split("?")[1];
+    console.log(pid)
+    function getContent(){
+        $.ajax({
+            type:"POST",
+            url:"../../../temp/server/productsContent.php",
+            data:pid,
+            success: function(msg){
+                var str = eval("("+msg+")");    //把返回的字符串解析为JSON
+                $(".product_img").html(`<img src=` + str.thumb + ` alt="">`);
+                $(".titleName").html(str.name);
+                $(".content").html(str.content);
+                $("title").html(str.name+"-河南晶泰光电科技有限公司");
+            }
+        });
+    }
+    getContent();
+</script>
+<!--footer产品中心-->
+<script>
+    //设置每几条数据为一页
+    var limits = 5;  //文本列表的数量
+    var pages = 0;
+    $.ajax({
+        type: "POST",
+        url: "../../../temp/server/products.php",
+        data: {page: 0, sum: limits},
+        success: function (msg) {
+            jsp = eval('(' + msg + ')');    //把字符串转换为json
+            str = "";
+            for (var i = 0; i < limits; i++) {
+                //底部小列表
+                str += `
+                    <li class=" col-md-4 " style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
+                        <a  href="../` + jsp[i].pid + `/">` + jsp[i].name + `</a>
+                    </li>`;
+                $(".footersect2").html(str);
+            }
+        }
+    });
+</script>
+<!--footer新闻资讯-->
+<script>
+    // 底部新闻资讯
+    $.ajax({
+        type: "POST",
+        url: "../../../temp/server/MaterialsContent.php",
+        success: function (msg) {
+            jsp = eval('(' + msg + ')');    //把字符串转换为json
+            newMessage = "";
+            for (var i = 0; i < jsp.length; i++) {
+                newMessage +=
+                    `<li style="width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;">
+                                                <a href="../../file/` + jsp[i].aid + `/" target="_blank" >` + jsp[i].title + `</a>
+                                            </li>`;
+                $(".news").html(newMessage);
+            }
+        }
+    });
+</script>
+<!--刷新静态页面-->
+<script>
+    $.ajax({
+        type: "POST",
+        url: "../new/xinjian.php",
+    })
+</script>
+</body>
+
+</html>

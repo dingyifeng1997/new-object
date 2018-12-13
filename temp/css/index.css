@@ -213,7 +213,7 @@ h4.indexsmallh4{
 .section3 img{
 	display: block;
 	width: 265px;
-	height: 200px;
+	height: 265px;
 }
 .section3 a{
 	position: relative;
@@ -511,16 +511,13 @@ a:focus, a:hover{
 	background: #3595ff;
 	color: #fff;
 }
-
 .product_fenye .button_back:hover{
 	background: #3595ff;
 	color: #fff;
 }
-
 .product_main ul{
 	display: inline-block;
 }
-
 .product_main li a:hover{
 	background: #347ab8;
 	color: #fff;
