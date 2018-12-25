@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5db903-b813-463f-b5e7-ecbc791f2521" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/temp/Installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/Installation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/about_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/contactus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/news_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wphObject/img/logo/facePhoto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/compile/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/compile/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wphObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/mindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/mindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,28 +31,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wphObject/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="227">
+              <caret line="256" column="22" lean-forward="true" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mindex.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>张鑫</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +71,22 @@
         <option value="$PROJECT_DIR$/temp/news_detail.html" />
         <option value="$PROJECT_DIR$/temp/product.html" />
         <option value="$PROJECT_DIR$/temp/product_detail.html" />
+        <option value="$PROJECT_DIR$/wphObject/orderPage/login.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" />
+        <option value="$PROJECT_DIR$/test1.html" />
         <option value="$PROJECT_DIR$/wphObject/index.html" />
+        <option value="$PROJECT_DIR$/wphObject/mindex.html" />
       </list>
     </option>
   </component>
@@ -73,8 +100,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="410" />
-    <option name="y" value="92" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1322" />
     <option name="height" value="783" />
   </component>
@@ -107,9 +134,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appserv\www\new-object\wphObject\img\logo" />
       <recent name="D:\appserv\www\wphObject\img\logo" />
       <recent name="D:\appserv\www\wphObject\img\page" />
     </key>
@@ -140,7 +169,25 @@
       <workItem from="1544594577766" duration="1721000" />
       <workItem from="1544596376913" duration="53000" />
       <workItem from="1544677630276" duration="721000" />
-      <workItem from="1544690868868" duration="514000" />
+      <workItem from="1544690868868" duration="1107000" />
+      <workItem from="1544771951333" duration="1766000" />
+      <workItem from="1545197670697" duration="1466000" />
+      <workItem from="1545289476512" duration="1012000" />
+      <workItem from="1545291674448" duration="1791000" />
+      <workItem from="1545293818549" duration="1438000" />
+      <workItem from="1545629945665" duration="1416000" />
+      <workItem from="1545631729245" duration="1086000" />
+      <workItem from="1545633735912" duration="1793000" />
+      <workItem from="1545638754683" duration="1636000" />
+      <workItem from="1545640562948" duration="1660000" />
+      <workItem from="1545642555577" duration="1787000" />
+      <workItem from="1545644363129" duration="955000" />
+      <workItem from="1545703486412" duration="827000" />
+      <workItem from="1545705324486" duration="1784000" />
+      <workItem from="1545707126554" duration="1713000" />
+      <workItem from="1545708934054" duration="1791000" />
+      <workItem from="1545710742477" duration="1064000" />
+      <workItem from="1545722228023" duration="721000" />
     </task>
     <task id="LOCAL-00001" summary="All File">
       <created>1544677742144</created>
@@ -156,23 +203,30 @@
       <option name="project" value="LOCAL" />
       <updated>1544691226335</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="alter cookie path">
+      <created>1544691420311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544691420311</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4264000" />
+    <option name="totallyTimeSpent" value="30563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13854167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18541667" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.46407187" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.4638298" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -199,6 +253,97 @@
     <option name="LAST_COMMIT_MESSAGE" value="alter cookie path" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="34" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="42" column="16" selection-start-line="41" selection-start-column="23" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="63" column="4" selection-start-line="29" selection-start-column="25" selection-end-line="63" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8880">
@@ -242,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-523" />
@@ -258,10 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="456" column="37" lean-forward="true" selection-start-line="456" selection-start-column="37" selection-end-line="456" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -272,23 +406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="536" column="54" selection-start-line="536" selection-start-column="45" selection-end-line="536" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -296,9 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="533" column="21" lean-forward="true" selection-start-line="533" selection-start-column="21" selection-end-line="533" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -306,9 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="494" column="53" lean-forward="true" selection-start-line="494" selection-start-column="53" selection-end-line="494" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -323,9 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="629" column="46" selection-start-line="629" selection-start-column="37" selection-end-line="629" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -347,28 +459,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="564" column="46" selection-start-line="564" selection-start-column="37" selection-end-line="564" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/orderPage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/js/inputScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/pc_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="436" column="61" selection-start-line="436" selection-start-column="61" selection-end-line="436" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="536" column="61" selection-start-line="536" selection-start-column="61" selection-end-line="536" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="525" column="61" selection-start-line="525" selection-start-column="61" selection-end-line="525" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="707" column="61" selection-start-line="707" selection-start-column="61" selection-end-line="707" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="423" column="61" selection-start-line="423" selection-start-column="61" selection-end-line="423" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="354" column="34" lean-forward="true" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7710">
+          <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7770">
+          <caret line="259" column="59" selection-start-line="259" selection-start-column="59" selection-end-line="259" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7710">
+          <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7950">
+          <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="269" column="30" selection-start-line="269" selection-start-column="30" selection-end-line="269" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="277" column="59" selection-start-line="277" selection-start-column="59" selection-end-line="277" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="227">
+          <caret line="256" column="22" lean-forward="true" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
         </state>
       </provider>
     </entry>

@@ -489,12 +489,18 @@
 				</button>
 
 				<!--1.3.5 打印按钮-->
-				<button class="btn btn-info" id="print">
+				<button class="btn btn-info" id="print" style="margin:10px 0;">
 					<span class="glyphicon glyphicon-print"> </span> &nbsp;&nbsp;打印表单
 				</button>
 
-
-
+				<!--1.3.6 导出Excel按钮-->
+				<a class="btn btn-info" id="outPutExcel">
+					导出Excel
+				</a>
+				<!--1.3.7 导出Word按钮-->
+				<a class="btn btn-info" id="outPutWord">
+					导出Word
+				</a>
 			</div>
 
 
@@ -507,9 +513,9 @@
 
 			<!--2.1:表格标题-->
 			<div class="biaoti" id="headline">
-					<h2 class="page-header" contenteditable="true">P10<span></span> LED显示屏报价</h2>
-					<br>
-				</div>
+				<h2 class="page-header" contenteditable="true">P10<span></span> LED显示屏报价</h2>
+				<br>
+			</div>
 
 			<!--2.2:合同签订方-->
 			<div class="hetong" id="signatory">
@@ -522,10 +528,10 @@
 
 
 			<!--2.3:报价表格主体-->
-			<div>
+			<div id="outPutTable">
 				<!--2.3.1:信息栏-->
 				<div class="table-responsive" id="xinxilan">	<!--响应式表格-->
-					<table class="table table-bordered table-striped table-condensed">
+					<table class="table table-bordered table-striped table-condensed" border="1">
 						<tbody class="xinxi" >
 							<tr>
 								<td contenteditable="true" >单板长度</td>
@@ -567,7 +573,7 @@
 					</table>
 				</div>
 				<!--2.3.2:报价表主体-->
-				<table class="table table-bordered table-striped" id="mytable">
+				<table class="table table-bordered table-striped"  border="1" id="mytable">
 					<tr id="bd1">
 						<td contenteditable="true">产品名称</td>
 						<td contenteditable="true">数量</td>
@@ -696,10 +702,10 @@
 					</tbody>
 				</table>
 				<!--2.3.3:报价表合计-->
-				<table class="table table-bordered  ">
+				<table class="table table-bordered  " border="1">
 					<tr id="bd20">
 						<td contenteditable="true" style="width: 20%" >合计</td>
-						<td contenteditable="true">大写 : <span id="allDaXie"></span></td>
+						<td contenteditable="true" colspan="3">大写 : <span id="allDaXie"></span></td>
 						<td contenteditable="true" style="width: 20%" id="zongHeJi"></td>
 					</tr>
 				</table>
@@ -715,6 +721,8 @@
 					</p>
 				</div>
 			</div>
+
+
 			<!--2.4:合同信息栏-->
 			<div class="hetong-message" id="contract-message"  style="margin-left:30px; width:100%;">
 				<!--备注栏-->

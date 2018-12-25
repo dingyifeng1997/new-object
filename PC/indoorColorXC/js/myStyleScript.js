@@ -239,6 +239,43 @@ $("#print").click(function(){
 });
 
 
+
+// 十二:导出Excel
+$("#outPutExcel").click(function(){
+    // 使用outerHTML属性获取整个table元素的HTML代码（包括<table>标签），然后包装成一个完整的HTML文档，
+    // 设置charset为urf-8以防止中文乱码
+    var html = document.getElementById("outPutTable").outerHTML;
+
+    // 实例化一个Blob对象，其构造函数的第一个参数是包含文件内容的数组，第二个参数是包含文件类型属性的对象
+    // var blob = new Blob([html], { type: "application/vnd.ms-excel" });
+    var blob = new Blob([html]);    //事实上只需要一个参数就可以
+
+    var pids = document.getElementById("outPutExcel");
+    // 利用URL.createObjectURL()方法为a元素生成blob URL
+    pids.href = URL.createObjectURL(blob);
+
+    // 设置文件名
+    pids.download =  Math.random().toString(36).substr(2)+".xls";
+});
+// 十三:导出Word
+$("#outPutWord").click(function(){
+    // 使用outerHTML属性获取整个table元素的HTML代码（包括<table>标签），然后包装成一个完整的HTML文档，
+    // 设置charset为urf-8以防止中文乱码
+
+    var html =  "<html><head><meta charset='utf-8' /></head><body>" + document.getElementById("outPutTable").outerHTML + "</body></html>"
+
+    // 实例化一个Blob对象，其构造函数的第一个参数是包含文件内容的数组，第二个参数是包含文件类型属性的对象
+    // var blob = new Blob([html], { type: "application/vnd.ms-excel" });
+    var blob = new Blob([html]);    //事实上只需要一个参数就可以
+
+    var pids = document.getElementById("outPutWord");
+    // 利用URL.createObjectURL()方法为a元素生成blob URL
+    pids.href = URL.createObjectURL(blob);
+
+    // 设置文件名
+    pids.download =  Math.random().toString(36).substr(2)+".doc";
+});
+
 //合同区域变为大写
 $("#contractNum").blur(function() {
     $("#priceDaXie").text(intToChinese($(this).val()));
