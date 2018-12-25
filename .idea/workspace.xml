@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5db903-b813-463f-b5e7-ecbc791f2521" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wphObject/img/logo/facePhoto.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/indoorColorYZL/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/monochromeP10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP10/js/myStyleScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/monochromeP3.75/js/myStyleScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXC/js/myStyleScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/compile/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/compile/index.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/mindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/mindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wphObject/orderPage/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/wphObject/orderPage/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,19 +21,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+        <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="256" column="22" lean-forward="true" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="44" />
+            <state relative-caret-position="482">
+              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mindex.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
+            <state relative-caret-position="469">
+              <caret line="64" column="82" lean-forward="true" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -72,12 +109,6 @@
         <option value="$PROJECT_DIR$/temp/product.html" />
         <option value="$PROJECT_DIR$/temp/product_detail.html" />
         <option value="$PROJECT_DIR$/wphObject/orderPage/login.html" />
-        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
-        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
-        <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
-        <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
-        <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
-        <option value="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
         <option value="$PROJECT_DIR$/PC/outdoorColorXT/js/myStyleScript.js" />
         <option value="$PROJECT_DIR$/PC/indoorColorXC/js/myStyleScript.js" />
         <option value="$PROJECT_DIR$/PC/monochrome5.0/js/myStyleScript.js" />
@@ -87,6 +118,13 @@
         <option value="$PROJECT_DIR$/test1.html" />
         <option value="$PROJECT_DIR$/wphObject/index.html" />
         <option value="$PROJECT_DIR$/wphObject/mindex.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP10/index.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorYZL/index.html" />
+        <option value="$PROJECT_DIR$/PC/indoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochrome5.0/index.html" />
+        <option value="$PROJECT_DIR$/PC/monochromeP3.75/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXC/index.html" />
+        <option value="$PROJECT_DIR$/PC/outdoorColorXT/index.html" />
       </list>
     </option>
   </component>
@@ -110,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,13 +159,12 @@
             <path>
               <item name="new-object" type="b2602c69:ProjectViewProjectNode" />
               <item name="new-object" type="462c0819:PsiDirectoryNode" />
-              <item name="wphObject" type="462c0819:PsiDirectoryNode" />
+              <item name="PC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,6 +226,7 @@
       <workItem from="1545708934054" duration="1791000" />
       <workItem from="1545710742477" duration="1064000" />
       <workItem from="1545722228023" duration="721000" />
+      <workItem from="1545724042691" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="All File">
       <created>1544677742144</created>
@@ -210,23 +249,29 @@
       <option name="project" value="LOCAL" />
       <updated>1544691420311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add outPut(Excel/Word) button">
+      <created>1545724146578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545724146579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30563000" />
+    <option name="totallyTimeSpent" value="31975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18541667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19114584" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.4638298" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.46170214" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -250,16 +295,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All File" />
     <MESSAGE value="alter cookie path" />
-    <option name="LAST_COMMIT_MESSAGE" value="alter cookie path" />
+    <MESSAGE value="add outPut(Excel/Word) button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add outPut(Excel/Word) button" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -486,48 +525,6 @@
         <state relative-caret-position="-1890" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="436" column="61" selection-start-line="436" selection-start-column="61" selection-end-line="436" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="536" column="61" selection-start-line="536" selection-start-column="61" selection-end-line="536" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="525" column="61" selection-start-line="525" selection-start-column="61" selection-end-line="525" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="707" column="61" selection-start-line="707" selection-start-column="61" selection-end-line="707" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="423" column="61" selection-start-line="423" selection-start-column="61" selection-end-line="423" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="354" column="34" lean-forward="true" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/js/myStyleScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1170" />
@@ -582,17 +579,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="256" column="22" lean-forward="true" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wphObject/mindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wphObject/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="256" column="22" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorYZL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/indoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochrome5.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP3.75/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/monochromeP10/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXC/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="64" column="82" lean-forward="true" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC/outdoorColorXT/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
         </state>
       </provider>
     </entry>
