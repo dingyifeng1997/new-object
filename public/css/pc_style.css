@@ -29,6 +29,10 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 	clear: both;
 }
 
+.hetong p{
+	width:40%;
+}
+
 /*隐藏横向滚动条--由于画面缩放的时候会显示出横向滚动条,所以打印的时候画面比例不正确,所以隐藏横向滚动条*/
 html{overflow-x:hidden}
 

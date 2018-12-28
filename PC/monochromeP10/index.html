@@ -510,332 +510,332 @@
 
 		<!--2.表格主体-->
 		<div class="col-md-12 content" style="height:100%;">
+			<div  id="kebianji">
+				<!--2.1:表格标题-->
+				<div class="biaoti" id="headline">
+					<h2 class="page-header" contenteditable="true">P10<span></span> LED显示屏报价</h2>
+					<br>
+				</div>
 
-			<!--2.1:表格标题-->
-			<div class="biaoti" id="headline">
-				<h2 class="page-header" contenteditable="true">P10<span></span> LED显示屏报价</h2>
-				<br>
-			</div>
-
-			<!--2.2:合同签订方-->
-			<div class="hetong" id="signatory">
-				<p class="input-left1"><span>需方(甲方) : </span><input type="text"></p>
-				<p class="input-right1"><span>合同编号 : </span><input type="text"></p>
-				<p class="input-left2"><span>供方(乙方) : </span><input type="text"></p>
-				<p class="input-right2"><span>签订地点 : </span><input type="text"></p>
-			</div>
+				<!--2.2:合同签订方-->
+				<div class="hetong" id="signatory" >
+					<p class="input-left1"><span>需方(甲方) : </span><input type="text"></p>
+					<p class="input-right1"><span>合同编号 : </span><input type="text"></p>
+					<p class="input-left2"><span>供方(乙方) : </span><input type="text"></p>
+					<p class="input-right2"><span>签订地点 : </span><input type="text"></p>
+				</div>
 
 
-
-			<!--2.3:报价表格主体-->
-			<div id="outPutTable">
-				<!--2.3.1:信息栏-->
-				<div class="table-responsive" id="xinxilan">	<!--响应式表格-->
-					<table class="table table-bordered table-striped table-condensed" border="1">
-						<tbody class="xinxi" >
-							<tr>
-								<td contenteditable="true" >单板长度</td>
-								<td contenteditable="true" >单元板长个数</td>
-								<td contenteditable="true" >显示总长度</td>
-								<td contenteditable="true" >加边框后长度</td>
-								<td contenteditable="true" >单元板长像素</td>
-								<td contenteditable="true" >显示屏长总像素</td>
-								<td contenteditable="true" >总千瓦数</td>
+				<!--2.3:报价表格主体-->
+				<div id="outPutTable">
+					<!--2.3.1:信息栏-->
+					<div class="table-responsive" id="xinxilan">	<!--响应式表格-->
+						<table class="table table-bordered table-striped table-condensed" border="1">
+							<tbody class="xinxi" >
+								<tr>
+									<td contenteditable="true" >单板长度</td>
+									<td contenteditable="true" >单元板长个数</td>
+									<td contenteditable="true" >显示总长度</td>
+									<td contenteditable="true" >加边框后长度</td>
+									<td contenteditable="true" >单元板长像素</td>
+									<td contenteditable="true" >显示屏长总像素</td>
+									<td contenteditable="true" >总千瓦数</td>
+								</tr>
+								<tr id="dataX">
+									<td contenteditable="true" id="dataA1"></td>
+									<td contenteditable="true" id="dataA2"></td>
+									<td contenteditable="true" id="dataA3"></td>
+									<td contenteditable="true" id="dataA4"></td>
+									<td contenteditable="true" id="dataA5"></td>
+									<td contenteditable="true" id="dataA6"></td>
+									<td contenteditable="true" id="dataA7"></td>
+								</tr>
+								<tr id="bdy">
+									<td contenteditable="true">单板高度</td>
+									<td contenteditable="true">单元板高个数</td>
+									<td contenteditable="true">显示总高度</td>
+									<td contenteditable="true">加边框后高度</td>
+									<td contenteditable="true">单元板高像素</td>
+									<td contenteditable="true">显示屏高总像素</td>
+									<td contenteditable="true">总平方数㎡</td>
+								</tr>
+								<tr id="dataY">
+									<td contenteditable="true" id="dataB1"></td>
+									<td contenteditable="true" id="dataB2"></td>
+									<td contenteditable="true" id="dataB3"></td>
+									<td contenteditable="true" id="dataB4"></td>
+									<td contenteditable="true" id="dataB5"></td>
+									<td contenteditable="true" id="dataB6"></td>
+									<td contenteditable="true" id="dataB7"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--2.3.2:报价表主体-->
+					<table class="table table-bordered table-striped"  border="1" id="mytable">
+						<tr id="bd1">
+							<td contenteditable="true">产品名称</td>
+							<td contenteditable="true">数量</td>
+							<td contenteditable="true">单位</td>
+							<td contenteditable="true">单价</td>
+							<td contenteditable="true">总价</td>
+						</tr>
+						<tbody class="warp-tbody">
+							<tr id="bd2">
+								<td contenteditable="true" id="partsA1">单元板</td>
+								<td contenteditable="true" id="partsA2" class="astrict-number"></td>
+								<td contenteditable="true">张</td>
+								<td contenteditable="true" id="partsA3" class="astrict-number"></td>
+								<td contenteditable="true" id="partsA4" class="astrict-number"></td>
 							</tr>
-							<tr id="dataX">
-								<td contenteditable="true" id="dataA1"></td>
-								<td contenteditable="true" id="dataA2"></td>
-								<td contenteditable="true" id="dataA3"></td>
-								<td contenteditable="true" id="dataA4"></td>
-								<td contenteditable="true" id="dataA5"></td>
-								<td contenteditable="true" id="dataA6"></td>
-								<td contenteditable="true" id="dataA7"></td>
+							<tr id="bd3">
+								<td contenteditable="true" id="partsB1">控制卡</td>
+								<td contenteditable="true" id="partsB2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsB3">个</td>
+								<td contenteditable="true" id="partsB4" class="astrict-number"></td>
+								<td contenteditable="true" id="partsB5" class="astrict-number"></td>
 							</tr>
-							<tr id="bdy">
-								<td contenteditable="true">单板高度</td>
-								<td contenteditable="true">单元板高个数</td>
-								<td contenteditable="true">显示总高度</td>
-								<td contenteditable="true">加边框后高度</td>
-								<td contenteditable="true">单元板高像素</td>
-								<td contenteditable="true">显示屏高总像素</td>
-								<td contenteditable="true">总平方数㎡</td>
+							<tr id="bd4">
+								<td contenteditable="true">转接板</td>
+								<td contenteditable="true" id="partsC1" class="astrict-number"></td>
+								<td contenteditable="true">张</td>
+								<td contenteditable="true" id="partsC2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsC3" class="astrict-number"></td>
 							</tr>
-							<tr id="dataY">
-								<td contenteditable="true" id="dataB1"></td>
-								<td contenteditable="true" id="dataB2"></td>
-								<td contenteditable="true" id="dataB3"></td>
-								<td contenteditable="true" id="dataB4"></td>
-								<td contenteditable="true" id="dataB5"></td>
-								<td contenteditable="true" id="dataB6"></td>
-								<td contenteditable="true" id="dataB7"></td>
+							<tr id="bd5">
+								<td contenteditable="true">电源</td>
+								<td contenteditable="true" id="partsD1" class="astrict-number"></td>
+								<td contenteditable="true">台</td>
+								<td contenteditable="true" id="partsD2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsD3" class="astrict-number"></td>
+							</tr>
+							<tr id="bd6">
+								<td contenteditable="true">型材</td>
+								<td contenteditable="true" id="partsE1" class="astrict-number"></td>
+								<td contenteditable="true">米</td>
+								<td contenteditable="true" id="partsE2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsE3" class="astrict-number"></td>
+							</tr>
+							<tr id="bd7">
+								<td contenteditable="true" id="partsF1" >龙骨</td>
+								<td contenteditable="true" id="partsF2" class="astrict-number"></td>
+								<td contenteditable="true">根</td>
+								<td contenteditable="true" id="partsF3" class="astrict-number"></td>
+								<td contenteditable="true" id="partsF4" class="astrict-number"></td>
+							</tr>
+							<tr id="bd8">
+								<td contenteditable="true">型材拐角</td>
+								<td contenteditable="true" id="partsG1" class="astrict-number"></td>
+								<td contenteditable="true">个</td>
+								<td contenteditable="true" id="partsG2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsG3" class="astrict-number"></td>
+							</tr>
+							<tr id="bd9">
+								<td contenteditable="true">型材接头</td>
+								<td contenteditable="true" id="partsH1" class="astrict-number"></td>
+								<td contenteditable="true">个</td>
+								<td contenteditable="true" id="partsH2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsH3" class="astrict-number"></td>
+							</tr>
+							<!--短燕尾丝
+							<tr id="bd10">
+								<td contenteditable="true">短燕尾丝</td>
+								<td contenteditable="true" id="partsI1" class="astrict-number"></td>
+								<td contenteditable="true">根</td>
+								<td contenteditable="true" id="partsI2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsI3" class="astrict-number"></td>
+							</tr>-->
+							<!--长燕尾丝
+							<tr id="bd11">
+								<td contenteditable="true">长燕尾丝</td>
+								<td contenteditable="true" id="partsJ1" class="astrict-number"></td>
+								<td contenteditable="true">根</td>
+								<td contenteditable="true" id="partsJ2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsJ3" class="astrict-number"></td>
+							</tr>-->
+							<!--插头
+							<tr id="bd12">
+								<td contenteditable="true">插头</td>
+								<td contenteditable="true" id="partsK1" class="astrict-number"></td>
+								<td contenteditable="true">个</td>
+								<td contenteditable="true" id="partsK2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsK3" class="astrict-number"></td>
+							</tr>-->
+							<!--长排线-->
+							<tr id="bd13">
+								<td contenteditable="true">长排线</td>
+								<td contenteditable="true" id="partsL1" class="astrict-number"></td>
+								<td contenteditable="true">个</td>
+								<td contenteditable="true" id="partsL2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsL3" class="astrict-number"></td>
+							</tr>
+							<tr id="bd14">
+								<td contenteditable="true">USB延长线</td>
+								<td contenteditable="true" id="partsM1" class="astrict-number"></td>
+								<td contenteditable="true">个</td>
+								<td contenteditable="true" id="partsM2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsM3" class="astrict-number"></td>
+							</tr>
+							<tr id="bd15">
+								<td contenteditable="true">挂件膨胀丝</td>
+								<td contenteditable="true" id="partsN1" class="astrict-number"></td>
+								<td contenteditable="true">套</td>
+								<td contenteditable="true" id="partsN2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsN3" class="astrict-number"></td>
+							</tr>
+							<!--包装费
+							<tr id="bd16">
+								<td contenteditable="true">包装费</td>
+								<td contenteditable="true" id="partsO1" class="astrict-number"></td>
+								<td contenteditable="true">平</td>
+								<td contenteditable="true" id="partsO2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsO3" class="astrict-number"></td>
+							</tr>-->
+							<tr id="bd17">
+								<td contenteditable="true">组装加工费</td>
+								<td contenteditable="true" id="partsP1" class="astrict-number"></td>
+								<td contenteditable="true">平</td>
+								<td contenteditable="true" id="partsP2" class="astrict-number"></td>
+								<td contenteditable="true" id="partsP3" class="astrict-number"></td>
 							</tr>
 						</tbody>
 					</table>
+					<!--2.3.3:报价表合计-->
+					<table class="table table-bordered  " border="1">
+						<tr id="bd20">
+							<td contenteditable="true" style="width: 20%" >合计</td>
+							<td contenteditable="true" colspan="3">大写 : <span id="allDaXie"></span></td>
+							<td contenteditable="true" style="width: 20%" id="zongHeJi"></td>
+						</tr>
+					</table>
+					<p style="float: right;color:red;" id="yunfeiyejiao" contenteditable="true">此价格不包含运费/背面铝塑板，默认发物流运费到付，型材误差0.5厘米不影响防水。</p>
+
+					<!--2.3.4:报价表页脚 -->
+					<div class="table-footer" id="tableFooter">
+						<p>制单人: <input type="text"> </p>
+
+						<p class="table-footer-right">
+							<input type="text" id="group" placeholder="XXXXXX有限公司-名称可修改-空格可隐藏" style="border:0px;width:300px;"> <br>
+							<span  id="footerDate"></span>
+						</p>
+					</div>
 				</div>
-				<!--2.3.2:报价表主体-->
-				<table class="table table-bordered table-striped"  border="1" id="mytable">
-					<tr id="bd1">
-						<td contenteditable="true">产品名称</td>
-						<td contenteditable="true">数量</td>
-						<td contenteditable="true">单位</td>
-						<td contenteditable="true">单价</td>
-						<td contenteditable="true">总价</td>
-					</tr>
-					<tbody class="warp-tbody">
-						<tr id="bd2">
-							<td contenteditable="true" id="partsA1">单元板</td>
-							<td contenteditable="true" id="partsA2" class="astrict-number"></td>
-							<td contenteditable="true">张</td>
-							<td contenteditable="true" id="partsA3" class="astrict-number"></td>
-							<td contenteditable="true" id="partsA4" class="astrict-number"></td>
-						</tr>
-						<tr id="bd3">
-							<td contenteditable="true" id="partsB1">控制卡</td>
-							<td contenteditable="true" id="partsB2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsB3">个</td>
-							<td contenteditable="true" id="partsB4" class="astrict-number"></td>
-							<td contenteditable="true" id="partsB5" class="astrict-number"></td>
-						</tr>
-						<tr id="bd4">
-							<td contenteditable="true">转接板</td>
-							<td contenteditable="true" id="partsC1" class="astrict-number"></td>
-							<td contenteditable="true">张</td>
-							<td contenteditable="true" id="partsC2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsC3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd5">
-							<td contenteditable="true">电源</td>
-							<td contenteditable="true" id="partsD1" class="astrict-number"></td>
-							<td contenteditable="true">台</td>
-							<td contenteditable="true" id="partsD2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsD3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd6">
-							<td contenteditable="true">型材</td>
-							<td contenteditable="true" id="partsE1" class="astrict-number"></td>
-							<td contenteditable="true">米</td>
-							<td contenteditable="true" id="partsE2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsE3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd7">
-							<td contenteditable="true" id="partsF1" >龙骨</td>
-							<td contenteditable="true" id="partsF2" class="astrict-number"></td>
-							<td contenteditable="true">根</td>
-							<td contenteditable="true" id="partsF3" class="astrict-number"></td>
-							<td contenteditable="true" id="partsF4" class="astrict-number"></td>
-						</tr>
-						<tr id="bd8">
-							<td contenteditable="true">型材拐角</td>
-							<td contenteditable="true" id="partsG1" class="astrict-number"></td>
-							<td contenteditable="true">个</td>
-							<td contenteditable="true" id="partsG2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsG3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd9">
-							<td contenteditable="true">型材接头</td>
-							<td contenteditable="true" id="partsH1" class="astrict-number"></td>
-							<td contenteditable="true">个</td>
-							<td contenteditable="true" id="partsH2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsH3" class="astrict-number"></td>
-						</tr>
-						<!--短燕尾丝
-						<tr id="bd10">
-							<td contenteditable="true">短燕尾丝</td>
-							<td contenteditable="true" id="partsI1" class="astrict-number"></td>
-							<td contenteditable="true">根</td>
-							<td contenteditable="true" id="partsI2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsI3" class="astrict-number"></td>
-						</tr>-->
-						<!--长燕尾丝
-						<tr id="bd11">
-							<td contenteditable="true">长燕尾丝</td>
-							<td contenteditable="true" id="partsJ1" class="astrict-number"></td>
-							<td contenteditable="true">根</td>
-							<td contenteditable="true" id="partsJ2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsJ3" class="astrict-number"></td>
-						</tr>-->
-						<!--插头
-						<tr id="bd12">
-							<td contenteditable="true">插头</td>
-							<td contenteditable="true" id="partsK1" class="astrict-number"></td>
-							<td contenteditable="true">个</td>
-							<td contenteditable="true" id="partsK2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsK3" class="astrict-number"></td>
-						</tr>-->
-						<!--长排线-->
-						<tr id="bd13">
-							<td contenteditable="true">长排线</td>
-							<td contenteditable="true" id="partsL1" class="astrict-number"></td>
-							<td contenteditable="true">个</td>
-							<td contenteditable="true" id="partsL2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsL3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd14">
-							<td contenteditable="true">USB延长线</td>
-							<td contenteditable="true" id="partsM1" class="astrict-number"></td>
-							<td contenteditable="true">个</td>
-							<td contenteditable="true" id="partsM2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsM3" class="astrict-number"></td>
-						</tr>
-						<tr id="bd15">
-							<td contenteditable="true">挂件膨胀丝</td>
-							<td contenteditable="true" id="partsN1" class="astrict-number"></td>
-							<td contenteditable="true">套</td>
-							<td contenteditable="true" id="partsN2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsN3" class="astrict-number"></td>
-						</tr>
-						<!--包装费
-						<tr id="bd16">
-							<td contenteditable="true">包装费</td>
-							<td contenteditable="true" id="partsO1" class="astrict-number"></td>
-							<td contenteditable="true">平</td>
-							<td contenteditable="true" id="partsO2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsO3" class="astrict-number"></td>
-						</tr>-->
-						<tr id="bd17">
-							<td contenteditable="true">组装加工费</td>
-							<td contenteditable="true" id="partsP1" class="astrict-number"></td>
-							<td contenteditable="true">平</td>
-							<td contenteditable="true" id="partsP2" class="astrict-number"></td>
-							<td contenteditable="true" id="partsP3" class="astrict-number"></td>
-						</tr>
-					</tbody>
-				</table>
-				<!--2.3.3:报价表合计-->
-				<table class="table table-bordered  " border="1">
-					<tr id="bd20">
-						<td contenteditable="true" style="width: 20%" >合计</td>
-						<td contenteditable="true" colspan="3">大写 : <span id="allDaXie"></span></td>
-						<td contenteditable="true" style="width: 20%" id="zongHeJi"></td>
-					</tr>
-				</table>
-				<p style="float: right;color:red;" id="yunfeiyejiao" contenteditable="true">此价格不包含运费/背面铝塑板，默认发物流运费到付，型材误差0.5厘米不影响防水。</p>
 
-				<!--2.3.4:报价表页脚 -->
-				<div class="table-footer" id="tableFooter">
-					<p>制单人: <input type="text"> </p>
 
-					<p class="table-footer-right">
-						<input type="text" id="group" placeholder="XXXXXX有限公司-名称可修改-空格可隐藏" style="border:0px;width:300px;"> <br>
-						<span  id="footerDate"></span>
+				<!--2.4:合同信息栏-->
+				<div class="hetong-message" id="contract-message"  style="margin-left:30px; width:100%;">
+					<!--备注栏-->
+					<div id="htbeizhu1">
+						<span style="float: right; display:block; margin:0; padding:0;">
+							<span style=" display:none; margin-left:-30px; padding:0;" id="shanchu1">X</span>
+						</span>
+						<table class="table table-bordered  " style="margin-left:-30px;" id="tbbeizhu1">
+							<tr id="beizhu1" style="line-height:100%;">
+								<td style="width: 10%;padding:0; border:0;">
+									<textarea rows="3" cols="20" style="padding:0;width:100%;height:100%;border:0;">备注</textarea>
+								</td>
+								<td style="width: 90%;padding:0; border:0;">
+										<textarea  rows="3" cols="20"  style="padding:0;width:100%;height:100%;border:0;" >输入备注内容
+										</textarea>
+
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<p>
+						<span>一、付款方式：</span><br>
+						<span>本次合同总价为<input type="text"class="message-input" placeholder="35300"  style="width:120px" id="contractNum">元,( <i id="priceDaXie">叁万伍仟叁佰元整</i> <<input type="text"class="message-input"  value="不含税" style="width:60px">>)，自合同签订之日起 <input type="text"class="message-input"  value="甲方" style="width:60px">支付<input type="text"class="message-input" placeholder="合同总金额的30%" style="width:200px"> 给<input type="text"class="message-input"  value="乙方" style="width:60px"><input type="text"class="message-input" placeholder="XXXX有限公司 ,发货前支付剩下的70%" style="width:700px">,物流<input type="text"class="message-input"  value="运费到付" style="width:150px">。</span>
 					</p>
-				</div>
-			</div>
+
+					<p>
+						<span>二、交货日期：</span><br>
+						<span>1、甲乙双方约定交货日期为收到定金后<input type="text"class="message-input" value="三" style="width:80px">个工作日内发货。</span><br>
+						<span>2、<input type="text"class="message-input" value="甲方" style="width:60px">未按本合同付款方式付款的，<input type="text"class="message-input" value="乙方" style="width:60px">交付产品的时间相应顺延。</span>
+					</p>
+
+					<p>
+						<span>三、交货方式：</span><br>
+						<span><input type="text"class="message-input"  value="甲方" style="width:60px">指定运输方式为汽运。运输费用由<input type="text"class="message-input"  value="甲方" style="width:60px">承担；<input type="text"class="message-input" value="甲方"style="width:60px">收货人姓名： <input type="text"class="message-input" placeholder="请输入甲方收货人姓名"style="width:230px">    联系电话： <input type="text"class="message-input" placeholder="请输入联系电话" style="width:180px">    收货地址: <input type="text"class="message-input"placeholder="请输入收货人地址" style="width:450px">   。货物运输安全由<input type="text"class="message-input" value="甲乙及物流公司共同承担"style="width:250px">。</span>
+					</p>
+
+					<p>
+						<span>四、验收标准及期限：</span><br>
+						<span>1、验收标准：按显示屏行业通用标准执行验收。</span><br>
+						<span>2、自<input type="text"class="message-input" value="乙方" style="width:60px">交付产品 <input type="text"class="message-input" placeholder="5" style="width:80px"> 天内，如有问题<input type="text"class="message-input" value="甲方" style="width:60px">因及时向<input type="text"class="message-input" value="乙方" style="width:60px">提出书面异议，<input type="text"class="message-input" value="甲方" style="width:60px">未按时提出书面异议的，视为产品验收合格。</span>
+
+					</p>
+					<p>
+						<span>五、售后服务：</span><br>
+						<span>1、 在免费保修期间，一切由于元器件质量原因或生产安装工艺原因引发的故障我们将无条件的免费维修，违反操作规程或国家规定的不可抗拒的外部因素除外,维修方式<input type="text"class="message-input" value="寄修" style="width:200px">。</span><br>
+						<span>2、免保期结束后，我们继续提供产品终身维修服务，服务费酌情收取。</span><br>
+						<span>3、对用户提出的维修和帮助要求给予最快的响应。</span>
+					</p>
+
+					<p>
+						<span>六、违约责任</span><br>
+						<span>1、甲方逾期付款的，每逾期一日，按应付而未付价款部分的<input type="text"class="message-input"  value="千分之一" style="width:80px">向乙方支付违约金。</span><br>
+						<span>2、乙方未按期交付设备的，每延迟<input type="text"class="message-input" value="一" style="width:80px">日。</span>按支付合同总额千分之一向甲方支付违约金。</span><br>
+						<span>3、甲方未按合同执行付款时间逾期超<input type="text"class="message-input"  value="20" style="width:80px">天,货物所有权归乙方所有，定金不退还。</span>
+					</p>
+
+					<p>
+						<span>七、争议解决</span><br>
+						<span>本合同签订和履行适用中华人民共和国法律一经签订双方必须严格履行。未尽事宜双方协商解决，协商不成应向<input type="text"class="message-input"  value="乙方" style="width:80px">住所地法院提起诉讼。</span>
+					</p>
+
+					<p>
+						<span>八、合同生效及其他</span><br>
+						<span>1、本合同经双方代表签字、加盖公章后生效。本合同一式贰份，甲方执1份，乙方执1份，具有同等法律效力。</span><br>
+						<span>2、未尽事宜，甲乙双方可签订补充协议，补充协议与本合同具有同等法律效力。</span>
+					</p>
 
 
-			<!--2.4:合同信息栏-->
-			<div class="hetong-message" id="contract-message"  style="margin-left:30px; width:100%;">
-				<!--备注栏-->
-				<div id="htbeizhu1">
-					<span style="float: right; display:block; margin:0; padding:0;">
-						<span style=" display:none; margin-left:-30px; padding:0;" id="shanchu1">X</span>
-					</span>
-					<table class="table table-bordered  " style="margin-left:-30px;" id="tbbeizhu1">
-						<tr id="beizhu1" style="line-height:100%;">
-							<td style="width: 10%;padding:0; border:0;">
-								<textarea rows="3" cols="20" style="padding:0;width:100%;height:100%;border:0;">备注</textarea>
-							</td>
-							<td style="width: 90%;padding:0; border:0;">
-									<textarea  rows="3" cols="20"  style="padding:0;width:100%;height:100%;border:0;" >输入备注内容
-									</textarea>
+					<div id="htbeizhu2" style="margin-top:30px;">
+						<span style="float: right; display:block; margin:0; padding:0;">
+							<span style=" display:none; margin-left:-30px; padding:0;" id="shanchu2">X</span>
+						</span>
+						<table class="table table-bordered  " style="margin-left:-30px;" id="tbbeizhu2">
+							<tr id="beizhu2" >
+								<td style="width: 10%;padding:0; border:0;">
+									<textarea style="padding:0;width:100%;height:100%;border:0;" >备注</textarea>
 
-							</td>
-						</tr>
-					</table>
+								</td>
+								<td style="width: 90%;padding:0; border:0;">
+										<textarea style="padding:0;width:100%;height:100%;border:0;" >输入备注内容
+										</textarea>
+								</td>
+							</tr>
+						</table>
 
-				</div>
-				<p>
-					<span>一、付款方式：</span><br>
-					<span>本次合同总价为<input type="text"class="message-input" placeholder="35300"  style="width:120px" id="contractNum">元,( <i id="priceDaXie">叁万伍仟叁佰元整</i> <<input type="text"class="message-input"  value="不含税" style="width:60px">>)，自合同签订之日起 <input type="text"class="message-input"  value="甲方" style="width:60px">支付<input type="text"class="message-input" placeholder="合同总金额的30%" style="width:200px"> 给<input type="text"class="message-input"  value="乙方" style="width:60px"><input type="text"class="message-input" placeholder="XXXX有限公司 ,发货前支付剩下的70%" style="width:700px">,物流<input type="text"class="message-input"  value="运费到付" style="width:150px">。</span>
-				</p>
-
-				<p>
-					<span>二、交货日期：</span><br>
-					<span>1、甲乙双方约定交货日期为收到定金后<input type="text"class="message-input" value="三" style="width:80px">个工作日内发货。</span><br>
-					<span>2、<input type="text"class="message-input" value="甲方" style="width:60px">未按本合同付款方式付款的，<input type="text"class="message-input" value="乙方" style="width:60px">交付产品的时间相应顺延。</span>
-				</p>
-
-				<p>
-					<span>三、交货方式：</span><br>
-					<span><input type="text"class="message-input"  value="甲方" style="width:60px">指定运输方式为汽运。运输费用由<input type="text"class="message-input"  value="甲方" style="width:60px">承担；<input type="text"class="message-input" value="甲方"style="width:60px">收货人姓名： <input type="text"class="message-input" placeholder="请输入甲方收货人姓名"style="width:230px">    联系电话： <input type="text"class="message-input" placeholder="请输入联系电话" style="width:180px">    收货地址: <input type="text"class="message-input"placeholder="请输入收货人地址" style="width:450px">   。货物运输安全由<input type="text"class="message-input" value="甲乙及物流公司共同承担"style="width:250px">。</span>
-				</p>
-
-				<p>
-					<span>四、验收标准及期限：</span><br>
-					<span>1、验收标准：按显示屏行业通用标准执行验收。</span><br>
-					<span>2、自<input type="text"class="message-input" value="乙方" style="width:60px">交付产品 <input type="text"class="message-input" placeholder="5" style="width:80px"> 天内，如有问题<input type="text"class="message-input" value="甲方" style="width:60px">因及时向<input type="text"class="message-input" value="乙方" style="width:60px">提出书面异议，<input type="text"class="message-input" value="甲方" style="width:60px">未按时提出书面异议的，视为产品验收合格。</span>
-
-				</p>
-				<p>
-					<span>五、售后服务：</span><br>
-					<span>1、 在免费保修期间，一切由于元器件质量原因或生产安装工艺原因引发的故障我们将无条件的免费维修，违反操作规程或国家规定的不可抗拒的外部因素除外,维修方式<input type="text"class="message-input" value="寄修" style="width:200px">。</span><br>
-					<span>2、免保期结束后，我们继续提供产品终身维修服务，服务费酌情收取。</span><br>
-					<span>3、对用户提出的维修和帮助要求给予最快的响应。</span>
-				</p>
-
-				<p>
-					<span>六、违约责任</span><br>
-					<span>1、甲方逾期付款的，每逾期一日，按应付而未付价款部分的<input type="text"class="message-input"  value="千分之一" style="width:80px">向乙方支付违约金。</span><br>
-					<span>2、乙方未按期交付设备的，每延迟<input type="text"class="message-input" value="一" style="width:80px">日。</span>按支付合同总额千分之一向甲方支付违约金。</span><br>
-					<span>3、甲方未按合同执行付款时间逾期超<input type="text"class="message-input"  value="20" style="width:80px">天,货物所有权归乙方所有，定金不退还。</span>
-				</p>
-
-				<p>
-					<span>七、争议解决</span><br>
-					<span>本合同签订和履行适用中华人民共和国法律一经签订双方必须严格履行。未尽事宜双方协商解决，协商不成应向<input type="text"class="message-input"  value="乙方" style="width:80px">住所地法院提起诉讼。</span>
-				</p>
-
-				<p>
-					<span>八、合同生效及其他</span><br>
-					<span>1、本合同经双方代表签字、加盖公章后生效。本合同一式贰份，甲方执1份，乙方执1份，具有同等法律效力。</span><br>
-					<span>2、未尽事宜，甲乙双方可签订补充协议，补充协议与本合同具有同等法律效力。</span>
-				</p>
-
-
-				<div id="htbeizhu2" style="margin-top:30px;">
-					<span style="float: right; display:block; margin:0; padding:0;">
-						<span style=" display:none; margin-left:-30px; padding:0;" id="shanchu2">X</span>
-					</span>
-					<table class="table table-bordered  " style="margin-left:-30px;" id="tbbeizhu2">
-						<tr id="beizhu2" >
-							<td style="width: 10%;padding:0; border:0;">
-								<textarea style="padding:0;width:100%;height:100%;border:0;" >备注</textarea>
-
-							</td>
-							<td style="width: 90%;padding:0; border:0;">
-									<textarea style="padding:0;width:100%;height:100%;border:0;" >输入备注内容
-									</textarea>
-							</td>
-						</tr>
-					</table>
-
-				</div>
-
-
-				<div class="hetong-fotter" style="margin: 50px 0px;">
-
-
-					<div>
-						<div class="warp-ht"><span>需方(甲方) :</span><input type="text"></div>
-						<div class="warp-ht"><span>供方(乙方) :</span><input type="text"></div>
 					</div>
-					<div>
-						<div class="warp-ht"><span>电 &nbsp;&nbsp;&nbsp;&nbsp;话 : </span><input type="text"></div>
-						<div class="warp-ht"><span>电 &nbsp;&nbsp;&nbsp;&nbsp;话 : </span><input type="text"></div>
-					</div>
-					<div>
-						<div class="warp-ht"><span>传 &nbsp;&nbsp;&nbsp;&nbsp;真 : </span><input type="text"></div>
-						<div class="warp-ht"><span>传 &nbsp;&nbsp;&nbsp;&nbsp;真 : </span><input type="text"></div>
-					</div>
-					<div>
-						<div class="warp-ht"><span>日 &nbsp;&nbsp;&nbsp;&nbsp;期 : </span><input type="text"></div>
-						<div class="warp-ht"><span>日 &nbsp;&nbsp;&nbsp;&nbsp;期 : </span><input type="text"></div>
+
+
+					<div class="hetong-fotter" style="margin: 50px 0px;">
+
+
+						<div>
+							<div class="warp-ht"><span>需方(甲方) :</span><input type="text"></div>
+							<div class="warp-ht"><span>供方(乙方) :</span><input type="text"></div>
+						</div>
+						<div>
+							<div class="warp-ht"><span>电 &nbsp;&nbsp;&nbsp;&nbsp;话 : </span><input type="text"></div>
+							<div class="warp-ht"><span>电 &nbsp;&nbsp;&nbsp;&nbsp;话 : </span><input type="text"></div>
+						</div>
+						<div>
+							<div class="warp-ht"><span>传 &nbsp;&nbsp;&nbsp;&nbsp;真 : </span><input type="text"></div>
+							<div class="warp-ht"><span>传 &nbsp;&nbsp;&nbsp;&nbsp;真 : </span><input type="text"></div>
+						</div>
+						<div>
+							<div class="warp-ht"><span>日 &nbsp;&nbsp;&nbsp;&nbsp;期 : </span><input type="text"></div>
+							<div class="warp-ht"><span>日 &nbsp;&nbsp;&nbsp;&nbsp;期 : </span><input type="text"></div>
+						</div>
+
+
 					</div>
 
 
 				</div>
-
-
 			</div>
 
 			<!--1.4:版权栏-->

@@ -216,6 +216,7 @@ $("#contract").click(function(){
         $(" #contract-message").show();     //合同主体显示
         $(" #yunfeiyejiao").hide();     //运费显示
         $(" #headline h2").text("购销合同");  //合同标题修改
+        $("#kebianji").attr("contenteditable","true")//给合同元素添加可编辑属性
     }else if(j%2==1){
         $(this).css({"background":"#5bbfdd"});  //按钮颜色变化
         //按钮文本变化
@@ -228,6 +229,7 @@ $("#contract").click(function(){
         $(" #contract-message").hide(); //合同主体隐藏
         $(" #yunfeiyejiao").show(); //运费隐藏
         $(" #headline h2").text(v);  //合同标题修改
+        $("#kebianji").attr("contenteditable","false")//给合同元素添加可编辑属性
     }
     j++;
 
