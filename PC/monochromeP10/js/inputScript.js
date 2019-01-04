@@ -457,53 +457,43 @@ function getLine2(){
             type = "ZH-WN";
             price = 35;
 
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").hide()
+            $("#bd14").hide();
         }else if(WM) {
             type = "ZH-WM";
             price = 46;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").hide()
+            $("#bd14").hide();
         }else if(W0){
             type = "ZH-W0";
             price = 58;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").hide()
+            $("#bd14").show();
         }else if(W1){
             type = "ZH-W1";
             price = 70;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W2){
             type = "ZH-W2";
             price = 85;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W3){
             type = "ZH-W3";
             price = 100;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W4){
             type = "ZH-W4";
             price = 118;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W5){
             type = "ZH-W5";
             price = 150;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W6){
             type = "ZH-W6";
             price = 230;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }else if(W7){
             type = "ZH-W7";
             price = 290;
-            //设定:如果是Wn卡 就去掉
-            $("#bd14").show()
+            $("#bd14").show();
         }
         else{
             type = "点数超载";
