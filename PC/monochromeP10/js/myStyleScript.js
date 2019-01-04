@@ -78,6 +78,7 @@ function getSelectsIO(){
     getLine2(); //设置控制卡型号
     getLine12();    //选择长排线
     getLine14();     //选择网线根数
+
 }
 
 // 五:选择外边框后调用方法
