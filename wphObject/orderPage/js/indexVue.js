@@ -37,7 +37,7 @@ $(function () {
                     obj.html("已跟进")
 
                     // 再循环出服务器返回来的数据
-                    for(s in sd){
+                    for(var s in sd){
                         if(sd[s].checkPerson == ""){
                             var idx = sd[s].id;
                             console.log(idx)

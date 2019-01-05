@@ -25,7 +25,7 @@
         //如果不存在则创建
         if (!file_exists($newfiles)){
             mkdir("./file/".$fileNames, 0700);
-            $tmpfname = "./file/".$fileNames."/"."index.html";    //要新建的文件名
+            $tmpfname = "./file/".$fileNames."/"."dw.html";    //要新建的文件名
 
             $handle = fopen($tmpfname, "w");
             $contents = "<!DOCTYPE html><html lang=\"en\">
@@ -52,7 +52,7 @@
 </head>
 <body>
 <div style=\"width:100%;border-bottom: 1px solid #676767;\">
-        <a href=\"../../../index.html\">
+        <a href=\"../../../dw.html\">
             <img src=\"../../../temp/img/logo/jtlogo.png \" style=\"width:auto;height:60px;margin-left:30%\">
         </a>
     </div>

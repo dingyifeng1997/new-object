@@ -115,7 +115,7 @@ $(".get-quote-calculate").click(function(){
         var height = $("#screenHeight").val();        //高度
         var contact = $("#phoneNumner").val();        //手机号码
         var dt = new Date();    //提交时间
-        var foundDate = dt.getFullYear()+"-"+dt.getMonth()+"-"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes();
+        var foundDate = dt.getFullYear()+"-"+dt.getMonth()+1+"-"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes();
         // 提交到数据库
         $.post("server/insertDatabase.php",{ scenario:scenario, address:address ,white:white,height:height ,contact:contact,foundDate:foundDate })
     }

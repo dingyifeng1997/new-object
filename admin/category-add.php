@@ -127,7 +127,7 @@ if($action == "save")
 			$source = $tempinfo->fetch($category->templets);		
 			$urlparam = array( 'name' => $categoryfilename, 'type' => 'category', 'generatehtml' => 1 );
 			$fileurl = formaturl($urlparam);
-			$cachedata->WriteFileCache(YIQIROOT."/".$fileurl.'index.html', $source, true);
+			$cachedata->WriteFileCache(YIQIROOT."/".$fileurl.'dw.html', $source, true);
 		}
         exit("分类添加成功！");
     }
