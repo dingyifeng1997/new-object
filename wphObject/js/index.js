@@ -115,7 +115,7 @@ $(".get-quote-calculate").click(function(){
             type: 1,
             title:" ",
             area: ['420px', '340px'], //宽高
-            content: '<div style="padding:20px;margin-top: 60px;text-align: center;border-radius: 10px;">' +
+            content: '<div style="padding:20px;text-align: center;border-radius: 10px;">' +
             '<span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br>' +
             '<h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4>' +
             '<p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p>' +
@@ -163,6 +163,8 @@ $(".make-an-inquiry").click(function(){
 $(".phone-bottom").focus(function(){
     $("#InquiryBottom .errorTip").hide();
 });
+
+
 
 
 

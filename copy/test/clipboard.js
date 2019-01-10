@@ -69,7 +69,7 @@ describe('Clipboard', () => {
             assert.instanceOf(clipboard.clipboardAction, ClipboardAction);
         });
 
-        it('should use an event\'s currentTarget when not equal to target', () => {
+        it('should use an event\'s.htaccess currentTarget when not equal to target', () => {
             let clipboard = new Clipboard('.btn');
             let bubbledEvent = { target: global.span, currentTarget: global.button };
 

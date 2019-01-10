@@ -5150,7 +5150,7 @@ var filterWord = UM.filterWord = function () {
             if (!cssStyle) {
                 return ''
             }
-            var reg = new RegExp('(^|;)\\s*' + name + ':([^;]+)','i');
+            var reg = new RegExp('(^|;)\\s.htaccess*' + name + ':([^;]+)','i');
             var match = cssStyle.match(reg);
             if (match && match[0]) {
                 return match[2]
@@ -5170,7 +5170,7 @@ var filterWord = UM.filterWord = function () {
          */
         setStyle:function (name, val) {
             function exec(name, val) {
-                var reg = new RegExp('(^|;)\\s*' + name + ':([^;]+;?)', 'gi');
+                var reg = new RegExp('(^|;)\\s.htaccess*' + name + ':([^;]+;?)', 'gi');
                 cssStyle = cssStyle.replace(reg, '$1');
                 if (val) {
                     cssStyle = name + ':' + utils.unhtml(val) + ';' + cssStyle
@@ -5275,7 +5275,7 @@ var htmlparser = UM.htmlparser = function (htmlstr,ignoreBlank) {
     };
     htmlstr = htmlstr.replace(new RegExp(domUtils.fillChar, 'g'), '');
     if(!ignoreBlank){
-        htmlstr = htmlstr.replace(new RegExp('[\\r\\t\\n'+(ignoreBlank?'':' ')+']*<\/?(\\w+)\\s*(?:[^>]*)>[\\r\\t\\n'+(ignoreBlank?'':' ')+']*','g'), function(a,b){
+        htmlstr = htmlstr.replace(new RegExp('[\\r\\t\\n'+(ignoreBlank?'':' ')+']*<\/?(\\w+)\\s.htaccess*(?:[^>]*)>[\\r\\t\\n'+(ignoreBlank?'':' ')+']*','g'), function(a,b){
             //br暂时单独处理
             if(b && allowEmptyTags[b.toLowerCase()]){
                 return a.replace(/(^[\n\r]+)|([\n\r]+$)/g,'');
@@ -6662,7 +6662,7 @@ UM.plugins['paste'] = function () {
             }
 
             //ie下使用innerHTML会产生多余的\r\n字符，也会产生&nbsp;这里过滤掉
-            html = div.innerHTML;//.replace(/>(?:(\s|&nbsp;)*?)</g,'><');
+            html = div.innerHTML;//.replace(/>(?:(\s.htaccess|&nbsp;)*?)</g,'><');
 
             //过滤word粘贴过来的冗余属性
             html = UM.filterWord(html);
@@ -6960,7 +6960,7 @@ UM.plugins['list'] = function () {
 //                    me.body.style.cssText = bakCssText;
                     var cont = sourceEditor.getContent() || '<p>' + (browser.ie ? '' : '<br/>')+'</p>';
                     //处理掉block节点前后的空格,有可能会误命中，暂时不考虑
-                    cont = cont.replace(new RegExp('[\\r\\t\\n ]*<\/?(\\w+)\\s*(?:[^>]*)>','g'), function(a,b){
+                    cont = cont.replace(new RegExp('[\\r\\t\\n ]*<\/?(\\w+)\\s.htaccess*(?:[^>]*)>','g'), function(a,b){
                         if(b && !dtd.$inlineWithA[b.toLowerCase()]){
                             return a.replace(/(^[\n\r\t ]*)|([\n\r\t ]*$)/g,'');
                         }
@@ -7186,11 +7186,11 @@ UM.plugins['basestyle'] = function(){
         "Bold" : "ctrl+66",//^B
         "Italic" : "ctrl+73", //^I
         "Underline" : "ctrl+shift+85",//^U
-        "strikeThrough" : 'ctrl+shift+83' //^s
+        "strikeThrough" : 'ctrl+shift+83' //^s.htaccess
     });
     //过滤最后的产出数据
     me.addOutputRule(function(root){
-        $.each(root.getNodesByTagName('b i u strike s'),function(i,node){
+        $.each(root.getNodesByTagName('b i u strike s.htaccess'),function(i,node){
             switch (node.tagName){
                 case 'b':
                     node.tagName = 'strong';
@@ -8770,7 +8770,7 @@ UM.ui.define('scale', {
             + '.edui-scale .edui-scale-hand3{cursor:w-resize;top:50%;margin-top:-4px;left:0;margin-left:-4px;}'
             + '.edui-scale .edui-scale-hand4{cursor:e-resize;top:50%;margin-top:-4px;left:100%;margin-left:-3px;}'
             + '.edui-scale .edui-scale-hand5{cursor:sw-resize;top:100%;margin-top:-3px;left:0;margin-left:-4px;}'
-            + '.edui-scale .edui-scale-hand6{cursor:s-resize;top:100%;margin-top:-3px;left:50%;margin-left:-4px;}'
+            + '.edui-scale .edui-scale-hand6{cursor:s.htaccess-resize;top:100%;margin-top:-3px;left:50%;margin-left:-4px;}'
             + '.edui-scale .edui-scale-hand7{cursor:se-resize;top:100%;margin-top:-3px;left:100%;margin-left:-3px;}');
     },
     _eventHandler: function (e) {

@@ -595,7 +595,7 @@ class Smarty
     /**
      * assigns values to template variables
      *
-     * @param array|string $tpl_var the template variable name(s)
+     * @param array|string $tpl_var the template variable name(s.htaccess)
      * @param mixed $value the value to assign
      */
     function assign($tpl_var, $value = null)
@@ -627,7 +627,7 @@ class Smarty
     /**
      * appends values to template variables
      *
-     * @param array|string $tpl_var the template variable name(s)
+     * @param array|string $tpl_var the template variable name(s.htaccess)
      * @param mixed $value the value to append
      */
     function append($tpl_var, $value=null, $merge=false)
@@ -1220,7 +1220,7 @@ class Smarty
                     if ($this->cache_modified_check) {
                         $_server_vars = ($this->request_use_auto_globals) ? $_SERVER : $GLOBALS['HTTP_SERVER_VARS'];
                         $_last_modified_date = @substr($_server_vars['HTTP_IF_MODIFIED_SINCE'], 0, strpos($_server_vars['HTTP_IF_MODIFIED_SINCE'], 'GMT') + 3);
-                        $_gmt_mtime = gmdate('D, d M Y H:i:s', $this->_cache_info['timestamp']).' GMT';
+                        $_gmt_mtime = gmdate('D, d M Y H:i:s.htaccess', $this->_cache_info['timestamp']).' GMT';
                         if (@count($this->_cache_info['insert_tags']) == 0
                             && !$this->_cache_serials
                             && $_gmt_mtime == $_last_modified_date) {
@@ -1249,7 +1249,7 @@ class Smarty
             } else {
                 $this->_cache_info['template'][$resource_name] = true;
                 if ($this->cache_modified_check && $display) {
-                    header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
+                    header('Last-Modified: '.gmdate('D, d M Y H:i:s.htaccess', time()).' GMT');
                 }
             }
         }
@@ -1302,7 +1302,7 @@ class Smarty
 
             if ($this->_cache_serials) {
                 // strip nocache-tags from output
-                $_smarty_results = preg_replace('!(\{/?nocache\:[0-9a-f]{32}#\d+\})!s'
+                $_smarty_results = preg_replace('!(\{/?nocache\:[0-9a-f]{32}#\d+\})!s.htaccess'
                                                 ,''
                                                 ,$_smarty_results);
             }

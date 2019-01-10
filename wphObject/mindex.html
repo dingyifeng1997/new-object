@@ -33,9 +33,15 @@
     <script src="positions/mobilePosition/js/LAreaData1.js"></script>
     <link rel="stylesheet" href="positions/mobilePosition/css/LArea.css">
 
+    <!--百度地图-->
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=nQAAUcgM8a3crA1enfABGDh7w0bbTodI"></script>
 
 </head>
 <body style="overflow-x: hidden">
+
+<!--百度地图标签-->
+<div id="allmap"></div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -84,7 +90,7 @@
                 <!--<span class="currCity main-color" id="address">郑州市</span></p>-->
             <div class="content-block">
             <span class="glyphicon glyphicon-map-marker" style="color:rgb(55,124,255);font-size: 16px;top: 2px;"></span>
-                <input  id="address" type="button" readonly="" placeholder="城市选择特效"  value="河南省,郑州市,郑东新区">
+                <input  id="address" type="button" readonly="" placeholder="城市选择特效"  value="">
             </div>
             <p class="input-title">使用场景</p>
             <div class="choose-pane ">
@@ -344,6 +350,7 @@
     })
 
 </script>
+
 <script>
     var area1 = new LArea();
     area1.init({
@@ -360,5 +367,37 @@
 
 </script>
 
+<!--地理定位-->
+<script>
+    function getLocation() {
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(116.331398, 39.897445);
+        // map.centerAndZoom(point,10);
+
+        var str = "";
+
+        function myFun(result) {
+            var cityName = result.name;
+            map.setCenter(cityName);
+            str = cityName;
+        }
+
+        var myCity = new BMap.LocalCity();
+        myCity.get(myFun);
+
+
+        //提示层
+        layer.msg("定位中");
+        setTimeout(function () {
+            layer.alert('当前定位城市为 ：'+str, {
+                skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+
+            })
+            $("#address").val(str);
+        }, 2000)
+
+    }
+    getLocation()
+</script>
 </body>
 </html>

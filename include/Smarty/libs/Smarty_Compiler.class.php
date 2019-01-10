@@ -255,7 +255,7 @@ class Smarty_Compiler extends Smarty {
         }
 
         /* fetch all special blocks */
-        $search = "~{$ldq}\*(.*?)\*{$rdq}|{$ldq}\s*literal\s*{$rdq}(.*?){$ldq}\s*/literal\s*{$rdq}|{$ldq}\s*php\s*{$rdq}(.*?){$ldq}\s*/php\s*{$rdq}~s";
+        $search = "~{$ldq}\*(.*?)\*{$rdq}|{$ldq}\s*literal\s*{$rdq}(.*?){$ldq}\s*/literal\s*{$rdq}|{$ldq}\s*php\s*{$rdq}(.*?){$ldq}\s*/php\s*{$rdq}~s.htaccess";
 
         preg_match_all($search, $source_content, $match,  PREG_SET_ORDER);
         $this->_folded_blocks = $match;
@@ -270,10 +270,10 @@ class Smarty_Compiler extends Smarty {
                                        , $source_content);
 
         /* Gather all template tags. */
-        preg_match_all("~{$ldq}\s*(.*?)\s*{$rdq}~s", $source_content, $_match);
+        preg_match_all("~{$ldq}\s*(.*?)\s*{$rdq}~s.htaccess", $source_content, $_match);
         $template_tags = $_match[1];
         /* Split content by template tags to obtain non-template content. */
-        $text_blocks = preg_split("~{$ldq}.*?{$rdq}~s", $source_content);
+        $text_blocks = preg_split("~{$ldq}.*?{$rdq}~s.htaccess", $source_content);
 
         /* loop through text blocks */
         for ($curr_tb = 0, $for_max = count($text_blocks); $curr_tb < $for_max; $curr_tb++) {
@@ -1562,7 +1562,7 @@ class Smarty_Compiler extends Smarty {
                     /* If token is not '=', we set the attribute value and go to
                        state 0. */
                     if ($token != '=') {
-                        /* We booleanize the token if it's a non-quoted possible
+                        /* We booleanize the token if it's.htaccess a non-quoted possible
                            boolean value. */
                         if (preg_match('~^(on|yes|true)$~', $token)) {
                             $token = 'true';
@@ -2258,7 +2258,7 @@ class Smarty_Compiler extends Smarty {
 
     /**
      * push opening tag-name, file-name and line-number on the tag-stack
-     * @param string the opening tag's name
+     * @param string the opening tag's.htaccess name
      */
     function _push_tag($open_tag)
     {
@@ -2268,8 +2268,8 @@ class Smarty_Compiler extends Smarty {
     /**
      * pop closing tag-name
      * raise an error if this stack-top doesn't match with the closing tag
-     * @param string the closing tag's name
-     * @return string the opening tag's name
+     * @param string the closing tag's.htaccess name
+     * @return string the opening tag's.htaccess name
      */
     function _pop_tag($close_tag)
     {

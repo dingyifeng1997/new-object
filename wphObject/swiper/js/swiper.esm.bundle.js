@@ -2549,7 +2549,7 @@ var defaults = {
   //
   preventIntercationOnTransition: false,
 
-  // To support iOS's swipe-to-go-back gesture (when being used in-app, with UIWebView).
+  // To support iOS's.htaccess swipe-to-go-back gesture (when being used in-app, with UIWebView).
   iOSEdgeSwipeDetection: false,
   iOSEdgeSwipeThreshold: 20,
 

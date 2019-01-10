@@ -889,18 +889,5 @@ header {
 
 }
 
-/*提交成功弹出层*/
-
-.layui-layer-title{
-    display:none;
-}
-.layui-layer-close{
-    margin:20px 20px 0 0;
-    font-size:20px;
-}
-
-/*底部获取报价窗口结束*/
-
-
 
 /*底部页脚结束*/

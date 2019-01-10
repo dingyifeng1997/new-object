@@ -104,8 +104,8 @@ $(".get-quote-calculate").click(function(){
         layer.open({
             type: 1,
             title:" ",
-            area: ['80%', '340px'], //宽高
-            content: '<div style="padding:20px;margin-top: 60px;text-align: center"><span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br><h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
+            area: ['80%', '300px'], //宽高
+            content: '<div style="padding:20px;text-align: center"><span class="layui-icon layui-icon-ok-circle" style="font-size: 80px;color: #F49F13;"></span><br><h4 style="font-size: 20px;line-height: 28px;margin: 14px 0;color: #212022;font-weight: bold;">提交成功</h4><p style="line-height: 26px;">晶泰光电客服将在3分钟内给您回电<br>免费提供装屏咨询服务</p></div>'
         });
 
         //提交到数据库

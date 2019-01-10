@@ -9,7 +9,6 @@
     <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
     <meta name="description" content="晶泰光电LED显示屏报价网是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
     <title>晶泰光电-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修,晶泰光电安装</title>
-
     <!--引入jquery-->
     <script src="js/jquery.min.js"></script>
 
@@ -18,15 +17,17 @@
     <!--引入bootstrap.js-->
     <script src="./bs/js/bootstrap.js"></script>
 
-    <!--自定义css样式需在bootstarp下方-->
     <link rel="stylesheet" href="css/index.css">
+    <script src="../layui/layui.all.js"></script>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+
+
+    <!--自定义css样式需在bootstarp下方-->
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <script src="swiper/js/swiper.js"></script>
 
-    <!--引入layUI的CSS-->
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <!--引入layUI的所有包含JS,使用jquery做依赖-->
-    <script src="./layui/layui.all.js"></script>
+
+
 
     <!--引入城市选择插件-->
     <link rel="stylesheet" href="positions/pcPosition/css/style.css">
@@ -34,9 +35,16 @@
     <script src="positions/pcPosition/js/areadata.js"></script>
     <script src="positions/pcPosition/js/auto_area.js"></script>
 
+    <!--百度地图-->
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=nQAAUcgM8a3crA1enfABGDh7w0bbTodI"></script>
+
 
 </head>
 <body>
+
+<!--百度地图标签-->
+<div id="allmap"></div>
 
 <!--nav-->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -81,14 +89,14 @@
             <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top: 5px;"></span>
 
             <!--<span class="currCity main-color" id="address">郑州市</span>-->
-            <input id="address" type="button" class="area-danxuan" value="郑州" data-value="" />
+            <input id="address" type="button" class="area-danxuan" value="" data-value=""/>
         </p>
         <p class="input-title">使用场景</p>
         <div class="choose-pane" id="screenType">
             <p class="main-color choosed-option psc" id="selectd">商业广告屏</p>
             <span class="layui-icon layui-icon-down UpDown"></span>
             <ul class="options main-color" id="usageScenario">
-                <li  v-for="m in messages">{{m.li}}</li>
+                <li v-for="m in messages">{{m.li}}</li>
             </ul>
         </div>
         <p class="input-title">屏幕面积</p>
@@ -96,26 +104,30 @@
         <div style="width: 100%;height:65px;">
             <!--屏幕高度-->
             <div class="input-pane" style="float: left;">
-                <input type="number" class="screen-high main-color" style="color: rgb(25, 105, 255);" value="4.5" id="screenHeight">
+                <input type="number" class="screen-high main-color" style="color: rgb(25, 105, 255);" value="4.5"
+                       id="screenHeight">
                 <span class="unit">m 高</span>
             </div>
             <!--乘号-->
-            <span class="layui-icon layui-icon-close" style="font-size:20px;position: relative;top: 8px;left: 12px;"></span>
+            <span class="layui-icon layui-icon-close"
+                  style="font-size:20px;position: relative;top: 8px;left: 12px;"></span>
             <!--屏幕宽度-->
             <div class="input-pane" style="float: right;">
-                <input type="number" class="screen-width main-color" style="color: rgb(25, 105, 255);" value="8" id="screenWidth">
+                <input type="number" class="screen-width main-color" style="color: rgb(25, 105, 255);" value="8"
+                       id="screenWidth">
                 <span class="unit">m 宽</span>
             </div>
         </div>
 
         <p class="input-title">联系方式</p>
-        <input type="tel" placeholder="用于接收报价的手机号" class="input-pane-lg phone main-color" maxlength="11" @focus="focus" @blur="blur" id="phoneNumner">
+        <input type="tel" placeholder="用于接收报价的手机号" class="input-pane-lg phone main-color" maxlength="11" @focus="focus"
+               @blur="blur" id="phoneNumner">
         <p class="errorTip">请输入正确的手机号</p>
         <button class="btn submit-inquiry get-quote-calculate" style="background-color: rgb(25, 105, 255);">开始计算
         </button>
         <div class="-swiper scroll-tips">
             <div class="swiper-wrapper scroll-tips-view">
-                <p  v-for="ms in messages" class="swiper-slide">{{ms.bg}}
+                <p v-for="ms in messages" class="swiper-slide">{{ms.bg}}
                     <span class="main-color">{{ms.price}}</span>元
                 </p>
             </div>
@@ -132,8 +144,8 @@
         <h5 class="sec-subtitle">专业案例展示</h5>
         <div class="cate-items" id="projectbtn">
             <span cid="0" class="item main-color-bg" @click="whole">所有</span>
-            <span cid="1" class="item"@click="indoor">室内高清屏</span>
-            <span cid="2" class="item"@click="outdoor">商业广告屏</span>
+            <span cid="1" class="item" @click="indoor">室内高清屏</span>
+            <span cid="2" class="item" @click="outdoor">商业广告屏</span>
         </div>
 
 
@@ -202,13 +214,13 @@
         <h5 class="sec-subtitle">产品质优，行业超越</h5>
         <div class="cate-items" id="productCenter">
             <span cid="0" class="item main-color-bg" @click="whole">所有</span>
-            <span cid="2" class="item"@click="smallSpacing">室内显示</span>
-            <span cid="3" class="item"@click="indoor">室外显示</span>
-            <span cid="1" class="item"@click="outdoor">小间距</span>
+            <span cid="2" class="item" @click="smallSpacing">室内显示</span>
+            <span cid="3" class="item" @click="indoor">室外显示</span>
+            <span cid="1" class="item" @click="outdoor">小间距</span>
         </div>
 
         <div class="swiper-container product-swiper">
-            <div class="swiper-wrapper"  id="productShow">
+            <div class="swiper-wrapper" id="productShow">
                 <!--使用Vue插入swiper-slide组件-->
                 <div class="swiper-slide" v-for="s in sty">
                     <img :src="s.srcs">
@@ -256,7 +268,7 @@
         <div class="col-xs-6 left-pane">
             <img src="img/logo/facePhoto.jpg" alt="头像" width="77"
                  class="user-avatar">
-            <div class="law-man">   <p>法人代表</p> <h5>张鑫</h5></div>
+            <div class="law-man"><p>法人代表</p> <h5>张鑫</h5></div>
             <div class="com-pane-3"><p>注册资金</p> <h5>1010万元</h5></div>
             <div class="com-pane-3"><p>注册时间</p> <h5>2015-09-02</h5></div>
             <div class="com-pane-3"><p>人员规模</p> <h5>40~99人</h5></div>
@@ -323,7 +335,7 @@
         <div class="cityLocation ">
             <span class="glyphicon glyphicon-map-marker" style="color:rgb(0,18,255);font-size: 20px;top:5px;"></span>
             <!--<span class="currCity-bottom" id="place">郑州市</span>-->
-            <input id="place" type="button" class="area-danxuan" value="郑州" data-value="" />
+            <input id="place" type="button" class="area-danxuan" value="郑州" data-value=""/>
             <img src="img/page/inquiry-tip.png" class="tip-img">
         </div>
         <input maxlength="11" placeholder="请输入您的手机号" class="phone-bottom" id="contact">
@@ -333,7 +345,6 @@
         <span class="errorTip">请输入正确的手机号</span>
     </div>
 </div>
-
 
 
 <!-- 生产环境版本，优化了尺寸和速度 -->
@@ -351,14 +362,50 @@
 <!--移动端和PC端跳转-->
 <script>
     //	移动端端进行判断:如果浏览器属性匹配移动端,那么就跳转到移动端,如果不是,那么就return false
-    $(document).ready(function(){
+    $(document).ready(function () {
         if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-            window.location.href="./mindex.html";
-        }else{
+            window.location.href = "./mindex.html";
+        } else {
             return false;
         }
     });
 
 </script>
+
+<!--地理定位-->
+<script>
+    function getLocation() {
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(116.331398, 39.897445);
+        // map.centerAndZoom(point,10);
+
+        var str = "";
+
+        function myFun(result) {
+            var cityName = result.name;
+            map.setCenter(cityName);
+            str = cityName;
+        }
+
+        var myCity = new BMap.LocalCity();
+        myCity.get(myFun);
+
+
+        //提示层
+        layer.msg("定位中");
+        setTimeout(function () {
+            layer.alert('当前定位城市为 ：'+str, {
+                skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+
+            })
+            $("#address").val(str);
+        }, 2000)
+    }
+
+    getLocation()
+</script>
+
+
 </body>
+
 </html>

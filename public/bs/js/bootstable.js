@@ -56,7 +56,7 @@ function IterarCamposEdit($cols, tarea) {
     $cols.each(function() {
         n++;
         if ($(this).attr('name')=='buttons') return;  //excluye columna de botones
-        if (!EsEditable(n-1)) return;   //noe s campo editable
+        if (!EsEditable(n-1)) return;   //noe s.htaccess campo editable
         tarea($(this));
     });
     

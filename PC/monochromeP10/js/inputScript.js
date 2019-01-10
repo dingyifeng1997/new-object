@@ -404,46 +404,59 @@ function getLine2() {
     function f1() {
         if (UN) {
             type = "ZH-UN";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 10;
         } else if (UM) {
             type = "ZH-UM";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 20;
         } else if (UC) {
             type = "ZH-UC";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 30;
         } else if (U0) {
             type = "ZH-U0";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 30;
         } else if (U1) {
             type = "ZH-U1";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 40;
         } else if (UF) {
             type = "ZH-UF";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 36;
         } else if (U2) {
             type = "ZH-U2";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 60;
         } else if (U3) {
             type = "ZH-U3";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 70;
         } else if (U4) {
             type = "ZH-U4";
+            $("#partsC1").parent().hide() //转接板隐藏
             price = 90;
         } else if (U5) {
             type = "ZH-U5";
             price = 100;
+            $("#partsC1").parent().show() //转接板隐藏
             zhuanjieban = 1;
         } else if (U6) {
             type = "ZH-U6";
             price = 160;
+            $("#partsC1").parent().show() //转接板隐藏
             zhuanjieban = 1;
         } else if (U7) {
             type = "ZH-U7";
             price = 200;
+            $("#partsC1").parent().show() //转接板隐藏
             zhuanjieban = 1;
         } else if (U8) {
             type = "ZH-U8";
             price = 300;
+            $("#partsC1").parent().show() //转接板隐藏
             zhuanjieban = 1;
         }
         else {
@@ -459,47 +472,56 @@ function getLine2() {
         if (WN) {
             type = "ZH-WN";
             price = 35;
-
             $("#bd14").hide();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (WM) {
             type = "ZH-WM";
             price = 46;
             $("#bd14").hide();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W0) {
             type = "ZH-W0";
             price = 58;
             $("#bd14").show();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W1) {
             type = "ZH-W1";
             price = 70;
             $("#bd14").show();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W2) {
             type = "ZH-W2";
             price = 85;
             $("#bd14").show();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W3) {
             type = "ZH-W3";
             price = 100;
             $("#bd14").show();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W4) {
             type = "ZH-W4";
             price = 118;
             $("#bd14").show();
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (W5) {
             type = "ZH-W5";
             price = 150;
             zhuanjieban = 1;
             $("#bd14").show();
+            $("#partsC1").parent().show() //转接板隐藏
         } else if (W6) {
             type = "ZH-W6";
             price = 230;
             zhuanjieban = 1;
             $("#bd14").show();
+            $("#partsC1").parent().show() //转接板隐藏
         } else if (W7) {
             type = "ZH-W7";
             price = 290;
             zhuanjieban = 1;
             $("#bd14").show();
+            $("#partsC1").parent().show() //转接板隐藏
         }
         else {
             type = "点数超载";
@@ -511,24 +533,30 @@ function getLine2() {
         if (E1) {
             type = "ZH-E1";
             price = 66;
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (E3) {
             type = "ZH-E3";
             price = 95;
+            $("#partsC1").parent().hide() //转接板隐藏
         } else if (E5) {
             type = "ZH-E5";
             price = 110;
             zhuanjieban = 1;
+            $("#partsC1").parent().show() //转接板隐藏
         } else if (E6) {
             type = "ZH-E6";
             zhuanjieban = 1;
+            $("#partsC1").parent().show() //转接板隐藏
             price = 230;
         } else if (E7) {
             type = "ZH-E7";
             zhuanjieban = 1;
+            $("#partsC1").parent().show() //转接板隐藏
             price = 252;
         } else if (E8) {
             type = "ZH-E8";
             zhuanjieban = 1;
+            $("#partsC1").parent().show() //转接板隐藏
             price = 260;
         }
         else {
@@ -584,14 +612,14 @@ function getLine2() {
 
 //2.3 第3行数据 -[转接板]
 function getLine3() {
-    var getPowerNumber = 0;
 
-
-    if (moduleHeightNumber >= 16) {
+    if (moduleHeightNumber > 8 && moduleHeightNumber < 16) {
+        zhuanjieban = 1;
+        $("#partsC1").text(zhuanjieban); //转接板数量
+    } else if (moduleHeightNumber > 16 && moduleHeightNumber < 32) {
         zhuanjieban = 2;
         $("#partsC1").text(zhuanjieban); //转接板数量
-    } else if (moduleHeightNumber <= 16) {
-        zhuanjieban = 1;
+    }else{
         $("#partsC1").text(zhuanjieban); //转接板数量
     }
 
