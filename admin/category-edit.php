@@ -121,13 +121,13 @@ if($action == "save")
 			$total = $source['totalpage'];
 			$urlparam = array( 'name' => $category->filename, 'type' => 'category', 'generatehtml' => 1, 'page'=> $curpage );
 			$fileurl = formaturl($urlparam);
-			$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'dw.html', $source['source'], true);
+			$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'index.html', $source['source'], true);			
 			while( $total > $curpage ) {
 				$curpage++;
 				$source = getcategorysource($category, $curpage);
 				$urlparam = array( 'name' => $category->filename, 'type' => 'category', 'generatehtml' => 1, 'page'=> $curpage );
 				$fileurl = formaturl($urlparam);
-				$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'dw.html', $source['source'], true);
+				$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'index.html', $source['source'], true);
 			}
 		}
         exit("分类编辑成功！");

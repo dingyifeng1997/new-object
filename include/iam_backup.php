@@ -3,7 +3,7 @@
 	 *  IAM_Backup A class for backing up an entire Database and send the dump to the browser or download it as a file
 		 *  @desc IAM_Backup A class for backing up an entire Database and send the dump to the browser or download it as a file.
 		 *  @package iam_backup
-		 *  @author     Ivï¿½n Ariel Melgrati <phpclasses@imelgrat.mailshell.com>
+		 *  @author     Iván Ariel Melgrati <phpclasses@imelgrat.mailshell.com>
 		 *  @version 1.3
 		 *
 		 *  Requires PHP v 4.0+ and MySQL 3.23+
@@ -133,7 +133,7 @@
 		 */
 		function _backup()
 		{
-			$now = gmdate( 'D, d M Y H:i:s.htaccess' ) . ' GMT';
+			$now = gmdate( 'D, d M Y H:i:s' ) . ' GMT';
 
 			$newfile .= "#------------------------------------------" . $this->newline;
 			$newfile .= "# Database Backup Class by YiQiCMS" . $this->newline;
@@ -201,7 +201,7 @@
 		}
 
 		/**
-		 * Generate the selected table's.htaccess definition
+		 * Generate the selected table's definition
 		 * @access private
 		 * @return String table definition dump
 		 * @param String $tablename Name of the table to back up
@@ -217,7 +217,7 @@
 			$result = @mysql_query( "SHOW FIELDS FROM `$tablename`" ) or die( "Table $tablename not existing in database" );
 			while ( $row = @mysql_fetch_array($result) )
 			{
-				// Updated after Carlos Carrasco's.htaccess suggestion. Thanks!
+				// Updated after Carlos Carrasco's suggestion. Thanks!
 				$def .= " `$row[Field]` $row[Type]"; // Sorround field names with quotes
 				if ( $row["Null"] != "YES" ) $def .= " NOT NULL";
 				if ( $row["Default"] != "" )
@@ -259,7 +259,7 @@
 		}
 
 		/**
-		 * Generate the selected table's.htaccess contents
+		 * Generate the selected table's contents
 		 * @access private
 		 * @return String table data as INSERT statements
 		 * @param String $tablename Name of the table to back up
@@ -324,7 +324,7 @@
 		}
 
 		/**
-		 * Define the client's.htaccess browser type
+		 * Define the client's browser type
 		 * @return String a String containing the browser type (IE, OPERA, MOZILA, etc.)
 		 * @access private
 		 */
@@ -384,7 +384,7 @@
 		function perform_backup()
 		{
 
-			$now = gmdate( 'D, d M Y H:i:s.htaccess' ) . ' GMT';
+			$now = gmdate( 'D, d M Y H:i:s' ) . ' GMT';
 			if ( $this->compress )
 			{
 				$filename = $this->dbname . ".backup";

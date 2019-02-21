@@ -47,7 +47,7 @@ if($action == "save")
                  "RewriteCond %{REQUEST_FILENAME} !-d\n".
                  "RewriteRule ^([^/_]{1,})/a_(.+)\.html$ article.php?name=$2&category=$1 [L]\n".
                  "RewriteRule ^([^/_]{1,})/p_(.+)\.html$ product.php?name=$2&category=$1 [L]\n".
-				 "RewriteRule ^admin/$ admin/dw.html [L]\n".
+				 "RewriteRule ^admin/$ admin/index.php [L]\n".
                  "RewriteRule ^([^/_]{1,})/$ category.php?name=$1 [L]\n".
 				 "RewriteRule ^([^/]{1,})_([0-9]+)/$ category.php?name=$1&p=$2 [L]\n".                 
                  "RewriteRule ^comment.html$ comment.php [L]\n".

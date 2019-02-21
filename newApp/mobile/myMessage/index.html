@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信息查看</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+    <!--引入MUI-->
+    <link rel="stylesheet" href="../../css/mui.css">
+    <script src="../../js/mui.js"></script>
+    <style>
+        #username{
+            animation: myfirst 1.5s;
+        }
+        #autograph{
+            animation: myfirst 1.5s;
+        }
+        #touxiang{
+            animation: toumingdu 1.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes myfirst {
+            0%{color: rgba(0, 0, 0, 0.1);}
+            100%{color: rgb(255, 255, 255);}
+        }
+        @keyframes toumingdu {
+            0%{opacity:0;}
+            100%{opacity:1;}
+        }
+    </style>
+
+
+</head>
+<body style="background: #fff;">
+<div id="app">
+
+    <div class="page-group">
+        <div id="page-ptr" class="page">
+
+            <div class="content pull-to-refresh-content">
+                <div style="position: relative;">
+                    <div style="position: absolute;width:80px;height:80px;border-radius: 50%;overflow: hidden;top:30px;left:30px;">
+                        <img src="imgs/timg.gif" alt="" style="width:100%;height: 100%;" id="touxiang">
+                    </div>
+                    <div style="position: absolute;top:50px;left:120px;">
+                        <p class="user-title" style="font-size:24px;color: #fff;" id="username"></p>
+                        <p style="color: #fff; " id="autograph"></p>
+                    </div>
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549792223&di=377800545ab015b99c3032590a49dbf5&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.97uimg.com%2Fback_pic%2F20%2F15%2F11%2F01%2F31b0ee74209cd8f67c004b5c42aee0ab.jpg"
+                         alt="" style="width:100%;height:130px;">
+
+                </div>
+
+                <ul class="mui-table-view" style="margin:5px 0;">
+                    <li class="mui-table-view-cell">
+                        <a href="../orderPage/message.html">
+                            我的跟单
+                            <span class="mui-icon mui-icon-forward" style="float: right;"></span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a href="information.html">
+                            资料设置
+                            <span class="mui-icon mui-icon-forward" style="float: right;"></span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell" id="addUser" style="display: none;">
+                        <a href="../orderPage/InsertUser.html">
+                            添加用户
+                            <span class="mui-icon mui-icon-forward" style="float: right;"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div style="text-align: center;margin-top:30%;padding:0 70px;">
+                    <button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" id="outLogin"
+                            style="width:100%;">退出登录
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <nav class="mui-bar mui-bar-tab">
+        <a href="../../index.html" class="mui-tab-item">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a href="../orderPage/index.html" class="mui-tab-item">
+            <span class="mui-icon mui-icon-email"></span>
+            <span class="mui-tab-label">信息</span>
+        </a>
+        <a href="#" class="mui-tab-item mui-active">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">我的</span>
+        </a>
+    </nav>
+
+</div>
+<script>
+
+
+    //设置开启tab点击
+    mui('body').on('tap', 'a', function () {
+        window.top.location.href = this.href;
+    });
+
+    //获取到登录用户的用户名
+    $.ajax({
+        type: "POST",
+        url: "../../cookies/checkCookie.php",
+        success: function (msg) {
+
+            $("#username").text(msg)
+            var loginUser = msg;
+            if (msg == "admin") {
+                $("#addUser").show()
+            } else {
+                $("#addUser").hide()
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "selectMyMessage.php",
+                data: {user:loginUser},
+                success: function (msg){
+                    //console.log(msg);
+                    var str = eval("("+msg+")");
+                    $("#autograph").html(str.autograph);
+                    $("#touxiang").attr({"src":str.imgpath});
+                }
+            });
+
+
+        }
+    });
+
+
+
+    //获取到登录用户的用户名
+
+
+
+    //退出登录按钮
+    $("#outLogin").click(function () {
+        $.ajax({
+            type: "POST",
+            url: "../../cookies/delCookie.php",
+            success: function (msg) {
+                location.href = "../../login.html";
+            }
+        });
+    })
+
+
+</script>
+<script>
+
+
+    mui.plusReady(function () {
+        //          var wvs = plus.webview.all();//获取所有的窗口
+        //        plus.webview.close(wvs[0]);//关闭欢迎页
+
+        //首页返回键处理  
+        //处理逻辑：2秒内，连续两次按返回键，则退出应用  
+        var first = null;
+        mui.back = function () {
+            if (!first) {
+                first = new Date().getTime();
+                mui.toast('再按一次退出应用');
+                setTimeout(function () {
+                    first = null;
+                }, 1000);
+            } else {
+                if (new Date().getTime() - first < 1000) {
+                    plus.runtime.quit();
+                }
+            }
+        };
+    })
+
+</script>
+
+
+</body>
+</html>

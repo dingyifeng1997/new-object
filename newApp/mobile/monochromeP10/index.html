@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!--匹配移动端-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>河南晶泰光电科技有限公司-P10单色移动端报价</title>
+
+
+		<!--bootstarp官方样式,因为引入本地的css文件会导致上传后不显示图标,所以引入官方在线文件-->
+		<link rel="stylesheet" href="../../public/bs/css/bootstrap.css">
+
+
+		<!--自定义样式css-->
+		<link rel="stylesheet" href="../../public/css/mobile.style.css">
+		<!--    引入弹出层css-->
+		<link rel="shortcut icon" href="../../layer/theme/default/layer.css">
+		<!-- 引入MUI -->
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css" />
+		<script src="../../js/mui.js"></script>
+
+		<style>
+			body{
+            padding-top:50px;
+        }
+    </style>
+
+	</head>
+	<body>
+
+		<div class="container" style="padding:0;">
+			<!--外层的div类container是为了吧所有的内容部分限制为居中-->
+			<!--导航条最外部 navbar-fixed-top 表示固定在顶部,(直接固定在顶部会使得标题被遮住,所以需要给body添加一个padding-top值)-->
+			<nav class="navbar  navbar-inverse navbar-fixed-top">
+				<!-- navbar-inverse 是整个导航条为黑色, 默认是navbar-default -->
+
+				<!--<div class="container"> &lt;!&ndash;这里再加一个div 类container是为了当导航条固定在顶部的时候,把里边的内容居中&ndash;&gt;-->
+
+				<!-- 1 . 左侧logo部分和右侧汉堡菜单部分-->
+				<div class="navbar-header">
+
+					<!--1.1 回到首页按钮-->
+					<a href="../../index.html" class="navbar-brand">首页</a> <!-- 左侧logo部分 a连接加 navbar-brand 起对齐作用 -->
+
+					<!--1.2 汉堡菜单-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!--1.3 下拉计算菜单按钮-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shuru" id="dropDown">
+						<span class="glyphicon glyphicon-menu-down" id="dropDownSpan1"></span>
+						<span class="glyphicon glyphicon-menu-up" id="dropDownSpan2" style="display: none;"></span>
+					</button>
+				</div>
+
+
+				<!-- 2 . 这里是手机端显示出来的合并区,点击汉堡按钮出现的内容,加上collapse类默认手机端是隐藏-->
+				<div class="collapse navbar-collapse" id="mynavbar" style="padding:0px;">
+					<!-- 2.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+					<ul class="nav navbar-nav" style="margin:0px; padding-left:15px;">
+						<h3 class="navbar-text navbar-right" style="margin-left: 15px;">型号选择:</h3>
+						<li>
+							<!--<a href="../m404.html">单 色 P10</a>-->
+							<a href="../monochromeP10/index.html">单 色 P10</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">单 色 3.75</a>-->
+							<a href="../monochromeP3.75/index.html">单 色 3.75</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">单 色 5.0</a>-->
+							<a href="../monochrome5.0/index.html">单 色 5.0</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">室内全彩型材</a>-->
+							<a href="../indoorColorXC/index.html">室内全彩</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">室外全彩型材</a>-->
+							<a href="../outdoorColorXC/index.html">室外全彩</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<!-- 3 .下拉计算菜单 -->
+				<div class="collapse navbar-collapse" id="shuru" style="width: 100%">
+					<!-- 3.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+					<ul class="nav navbar-nav" style="margin: 0;">
+						<h3 class="navbar-text navbar-right" style="margin-left: 15px;">输入参数:</h3>
+						<li class="active">
+							<form class="navbar-form navbar-left form-horizontal" role="search" style="color:#9c9c9c;">
+								<!--1.产品型号-->
+								<div class="form-group">
+									<label for="selectType" class="col-sm-2 control-label">型号:</label>
+									<div class="col-sm-10">
+										<select id="selectType" class="form-control">
+											<option disabled>请选择型号 :</option>
+											<option selected>P10插灯全户外红</option>
+											<option>P10插灯半户外红</option>
+											<option>P10插灯全户外白</option>
+											<option>P10插灯半户外白</option>
+											<option>P10表贴全户外红</option>
+											<option>P10表贴半户外红</option>
+											<option>P10表贴全户外白</option>
+											<option>P10表贴半户外白</option>
+											<option>P10户外双色</option>
+											<option>P10全彩走字</option>
+										</select>
+									</div>
+									<div class="warning" style="display:none;">
+										<span>未 选 择 型 号 !</span>
+									</div>
+								</div>
+
+
+								<!--2.长度输入框-->
+								<div class="form-group">
+									<label for="inputWidth" class="col-sm-2 control-label">长度:</label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" id="inputWidth" placeholder="请输入长度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');">
+									</div>
+									<div class="warning" style="display:none;">
+										<span>未 输 入 长 度 !</span>
+									</div>
+								</div>
+								<!--3.高度输入框-->
+								<div class="form-group">
+									<label for="inputHeight" class="col-sm-2 control-label">高度:</label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" id="inputHeight" placeholder="请输入高度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');">
+									</div>
+									<div class="warning" style="display:none;">
+										<span>未 输 入 高 度 !</span>
+									</div>
+								</div>
+
+
+								<!--1.2输入长度-->
+								<!--<div class="form-group">
+                                <label for="inputWidth" class="col-sm-2 control-label">长度:</label>
+                                <div class="col-sm-10">
+                                    <select  class="form-control" id="inputWidth" >
+                                    <option disabled selected>选择长度 :</option>
+                                    <option >32</option>
+                                    <option >64</option>
+                                    <option >96</option>
+                                    <option >128</option>
+                                    <option >160</option>
+                                    <option >192</option>
+                                    <option >224</option>
+                                    <option >256</option>
+                                    <option >288</option>
+                                    <option >320</option>
+                                    <option >352</option>
+                                    <option >384</option>
+                                    <option >416</option>
+                                    <option >448</option>
+                                    <option >480</option>
+                                    <option >512</option>
+                                    <option >544</option>
+                                    <option >576</option>
+                                    <option >608</option>
+                                    <option >640</option>
+                                    <option >672</option>
+                                    <option >704</option>
+                                    <option >736</option>
+                                    <option >768</option>
+                                    <option >800</option>
+                                    <option >832</option>
+                                    <option >864</option>
+                                    <option >896</option>
+                                    <option >928</option>
+                                    <option >960</option>
+                                    <option >992</option>
+                                    <option >1024</option>
+                                    <option >1056</option>
+                                    <option >1088</option>
+                                    <option >1120</option>
+                                    <option >1152</option>
+                                    <option >1184</option>
+                                    <option >1216</option>
+                                    <option >1248</option>
+                                    <option >1280</option>
+                                    <option >1312</option>
+                                    <option >1344</option>
+                                    <option >1376</option>
+                                    <option >1408</option>
+                                    <option >1440</option>
+                                    <option >1472</option>
+                                    <option >1504</option>
+                                    <option >1536</option>
+                                    <option >1568</option>
+                                    <option >1600</option>
+                                    <option >1632</option>
+                                    <option >1664</option>
+                                    <option >1696</option>
+                                    <option >1728</option>
+                                    <option >1760</option>
+                                    <option >1792</option>
+                                    <option >1824</option>
+                                    <option >1856</option>
+                                    <option >1888</option>
+                                    <option >1920</option>
+                                    <option >1952</option>
+                                    <option >1984</option>
+                                    <option >2016</option>
+                                    <option >2048</option>
+                                    <option >2080</option>
+                                    <option >2112</option>
+                                    <option >2144</option>
+                                    <option >2176</option>
+                                    <option >2208</option>
+                                    <option >2240</option>
+                                    <option >2272</option>
+                                    <option >2304</option>
+                                    <option >2336</option>
+                                    <option >2368</option>
+                                    <option >2400</option>
+                                    <option >2432</option>
+                                    <option >2464</option>
+                                    <option >2496</option>
+                                    <option >2528</option>
+                                    <option >2560</option>
+                                    <option >2592</option>
+                                    <option >2624</option>
+                                    <option >2656</option>
+                                    <option >2688</option>
+                                    <option >2720</option>
+                                    <option >2752</option>
+                                    <option >2784</option>
+                                    <option >2816</option>
+                                    <option >2848</option>
+                                    <option >2880</option>
+                                    <option >2912</option>
+                                    <option >2944</option>
+                                    <option >2976</option>
+                                    <option >3008</option>
+                                    <option >3040</option>
+                                    <option >3072</option>
+                                    <option >3104</option>
+                                    <option >3136</option>
+                                    <option >3168</option>
+                                    <option >3200</option>
+                                    <option >3232</option>
+                                    <option >3264</option>
+                                    <option >3296</option>
+                                    <option >3328</option>
+                                    <option >3360</option>
+                                    <option >3392</option>
+                                    <option >3424</option>
+                                    <option >3456</option>
+                                    <option >3488</option>
+                                    <option >3520</option>
+                                    <option >3552</option>
+                                    <option >3584</option>
+                                    <option >3616</option>
+                                    <option >3648</option>
+                                    <option >3680</option>
+                                    <option >3712</option>
+                                    <option >3744</option>
+                                    <option >3776</option>
+                                    <option >3808</option>
+                                    <option >3840</option>
+                                    <option >3872</option>
+                                    <option >3904</option>
+                                    <option >3936</option>
+                                    <option >3968</option>
+                                    <option >4000</option>
+                                    <option>4032</option>
+                                    <option>4064</option>
+                                    <option>4096</option>
+                                    <option>4128</option>
+                                    <option>4160</option>
+                                    <option>4192</option>
+                                    <option>4224</option>
+                                    <option>4256</option>
+                                    <option>4288</option>
+                                    <option>4320</option>
+                                    <option>4352</option>
+                                    <option>4384</option>
+                                    <option>4416</option>
+                                    <option>4448</option>
+                                    <option>4480</option>
+                                    <option>4512</option>
+                                    <option>4544</option>
+                                    <option>4576</option>
+                                    <option>4608</option>
+                                    <option>4640</option>
+                                    <option>4672</option>
+                                    <option>4704</option>
+                                    <option>4736</option>
+                                    <option>4768</option>
+                                    <option>4800</option>
+                                    <option>4832</option>
+                                    <option>4864</option>
+                                    <option>4896</option>
+                                    <option>4928</option>
+                                    <option>4960</option>
+                                    <option>4992</option>
+                                    <option>5024</option>
+                                    <option>5056</option>
+                                    <option>5088</option>
+                                    <option>5120</option>
+                                    <option>5152</option>
+                                    <option>5184</option>
+                                    <option>5216</option>
+                                    <option>5248</option>
+                                    <option>5280</option>
+                                    <option>5312</option>
+                                    <option>5344</option>
+                                    <option>5376</option>
+                                    <option>5408</option>
+                                    <option>5440</option>
+                                    <option>5472</option>
+                                    <option>5504</option>
+                                    <option>5536</option>
+                                    <option>5568</option>
+                                    <option>5600</option>
+                                    <option>5632</option>
+                                    <option>5664</option>
+                                    <option>5696</option>
+                                    <option>5728</option>
+                                    <option>5760</option>
+                                    <option>5792</option>
+                                    <option>5824</option>
+                                    <option>5856</option>
+                                    <option>5888</option>
+                                    <option>5920</option>
+                                    <option>5952</option>
+                                    <option>5984</option>
+                                    <option>6016</option>
+                                    <option>6048</option>
+                                    <option>6080</option>
+                                    <option>6112</option>
+                                    <option>6144</option>
+                                    <option>6176</option>
+                                    <option>6208</option>
+                                    <option>6240</option>
+                                    <option>6272</option>
+                                    <option>6304</option>
+                                    <option>6336</option>
+                                    <option>6368</option>
+                                    <option>6400</option>
+                                    <option>6432</option>
+                                    <option>6464</option>
+                                    <option>6496</option>
+                                    <option>6528</option>
+                                    <option>6560</option>
+                                    <option>6592</option>
+                                    <option>6624</option>
+                                    <option>6656</option>
+                                    <option>6688</option>
+                                    <option>6720</option>
+                                    <option>6752</option>
+                                    <option>6784</option>
+                                    <option>6816</option>
+                                    <option>6848</option>
+                                    <option>6880</option>
+                                    <option>6912</option>
+                                    <option>6944</option>
+                                    <option>6976</option>
+                                    <option>7008</option>
+                                    <option>7040</option>
+                                    <option>7072</option>
+                                    <option>7104</option>
+                                    <option>7136</option>
+                                    <option>7168</option>
+                                    <option>7200</option>
+                                    <option>7232</option>
+                                    <option>7264</option>
+                                    <option>7296</option>
+                                    <option>7328</option>
+                                    <option>7360</option>
+                                    <option>7392</option>
+                                    <option>7424</option>
+                                    <option>7456</option>
+                                    <option>7488</option>
+                                    <option>7520</option>
+                                    <option>7552</option>
+                                    <option>7584</option>
+                                    <option>7616</option>
+                                    <option>7648</option>
+                                    <option>7680</option>
+                                    <option>7712</option>
+                                    <option>7744</option>
+                                    <option>7776</option>
+                                    <option>7808</option>
+                                    <option>7840</option>
+                                    <option>7872</option>
+                                    <option>7904</option>
+                                    <option>7936</option>
+                                    <option>7968</option>
+                                    <option>8000</option>
+
+                                </select>
+                                </div>
+                            </div>
+                            <div class="warning" style="display: none;">
+                                <span >未 选 择 长 度 !</span>
+                            </div>-->
+								<!--1.3输入高度-->
+								<!--<div class="form-group">
+                                <label for="inputHeight" class="col-sm-2 control-label">高度:</label>
+                                <div class="col-sm-10">
+                                    <select  class=" form-control" id="inputHeight">
+                                    <option disabled selected>选择高度 :</option>
+                                    <option >16</option>
+                                    <option >32</option>
+                                    <option >48</option>
+                                    <option >64</option>
+                                    <option >80</option>
+                                    <option >96</option>
+                                    <option >112</option>
+                                    <option >128</option>
+                                    <option >144</option>
+                                    <option >160</option>
+                                    <option >176</option>
+                                    <option >192</option>
+                                    <option >208</option>
+                                    <option >224</option>
+                                    <option >240</option>
+                                    <option >256</option>
+                                    <option >272</option>
+                                    <option >288</option>
+                                    <option >304</option>
+                                    <option >320</option>
+                                    <option >336</option>
+                                    <option >352</option>
+                                    <option >368</option>
+                                    <option >384</option>
+                                    <option >400</option>
+                                    <option >416</option>
+                                    <option >432</option>
+                                    <option >448</option>
+                                    <option >464</option>
+                                    <option >480</option>
+                                    <option >496</option>
+                                    <option >512</option>
+                                    <option >528</option>
+                                    <option >544</option>
+                                    <option >560</option>
+                                    <option >576</option>
+                                    <option >592</option>
+                                    <option >608</option>
+                                    <option >624</option>
+                                    <option >640</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="warning" style="display: none;">
+                                <span >未 选 择 高 度 !</span>
+                            </div>-->
+
+								<!--1.4选择控制卡-->
+								<div class="form-group">
+									<label for="selectIO" class="col-sm-2 control-label">控制卡:</label>
+									<div class="col-sm-10">
+										<select class="form-control" id="selectIO">
+											<option disabled>选择控制系统 :</option>
+											<option selected>中航U盘卡</option>
+											<option>中航wifi卡</option>
+											<option>中航网口卡</option>
+											<option>灵信全彩门头异步U盘卡</option>
+											<option>灵信全彩门头同步网口卡</option>
+										</select>
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 控 制 卡 !</span>
+									</div>
+								</div>
+
+
+								<!--1.5选择型材-->
+								<div class="form-group">
+									<label for="selectBorder" class="col-sm-2 control-label">外边框:</label>
+
+									<div class="col-sm-10">
+										<select class="form-control" id="selectBorder">
+											<option disabled>选择屏幕外边框 :</option>
+											<option>9025常规型材</option>
+											<option>9035常规型材</option>
+											<option>9040常规型材</option>
+											<option selected>9045常规型材</option>
+											<option>10050常规型材</option>
+											<option>9045金型材</option>
+											<option>10050金型材</option>
+											<option>9045银型材</option>
+											<option>9060银型材</option>
+											<option>10070银型材</option>
+										</select>
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 型 材 !</span>
+									</div>
+								</div>
+
+
+
+
+								<!--编辑按钮-->
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" class="btn btn-warning  btn-block" id="copyreader">编 辑 表 单&nbsp;&nbsp;
+										<span class='glyphicon glyphicon-list-alt'></span>
+									</button>
+								</div>
+
+								<!--计算按钮-->
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" class="btn btn-success  btn-block" id="numeration">计 算 报 价&nbsp;&nbsp;&nbsp;
+										<spna class='glyphicon glyphicon-list-alt'></spna>
+									</button>
+								</div>
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" id="add" class="btn btn-primary btn-block">
+										添 加 新 行&nbsp;&nbsp;&nbsp;<spna class='glyphicon glyphicon-plus'></spna>
+									</button>
+								</div>
+
+							</form>
+						</li>
+					</ul>
+				</div>
+				<!--</div>-->
+
+			</nav>
+
+
+			<!--表格内容区域-->
+			<div class="container" style="padding:0;"  contenteditable="true">
+
+				<!--2.1:表格标题-->
+				<div class="biaoti" id="headline">
+					<h4 class="page-header" style="margin:30px 0px 0px 0px;">P10<span></span> LED显示屏报价</h4>
+					<br>
+				</div>
+
+				<!--2.3:信息栏-->
+				<div class="table-responsive" id="xinxilan">
+					<!--响应式表格-->
+					<table class="table table-bordered table-striped table-condensed">
+						<tbody class="xinxi">
+							<tr>
+								<td>单板长度</td>
+								<td>单元板长个数</td>
+								<td>显示总长度</td>
+								<td>加边框后长度</td>
+								<td>单元板长像素</td>
+								<td>显示屏长总像素</td>
+								<td>总千瓦数</td>
+							</tr>
+							<tr id="dataX">
+								<td id="dataA1"></td>
+								<td id="dataA2"></td>
+								<td id="dataA3"></td>
+								<td id="dataA4"></td>
+								<td id="dataA5"></td>
+								<td id="dataA6"></td>
+								<td id="dataA7"></td>
+							</tr>
+							<tr id="bdy">
+								<td>单板高度</td>
+								<td>单元板高个数</td>
+								<td>显示总高度</td>
+								<td>加边框后高度</td>
+								<td>单元板高像素</td>
+								<td>显示屏高总像素</td>
+								<td>总平方数㎡</td>
+							</tr>
+							<tr id="dataY">
+								<td id="dataB1"></td>
+								<td id="dataB2"></td>
+								<td id="dataB3"></td>
+								<td id="dataB4"></td>
+								<td id="dataB5"></td>
+								<td id="dataB6"></td>
+								<td id="dataB7"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--2.4:报价栏-->
+				<table class="table table-bordered table-striped table-condensed" id="mytable">
+					<tr id="bd1">
+						<td>产品名称</td>
+						<td>数量</td>
+						<td>单位</td>
+						<td>单价</td>
+						<td>总价</td>
+					</tr>
+					<tbody class="warp-tbody">
+						<tr id="bd2">
+							<td id="partsA1">单元板</td>
+							<td id="partsA2" class="astrict-number"></td>
+							<td>张</td>
+							<td id="partsA3" class="astrict-number"></td>
+							<td id="partsA4" class="astrict-number"></td>
+						</tr>
+						<tr id="bd3">
+							<td id="partsB1">控制卡</td>
+							<td id="partsB2" class="astrict-number"></td>
+							<td id="partsB3">个</td>
+							<td id="partsB4" class="astrict-number"></td>
+							<td id="partsB5" class="astrict-number"></td>
+						</tr>
+						<tr id="bd4">
+							<td>转接板</td>
+							<td id="partsC1" class="astrict-number"></td>
+							<td>张</td>
+							<td id="partsC2" class="astrict-number"></td>
+							<td id="partsC3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd5">
+							<td>电源</td>
+							<td id="partsD1" class="astrict-number"></td>
+							<td>台</td>
+							<td id="partsD2" class="astrict-number"></td>
+							<td id="partsD3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd6">
+							<td>型材</td>
+							<td id="partsE1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsE2" class="astrict-number"></td>
+							<td id="partsE3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd7">
+							<td id="partsF1">龙骨</td>
+							<td id="partsF2" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsF3" class="astrict-number"></td>
+							<td id="partsF4" class="astrict-number"></td>
+						</tr>
+						<tr id="bd8">
+							<td>型材拐角</td>
+							<td id="partsG1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsG2" class="astrict-number"></td>
+							<td id="partsG3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd9">
+							<td>型材接头</td>
+							<td id="partsH1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsH2" class="astrict-number"></td>
+							<td id="partsH3" class="astrict-number"></td>
+						</tr>
+
+						<tr id="bd10">
+							<td>短燕尾丝</td>
+							<td id="partsI1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsI2" class="astrict-number"></td>
+							<td id="partsI3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd11">
+							<td>长燕尾丝</td>
+							<td id="partsJ1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsJ2" class="astrict-number"></td>
+							<td id="partsJ3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd12">
+							<td>插头</td>
+							<td id="partsK1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsK2" class="astrict-number"></td>
+							<td id="partsK3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd13">
+							<td>长排线</td>
+							<td id="partsL1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsL2" class="astrict-number"></td>
+							<td id="partsL3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd14">
+							<td>USB延长线</td>
+							<td id="partsM1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsM2" class="astrict-number"></td>
+							<td id="partsM3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd15">
+							<td>挂件膨胀丝</td>
+							<td id="partsN1" class="astrict-number"></td>
+							<td>套</td>
+							<td id="partsN2" class="astrict-number"></td>
+							<td id="partsN3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd16">
+							<td>包装费</td>
+							<td id="partsO1" class="astrict-number"></td>
+							<td>平</td>
+							<td id="partsO2" class="astrict-number"></td>
+							<td id="partsO3" class="astrict-number"></td>
+						</tr>
+
+						<tr id="bd17">
+							<td>组装加工费</td>
+							<td id="partsP1" class="astrict-number"></td>
+							<td>平</td>
+							<td id="partsP2" class="astrict-number"></td>
+							<td id="partsP3" class="astrict-number"></td>
+						</tr>
+					</tbody>
+				</table>
+				<!--2.3.3:报价表合计-->
+				    <table class="table table-bordered ">
+				        <tr id="bd20">
+				            <td style="width: 20%" >合计</td>
+				            <td>大写 : <span id="allDaXie"></span></td>
+				            <td style="width: 18.5%" id="zongHeJi"></td>
+				        </tr>
+				    </table>
+				</div>
+				<div style="text-align:center; font-size: 12px;margin:10px 0;">
+				    <p style="margin:0;line-height:30px;">河南晶泰光电科技有限公司版权所有 ©2017-2019</p>
+				</div>
+		</div>
+	</body>
+
+	<!--jquery包-->
+	<script src="../../public/bs/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<!--    引入layer弹出层-->
+	<script src="../../layer/layer.js"></script>
+	<script type="text/javascript" src="../../public/bs/js/bootstable.js"></script>
+	<script type="text/javascript" src="../../public/bs/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="JS/myStyleScript.js"></script>
+	<script type="text/javascript" src="JS/inputScript.js"></script>
+
+	<script>
+		//客户端cookie验证
+		function getCookid() {
+			$.ajax({
+				type: "POST",
+				url: "../../cookies/checkCookie.php",
+				success: function(msg) {
+					if (msg == "") {
+						location.href = "../../login.php";
+					}
+				},
+				error: function(msg) {
+					// alert("发送失败");
+				}
+			});
+		}
+		// getCookid();
+	</script>
+</html>

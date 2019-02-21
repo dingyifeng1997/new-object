@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>文件上传页面</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+    
+    <!--引入MUI-->
+    <link rel="stylesheet" href="../../css/mui.css">
+    <script src="../../js/mui.js"></script>
+	<style>
+		.img-out{
+			/* width: 100%; */
+			height:100vw;
+			padding:15px;
+		}
+		.big-img{
+			/* width: 90%; */
+			height:100%;
+			border: 1px solid #fff;
+			opacity:0;
+			animation: myfirst 1.5s;
+			animation-fill-mode: forwards;
+            box-shadow: 5px 5px 5px #aba8a8;
+			}
+
+        @keyframes myfirst {
+            0%{opacity:0;}
+            100%{opacity:1;}
+        }
+		.input-out{
+			display:block;
+			margin-left:15px;
+			width:50px;
+			height:50px;
+			background:url('imgs/photo.jpg');
+			background-size:50px 50px;
+            overflow : hidden;
+
+		}
+        .imgInput{
+            width:100%;
+            height:100%;
+            opacity: 0
+        }
+
+	</style>
+</head>
+<body>
+	<div style="margin-bottom:80px;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">头像修改</h1>
+		</header>
+	</div>
+	
+<form action="upload.php" method="post" enctype="multipart/form-data" id="forms">
+	<div class="img-out">
+        <img src="imgs/timg.gif" class="big-img" id="touxiang">
+    </div>
+    <div class="input-out">
+        <input type="file" name="load" accept="image/*" class="imgInput" >
+    </div>
+    <div style="position:relative;top:-40px;margin-left:80px;">
+        <input type="submit" value="确定">
+    </div>
+    <input type="text" id="user" name="username" style="opacity:0">
+
+</form>
+
+<script>
+    document.addEventListener('plusready', function() {
+        var webview = plus.webview.currentWebview();
+        plus.key.addEventListener('backbutton', function() {
+            webview.canBack(function(e) {
+                if(e.canBack) {
+                    webview.back();
+                } else {
+                    webview.close(); //hide,quit
+                    //plus.runtime.quit();
+                }
+            })
+        });
+    });
+    //获取到登录用户的用户名
+    $.ajax({
+        type: "POST",
+        url: "../../cookies/checkCookie.php",
+        success: function (msg) {
+            console.log(msg);
+            $("#user").val(msg);
+        },
+        error: function (msg) {
+//	           alert("发送失败");
+        }
+    });
+
+    $(".imgInput").change(function(){
+        $(".big-img").attr("src",URL.createObjectURL($(this)[0].files[0]));
+    });
+
+
+
+
+</script>
+
+    <script>
+        //获取到登录用户的用户名
+        $.ajax({
+            type: "POST",
+            url: "../../cookies/checkCookie.php",
+            success: function (msg) {
+
+                $("#username").text(msg)
+                var loginUser = msg;
+
+                $.ajax({
+                    type: "POST",
+                    url: "selectMyMessage.php",
+                    data: {user:loginUser},
+                    success: function (msg){
+                        //console.log(msg)
+                        var str = eval("("+msg+")");
+                        $("#touxiang").attr({"src":str.imgpath});
+                    }
+                });
+
+            }
+        });
+
+		window.addEventListener("swiperight",function(){
+			window.history.go(-1);
+		});
+
+
+
+    </script>
+
+</body>
+</html>

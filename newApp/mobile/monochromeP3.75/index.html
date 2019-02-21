@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!--匹配移动端-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>河南晶泰光电科技有限公司-3.75单色移动端报价</title>
+
+
+
+		<!--bootstarp官方样式,因为引入本地的css文件会导致上传后不显示图标,所以引入官方在线文件-->
+		<link rel="stylesheet" href="../../public/bs/css/bootstrap.css">
+
+
+		<!--自定义样式css-->
+		<link rel="stylesheet" href="../../public/css/mobile.style.css">
+		<!--    引入弹出层css-->
+		<link rel="shortcut icon" href="../../layer/theme/default/layer.css">
+		<!-- 引入MUI -->
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css" />
+		<script src="../../js/mui.js"></script>
+
+		<style>
+			body{
+            padding-top:50px;
+        }
+    </style>
+
+	</head>
+	<body>
+
+		<div class="container" style="padding:0;">
+			<!--外层的div类container是为了吧所有的内容部分限制为居中-->
+			<!--导航条最外部 navbar-fixed-top 表示固定在顶部,(直接固定在顶部会使得标题被遮住,所以需要给body添加一个padding-top值)-->
+			<nav class="navbar  navbar-inverse navbar-fixed-top">
+				<!-- navbar-inverse 是整个导航条为黑色, 默认是navbar-default -->
+
+				<!--<div class="container"> &lt;!&ndash;这里再加一个div 类container是为了当导航条固定在顶部的时候,把里边的内容居中&ndash;&gt;-->
+
+				<!-- 1 . 左侧logo部分和右侧汉堡菜单部分-->
+				<div class="navbar-header">
+
+					<!--1.1 回到首页按钮-->
+					<a href="../../index.html" class="navbar-brand">首页</a> <!-- 左侧logo部分 a连接加 navbar-brand 起对齐作用 -->
+
+					<!--1.2 汉堡菜单-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!--1.3 下拉计算菜单按钮-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shuru" id="dropDown">
+						<span class="glyphicon glyphicon-menu-down" id="dropDownSpan1"></span>
+						<span class="glyphicon glyphicon-menu-up" id="dropDownSpan2" style="display: none;"></span>
+					</button>
+				</div>
+
+
+				<!-- 2 . 这里是手机端显示出来的合并区,点击汉堡按钮出现的内容,加上collapse类默认手机端是隐藏-->
+				<div class="collapse navbar-collapse" id="mynavbar" style="padding:0px;">
+					<!-- 2.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+					<ul class="nav navbar-nav" style="margin:0px; padding-left:15px;">
+						<h3 class="navbar-text navbar-right" style="margin-left: 15px;">型号选择:</h3>
+						<li>
+							<!--<a href="../m404.html">单 色 P10</a>-->
+							<a href="../monochromeP10/index.html">单 色 P10</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">单 色 3.75</a>-->
+							<a href="../monochromeP3.75/index.html">单 色 3.75</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">单 色 5.0</a>-->
+							<a href="../monochrome5.0/index.html">单 色 5.0</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">室内全彩型材</a>-->
+							<a href="../indoorColorXC/index.html">室内全彩</a>
+						</li>
+						<li>
+							<!--<a href="../m404.html">室外全彩型材</a>-->
+							<a href="../outdoorColorXC/index.html">室外全彩</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<!-- 3 .下拉计算菜单 -->
+				<div class="collapse navbar-collapse" id="shuru" style="width: 100%">
+					<!-- 3.1 这里是合并区显示的横条菜单栏,使用nav标签后边跟navbar-nav-->
+					<ul class="nav navbar-nav" style="margin: 0;">
+						<h3 class="navbar-text navbar-right" style="margin-left: 15px;">输入参数:</h3>
+						<li class="active">
+							<form class="navbar-form navbar-left form-horizontal" role="search" style="color:#9c9c9c;">
+								<!--1.产品型号-->
+								<div class="form-group">
+									<label for="selectType" class="col-sm-2 control-label">型号:</label>
+									<div class="col-sm-10">
+										<select id="selectType" class="form-control">
+											<option disabled>请选择型号 :</option>
+											<option selected>3.75单色</option>
+											<option>3.75双色</option>
+										</select>
+									</div>
+									<div class="warning" style="display:none;">
+										<span>未 选 择 型 号 !</span>
+									</div>
+								</div>
+								<!--2.长度输入框-->
+								<!--1.2输入长度-->
+								<div class="form-group">
+									<label for="inputWidth" class="col-sm-2 control-label">长度:</label>
+									<div class="col-sm-10">
+										<!--<select  class="col-sm-9 form-control" id="inputWidth"  style=" padding:0px 0px 0px 10px;">
+                                        <option disabled selected>选择长度 :</option>
+                                        <option>30.4</option>
+                                        <option>60.8</option>
+                                        <option>91.2</option>
+                                        <option>121.6</option>
+                                        <option>152</option>
+                                        <option>182.4</option>
+                                        <option>212.8</option>
+                                        <option>243.2</option>
+                                        <option>273.6</option>
+                                        <option>304</option>
+                                        <option>334.4</option>
+                                        <option>364.8</option>
+                                        <option>395.2</option>
+                                        <option>425.6</option>
+                                        <option>456</option>
+                                        <option>486.4</option>
+                                        <option>516.8</option>
+                                        <option>547.2</option>
+                                        <option>577.6</option>
+                                        <option>608</option>
+                                        <option>638.4</option>
+                                        <option>668.8</option>
+                                        <option>699.2</option>
+                                        <option>729.6</option>
+                                        <option>760</option>
+                                        <option>790.4</option>
+                                        <option>820.8</option>
+                                        <option>851.2</option>
+                                        <option>881.6</option>
+                                        <option>912</option>
+                                        <option>942.4</option>
+                                        <option>972.8</option>
+                                        <option>1003.2</option>
+                                        <option>1033.6</option>
+                                        <option>1064</option>
+                                        <option>1094.4</option>
+                                        <option>1124.8</option>
+                                        <option>1155.2</option>
+                                        <option>1185.6</option>
+                                        <option>1216</option>
+                                        <option>1246.4</option>
+                                        <option>1276.8</option>
+                                        <option>1307.2</option>
+                                        <option>1337.6</option>
+                                        <option>1368</option>
+                                        <option>1398.4</option>
+                                        <option>1428.8</option>
+                                        <option>1459.2</option>
+                                        <option>1489.6</option>
+                                        <option>1520</option>
+                                        <option>1550.4</option>
+                                        <option>1580.8</option>
+                                        <option>1611.2</option>
+                                        <option>1641.6</option>
+                                        <option>1672</option>
+                                        <option>1702.4</option>
+                                        <option>1732.8</option>
+                                        <option>1763.2</option>
+                                        <option>1793.6</option>
+                                        <option>1824</option>
+                                        <option>1854.4</option>
+                                        <option>1884.8</option>
+                                        <option>1915.2</option>
+                                        <option>1945.6</option>
+                                        <option>1976</option>
+                                        <option>2006.4</option>
+                                        <option>2036.8</option>
+                                        <option>2067.2</option>
+                                        <option>2097.6</option>
+                                        <option>2128</option>
+                                        <option>2158.4</option>
+                                        <option>2188.8</option>
+                                        <option>2219.2</option>
+                                        <option>2249.6</option>
+                                        <option>2280</option>
+                                        <option>2310.4</option>
+                                        <option>2340.8</option>
+                                        <option>2371.2</option>
+                                        <option>2401.6</option>
+                                        <option>2432</option>
+                                        <option>2462.4</option>
+                                        <option>2492.8</option>
+                                        <option>2523.2</option>
+                                        <option>2553.6</option>
+                                        <option>2584</option>
+                                        <option>2614.4</option>
+                                        <option>2644.8</option>
+                                        <option>2675.2</option>
+                                        <option>2705.6</option>
+                                        <option>2736</option>
+                                        <option>2766.4</option>
+                                        <option>2796.8</option>
+                                        <option>2827.2</option>
+                                        <option>2857.6</option>
+                                        <option>2888</option>
+                                        <option>2918.4</option>
+                                        <option>2948.8</option>
+                                        <option>2979.2</option>
+                                        <option>3009.6</option>
+                                        <option>3040</option>
+                                        <option>3070.4</option>
+                                        <option>3100.8</option>
+                                        <option>3131.2</option>
+                                        <option>3161.6</option>
+                                        <option>3192</option>
+                                        <option>3222.4</option>
+                                        <option>3252.8</option>
+                                        <option>3283.2</option>
+                                        <option>3313.6</option>
+                                    </select>-->
+										<input type="email" class="form-control" id="inputWidth" placeholder="请输入长度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');">
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 长 度 !</span>
+									</div>
+								</div>
+
+								<!--1.3输入高度-->
+								<div class="form-group">
+									<label for="inputHeight" class="col-sm-2 control-label">高度:</label>
+									<div class="col-sm-10">
+										<!--<select  class=" form-control" id="inputHeight">
+                                    <option disabled selected>选择高度 :</option>
+                                        <option>15.2</option>
+                                        <option>30.4</option>
+                                        <option>45.6</option>
+                                        <option>60.8</option>
+                                        <option>76</option>
+                                        <option>91.2</option>
+                                        <option>106.4</option>
+                                        <option>121.6</option>
+                                        <option>136.8</option>
+                                        <option>152</option>
+                                        <option>167.2</option>
+                                        <option>182.4</option>
+                                        <option>197.6</option>
+                                        <option>212.8</option>
+                                        <option>228</option>
+                                        <option>243.2</option>
+                                        <option>258.4</option>
+                                </select>-->
+										<input type="email" class="form-control" id="inputHeight" placeholder="请输入高度" onKeyUp="this.value=this.value.replace(/[^\d]/g,'');">
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 高 度 !</span>
+									</div>
+								</div>
+
+
+								<!--1.4选择控制卡-->
+								<div class="form-group">
+									<label for="selectIO" class="col-sm-2 control-label">控制卡:</label>
+									<div class="col-sm-10">
+										<select class="form-control" id="selectIO">
+											<option disabled>选择控制系统 :</option>
+											<option selected>中航U盘卡</option>
+											<option>中航wifi卡</option>
+											<option>中航网口卡</option>
+										</select>
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 控 制 卡 !</span>
+									</div>
+								</div>
+
+
+								<!--1.5选择型材-->
+								<div class="form-group">
+									<label for="selectBorder" class="col-sm-2 control-label">外边框:</label>
+
+									<div class="col-sm-10">
+										<select class="form-control" id="selectBorder">
+											<option disabled>选择屏幕外边框 :</option>
+											<option>9025常规型材</option>
+											<option>9035常规型材</option>
+											<option>9040常规型材</option>
+											<option selected>9045常规型材</option>
+											<option>10050常规型材</option>
+											<option>9045金型材</option>
+											<option>10050金型材</option>
+											<option>9045银型材</option>
+											<option>9060银型材</option>
+											<option>10070银型材</option>
+										</select>
+									</div>
+									<div class="warning" style="display: none;">
+										<span>未 选 择 型 材 !</span>
+									</div>
+								</div>
+
+
+
+
+								<!--编辑按钮-->
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" class="btn btn-warning  btn-block" id="copyreader">编 辑 表 单&nbsp;&nbsp;
+										<span class='glyphicon glyphicon-list-alt'></span>
+									</button>
+								</div>
+
+								<!--计算按钮-->
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" class="btn btn-success  btn-block" id="numeration">计 算 报 价&nbsp;&nbsp;&nbsp;
+										<spna class='glyphicon glyphicon-list-alt'></spna>
+									</button>
+								</div>
+								<div class="form-group" style="padding: 8px 15px; margin:0;">
+									<button type="button" id="add" class="btn btn-primary btn-block">
+										添 加 新 行&nbsp;&nbsp;&nbsp;<spna class='glyphicon glyphicon-plus'></spna>
+									</button>
+								</div>
+
+							</form>
+						</li>
+					</ul>
+				</div>
+				<!--</div>-->
+
+			</nav>
+
+
+			<!--表格内容区域-->
+			<div class="container" style="padding:0;"  contenteditable="true">
+
+				<!--2.1:表格标题-->
+				<div class="biaoti" id="headline">
+					<h4 class="page-header" style="margin:30px 0px 0px 0px;">3.75<span></span> LED显示屏报价</h4>
+					<br>
+				</div>
+
+				<!--2.3:信息栏-->
+				<div class="table-responsive" id="xinxilan">
+					<!--响应式表格-->
+					<table class="table table-bordered table-striped table-condensed">
+						<tbody class="xinxi">
+							<tr>
+								<td>单板长度</td>
+								<td>单元板长个数</td>
+								<td>显示总长度</td>
+								<td>加边框后长度</td>
+								<td>单元板长像素</td>
+								<td>显示屏长总像素</td>
+								<td>总千瓦数</td>
+							</tr>
+							<tr id="dataX">
+								<td id="dataA1"></td>
+								<td id="dataA2"></td>
+								<td id="dataA3"></td>
+								<td id="dataA4"></td>
+								<td id="dataA5"></td>
+								<td id="dataA6"></td>
+								<td id="dataA7"></td>
+							</tr>
+							<tr id="bdy">
+								<td>单板高度</td>
+								<td>单元板高个数</td>
+								<td>显示总高度</td>
+								<td>加边框后高度</td>
+								<td>单元板高像素</td>
+								<td>显示屏高总像素</td>
+								<td>总平方数㎡</td>
+							</tr>
+							<tr id="dataY">
+								<td id="dataB1"></td>
+								<td id="dataB2"></td>
+								<td id="dataB3"></td>
+								<td id="dataB4"></td>
+								<td id="dataB5"></td>
+								<td id="dataB6"></td>
+								<td id="dataB7"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--2.4:报价栏-->
+				<table class="table table-bordered table-striped table-condensed" id="mytable">
+					<tr id="bd1">
+						<td>产品名称</td>
+						<td>数量</td>
+						<td>单位</td>
+						<td>单价</td>
+						<td>总价</td>
+					</tr>
+					<tbody class="warp-tbody">
+						<tr id="bd2">
+							<td id="partsA1">单元板</td>
+							<td id="partsA2" class="astrict-number"></td>
+							<td>张</td>
+							<td id="partsA3" class="astrict-number"></td>
+							<td id="partsA4" class="astrict-number"></td>
+						</tr>
+						<tr id="bd3">
+							<td id="partsB1">控制卡</td>
+							<td id="partsB2" class="astrict-number"></td>
+							<td id="partsB3">个</td>
+							<td id="partsB4" class="astrict-number"></td>
+							<td id="partsB5" class="astrict-number"></td>
+						</tr>
+						<tr id="bd4">
+							<td>转接板</td>
+							<td id="partsC1" class="astrict-number"></td>
+							<td>张</td>
+							<td id="partsC2" class="astrict-number"></td>
+							<td id="partsC3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd5">
+							<td>电源</td>
+							<td id="partsD1" class="astrict-number"></td>
+							<td>台</td>
+							<td id="partsD2" class="astrict-number"></td>
+							<td id="partsD3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd6">
+							<td>型材</td>
+							<td id="partsE1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsE2" class="astrict-number"></td>
+							<td id="partsE3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd7">
+							<td id="partsF1">龙骨</td>
+							<td id="partsF2" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsF3" class="astrict-number"></td>
+							<td id="partsF4" class="astrict-number"></td>
+						</tr>
+						<tr id="bd8">
+							<td>型材拐角</td>
+							<td id="partsG1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsG2" class="astrict-number"></td>
+							<td id="partsG3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd9">
+							<td>型材接头</td>
+							<td id="partsH1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsH2" class="astrict-number"></td>
+							<td id="partsH3" class="astrict-number"></td>
+						</tr>
+
+						<tr id="bd10">
+							<td>短燕尾丝</td>
+							<td id="partsI1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsI2" class="astrict-number"></td>
+							<td id="partsI3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd11">
+							<td>长燕尾丝</td>
+							<td id="partsJ1" class="astrict-number"></td>
+							<td>根</td>
+							<td id="partsJ2" class="astrict-number"></td>
+							<td id="partsJ3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd12">
+							<td>插头</td>
+							<td id="partsK1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsK2" class="astrict-number"></td>
+							<td id="partsK3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd13">
+							<td>长排线</td>
+							<td id="partsL1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsL2" class="astrict-number"></td>
+							<td id="partsL3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd14">
+							<td>USB延长线</td>
+							<td id="partsM1" class="astrict-number"></td>
+							<td>个</td>
+							<td id="partsM2" class="astrict-number"></td>
+							<td id="partsM3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd15">
+							<td>挂件膨胀丝</td>
+							<td id="partsN1" class="astrict-number"></td>
+							<td>平</td>
+							<td id="partsN2" class="astrict-number"></td>
+							<td id="partsN3" class="astrict-number"></td>
+						</tr>
+						<tr id="bd16">
+							<td>包装费</td>
+							<td id="partsO1" class="astrict-number"></td>
+							<td>平</td>
+							<td id="partsO2" class="astrict-number"></td>
+							<td id="partsO3" class="astrict-number"></td>
+						</tr>
+
+						<tr id="bd17">
+							<td>组装加工费</td>
+							<td id="partsP1" class="astrict-number"></td>
+							<td>平</td>
+							<td id="partsP2" class="astrict-number"></td>
+							<td id="partsP3" class="astrict-number"></td>
+						</tr>
+					</tbody>
+				</table>
+				<!--2.3.3:报价表合计-->
+				<table class="table table-bordered ">
+					<tr id="bd20">
+						<td style="width: 20%">合计</td>
+						<td>大写 : <span id="allDaXie"></span></td>
+						<td style="width: 18.5%" id="zongHeJi"></td>
+					</tr>
+				</table>
+			</div>
+			<div style="text-align:center; font-size: 12px;margin:10px 0;">
+				<p style="margin:0;line-height:30px;">河南晶泰光电科技有限公司版权所有 ©2017-2019</p>
+			</div>
+	</body>
+
+	<!--jquery包-->
+	<script src="../../public/bs/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<!--    引入layer弹出层-->
+	<script src="../../layer/layer.js"></script>
+	<script type="text/javascript" src="../../public/bs/js/bootstable.js"></script>
+	<script type="text/javascript" src="../../public/bs/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="JS/myStyleScript.js"></script>
+	<script type="text/javascript" src="JS/inputScript.js"></script>
+
+	<script>
+		//客户端cookie验证
+		function getCookid() {
+			$.ajax({
+				type: "POST",
+				url: "../../cookies/checkCookie.php",
+				success: function(msg) {
+					if (msg == "") {
+						location.href = "../../login.php";
+					}
+				},
+				error: function(msg) {
+					// alert("发送失败");
+				}
+			});
+		}
+		// getCookid();
+	</script>
+</html>

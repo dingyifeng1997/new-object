@@ -24,7 +24,7 @@ if($action=="save")
         $userinfo = $userdata->GetUserByName($username);
         session_start();
         $_SESSION["adminid"] = $userinfo->uid;
-        header("location:dw.html");
+        header("location:index.php");
     }
     else
     {

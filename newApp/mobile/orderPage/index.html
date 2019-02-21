@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>信息查看</title>
+
+		<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+		<!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+		<!--引入MUI-->
+		<link rel="stylesheet" href="../../css/mui.css">
+		<script src="../../js/mui.js"></script>
+
+		<link rel="stylesheet" href="styles.css">
+	</head>
+<body>
+
+	<div class="page-group">
+		<div id="page-ptr" class="page">
+			<header class="mui-bar mui-bar-nav">
+				<h1 class="mui-title">客户信息</h1>
+			</header>
+			<div class="content pull-to-refresh-content">
+
+				<!-- 左侧客户信息 -->
+				<div class="card-container" id="userinfo">
+
+
+
+					<div class="card" v-cloak v-for="ms in messages">
+						<div class="card-header">
+							<b class="topTitle">{{ms.scenario}}</b>
+							<button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal" :cid="ms.id">获取电话号码</button>
+						</div>
+						<div class="card-content">
+							<div class="card-content-inner">
+								<div class="">
+                                    <span>位 置</span><b>{{ms.address}}</b><br>
+                                </div>
+								<span>屏 宽</span><b>{{ms.white}}</b><br>
+								<span>屏 高</span><b>{{ms.height}}</b><br>
+								<span>时 间</span><b>{{ms.foundDate}}</b><br>
+								<div class="defaultHide">
+									<span>电 话</span><b><a :href="'tel:'+ms.contact">{{ms.contact}}</a> </b><br>
+								</div>
+								<div class="whether-follow-up">
+									<span>是否跟进</span><b>{{ms.checkPerson}}</b><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<nav class="mui-bar mui-bar-tab">
+		<a href="../../index.html" class="mui-tab-item">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a href="./index.html" class="mui-tab-item  mui-active" >
+			<span class="mui-icon mui-icon-email"></span>
+			<span class="mui-tab-label">信息</span>
+		</a>
+		<a href="../myMessage/index.html" class="mui-tab-item">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+
+
+    <script>
+        //设置开启tab点击
+        mui('body').on('tap','a',function(){
+            window.top.location.href=this.href;
+        });
+		
+		
+		//设置返回键2次按下直接退出应用
+				mui.plusReady(function(){
+					//          var wvs = plus.webview.all();//获取所有的窗口
+					//        plus.webview.close(wvs[0]);//关闭欢迎页
+		
+				    //首页返回键处理  
+		            //处理逻辑：2秒内，连续两次按返回键，则退出应用  
+		            var first = null;  
+		            mui.back=function(){
+		            if(!first){  
+		                    first = new Date().getTime();  
+		                    mui.toast('再按一次退出应用');  
+		                    setTimeout(function(){  
+		                        first = null;  
+		                    },1000);  
+		                } else {  
+		                    if(new Date().getTime() - first < 1000){  
+		                        plus.runtime.quit();  
+		                    }  
+		                }  
+		            };
+				})
+			
+    </script>
+	<!--<script src="js/indexVue.js"></script>-->
+	<script src="js/index.js"></script>
+	<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+
+
+
+</body>
+</html>

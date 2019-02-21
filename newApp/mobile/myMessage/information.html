@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人资料</title>
+<meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+		<!--引入MUI-->
+		<link rel="stylesheet" href="../../css/mui.css">
+		<script src="../../js/mui.js"></script>
+		
+		<style>
+			.img-out{
+				 width:60px;
+				 height:60px;
+				 border-radius:50%;
+				 overflow:hidden;
+				 display: inline-block;
+			}
+
+			#username{
+				animation: myfirst 1.5s;
+				animation-fill-mode: forwards;
+
+			}
+			#autograph{
+				animation: myfirst 1.5s;
+				animation-fill-mode: forwards;
+
+			}
+			#touxiang{
+				animation: toumingdu 1.5s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes myfirst {
+				0%{color: rgba(0, 0, 0, 0.1);}
+				100%{color: rgb(0,0,0);}
+			}
+			@keyframes toumingdu{
+				0%{opacity:0;}
+				100%{opacity:1;}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人资料</h1>
+		</header>
+
+
+		<div style="margin-top:55px;">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="heads.html">
+						<div class="img-out">
+							<img src="imgs/timg.gif" alt=""  style="width:100%;height:100%;" id="touxiang">
+						</div>
+						<span style="float: right;line-height:65px;margin-right:50px;">上传头像</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="username/index.html">
+						昵称
+						<span style="float: right;margin-right:50px;"  id="username">****</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="autographs/index.html">
+						签名
+						<span style="width:150px;float: right; margin-right: 50px;overflow: hidden;"  id="autograph">****************</span>
+					</a>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="passwords/index.html">
+						密码
+						<span style="float: right;margin-right:50px;">修改密码</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+            //获取到登录用户的用户名
+            $.ajax({
+                type: "POST",
+                url: "../../cookies/checkCookie.php",
+                success: function (msg) {
+
+                    $("#username").text(msg)
+                    var loginUser = msg;
+
+                    $.ajax({
+                        type: "POST",
+                        url: "selectMyMessage.php",
+                        data: {user:loginUser},
+                        success: function (msg){
+                            //console.log(msg)
+                            var str = eval("("+msg+")");
+                            $("#username").html(str.username);
+                            $("#autograph").html(str.autograph);
+                            $("#touxiang").attr({"src":str.imgpath});
+                        }
+                    });
+
+                }
+            });
+			window.addEventListener("swiperight",function(){
+				window.history.go(-1);
+			});
+		</script>
+	</body>
+</html>

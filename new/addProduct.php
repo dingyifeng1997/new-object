@@ -26,7 +26,7 @@ function newfile($fileNames, $name, $content, $adddate, $seokeywords, $seodescri
     //如果不存在则创建
     if (!file_exists($newfiles)) {
         mkdir("./product/" . $fileNames, 0700);
-        $tmpfname = "./product/" . $fileNames . "/" . "dw.html";    //要新建的文件名
+        $tmpfname = "./product/" . $fileNames . "/" . "index.html";    //要新建的文件名
 
         $handle = fopen($tmpfname, "w");
         $contents = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">
@@ -73,13 +73,13 @@ function newfile($fileNames, $name, $content, $adddate, $seokeywords, $seodescri
                         <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span>
                     </button>
                     <div style=\"width:200px;\">
-                        <a href=\"../../../dw.html\"><img src=\"../../../temp/img/logo/jtlogo.png \" style=\"width:100%;\"></a>
+                        <a href=\"../../../index.html\"><img src=\"../../../temp/img/logo/jtlogo.png \" style=\"width:100%;\"></a>
                     </div>
                 </div>
                 <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
                     <ul class=\"nav navbar-nav navbar-right\">
                         <li>
-                            <a href=\"../../../../dw.html\">首页</a>
+                            <a href=\"../../../../index.html\">首页</a>
                         </li>
                         <li>
                             <a href=\"../../../temp/about_us.html\">关于我们</a>
@@ -97,7 +97,7 @@ function newfile($fileNames, $name, $content, $adddate, $seokeywords, $seodescri
                             <a href=\"../../../temp/contactus.html\">联系我们</a>
                         </li>
                         <li>
-                            <a href=\"../../../wphObject/dw.html\">定制屏幕</a>
+                            <a href=\"../../../wphObject/index.html\">定制屏幕</a>
                         </li>
                         <li>
                             <a href=\"../../../wphObject/orderPage/login.html\">Message</a>

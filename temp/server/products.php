@@ -30,7 +30,6 @@ function select(){
     $zhixing = mysqli_query($conn,$sql);
     $str = "";
     while($rows = @mysqli_fetch_row($zhixing)){
-//        { "name":"菜鸟教程" , "url":"www.runoob.com" }
         $str.= "{'"."pid':'"."{$rows[0]}"."','"."name':'"."{$rows[1]}"."','"."cid':'"."{$rows[2]}"."','"."content':'"."{$rows[3]}"."','"."adddate':'"."{$rows[4]}"."','"."thumb':'"."{$rows[5]}"."','"."seodescription':'"."{$rows[6]}"."'"."},";
     }
     $nums = substr($str, 0, -1); //将拼接好的字符串最后一个 , 逗号去掉

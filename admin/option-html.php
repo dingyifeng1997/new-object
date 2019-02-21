@@ -46,7 +46,7 @@ switch($gt) {
 		chmod(YIQIROOT."/",0777);
 		$htmlmsg = "正在生成 首页...";
 		$source = $tempinfo->fetch("index.tpl");
-		$cachedata->WriteFileCache(YIQIROOT.'/'.'dw.html', $source, true);
+		$cachedata->WriteFileCache(YIQIROOT.'/'.'index.html', $source, true);
 		if ( $all == "true" )
 			redirect("?all=true&gt=article");
 		else 
@@ -137,7 +137,7 @@ switch($gt) {
 
 			$urlparam = array( 'name' => $category->filename, 'type' => 'category', 'generatehtml' => 1, 'page'=> $curpage );
 			$fileurl = formaturl($urlparam);
-			$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'dw.html', $source['source'], true);
+			$cachedata->WriteFileCache(YIQIROOT.'/'.$fileurl.'index.html', $source['source'], true);
 			if( $total > $curpage ) {
 				$curpage = ($curpage+1);
 				$nextlink = "?".$alltrue."gt=category&ids=".$ids."&page=".$curpage;

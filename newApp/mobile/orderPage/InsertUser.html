@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信息查看</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>-->
+    <!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!--引入bootstrap-->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--引入MUI-->
+    <link rel="stylesheet" href="../../css/mui.css">
+    <script src="../../js/mui.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .conten{
+            animation: myfirst 2s;
+        }
+        @keyframes myfirst
+        {
+            0%{color: rgba(0, 0, 0, 0.1);}
+            100%{color: rgba(0, 0, 0, 1);}
+        }
+    </style>
+</head>
+<body>
+
+<!-- 主界面菜单同时移动 -->
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+    <!-- 主页面容器 -->
+    <div class="mui-inner-wrap">
+        <!-- 菜单容器 -->
+        <aside class="mui-off-canvas-right" id="offCanvasSide">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- 菜单具体展示内容 -->
+					<div style="width:100%;text-align: center;margin:30px 0;">
+						<p style="font-size:24px;">添加新用户</p>
+					</div>
+					<form class="mui-input-group" style="background:none;color: #fff;">
+						<div class="mui-input-row">
+							<label>用户名</label>
+						<input type="text" id="username" class="mui-input-clear" placeholder="请输入用户名">
+						</div>
+						<div class="mui-input-row">
+							<label>密码</label>
+							<input type="password" id="password" class="mui-input-password" placeholder="请输入密码">
+						</div>
+						<div class="mui-button-row">
+							<button type="button" class="mui-btn mui-btn-primary" id="addUsers">确认</button>
+						</div>
+					</form>
+					
+                </div>
+            </div>
+        </aside>
+        <!-- 主页面标题 -->
+        <header class="mui-bar mui-bar-nav">
+            <a href="../myMessage/index.html" class="mui-pull-left">
+                <span class="mui-icon mui-icon-back"> </span>
+            </a>
+            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide"></a>
+            <h1 class="mui-title">标题</h1>
+        </header>
+        <!-- 主页面内容容器 -->
+        <div class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主界面具体展示内容 -->
+
+                <div id="app">
+                    <div class="page-group">
+                        <div id="page-ptr" class="page">
+                            <div style="margin-top:10px;" v-cloak class="conten">
+                                <table class="table">
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>用户名</td>
+                                        <td>密码</td>
+                                        <td>注册时间</td>
+                                        <td>删除</td>
+                                    </tr>
+                                    <tr  v-for="(item,index) in dt">
+                                        <td>{{index+1}}</td>
+                                        <td>{{item.username}}</td>
+                                        <td>{{item.password}}</td>
+                                        <td>{{item.time}}</td>
+                                        <td>
+                                            <button @click="delUser(item.id)">删除</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>
+
+<script>
+    //设置开启tab点击
+    mui('body').on('tap', 'a', function () {
+        window.top.location.href = this.href;
+    });
+
+
+    $.ajax({
+        type: "POST",
+        url: "server/selectUser.php",
+        success: function (msg) {
+            datas = eval("("+msg+")");
+            new Vue({
+                el: "#app",
+                data(){
+                    return {
+                        dt:datas,
+                    }
+                },
+                methods:{
+                    delUser(index){
+                        $.ajax({
+                            type: "POST",
+                            url: "server/delUser.php",
+                            data:{delId:index},
+                            success: function (msg) {
+                                alert(msg)
+                                window.location.reload()
+                            },
+                            error: function (msg) {
+//                            alert("发送失败");
+                            }
+                        });
+                    }
+                }
+            })
+        },
+        error: function (msg) {
+            // alert("发送失败");
+        }
+    });
+
+
+
+	$("#addUsers").click(function(){
+		//账号和密码
+		var username = $("#username").val();
+		var password = $("#password").val();
+		
+		//注册时间
+		var str = new Date();
+		var shijian = str.getFullYear()+"-"+(str.getMonth()+1)+"-"+str.getDate();
+		 
+		
+		if(username != " "&&username != ""&&password != " "&&password != ""){
+			$.ajax({
+			    type: "POST",
+			    url: "server/addUser.php",
+				data:{user:username,pass:password,times:shijian},
+			    success: function (msg) {
+                    location.reload();
+			        console.log(msg)
+			    },
+			    error: function (msg) {
+			        // alert("发送失败");
+			    }
+			});
+		}else{
+			alert("输入账号或密码格式不正确")
+		}
+	})
+
+	window.addEventListener("swiperight",function(){
+		window.history.go(-1);
+	});
+    
+</script>
+
+
+</body>
+</html>

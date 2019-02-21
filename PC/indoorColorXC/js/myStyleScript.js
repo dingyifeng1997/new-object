@@ -69,6 +69,22 @@ $("#selectIO").click(function(){
     getSelectsIO()
     selects()   //判断是否选择
 });
+    //自定义控制卡后再次调用方法
+$("#receiverCardWidth").change(function(){
+    getSelectsIO()
+    selects()   //判断是否选择
+});
+$("#receiverCardHeight").change(function(){
+    getSelectsIO()
+    selects()   //判断是否选择
+});
+    //自定义电源后再次调用方法
+$("#PowerSupplyLoad").change(function(){
+    getDataList();
+    selects()   //判断是否选择
+});
+
+
 function getSelectsIO(){
     getLine4(); //设置发送卡
     getLine5(); //设置接收卡
@@ -118,14 +134,14 @@ $("#submitNumeration").click(function(){
 
 //提交计算的时候判断选择和输入是否为空
 function inputAndSelect(){
-    $(".form-horizontal select").each(function(){
+    $(".form-horizontal>select").each(function(){
         if($(this).val() == null){
             $(this).parent().next().children("span").css({"display":"block"});
             alert($(this).parent().next().children("span").text())
         }
     })
 
-    $(".form-horizontal input").each(function(){
+    $(".form-horizontal>input").each(function(){
         if($(this).val() == ""){
             $(this).parent().parent().next().children("span").css({"display":"block"});
             alert($(this).parent().parent().next().children("span").text());
@@ -157,17 +173,25 @@ function onlyNumber(){
 
 //对所有的单价和数量再次进行求和
 function getSum(){
-    summation = 0;
-    $(" #mytable .warp-tbody").children("tr").each(function(){
-        num = $(this).children("td").eq(1).text();    //数量
-        prace = $(this).children("td").eq(3).text();    //单价
-        $(this).children("td").eq(4).text(accMul(num,prace));
-        summation += accMul(num,prace);
-    })
-    $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
-    $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
-    layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6,shadeClose:true});  //弹出每平方价格
 
+
+    //先判断是否可以请求到sum.php,如果请求不到代表是本地保存文件,则不进行计算
+    $.ajax({
+        type: "post",
+        url: "../sum.php",
+        success: function(data) {
+            summation = 0;
+            $(" #mytable .warp-tbody").children("tr").each(function(){
+                num = $(this).children("td").eq(1).text();    //数量
+                prace = $(this).children("td").eq(3).text();    //单价
+                $(this).children("td").eq(4).text(accMul(num,prace));
+                summation += accMul(num,prace);
+            })
+            $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
+            $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
+            layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6,shadeClose:true});  //弹出每平方价格
+        }
+    })
 }
 
 // alert(1);
@@ -277,6 +301,22 @@ $("#outPutWord").click(function(){
     // 设置文件名
     pids.download =  Math.random().toString(36).substr(2)+".doc";
 });
+
+// 十四:选中自定义参数时现实对应单元行
+$(".checked").click(function(){
+    var thisIndex = $(this).index();
+    if($(this).find("input").is(":checked") == true){
+        $(".d"+thisIndex).show();
+    }else{
+        $(".d"+thisIndex).hide();
+    }
+});
+
+
+
+
+
+
 
 //合同区域变为大写
 $("#contractNum").blur(function() {

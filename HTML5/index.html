@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传页面</title>
+    　　
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<h1>文件上传</h1>
+<hr>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="load" accept="image/*">
+    <br>
+    <input type="submit" value="上传">
+</form>
+
+
+<!--<input type="file" name="load" accept="image/*" id="files">-->
+<!--<input type="submit" value="上传" id="upLoad">-->
+
+<!--
+
+<script>
+    var fil = $("#files").val();
+
+    $("#upLoad").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "upload.php",
+            processData : false,
+            contentType : false,
+            async:false,
+            data:{load:fil},
+            success: function(msg){
+                alert(msg );
+            }
+        });
+    })
+</script>
+
+
+-->
+
+</body>
+</html>

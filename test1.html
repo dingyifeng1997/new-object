@@ -1,91 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
 
+        /*单行文本*/
+        .multiLineText      {
+            width:300px;
+            overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            border: 1px solid #000;
+        }
+
+        /*多行文本*/
+        .multiLineTexts {                   /*设置文本为多行，如果超出长度用省略号代替*/
+            width: 200px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;         /*限制在一个块元素显示的文本的行数*/
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+
+    </style>
 </head>
 <body>
 
+    <h1>测试单行文本:</h1>
+    <div class="multiLineText">
+        text-overflow: ellipsis可以用来多行文本的情况下，用省略号隐藏超出范围的文本 ；
+        white-space: nowrap规定段落中的文本不进行换行;
+        -webkit-box-orient：vertical限制在一个块元素显示的文本的行数
+    </div>
+
+    <h1>测试两行或者两行以上的文本:</h1>
+    <div class="multiLineTexts">
+        text-overflow: ellipsis可以用来多行文本的情况下，用省略号隐藏超出范围的文本 ；
+        white-space: nowrap规定段落中的文本不进行换行;
+        -webkit-box-orient：vertical限制在一个块元素显示的文本的行数
+    </div>
+
+    <div class="shangqiao">
+        点击
+    </div>
+
+    <a href="http://p.qiao.baidu.com/cps/chat?siteId=12039318&userId=25361609&cp=http%3A%2F%2Fwww.98china.cn&cr=http%3A%2F%2Fwww.98china.cn&cw=http%3A%2F%2Fwww.98china.cn" target="_blank">点击咨询</a>
 <script>
-    /***
-     *
-     * @param Digits 位数
-     * @param type 生成类型
-     * 类型1  数字大小写字母全类型 使用数字1表示
-     * 类型2  数字类型  使用数字2表示
-     * 类型3  小写类型 使用数字3表示
-     * 类型4  大写类型 使用数字4表示
-     * 类型5  数字+小写类型 使用数字5表示
-     * 类型6  数字+大写类型 使用数字6表示
-     * 类型7  小写+大写类型 使用数字7表示
-     * return 随机数
-     */
-    function randomWord(Digits,type){
-        var str = "";
-        //类型1 数字大小写字母全类型 使用数字1表示
-        var arr1 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-        //类型2  数字类型  使用数字2表示
-        var arr2 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-        //类型3  小写类型 使用数字3表示
-        var arr3 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        //类型4  大写类型 使用数字4表示
-        var arr4 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-        //类型5  数字+小写类型 使用数字5表示
-        var arr5 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        //类型6  数字+大写类型 使用数字6表示
-        var arr6 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-        //类型7  小写+大写类型 使用数字7表示
-        var arr7 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?eab6b18cfa1322a9f229799562e8a65e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 
-        var tp = 0;
-        switch (type){
-            case 1:
-                tp = arr1;
-                break;
-            case 2:
-                tp = arr2;
-                break;
-            case 3:
-                tp = arr3;
-                break;
-            case 4:
-                tp = arr4;
-                break;
-            case 5:
-                tp = arr5;
-                break;
-            case 6:
-                tp = arr6;
-                break;
-            case 7:
-                tp = arr7;
-                break;
-        }
 
-        var sarr = [];  //创建一个用于存放随机数值的数组
-        var strs = "";  //创建一个用于存放字符串的数组
-
-        for (var i = 0;i<Digits;i++){
-            var num = Math.floor(Math.random() * (tp.length));
-            for (var s = 0;s<sarr.length;s++){
-                //循环查找数组中的元素,如果获取的随机数和上一个随机数相等,就重新再做一次随机,直到没有重复数字
-                if(num === sarr[s]){
-                    num = Math.floor(Math.random() * (tp.length));
-                }
-            }
-            sarr.push(num); //给数组中压入一个元素
-            //console.log(num);          // 可注释
-            strs+=tp[num];  //将随机数匹配后添加到字符串内
-        }
-        //console.log(sarr);         // 可注释
-        console.log("最终取得的随机数为 : "+strs);       // 可注释
-        return strs;
-    }
-
-    alert(randomWord(4,2));
-
+    //点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
+    $(".shangqiao").click(function(event) {
+        window.open("http://p.qiao.baidu.com/cps/chat?siteId=12039318&userId=25361609&cp=http%3A%2F%2Fwww.98china.cn%2Ftest1.html&cr=http%3A%2F%2Fwww.98china.cn%2Ftest1.html&cw=http%3A%2F%2Fwww.98china.cn")
+    });
 </script>
 </body>
 </html>

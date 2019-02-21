@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+
+    <script type="text/javascript" charset="utf-8">
+        mui.init({});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script type="text/javascript">
+
+       document.addEventListener('plusready',function(){
+             plus.navigator.setStatusBarBackground("#000");
+        },false);
+		
+    </script>
+
+</head>
+<body>
+
+
+<div style="margin-bottom:45px;">
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">晶泰LED</h1>
+    </header>
+</div>
+<div class="mui-slider">
+    <div class="mui-slider-group mui-slider-loop" style="height:130px;">
+        <!--第一个内容区容器-->
+        <div class="mui-slider-item">
+            <img src="public/img/banner/jtbanner1.jpg" alt="" style="height:100%;">
+        </div>
+        <!--第二个内容区-->
+        <div class="mui-slider-item">
+            <!-- 具体内容 -->
+            <img src="public/img/banner/jtbanner2.jpg" alt="" style="height:100%">
+        </div>
+        <!--第三个内容区-->
+        <div class="mui-slider-item">
+            <!-- 具体内容 -->
+            <img src="public/img/banner/jtbanner3.jpg" alt="" style="height:100%;">
+        </div>
+        <!--第四个内容区-->
+        <div class="mui-slider-item">
+            <!-- 具体内容 -->
+            <img src="public/img/banner/jtbanner4.jpg" alt="" style="height:100%;">
+        </div>
+        <!--第五个内容区-->
+        <div class="mui-slider-item">
+            <!-- 具体内容 -->
+            <img src="public/img/banner/jtbanner5.jpg" alt="" style="height:100%;">
+        </div>
+
+
+        <!--第一个内容区容器-->
+        <div class="mui-slider-item">
+            <img src="public/img/banner/jtbanner1.jpg" alt="" style="height:100%;">
+        </div>
+        <!--第二个内容区-->
+        <div class="mui-slider-item">
+            <!-- 具体内容 -->
+            <img src="public/img/banner/jtbanner2.jpg" alt="" style="height:100%">
+        </div>
+    </div>
+</div>
+<ul class="mui-table-view mui-grid-view mui-grid-9" style="background:#efeff4;;">
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="">
+            <span class="mui-icon mui-icon-home" style="color:red;"></span>
+            <div class="mui-media-body">首页</div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="mobile/monochromeP10/index.html">
+            <span class="mui-icon mui-icon-paperplane"></span>
+            <div class="mui-media-body">单色P10</div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="mobile/monochromeP3.75/index.html">
+            <span class="mui-icon mui-icon-paperplane"></span>
+            <div class="mui-media-body">单色P3.75</div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="mobile/monochrome5.0/index.html">
+            <span class="mui-icon mui-icon-paperplane"></span>
+            <div class="mui-media-body">单色P5.0</div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="mobile/indoorColorXC/index.html">
+            <span class="mui-icon mui-icon-navigate"></span>
+            <div class="mui-media-body">全彩室内</div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+        <a href="mobile/outdoorColorXC/index.html">
+            <span class="mui-icon mui-icon-navigate"></span>
+            <div class="mui-media-body">全彩室外</div>
+        </a>
+    </li>
+
+
+</ul>
+
+<nav class="mui-bar mui-bar-tab">
+    <a href="#" class="mui-tab-item mui-active">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a href="mobile/orderPage/index.html" class="mui-tab-item">
+        <span class="mui-icon mui-icon-email"></span>
+        <span class="mui-tab-label">信息</span>
+    </a>
+    <a href="mobile/myMessage/index.html" class="mui-tab-item">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">我的</span>
+    </a>
+</nav>
+
+<script type="text/javascript">
+    //设置开启tab点击
+    mui('.mui-bar-tab').on('tap', 'a', function () {
+        console.log(this.getAttribute('href'));
+        location.href = this.getAttribute('href');
+    })
+
+
+    //查找是否登录
+    $.ajax({
+        type: "POST",
+        url: "cookies/checkCookie.php",
+        success: function (msg) {
+            console.log(msg)
+            if (msg == "") {
+                location.href = "login.html";
+            }
+        },
+        error: function (msg) {
+//            alert("发送失败");
+        }
+    });
+
+    mui.plusReady(function () {
+        //          var wvs = plus.webview.all();//获取所有的窗口
+        //        plus.webview.close(wvs[0]);//关闭欢迎页
+
+        //首页返回键处理  
+        //处理逻辑：2秒内，连续两次按返回键，则退出应用  
+        var first = null;
+
+        mui.back = function () {
+            if (!first) {
+                first = new Date().getTime();
+                mui.toast('再按一次退出应用');
+                setTimeout(function () {
+                    first = null;
+                }, 1000);
+            } else {
+                if (new Date().getTime() - first < 1000) {
+                    plus.runtime.quit();
+                }
+            }
+        };
+    })
+</script>
+
+</body>
+</html>

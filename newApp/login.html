@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        window.onload = function () {
+            mui.init({
+				statusBarBackground:"#FF0000"
+			});
+
+        }
+    </script>
+
+</head>
+<body style="background:#FFF;padding:0 20px;">
+<div style="margin-top:50px;text-align: center;">
+    <img src="http://www.98china.cn/wphObject/img/logo/jtlogo.png" alt="" style="width:70%;">
+</div>
+<form class="mui-input-group" style="margin-top:100px;">
+    <div class="mui-input-row">
+        <label>用户名</label>
+        <input type="text" id="username" class="mui-input-clear" placeholder="请输入用户名">
+    </div>
+    <div class="mui-input-row">
+        <label>密码</label>
+        <input type="password" id="password" class="mui-input-password" placeholder="请输入密码">
+    </div>
+    <div class="mui-button-row" style="margin-top:30px;width:100%;padding:0 30px;">
+        <button type="button" id="loginBtn" class="mui-btn mui-btn-primary" style="width:100%;">登录</button>
+    </div>
+</form>
+
+<script>
+    document.getElementById("loginBtn").onclick = function () {
+
+        var user = document.getElementById("username").value;
+
+        var pass = document.getElementById("password").value;
+
+        //点击按钮后的判断方法
+        (function verdict() {
+            $.ajax({
+                type: "POST",
+                url: "servers/verify.php",
+                data: {username: user, password: pass},
+                success: function (msg) {
+                    // console.log(msg);
+                    if (msg == 1) {
+                        addCookie();
+                        mui.toast('登录成功', {duration: 'long', type: 'div'})
+                        setTimeout(function () {
+                            location.href = "index.html?username=" + user + "&";
+                        }, 1000)
+                    } else {
+                        // 调用layer弹出层 弹出密码错误信息
+                        alert("账号或密码错误")
+                        $("#password").val(""); //输入错误清空输入框
+                    }
+                },
+                error: function (msg) {
+                    alert("用户名匹配错误");
+                }
+            });
+        })();
+
+        //成功后发送一个Cookie
+        function addCookie() {
+
+            $.ajax({
+                type: "POST",
+                url: "cookies/addCookie.php",
+                data: {cook: user},
+                success: function (msg) {
+
+                },
+                error: function (msg) {
+//                    alert("发送失败");
+                }
+            });
+        }
+    }
+
+</script>
+<script>
+    window.onload = function () {
+
+        //查找是否登录
+        $.ajax({
+            type: "POST",
+            url: "cookies/checkCookie.php",
+            success: function (msg) {
+                console.log(msg)
+                if (msg != "") {
+                    location.href = "index.html";
+                }
+            },
+            error: function (msg) {
+//                alert("发送失败");
+            }
+        });
+    }
+
+    mui.plusReady(function () {
+        //          var wvs = plus.webview.all();//获取所有的窗口
+        //        plus.webview.close(wvs[0]);//关闭欢迎页
+
+        //首页返回键处理  
+        //处理逻辑：2秒内，连续两次按返回键，则退出应用  
+        var first = null;
+
+        mui.back = function () {
+            if (!first) {
+                first = new Date().getTime();
+                mui.toast('再按一次退出应用');
+                setTimeout(function () {
+                    first = null;
+                }, 1000);
+            } else {
+                if (new Date().getTime() - first < 1000) {
+                    plus.runtime.quit();
+                }
+            }
+        };
+    })
+</script>
+
+
+</body>
+</html>

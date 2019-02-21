@@ -16,7 +16,7 @@ class Article
 			}
 	        else
 			{
-				return $yiqi_db->get_row(CheckSql(sprintf("select * from yiqi_article where aid = '$aid' and adddate <= s.s.htaccesstaccess limit 1",date("Y-m-s.htaccess H:i:s"))));
+				return $yiqi_db->get_row(CheckSql(sprintf("select * from yiqi_article where aid = '$aid' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"))));
 			}
 	    }
 	    else
@@ -30,7 +30,7 @@ class Article
 	    global $yiqi_db;
 	    if($this->ExistArticle($article->aid)==1)
 	    {
-	        $sql = sprintf("select * from yiqi_article where aid > '$article->aid' and adddates.htaccess<= '%s' limit 1",date("Y-m-s.htaccess H:i:s"));
+	        $sql = sprintf("select * from yiqi_article where aid > '$article->aid' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"));
 	        return $yiqi_db->get_row(CheckSql($sql));
 	    }
 	    else
@@ -44,7 +44,7 @@ class Article
 	    global $yiqi_db;
 	    if($this->ExistArticle($article->aid)==1)
 	    {
-	        $sql = sprintf("select * from yiqi_article where aid < '$article->aid' and adddates.htaccess<= '%s' order by adddate desc limit 1",date("Y-m-s.htaccess H:i:s"));
+	        $sql = sprintf("select * from yiqi_article where aid < '$article->aid' and adddate <= '%s' order by adddate desc limit 1",date("Y-m-d H:i:s"));
 	        return $yiqi_db->get_row(CheckSql($sql));
 	    }
 	    else
@@ -65,7 +65,7 @@ class Article
 			}
 			else
 			{
-				$sql = sprintf("select * from yiqi_article where filename = '$name' and adddates.htaccess<= '%s' limit 1",date("Y-m-s.htaccess H:i:s"));
+				$sql = sprintf("select * from yiqi_article where filename = '$name' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"));
 			}
 	        return $yiqi_db->get_row(CheckSql($sql));
 	    }
@@ -85,7 +85,7 @@ class Article
 		}
 		else
 		{
-			$sql = sprintf("select * from yiqi_article where aid = '$aid' and adddates.htaccess<= '%s' limit 1",date("Y-m-s.htaccess H:i:s"));
+			$sql = sprintf("select * from yiqi_article where aid = '$aid' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"));
 		}
 	    $exist = $yiqi_db->query(CheckSql($sql));
 	    if($exist == 0)
@@ -108,7 +108,7 @@ class Article
 		}
 		else
 		{
-			$sql = sprintf("select * from yiqi_article where filename = '$filename' and adddates.htaccess<= s.htaccess limit 1",dates.htaccess"Y-m-d H:i:s"));
+			$sql = sprintf("select * from yiqi_article where filename = '$filename' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"));
 		}
 	    $exist = $yiqi_db->query(CheckSql($sql));
 	    if($exist == 0)
@@ -143,7 +143,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where cid in ($cids) and adddate <= '".dates.htaccess"Y-m-d H:i:s")."' $andwhere order by $orderby "));
+				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where cid in ($cids) and adddate <= '".date("Y-m-d H:i:s")."' $andwhere order by $orderby "));
 			}
 		}
 		else
@@ -154,7 +154,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where adddate <= '".dates.htaccess"Y-m-d H:i:s")."' $andwhere order by $orderby"));
+				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where adddate <= '".date("Y-m-d H:i:s")."' $andwhere order by $orderby"));
 			}
 		}
 	}	
@@ -181,7 +181,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where cid in ($cids) and adddate <= '".dates.htaccess"Y-m-d H:i:s")."' $andwhere order by $orderby limit $skip,$take "));
+				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where cid in ($cids) and adddate <= '".date("Y-m-d H:i:s")."' $andwhere order by $orderby limit $skip,$take "));
 			}
 		}
 		else
@@ -192,7 +192,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where adddate <= '".dates.htaccess"Y-m-d H:i:s")."' $andwhere order by $orderby limit $skip,$take"));
+				return $yiqi_db->get_results(CheckSql("select * from yiqi_article where adddate <= '".date("Y-m-d H:i:s")."' $andwhere order by $orderby limit $skip,$take"));
 			}
 		}
 	}
@@ -214,7 +214,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql(sprintf("select * from yiqi_article where cid in ($cids) and as.htaccessddate <= '%s' order by $orderby limit $skip,$take ",dates.htaccess"Y-m-d H:i:s"))));
+				return $yiqi_db->get_results(CheckSql(sprintf("select * from yiqi_article where cid in ($cids) and adddate <= '%s' order by $orderby limit $skip,$take ",date("Y-m-d H:i:s"))));
 			}
 		}
 		else
@@ -225,7 +225,7 @@ class Article
 			}
 			else
 			{
-				return $yiqi_db->get_results(CheckSql(sprintf("select * from yiqi_article where as.htaccessddate <= '%s' order by $orderby limit $skip,$take",dates.htaccess"Y-m-d H:i:s"))));
+				return $yiqi_db->get_results(CheckSql(sprintf("select * from yiqi_article where adddate <= '%s' order by $orderby limit $skip,$take",date("Y-m-d H:i:s"))));
 			}
 		}
 	}

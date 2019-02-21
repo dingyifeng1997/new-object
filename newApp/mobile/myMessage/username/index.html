@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>文件上传页面</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 引入Vue 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+    <!--引入MUI-->
+    <link rel="stylesheet" href="../../../css/mui.css">
+    <script src="../../../js/mui.js"></script>
+
+</head>
+<body>
+<div style="margin-bottom:80px;">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">昵称设置</h1>
+    </header>
+
+
+    <div class="mui-input-group" style="margin-top: 50px;">
+        <div class="mui-input-row">
+            <label>用户名:</label>
+            <input type="text" class="mui-input-clear">
+        </div>
+        <div class="mui-button-row">
+            <button type="button" class="mui-btn mui-btn-primary">确认</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //获取到登录用户的用户名
+    $.ajax({
+        type: "POST",
+        url: "../../../cookies/checkCookie.php",
+        success: function (msg) {
+
+            var oldUsers = msg;    //登录的用户名
+
+            $(".mui-input-clear").val(msg);
+
+            $(".mui-btn").click(function () {
+
+                var newUsers = $(".mui-input-clear").val(); //准备设置新的用户名,此时用户名已经改变
+
+                if ($(".mui-input-clear").val() === msg) {
+                    alert("未作修改");
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: "index.php",
+                        data: {newUser:newUsers,oldUser:oldUsers},
+                        success: function (msg){
+                            $.post("../../../cookies/delCookie.php");
+                            location.href = "../../../login.html"
+                        }
+                    });
+                }
+
+
+            })
+
+
+        }
+    });
+
+    window.addEventListener("swiperight", function () {
+        window.history.go(-1);
+    });
+
+
+</script>
+
+</body>
+</html>

@@ -16,7 +16,7 @@ class Product
 			}
 			else
 			{
-				 return $yiqi_db->get_row(CheckSql(sprintf("select * from yiqi_product where pid = '$pid' and adddate <= s.htaccess limit 1",date("Y-m-d H:i:s"))));
+				 return $yiqi_db->get_row(CheckSql(sprintf("select * from yiqi_product where pid = '$pid' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"))));
 			}
 	    }
 	    else
@@ -106,7 +106,7 @@ class Product
 		}
 		else
 		{
-			$sql = sprintf("select * from yiqi_product where filename = '$filename' and adddate <= s.htaccess limit 1",date("Y-m-d H:i:s"));
+			$sql = sprintf("select * from yiqi_product where filename = '$filename' and adddate <= '%s' limit 1",date("Y-m-d H:i:s"));
 		}
 	    $exist = $yiqi_db->query(CheckSql($sql));
 	    if($exist == 0)

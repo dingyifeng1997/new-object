@@ -1,0 +1,67 @@
+.bar-tab .tab-item.active{
+    color: #214fff;!important;
+}
+.defaultNotDisplay{
+    display: none;
+}
+.myMessage{
+    margin-top: 50px;
+    background: #fff;
+}
+.content{
+    background: #eee;
+}
+.card{
+    background: #fff;
+    box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+    margin: 0.5rem;
+    position: relative;
+    border-radius: 0.1rem;
+}
+.card-header {
+    border-radius: 0.1rem 0.1rem 0 0;
+    font-size: 0.85rem;
+    min-height: 2.2rem;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header b{
+    color: #327bff;
+    font-weight: bold;
+    font-size:18px;
+}
+.card-header button{
+    border-radius: 100px;
+}
+.messageLine{
+    border-bottom: 1px dashed  #f1f1f1;
+}
+
+.card-content-inner span{
+    display: inline-block;
+    width:70px;
+
+}
+.card-content-inner{
+    padding: 10px;
+}
+.card-content-inner{
+    padding: 10px;
+}
+
+.pull-to-refresh-content{
+    margin-bottom:70px;
+}
+.card-content-inner span{
+    margin:0 15px;
+}
+.topTitle{
+    color: #327bff;
+}
+.defaultHide{
+    display: none;
+}

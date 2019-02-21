@@ -144,16 +144,27 @@ function onlyNumber(){
 
 //对所有的单价和数量再次进行求和
 function getSum(){
-    summation = 0;
-    $(" #mytable .warp-tbody").children("tr").each(function(){
-        num = $(this).children("td").eq(1).text();    //数量
-        prace = $(this).children("td").eq(3).text();    //单价
-        $(this).children("td").eq(4).text(accMul(num,prace));
-        summation += accMul(num,prace);
+
+    //先判断是否可以请求到sum.php,如果请求不到代表是本地保存文件,则不进行计算
+    $.ajax({
+        type: "post",
+        url: "../sum.php",
+        success: function(data) {
+            summation = 0;
+            $(" #mytable .warp-tbody").children("tr").each(function(){
+                num = $(this).children("td").eq(1).text();    //数量
+                prace = $(this).children("td").eq(3).text();    //单价
+                $(this).children("td").eq(4).text(accMul(num,prace));
+                summation += accMul(num,prace);
+            });
+            $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
+            $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
+            layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6,shadeClose:true});  //弹出每平方价格
+
+        }
     })
-    $("#zongHeJi").text(summation.toFixed(1)); //插入到总合计中
-    $("#allDaXie").text(intToChinese(summation.toFixed(1))); //插入到总合计中
-    layer.alert(((summation/allSquare).toFixed(1)+" 元"), {title:'每平方报价为',icon:6,shadeClose:true});  //弹出每平方价格
+
+
 
 }
 

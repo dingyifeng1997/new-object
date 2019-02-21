@@ -378,7 +378,17 @@ function getLine3(){
             powerSource = "6";
             break;
     }
-    getPowerNumber =  Math.ceil(boardNumber/powerSource);
+
+    //判断是否自定义了电源带载数量
+    if($("#PowerSupplyLoad").val() != "" && $("#PowerSupplyLoad").val() != 0){
+        //若是定义了电源带载数量, 则采用以下算法
+        getPowerNumber =  Math.ceil(boardNumber/$("#PowerSupplyLoad").val());
+    }else{
+        //若是没有定义电源带载数量, 则采用以下算法
+        getPowerNumber =  Math.ceil(boardNumber/powerSource);
+    }
+
+
     $("#partsC1").text(getPowerNumber); //电源数量
     $("#partsC2").text(45); //电源价格
     $("#partsC3").text(accMul(getPowerNumber,45));
@@ -499,7 +509,18 @@ function getLine5(){
                 break;
         }
     }
-    receptionCard =  Math.ceil(moduleWidthNumber/widthNumber) * Math.ceil(moduleHeightNumber/heightNumber)
+
+
+
+    //判断是否自定义了接收卡带载数量
+    if($("#receiverCardWidth").val() != "" && $("#receiverCardWidth").val() != 0 && $("#receiverCardHeight").val() != ""&& $("#receiverCardHeight").val() != 0){
+        //若是自定义了接收卡带载数量 则采用以下算法
+        receptionCard = Math.ceil(moduleWidthNumber/($("#receiverCardWidth").val())) * Math.ceil(moduleHeightNumber/($("#receiverCardHeight").val()))
+    }else{
+        //若是没有自定义接收卡带载数量 则采用以下算法
+        receptionCard =  Math.ceil(moduleWidthNumber/widthNumber) * Math.ceil(moduleHeightNumber/heightNumber)
+    }
+
 
     $("#partsE1").text(receptionCard);
     $("#partsE2").text(price);
@@ -702,27 +723,27 @@ function getLine11(){
 
     if(getPowerNumber>50&&getPowerNumber<100){
         xinghao ="20KW";
-    }else if(getPowerNumber>100&&getPowerNumber<150){
+    }else if(getPowerNumber>=100&&getPowerNumber<150){
         xinghao ="30KW";
-    }else if(getPowerNumber>150&&getPowerNumber<200){
+    }else if(getPowerNumber>=150&&getPowerNumber<200){
         xinghao ="40KW";
-    }else if(getPowerNumber>200&&getPowerNumber<250){
+    }else if(getPowerNumber>=200&&getPowerNumber<250){
         xinghao ="50KW";
-    }else if(getPowerNumber>250&&getPowerNumber<300){
+    }else if(getPowerNumber>=250&&getPowerNumber<300){
         xinghao ="60KW";
-    }else if(getPowerNumber>300&&getPowerNumber<400){
+    }else if(getPowerNumber>=300&&getPowerNumber<400){
         xinghao ="80KW";
-    }else if(getPowerNumber>400&&getPowerNumber<500){
+    }else if(getPowerNumber>=400&&getPowerNumber<500){
         xinghao ="100KW";
-    }else if(getPowerNumber>500&&getPowerNumber<600){
+    }else if(getPowerNumber>=500&&getPowerNumber<600){
         xinghao ="120KW";
-    }else if(getPowerNumber>600&&getPowerNumber<700){
+    }else if(getPowerNumber>=600&&getPowerNumber<700){
         xinghao ="140KW";
-    }else if(getPowerNumber>700&&getPowerNumber<800){
+    }else if(getPowerNumber>=700&&getPowerNumber<800){
         xinghao ="160KW";
-    }else if(getPowerNumber>800&&getPowerNumber<900){
+    }else if(getPowerNumber>=800&&getPowerNumber<900){
         xinghao ="180KW";
-    }else if(getPowerNumber>900&&getPowerNumber<1000){
+    }else if(getPowerNumber>=900&&getPowerNumber<1000){
         xinghao ="200KW";
     }
 
