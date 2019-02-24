@@ -90,7 +90,22 @@ $("#submitNumeration").click(function(){
     inputAndSelect();   //判断输入是否为空
     onlyNumber();       //判断表格是否为数字
     getSum();           //对修改过的所有的的数量和单价都再次进行计算
+    outPutImg();        //导出报价图片
 });
+
+//导出报价为图片
+function outPutImg(){
+    $.post("../../cookies/checkCookie.php",function(data){
+        var sr = document.getElementById("kebianji");
+        html2canvas(sr).then(function (canvas) {
+//                    document.body.appendChild(canvas);
+            var html_canvas = canvas.toDataURL();
+            $.post('../server.php', {html_canvas: html_canvas,ids:data}, function (json) {
+            }, 'json');
+        });
+    } );
+}
+
 
 //提交计算的时候判断选择和输入是否为空
 function inputAndSelect(){

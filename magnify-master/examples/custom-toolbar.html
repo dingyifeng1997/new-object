@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>历史报价单</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/jquery.magnify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../docs/css/index.css">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="../../index.html">
+                    <img src="../../public/img/logo2.png" alt="" style="width:150px;">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div style="margin-top:80px;">
+        <h2 style="text-align: center;color: #737373;" class="header">历史报价单</h2>
+    </div>
+
+    <div class="image-set">
+
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">删除此报价</h4>
+                </div>
+                <div class="modal-body">
+                    确定要删除吗?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="footer">
+    <p>河南晶泰光电科技有限公司版权所有©2017-2019</p>
+    <p>河南晶泰光电科技有限公司运营：<a href="http://www.miitbeian.gov.cn/">豫ICP备18016214号</a></p>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="../dist/jquery.magnify.js"></script>
+<script>
+
+    window.onload = function () {
+        $.ajax({
+            type: "POST",
+            url: "getPhonePath.php",
+            async: false,
+            success: function (msg) {
+                var obj = eval("(" + msg + ")");
+                for (let i = 0; i < obj.length; i++) {
+                    var name = (obj[i].src).split("/")[1].split(".")[0].split("-")[0];
+                    var times = (obj[i].src).split("/")[1].split(".")[0].split("-");
+                    var time = times[1] + "-" + times[2] + "-" + times[3] + ":" + times[4] + ":" + times[5];
+                    str = `
+                        <a data-magnify="gallery" href="${obj[i].src}" style="position: relative;" class="col-md-3">
+                            <div style="z-index:100;"   data-toggle="modal" data-target="#myModal" class="closes">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </div>
+                             <img src="${obj[i].src}" alt="" class="imgs">
+
+                             <div class="Description">
+                               <span>账号:[${name}]</span><br>
+                               <span>时间:[${time}]</span>
+                             </div>
+                        </a>
+
+                      `;
+                    $(".image-set").prepend(str);
+
+                }
+            }
+
+        });
+
+        $(".closes").on("click", function (event) {
+
+            var path = $(this).parent().attr("href");
+
+            //询问框
+                //提示层
+
+                // layer.msg('玩命提示中');
+            //删除图片
+            $.ajax({
+                type: "POST",
+                url: "removePhone.php",
+                data: {path: path},
+                success: function (msg) {
+                    alert(msg)
+                }
+            });
+
+            // alert($(this).parent().attr("href"));
+            window.location.reload();   //刷新当前页面
+            return false;//取消执行后续事件
+        });
+
+
+        $('[data-magnify]').magnify({
+            headToolbar: [
+                'minimize',
+                'maximize',
+                'close'
+            ],
+            footToolbar: [
+                'prev',
+                'next',
+                'zoomIn',
+                'zoomOut',
+                'fullscreen',
+                'actualSize',
+                'rotateLeft',
+                'rotateRight'
+            ],
+            modalWidth: 400,
+            modalHeight: 400
+        });
+
+    }
+
+
+</script>
+</body>
+
+</html>

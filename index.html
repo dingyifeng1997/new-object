@@ -88,9 +88,9 @@
                         <li>
                             <a href="wphObject/index.html">定制屏幕</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="wphObject/orderPage/login.html">Message</a>
-                        </li>
+                        </li>-->
                         <li>
                             <a href="login.php">登录</a>
                         </li>
@@ -377,6 +377,7 @@
     $.ajax({
         type: "POST",
         url: "temp/server/MaterialsContent.php",
+        cache:true,
         success: function (msg) {
             jsp = eval('(' + msg + ')');    //把字符串转换为json
             newMessage = "";
